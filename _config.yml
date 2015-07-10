@@ -1,11 +1,11 @@
 # Site settings
 title: Affdex SDK Developer Portal
 email: sdk@affectiva.com
-description: > For developer use in conjunction with Affectiva's Affdex 
-baseurl: /DeveloperPortal/
-url: http://benjaminanding.github
-twitter_username: 
-github_username:  
+description: For developer use in conjunction with Affectiva's Affdex 
+baseurl: http://benjaminanding.github
+url: /DeveloperPortal/
+twitter_username: #
+github_username:  #
 
 # Build settings
 markdown: kramdown
