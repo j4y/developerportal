@@ -1,11 +1,11 @@
 # Site settings
-title: Affdex SDK Developer Portal
+title: "Affdex SDK Developer Portal"
 email: sdk@affectiva.com
 description: > For developer use in conjunction with Affectiva's Affdex 
-baseurl: "/DeveloperPortal/" # the subpath of your site, e.g. /blog/
-url: "http://benjaminanding.github/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: /DeveloperPortal/
+url: http://benjaminanding.github
+twitter_username: 
+github_username:  
 
 # Build settings
 markdown: kramdown
