@@ -1,5 +1,5 @@
 # Site settings
-title: "Affdex SDK Developer Portal"
+title: Affdex SDK Developer Portal
 email: sdk@affectiva.com
 description: > For developer use in conjunction with Affectiva's Affdex 
 baseurl: /DeveloperPortal/
