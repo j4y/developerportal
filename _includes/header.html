@@ -8,16 +8,24 @@
     	</a>
     </center>
 
-    <nav class="site-nav">
-
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
+<tr>
+<td colspan="3">
+	<table border="0" cellpadding="2" cellspacing="3" width="100%">   
+		<tbody>
+			<span class="header"
+    		<nav class="site-nav">
+    		  <div class="trigger">
+    		  	  {% for page in site.pages %}
+    	     		 {% if page.title %}
+    	      		<a class="page-link" href="{{ page.url | prepend: site.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    	     		 {% endif %}
+    	    	{% endfor %}
+    		  </div>
+    		</nav>
+		</tbody>
+	</table>
+</td>
+</tr>
 
   </div>
 
