@@ -2,8 +2,8 @@
 title: developer.affdex
 email: sdk@affectiva.com
 description: For developer use in conjunction with Affectiva's Affdex 
-baseurl: http://benjaminanding.github.io
-url: /developerportal
+baseurl: # http://benjaminanding.github.io
+url: # /developerportal
 twitter_username: #
 github_username:  #
 
