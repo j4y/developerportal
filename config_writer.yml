@@ -1,5 +1,5 @@
 # mandatory definitions
-project: documentation-theme-jekyll-writer
+project: developerportal
 
 audience: writer
 
@@ -9,17 +9,17 @@ platform: all
 
 version: all
 
-topnav_title: Jekyll for writers
+topnav_title: developer.affdex
 
-topnav_version: "2.0"
+topnav_version: "1.0"
 
-tagline: Guide for writers
+tagline: Guide for Developers
 
-baseurl: "/documentation-theme-jekyll/writer" 
+baseurl: "/developerportal/writer" 
 
 port: 4008
 
-destination: ../documentation-theme-jekyll-builds/writer
+destination: ../developerportal-builds/writer
 
 homepage_title: Doc theme for Jekyll -- writer version
 
