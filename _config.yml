@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 project: developerportal
 
 audience: designer
@@ -89,6 +90,8 @@ collections:
   tooltips:
     output: true
 =======
+=======
+>>>>>>> parent of 756b936... complete overhaul, template te in use now
 # Site settings
 title: developer.affdex
 email: sdk@affectiva.com
@@ -100,4 +103,7 @@ github_username:  #
 
 # Build settings
 markdown: kramdown
+<<<<<<< HEAD
+>>>>>>> parent of 756b936... complete overhaul, template te in use now
+=======
 >>>>>>> parent of 756b936... complete overhaul, template te in use now
