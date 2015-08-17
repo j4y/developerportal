@@ -12,14 +12,14 @@ topnav:
       version: all
   
     - title: Github repo
-      external_url: https://github.com/benjaminanding/developerportal
+      external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
       audience: writer, designer
       platform: all
       product: all
       version: all
   
-    - title: 
-      external_url: 
+    - title: My blog
+      external_url: http://idratherbewriting.com
       audience: writer, designer
       platform: all
       product: all
