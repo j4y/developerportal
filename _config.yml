@@ -1,4 +1,4 @@
-project: documentation-theme-jekyll-designer
+project: developerportal
 
 audience: designer
 
@@ -18,13 +18,13 @@ site_title: Documentation theme for Jekyll
 
 tagline: Guide for designers
 
-baseurl: "/documentation-theme-jekyll"
+baseurl: "/developerportal"
 
 port: 4006
 
 host: 127.0.0.1 
 
-url: "http://tomjohnson1492.github.io"
+url: "http://http://benjaminanding.github.io/"
 
 feedback_email: tomjohnson1492@gmail.com
 
