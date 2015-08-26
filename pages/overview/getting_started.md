@@ -9,107 +9,81 @@ summary:
 ---
 {% include linkrefs.html %} 
 
+<h1 id="Introducing the Affdex Mobile SDK">Introducing the Affdex Mobile SDK</h1>
+<p>
+The Affdex Mobile SDK for iOS and Android captures and reports emotion insights from people&acute;s faces. Emotion insights from faces obtained from the device camera, a video or even a single image are generated on-device and in real time.
+</p><p>
+Integrating the Affdex Mobile SDK enables iOS and Android developers to create interactive and exciting emotion-aware applications. Users interact with their mobile device using applications you build with the Affdex Mobile SDK, and their facial expressions are captured, analyzed and made available for further processing.
+</p><p>
+While the science underlying the Affdex SDK is complex, the emotion insights provided by the SDK are easy to interpret and process. Features of the Affdex Mobile SDK include:
+</p>
+<ul>
+<li>	Real-time capture and feedback of emotion insights
+</li><li>	Processes videos obtained from device camera, from a video file, or from still images
+</li><li>	Flexible and easy to use API
+</li><li>	All processing done on device - no videos or images sent to Affdex server
+</li></ul>
+<p>
 
-## Step 1: Set up the prerequisites
+<h2 id="Why Emotion-Enable Your Applications?">Why Emotion-Enable Your Applications?</h2>
+<p>Mobile devices are incredibly smart, but they don't respond to human sentiment. Emotion-enabled applications open a new world of spontaneous interaction in response to how people feel, allowing your applications to come to life. Using the Affdex Mobile SDK, your applications instantly respond to users’ unfiltered emotion feedback. Your applications become sympathetic to the user, mirroring the user’s emotional state, adjusting their interfaces and flow to better suit the user’s mood.
+</p><p>
 
-Before you start installing the theme, make sure you have all of these prerequisites in place.
+<h2 id="Technology">Technology</h2>
+<p>
+The Affdex Mobile SDK builds on the proven cloud-based Affdex facial expression analysis platform. It has been adapted and tuned to process images captured in everyday use of a mobile device.  Processing is on-device (no cloud round trip), and the library is lightweight and fast to support a small memory footprint and real-time processing.
+</p><p>
+Follow <a href=http://www.affdex.com/clients/affdex-resources/ target=_blank>this link</a> for more information on the science underlying the Affdex SDK.
+</p>
 
-* **Mac computer (recommended)**. If you have a PC, you need to see [Jekyll on Windows](http://jekyllrb.com/docs/windows/). Make sure you can get Jekyll working on Windows before proceeding.
-* **[Ruby](https://www.ruby-lang.org/en/)**. This should already be installed. Type `which ruby` to confirm. 
-* **[Rubygems](https://rubygems.org/pages/download)**. This is a package manager for Ruby (gems). Type `which gem` to confirm.
-* **[Jekyllrb](http://jekyllrb.com/)**. To install: `gem install jekyll`. Type `which jekyll` to confirm.
-* **[Git](http://git-scm.com/download/mac)**. Type `which git` to see if you already have it installed.
-* **Text editor** (some examples: Sublime Text, Atom, WebStorm)
-* **[iTerm](http://iterm.sourceforge.net/)** - Optional but recommended instead of Terminal. 
-* **[pygments](http://pygments.org/download/)** - Pygments handles syntax highlighting. In my experiments, the Pygments highlighter seemed better than the default rouge highlighter. To install Pygments, you will need Python installed. (If you don't install pygments, you'll get an error when you build the theme.) To check if Python is installed, type `which python`. To install Pygments: `gem install pygments.rb`.
+<h2 id="Requirements & Platform Details">Requirements & Platform Details</h2>
+<p>Integration documentation and example code are packaged with the SDK. You can also visit <a href=http://www.affdex.com/mobile-sdk target=_blank>www.affdex.com/mobile-sdk</a> for more information.
+</p>
+<p>
+Visit our GitHub page for example projects that utilize the SDK: <a href=https://github.com/Affectiva target=_blank>https://github.com/Affectiva</a>
+</p><p>
 
-{{warning}} These instructions are designed for users on Macs. Jekyllrb supposedly works on Windows but is not officially supported on that platform. See <a href="Jekyll on Windows">http://jekyllrb.com/docs/windows/</a> for more details. {{end}}
+<h2 id="Measurements">Measurements</h2>
+<p>The face provides a rich canvas of emotion. Humans are innately programmed to express and communicate emotion through facial expressions. Affdex scientifically measures and reports facial expressions using sophisticated computer vision and machine learning techniques. When you use the Affdex Mobile SDK in your applications, you will receive facial expression output from Affdex in the form of Affdex metrics: expression metrics and emotional metrics.
+</p>
+<center><img src="../images/graphic1.png"></center>
+<p>
+Expression metrics are scores that indicate when users make a specific facial expression (e.g., a smile) along with the degree of intensity. The metrics can be thought of as expression detectors: as the expression occurs and intensifies, the score rises from 0 (no expression) to 100 (expression fully present). In addition, we also expose a composite emotional metric called valence which gives feedback on the overall experience. Valence measures 0 to 100 indicate a neutral to positive experience, while -100 to 0 indicate a negative to neutral experience.
+</p>
 
-## Step 2: Build the theme
+<center><img src="../images/graphic2.png"></center>
 
-Before you start customizing the theme, make sure you can build the theme with the default content and settings first.
+<h2 id="Getting The Best Results">Getting The Best Results</h2>
+The Affdex Mobile SDK builds on Affdex real-world experience analyzing billions of faces worldwide, both online and offline. The SDK robustly handles gender, age, and ethnicity, and has been cross-culturally validated on real-world data.  While accommodating a variety of lighting conditions and head orientations, the SDK produces best results when people face the screen and facial features are visible. Obstructions to the face, such as a hand over the mouth, will result in a temporary loss of facial expression data so developers should prompt users to avoid such obstructions.
 
-1. Make sure you satisfy all the prerequisites as listed in the previous section, "Prerequisites."
-2. Download the theme from the [documentation-theme-jekyll Github repository](https://github.com/tomjohnson1492/documentation-theme-jekyll) and unzip it into your ~username/projects folder. 
-    
-    You can either download the theme files directly by clicking the **Download Zip** button on the right of the repo, or use git to clone the repository to your local machine. Note, however, that you won't be using the pull command to update the theme since you'll be customizing it with your own content and won't want to overwrite those customizations, so there isn't a huge need to clone it.
+<h2 id="Ways To Use The SDK">Ways To Use The SDK</h2>
 
-2. After downloading the theme, note some unique aspects of the file structure: 
- * In the root directory, there's a separate configuration file for each unique output you're building.
- * Each configuration file has a different preview port. 
- * Each configuration file also specifies a different project (and potentially a different audience, product, platform, and version). By setting unique values for these properties in your configuration file, you determine how the sidebar and top navigation is constructed. 
- 
-    {{tip}} The main goal of this theme is to enable single sourcing. With single sourcing, you build multiple outputs from the same source, with somewhat different content in each site based on the particular product, platform, version, and audience. That's why there are separate configuration files for each output.{{end}}
-    
-    In general, you build the sites by using build commands that specify the configuration file, like this:
+<h3 id="Video">Video</h3>
+<p>The SDK supports extracting metrics directly from front-facing or back-facing cameras. You can send consecutive video frames to the SDK for processing. You can also specify a video file that resides on the file system of the device.
+</p><p>
 
-    ```
-    jekyll serve --config config_base.yml,config_designer.yml
-    ```
+<h3 id="Static images">Static images</h3>
+<p>The SDK also includes the capability to generate emotion metrics from individual images (photographs).
+</p><p>
 
-    The `--config` parameter specifies the location of the configuration file to be used in the build. The configuration file itself contains the destination location. 
+<h2 id="A Note About Privacy">A Note About Privacy</h2>
+<p>Affdex takes the issue of privacy seriously, and we ask developers using the Affdex Mobile SDK to also be vigilant about safeguarding user information. The Affdex Mobile SDK collects a minimal set of anonymous technical data to help us better understand how it is being used.
+</p><p>
+The Affdex Mobile SDK does not collect the following information:
 
-    There are two configuration files used here -- config_base.yml contains common settings used in all the configuration files. The config_designer.yml file contains unique configuration properties specific to this build.
+<ul>
+<li>	The Affdex Mobile SDK does not collect personal information
+</li><li>	The Affdex Mobile SDK does not store face video obtained from the device camera; all the processing is done local to the device, transiently, on a frame-by-frame basis.
+</li><li>	The Affdex Mobile SDK does not perform facial or identity recognition.
+</li></ul>
+<p>The Affdex SDK for iOS and Android leverages the Flurry Analytics service; please see Flurry's Privacy Policy for details, including their instructions allowing users to opt out of tracking
+</p>
 
-    {{note}} The _config.yml file in the theme's root directory is just a duplicate of the config_base.yml and config_designer.yml files combined. The _config.yml file in root allows Github Pages to build the site from the Github repo. Unless you're using Github Pages to build your sites, you don't need _config.yml in the root directory. {{end}}
-    
-3. In the root directory, you'll find build_writer.sh, which is a simple shell script containing this build argument. Instead of running the command above, run the following:
 
-    ```
-    . build_writer.sh
-    ```
-    
-    Preview the site at the preview URL shown.
-    
-4. Open a new tab in iTerm and build an additional output:
-
-    ```
-    . build_designer.sh
-    ```
-    Open a new tab in your browser and preview the site at the preview URL shown. Notice that the writer output doesn't include the Special Layouts section in the sidebar.
-    
-    If the theme builds both outputs successfully, great. You can move on to the next section: Customizing the theme. If you run into errors building the basic theme, you must solve them before moving on. See {{troubleshooting}} for more information.
-    
-{{tip}} You can set up profiles in iTerm to initiate all your builds with one selection. See {{iterm_profiles}} for details. {{end}}
-
-## Step 3: Customize the theme
-
-{{note}} Before you start customizing the theme, make sure you can build the theme by following the instructions in the previous section, "Step 2: Build the theme." {{end}}
-
-The theme shows two build outputs: one for designers, and one for writers. The dual outputs is an example of the single sourcing nature of the theme. The designers output is comprehensive, whereas the writers output is a subset of the information. Follow these steps to customize the theme with your own content.
-
-{{important}} In these instructions, I'll assume your project's name is "acme." I'll also assume you have two audiences you're building your acme project for: developers and marketers. {{end}}
-
-1. If you haven't already downloaded the theme, see the previous section, "Step 2: Build the theme." Press Ctrl+C to stop the previews.
-2. In the theme's root directory, rename config_writer.yml to config_developer.yml and customize all the values inside that file based on the instructions {{config_setup}}. Do the same with config_designer.yml (changing it to config_marketer.yml) and continue to clone and customize the config file for other audiences you need.
-    
-    In this theme, each output requires a separate config file. If you have 10 audiences and you want separate sites for each, then then you'll have 10 config files in this directory. 
-    
-    {{tip}} As you customize the config files, make the port values unique so that you don't run into "Address already in use" issues when you build multiple sites and want to preview them at the same time.{{end}}
-    
-5. In the _includes/custom directory, open conditions.html and customize the values there specific to your outputs. (Basically, replace `writer` with your developer, and `designer` with another marketer.) 
-    
-    The conditions.html file is used to apply different requirements to the sidebar and other files. The conditions.html file is included in various parts of the theme &mdash; the sidebar.html, the topnav.html, and some of the print files.
-    
-6. Remove the content inside the pages folder, and then add your own pages in this pages folder. (Using subfolders and sub-subfolders inside the pages folder is fine &mdash; you won't have to worry about folder paths in links.)
-7. Inside \_data, open sidebar.yml and topnav.yml and customize the navigation. 
-    
-    {{warning}} Don't mess up the spacing or change any of the YML level names or the site or sidebar won't build. Each new YML level is indented with two spaces. {{end}}
-    
-8. In the root directory, rename build_writer.sh to build_developer.sh (same with build_designer.sh; change it to build_marketer.sh). In the content of each of these files, change the build parameters to point to the configuration file you want. 
-9. In the root directory, customize the index.md file. This file will be the homepage for all of your projects. Use conditional tags (for example, `if site.project == "acme-writer" ...`) to change the content for different builds of your site. Store the content of the homepage in your _includes/custom folder. See {{conditional_logic}} for more information on applying conditions.
-10. For each of your pages where you want to insert a note or callout, add {%raw%}`{% include linkrefs.html %}`{%endraw%}  directly below the frontmatter.
-    
-    {{tip}} If you're using WebStorm, you can create a Jekyll template so that the frontmatter is auto-populated when you create a new Jekyll file. {{end}}
-    
-12. In the _includes folder, open footer.html and customize the content. If you have different footers for different outputs, use conditional tags as you did with index.md.
-11. Build your site with `. build_developer.sh` and `. build_marketer.sh` and preview it at the URLs provided.
-
-{{callout_info}}<b>Publishing to web hosts:</b> If you have multiple outputs, you probably don't want to use Github Pages to publish your site, since Github Pages looks for a _config.yml file in the root directory and uses that to build a site in the gh-pages branch of your repository. You can't instruct Github pages to look in another directory for the right configuration file. Instead, you'll probably have a better experience publishing to a Amazon Web Services S3 bucket or some other web host.{{end}}
 
 ## Questions
 
-If you have questions, contact me at tomjohnson1492@gmail.com. My regular site is [http://idratherbewriting.com](idratherbewriting.com). I'm eager to make these installation instructions as clear as possible, so please let me know if there are areas of confusion that need clarifying.
+If you have any comments, concerns, or questions, contact us at SDK@affectiva.com. Our site is [http://www.affectiva.com](affectiva.com). 
 
 
 

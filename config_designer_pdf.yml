@@ -1,4 +1,4 @@
-baseurl: "/documentation-theme-jekyll/designer-pdf"
+baseurl: "/developerportal/designer-pdf"
 
 host: 127.0.0.1
 
@@ -16,4 +16,4 @@ defaults:
 
 
 print: true
-destination: ../documentation-theme-jekyll-builds/designer_guide.pdf
+destination: ../developerportal/designer_guide.pdf

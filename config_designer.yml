@@ -1,4 +1,4 @@
-project: documentation-theme-jekyll-designer
+project: developerportal
 
 audience: designer
 
@@ -8,7 +8,7 @@ platform: all
 
 version: all
 
-topnav_title: Jekyll for Designers
+topnav_title: Affdex SDK
 
 topnav_version: 2.0
 
@@ -18,6 +18,6 @@ baseurl: "/developerportal/designer"
 
 port: 4006
 
-homepage_title: Doc theme for Jekyll -- designer version
+homepage_title: Affdex SDK -- designer version
 
-site_title: Documentation theme for Jekyll -- designer version
+site_title: Affdex SDK -- designer version
