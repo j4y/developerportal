@@ -333,6 +333,39 @@ entries:
           product: all
           version: all
           print: true
+          
+    - title: Platforms
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all
+      print: true
+
+      items:
+        - title: Android SDK
+          url: /android_sdk/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: iOS SDK
+          url: /ios_sdk/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Windows SDK
+          url: /windows_sdk/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
 
     - title: Tag archives
       audience: designer, writer
