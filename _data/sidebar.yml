@@ -39,7 +39,7 @@ entries:
           print: true
 
         - title: Accuracy
-          url: /accuray/
+          url: /accuracy/
           audience: writer, designer
           platform: all
           product: all
