@@ -12,7 +12,7 @@ topnav:
       version: all
   
     - title: Github repo
-      external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
+      external_url: https://github.com/benjaminanding/developerportal
       audience: writer, designer
       platform: all
       product: all
@@ -25,34 +25,3 @@ topnav:
       product: all
       version: all
 
-#Topnav dropdowns
-topnav_dropdowns:
-- title: Topnav dropdowns
-  subcategories:
-    - title: Jekyll resources
-      audience: writer, designer
-      platform: all
-      product: all
-      version: all
-    
-      items:
-        - title: Jekyll documentation
-          external_url: http://jekyllrb.com/docs/home/
-          audience: writer, designer
-          platform: all
-          product: all
-          version: all
-
-        - title: Jekyll Talk
-          external_url: https://talk.jekyllrb.com/
-          audience: designer, writer
-          platform: all
-          product: all
-          version: all
-
-        - title: Jekyll on Stackoverflow
-          external_url: http://stackoverflow.com/questions/tagged/jekyll
-          audience: writer, designer
-          platform: all
-          product: all
-          version: all

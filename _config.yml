@@ -10,7 +10,7 @@ version: all
 
 topnav_title: Affdex Dev Portal
 
-topnav_version: 2.1
+topnav_version: 2.4
 
 homepage_title: Affdex Dev Portal 
 
@@ -30,9 +30,9 @@ feedback_email: SDK@affectiva.com
 
 sidebar_accordion: true
 
-disqus_shortname: idrbwjekyll
+disqus_shortname: 
 
-google_analytics:  UA-408430-5
+google_analytics:  
 
 markdown: redcarpet
 
