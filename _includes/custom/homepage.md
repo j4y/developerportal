@@ -36,12 +36,12 @@ Visit our GitHub page for example projects that utilize the SDK: <a href=https:/
 <h2 id="Measurements">Measurements</h2>
 <p>The face provides a rich canvas of emotion. Humans are innately programmed to express and communicate emotion through facial expressions. Affdex scientifically measures and reports facial expressions using sophisticated computer vision and machine learning techniques. When you use the Affdex Mobile SDK in your applications, you will receive facial expression output from Affdex in the form of Affdex metrics: expression metrics and emotional metrics.
 </p>
-<center><img src="../../images/graphic1.png"></center>
+<center><img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}"/></center>
 <p>
 Expression metrics are scores that indicate when users make a specific facial expression (e.g., a smile) along with the degree of intensity. The metrics can be thought of as expression detectors: as the expression occurs and intensifies, the score rises from 0 (no expression) to 100 (expression fully present). In addition, we also expose a composite emotional metric called valence which gives feedback on the overall experience. Valence measures 0 to 100 indicate a neutral to positive experience, while -100 to 0 indicate a negative to neutral experience.
 </p>
 
-<center><img src="../../images/graphic2.png"></center>
+<center><img src="{{ "/images/graphic2.png" | prepend: site.baseurl }}"/></center>
 
 <h2 id="Getting The Best Results">Getting The Best Results</h2>
 The Affdex Mobile SDK builds on Affdex real-world experience analyzing billions of faces worldwide, both online and offline. The SDK robustly handles gender, age, and ethnicity, and has been cross-culturally validated on real-world data.  While accommodating a variety of lighting conditions and head orientations, the SDK produces best results when people face the screen and facial features are visible. Obstructions to the face, such as a hand over the mouth, will result in a temporary loss of facial expression data so developers should prompt users to avoid such obstructions.
