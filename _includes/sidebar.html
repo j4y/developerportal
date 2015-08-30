@@ -4,6 +4,7 @@
     <div class="col-md-3">
 
         <script>
+
             $(document).ready(function() {
                         // Initialize navgoco with default options
                         $("#mysidebar").navgoco({
@@ -21,15 +22,19 @@
                             easing: 'swing'
                                 }
                                 });
+
             $("#collapseAll").click(function(e) {
                 e.preventDefault();
                 $("#mysidebar").navgoco('toggle', false);
             });
+
             $("#expandAll").click(function(e) {
                 e.preventDefault();
                 $("#mysidebar").navgoco('toggle', true);
             });
+
             });
+
         </script>
 
 
