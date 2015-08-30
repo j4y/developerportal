@@ -18,8 +18,8 @@ topnav:
       product: all
       version: all
   
-    - title: My blog
-      external_url: http://idratherbewriting.com
+    - title: Blog
+      external_url: http://www.affectiva.com/blog/
       audience: writer, designer
       platform: all
       product: all

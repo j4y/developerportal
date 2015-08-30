@@ -46,6 +46,14 @@ entries:
           version: all
           print: true
 
+        - title: Metrics
+          url: /metrics/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
         - title: See Also
           url: /see_also/
           audience: writer, designer
@@ -92,8 +100,6 @@ entries:
       platform: all
       product: all
       version: all
-      print: false
-      
       items:
       - title: Overview
         url: /tag-archives-overview/
@@ -101,16 +107,13 @@ entries:
         platform: all
         product: all
         version: all
-        print: false
-
         thirdlevel: #demo's how to add a third level to the sidebar nav.
-          - title: Third level title
+          - title: Tag Archives
             audience: writer, designer
             platform: all
             product: all
             version: all
-            print: false
-              
+            print: true
             thirdlevelitems:
                - title: Overview pages
                  url: /tag-overview/
@@ -128,32 +131,32 @@ entries:
                  version: all
                  print: false
 
-               - title: Single Sourcing pages
-                 url: /tag-single-sourcing/
+               - title: Android pages
+                 url: /tag-android/
                  audience: writer, designer
                  platform: all
                  product: all
                  version: all
                  print: false
 
-               - title: Publishing pages
-                 url: /tag-publishing/
+               - title: iOS pages
+                 url: /tag-ios/
                  audience: writer, designer
                  platform: all
                  product: all
                  version: all
                  print: false
 
-               - title: Formatting pages
-                 url: /tag-formatting/
+               - title: SDK pages
+                 url: /tag-sdk/
                  audience: writer, designer
                  platform: all
                  product: all
                  version: all
                  print: false
 
-               - title: Special layout pages
-                 url: /tag-special-layouts/
+               - title: Windows pages
+                 url: /tag-windows/
                  audience: writer, designer
                  platform: all
                  product: all
