@@ -1,7 +1,7 @@
 ---
 title: Android SDK
 permalink: /android_sdk/
-tags: android-sdk
+tags: [android, sdk]
 audience: writer, designer
 keywords: 
 last_updated: 
