@@ -1,7 +1,7 @@
 ---
 title: iOS SDK
 permalink: /ios_sdk/
-tags: [ios, sdk]
+tags: ios-sdk
 audience: writer, designer
 keywords: 
 last_updated: 
