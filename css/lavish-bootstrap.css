@@ -276,6 +276,7 @@ a {
 }
 a:hover,
 a:focus {
+  color: #517738;
   text-decoration: underline;
 }
 a:focus {
@@ -1878,6 +1879,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
+  background-color: #74ab50;
+  border-color: #689a48;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1885,6 +1888,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
+  background-color: #618f43;
+  border-color: #4c7034;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -1906,6 +1911,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
+  background-color: #74ab50;
+  border-color: #689a48;
 }
 .btn-warning {
   color: #ffffff;
@@ -2020,8 +2027,8 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
   color: #ffffff;
-  background-color: #347DBE;
-  border-color: #347DBE;
+  background-color: #5bc0de;
+  border-color: #46b8da;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -2029,8 +2036,8 @@ fieldset[disabled] .btn-success.active {
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
   color: #ffffff;
-  background-color: #015CAE;
-  border-color: #015CAE;
+  background-color: #39b3d7;
+  border-color: #269abc;
 }
 .btn-info:active,
 .btn-info.active,
@@ -2815,7 +2822,7 @@ input[type="button"].btn-block {
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #679DCE;
+  background-color: #74ab50;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -2823,7 +2830,7 @@ input[type="button"].btn-block {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #679DCE;
+  background-color: #74ab50;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -4183,7 +4190,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .label:empty {
   display: none;
 }
-
+.label-default {
+  background-color: #f9faf9;
+}
 .label-default[href]:hover,
 .label-default[href]:focus {
   background-color: #dde3dd;

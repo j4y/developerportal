@@ -1,8 +1,7 @@
 # Documentation theme for Jekyll 
 
-This is a Jekyll theme designed to be used for single-sourced documentation sites. Instructions for using the theme are in the site build. You can see the site build in the following two locations:
+This is a Jekyll theme designed to be used for single-sourced documentation sites. Instructions for using the theme are in the site build. 
 
-* [http://idratherbetellingstories.com/documentation-theme-jekyll/doc_designers/](http://idratherbetellingstories.com/documentation-theme-jekyll/doc_designers/)
-* [http://idratherbetellingstories.com/documentation-theme-jekyll/doc_writers/](http://idratherbetellingstories.com/documentation-theme-jekyll/doc_writers/)
+The basic idea of this theme is that you can use the same theme to create lots of different sites, such as what you would need if producing different help systems for different versions, models, etc. of a similar product.
 
-The two different builds demonstrate the single-source publishing capabilities of the theme. The designer version is comprehensive, whereas the writer version is a subset of the designer version.
+Once you build the site, see the Getting Started section of the sidebar.
