@@ -1,0 +1,163 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+# Spacing is really important here. A two-space indent appears below each level to indicate a new depth.
+# 
+# Sidebar
+entries:
+- title: Sidebar # this title doesn't appear anywhere
+  subcategories:
+    - title: Overview
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all
+      print: true
+
+      items:
+        - title: Cover
+          url: /titlepage/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+          web: false
+
+        - title: Getting started
+          url: /getting_started/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Metrics
+          url: /metrics/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Accuracy
+          url: /accuracy/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: See Also
+          url: /see_also/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+          
+    - title: Platforms
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all
+      print: true
+
+      items:
+        - title: Android
+          url: /android/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: iOS
+          url: /ios/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Windows
+          url: /windows/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+
+    - title: Tag archives
+      audience: designer, writer
+      platform: all
+      product: all
+      version: all
+      print: false
+      web: false
+      
+      items:
+      - title: Overview
+        url: /tag-archives-overview/
+        audience: writer, designer
+        platform: all
+        product: all
+        version: all
+        print: false
+
+        thirdlevel: #demo's how to add a third level to the sidebar nav.
+          - title: Third level title
+            audience: writer, designer
+            platform: all
+            product: all
+            version: all
+            print: false
+              
+            thirdlevelitems:
+               - title: Overview pages
+                 url: /tag-overview/
+                 audience: writer, designer
+                 platform: all
+                 product: all
+                 version: all
+                 print: false
+
+               - title: Getting Started pages
+                 url: /tag-getting-started/
+                 audience: writer, designer
+                 platform: all
+                 product: all
+                 version: all
+                 print: false
+
+               - title: Single Sourcing pages
+                 url: /tag-single-sourcing/
+                 audience: writer, designer
+                 platform: all
+                 product: all
+                 version: all
+                 print: false
+
+               - title: Publishing pages
+                 url: /tag-publishing/
+                 audience: writer, designer
+                 platform: all
+                 product: all
+                 version: all
+                 print: false
+
+               - title: Formatting pages
+                 url: /tag-formatting/
+                 audience: writer, designer
+                 platform: all
+                 product: all
+                 version: all
+                 print: false
+
+               - title: Special layout pages
+                 url: /tag-special-layouts/
+                 audience: writer, designer
+                 platform: all
+                 product: all
+                 version: all
+                 print: false
+

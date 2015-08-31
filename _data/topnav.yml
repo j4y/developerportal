@@ -1,0 +1,27 @@
+# if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+
+# Topnav single links
+topnav:
+- title: Topnav
+  subcategories:
+    - title: About
+      url: /about/
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all
+  
+    - title: GitHub repo
+      external_url: https://github.com/benjaminanding/developerportal
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all
+  
+    - title: Blog
+      external_url: http://affectiva.com
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all
+
