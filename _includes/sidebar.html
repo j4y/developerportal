@@ -17,7 +17,7 @@
                     cookie: {
                 name: 'navgoco',
                         expires: false,
-                        path: '/'
+                        path: ''
             },
             slide: {
                 duration: 400,
@@ -54,12 +54,13 @@
                     {% for item in subcategory.items %}
                     {% if item.audience contains audience and item.product contains product and item.platform contains platform and item.version contains version and item.web != false %}
                     {% if item.external_url %}
-                    <li><a href="../{{item.external_url}}" target="_blank">{{subcategory.title}}</a></li>
+                    <li><a href="{{item.external_url}}" target="_blank">{{subcategory.title}}</a></li>
                     {% elsif page.url contains item.url %}
-                    <li class="active"><a href="../{{item.url | prepend: site.baseurl}}">{{item.title}}</a></li>
+                    <li class="active"><a href="..{{item.url}}">{{item.title}}</a></li>
                     {% else %}
-                    <li><a href="../{{item.url | prepend: site.baseurl}}">{{item.title}}</a></li>
+                    <li><a href="{{item.url | prepend: site.baseurl}}">{{item.title}}</a></li>
                     {% endif %}
+                    
 
                     {% for thirdlevel in item.thirdlevel %}
                     {% if thirdlevel.audience contains buildAudience and web != false %}
