@@ -12,7 +12,7 @@ topnav:
       version: all
   
     - title: GitHub repo
-      external_url: https://github.com/benjaminanding/developerportal
+      external_url: https://github.com/affectiva
       audience: writer, designer
       platform: all
       product: all
