@@ -19,9 +19,15 @@ topnav:
       version: all
   
     - title: Blog
-      external_url: http://affectiva.com
+      external_url: http://affectiva.com/blog
       audience: writer, designer
       platform: all
       product: all
       version: all
 
+    - title: Get Affdex SDK
+      external_url: http://www.affectiva.com/solutions/apis-sdks/
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all

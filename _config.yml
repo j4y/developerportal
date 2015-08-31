@@ -10,7 +10,7 @@ version: all
 
 topnav_title: Affdex Dev Portal
 
-topnav_version: 2.4
+topnav_version:
 
 homepage_title: Affdex Dev Portal 
 
@@ -24,7 +24,7 @@ port: 4006
 
 host: 127.0.0.1 
 
-url: "http://http://benjaminanding.github.io/"
+url: "http://benjaminanding.github.io/"
 
 feedback_email: SDK@affectiva.com
 
