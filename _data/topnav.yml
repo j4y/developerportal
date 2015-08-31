@@ -12,7 +12,7 @@ topnav:
       version: all
   
     - title: GitHub repo
-      external_url: https://github.com/affectiva
+      external_url: https://github.com/Affectiva
       audience: writer, designer
       platform: all
       product: all
