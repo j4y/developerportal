@@ -18,10 +18,6 @@ Release 2.0
 Affdex SDK is the culmination of years of scientific research into emotion detection, validated across thousands of tests worldwide on PC platforms, and now made available on Apple iOS. Affdex SDK turns your ordinary app into an extraordinary app by emotion-enabling it to respond in real-time to user emotions.
 In this document, you will become familiar with integrating the Affdex SDK into your iOS app. Please take time to read this document and feel free to give us feedback at sdk@affectiva.com.
 
-### What's New in this Release
-Version 2.0 of the SDK introduces support for multiple face detection in a single frame. Because the interface for version 1 of the SDK was geared towards single face, it has been significantly revamped in version 2. The AFDXMetric class has been replaced with an AFDXFace class, which we'll discuss shortly.
-Because of these changes, method signatures have changed, and a few have been added. You can now specify the maximum number of faces that the detector will find by passing a number to one of the new initialization methods discussed later.
-
 ### Getting Started
 The Affdex SDK package consists of the following:
 * 	<b>Introducing the SDK.pdf</b>
