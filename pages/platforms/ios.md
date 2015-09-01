@@ -30,7 +30,7 @@ Affectiva makes source available for sample applications that use the SDK. You c
 
 There is a single Objective-C header file that your app will need to include: <code>Affdex/Affdex.h</code>. This header file defines the <code>AFDXDetector</code> class which contains the facial expression detector logic as well as the <code>AFDXFace</code> object.
 The Affdex framework contains all of the necessary code for the SDK and will need to be linked to your app. It contains compiled code for armv7, armv7s, arm64, i386 and x86_64 architectures, allowing you to use either the iOS simulator or a real iOS device.
-
+G
 ### Requirements & Dependencies
 
 The iOS SDK requires iOS 8.0 or above and Xcode 6. The SDK also depends on the following iOS frameworks:
@@ -129,7 +129,7 @@ This initialization method also takes a reference to an object which adheres to 
 The maximum number of faces detected is set to 1. If you want to override this default, use this initializer:  
 
 ```
-- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingFile:(NSString *)path  maximumFaces:(NSUInteger)maximumFaces;
+- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingFile:(NSString *)path maximumFaces:(NSUInteger)maximumFaces;
 ```
 
 To optimize performance, you should should set this to the maximum number of expected faces that you anticipate.
@@ -229,54 +229,70 @@ This method is called in your code and signals when the detector detects a new f
 This method is called in your code and signals when the detector no longer detects a particular face. This is the converse of detector:didStartDetectingFace:. Together, the two methods provide signals of when a face comes into or goes out of view. The implementation of this delegate method is also optional.  
 
 ```
-- (void)detector:(AFDXDetector *)detector hasImage:(UIImage *)image withFaces:(NSDictionary *)faces atTime:(NSTimeInterval)time;
+- (void)detector:(AFDXDetector *)detector hasResults:(NSMutableDictionary *)faces forImage:(UIImage *)image atTime:(NSTimeInterval)time;
 ```
 
-This method is called in your code when the detector has processed a video frame from the camera or file, or has processed a static image.
+This method is called in your code when the detector has processed a video frame from the camera, from a video file, or via a static image.
 There are four parameters sent to this method:  
 
 1.	A reference to the detector.
-2.	A reference to the image that was analyzed.
-3.	A dictionary of <code>AFDXFace</code> objects corresponding to the faces in the image. They key for each object is the face identifier
+2.	A dictionary of <code>AFDXFace</code> objects corresponding to the faces in the image. They key for each object is the face identifier. If <code>nil</code> is passed, then this is an unprocessed frame.
+3.	A reference to the image.
 4.	A timestamp (relative to 0) representing the point in time that the image was processed,  
 
-For camera and video cases, the number of frames that are processed to the detector is usually a subset of the available frames. If you are interested in all of the frame images from the camera or video file, you can also implement the following delegate method:  
-
-```
-- (void)detector:(AFDXDetector *)detector hasImage:(UIImage *)image atTime:(NSTimeInterval)time;
-```
-
-Unlike the previous delegate method, this one does not take an array of AFDXFace objects because the image has not been processed. You typically implement this method when you want to display the associated images in a UIView.
+For camera and video cases, the number of frames that are processed to the detector is usually a subset of the available frames. 
 
 ## Interpreting the Data
 
-When the array of metrics comes into the delegate method, your application can interpret the data as it sees fit. Here’s a code example:  
+When the array of faces comes into the delegate method, your application can interpret the data as it sees fit. Here’s a code example:  
 
 ```
-- (void)detector:(AFDXDetector *)detector hasImage:(UIImage *)image withFaces:(NSDictionary *)faces atTime:(NSTimeInterval)time;
+// Convenience method to work with processed images.
+- (void)processedImageReady:(AFDXDetector *)detector image:(UIImage *)image faces:(NSDictionary *)faces atTime:(NSTimeInterval)time;
 {
     for (AFDXFace *face in [faces allValues])
     {
-        if (face.smile != NAN)
+        if (isnan(face.smile) == NO)
         {
             // do something with the value...
         }
-        if (face.browRaise != NAN)
+        if (isnam(face.browRaise) == NO)
         {
             // do something with the value...
         } 
-        // handle other expressions here
+        // handle other metrics here
         . . .
+    }
+}
+
+// Convenience method to work with unprocessed images.
+- (void)unprocessedImageReady:(AFDXDetector *)detector image:(UIImage *)image atTime:(NSTimeInterval)time;
+{
+    // This is an unprocessed frame... do something with it...
+}
+
+// The delegate method of the AFDXDetectorDelegate protocol.
+- (void)detector:(AFDXDetector *)detector hasResults:(NSMutableDictionary *)faces forImage:(UIImage *)image atTime:(NSTimeInterval)time;
+{
+    if (nil == faces)
+    {
+        [self unprocessedImageReady:detector image:image atTime:time];
+    }
+    else
+    {
+        [self processedImageReady:detector image:image faces:faces atTime:time];
     }
 }
 ```
 
-In the above code snippet, every expression score for each face in the faces dictionary is examined. The value extracted from the metric should be checked for NaN (not a number) which indicates that the detector has not been instructed to classify that expression.
+In the above code snippet, the delegate method will call one of two instance methods depending on the value of the <code>faces</code> dictionary. The <code>unprocessedImageReady:image:atTime:</code> method receives unprocessed frames while the <code>processedImageReady:image:faces:atTime:</code> method receives the processed ones. In that method, you can check the metric values for  all <code>AFDXFace</code> objects in the dictionary is examined. The value extracted from the metric should be checked for NaN (not a number) which indicates that the detector has not been instructed to classify that expression.
 For multiple face detection, it is important to keep in mind that each face has its own face identifier (a unique number) which is tracked as long as that face remains in the image and does not "cross over" another face. If one face's bounding box collides with another face's bounding box from one frame to the next (in video or non-discrete image mode), the face tracker may assign a different face ID to those faces.
 
 ## Where to Go From Here
 
 For detailed class documentation, see the documentation folder. 
-We’re excited to help you get the most of our SDK in your application. Please use the following ways to contact us with questions, comments, suggestions...or even praise!
-Email: [sdk@affectiva.com](sdk@affectiva.com)
-Web: [www.affdex.com/mobile-sdk](www.affdex.com/mobile-sdk)
+We’re excited to help you get the most of our SDK in your application. Please use the following ways to contact us with questions, comments, or suggestions.
+  
+Email: [sdk@affectiva.com](mailto:sdk@affectiva.com)
+  
+Web: [www.affdex.com/mobile-sdk](http://www.affdex.com/mobile-sdk)
