@@ -36,7 +36,7 @@ A measure of the participant’s disgust. (0 - 100)
 
 A measure of the participant’s attention to the screen, using the orientation of the face to assess if they are looking directly at the screen or if they are distracted (turning away) while viewing content. (0 - 100)
 
-<center><img src="../images/faces/Expressiveness.jpg" alt="Expressiveness" title=""></center>
+<center><img src="../images/faces/Expressiveness.jpg" alt="" title="Expressiveness"></center>
 
 ## Fear
 
@@ -78,13 +78,13 @@ A measure of the participant’s attention. (0 - 100)
 
 The degree to which the participant is displaying a brow furrow. Brow Furrow responses are often negative in valence. They are usually attributable to mental effort, focus, or confusion. (0 - 100)
 
-<center><img src="../images/faces/Brow%20Furrow.jpg" alt="" title=“Brow Furrow”></center>
+<center><img src="../images/faces/Brow%20Furrow.jpg" alt="" title="Brow Furrow"></center>
 
 ## Brow Raise
 
 The degree to which the participant is showing a face of surprise, indicated by raised eyebrows. (0 - 100)
 
-<center><img src="../images/browraise.jpg" alt="" title=“Brow Raise”></center>
+<center><img src="../images/faces/Brow%20Raise.jpg" alt="" title="Brow Raise"></center>
 
 ## Chin Raise
 
@@ -108,55 +108,55 @@ A measure of the participant’s inner brow raise. (0 - 100)
 
 The degree to which the participant is displaying signs of sadness. (0 - 100)
 
-<center><img src="../images/faces/Lip%20Depressor.jpg" alt="" title=“Lip Depressor”></center>
+<center><img src="../images/faces/Lip%20Depressor.jpg" alt="" title="Lip Depressor"></center>
 
 ## Lip Press
 
 A measure of the participant’s lip press. (0 - 100)
 
-<center><img src="../images/faces/Lip%20Press.jpg" alt="" title=“Lip Press”></center>
+<center><img src="../images/faces/Lip%20Press.jpg" alt="" title="Lip Press"></center>
 
 ## Lip Pucker
 
 A measure of the participant’s lip pucker. (0 - 100)
 
-<center><img src="../images/faces/Lip%20Pucker.jpg" alt="" title=“Lip Pucker”></center>
+<center><img src="../images/faces/Lip%20Pucker.jpg" alt="" title="Lip Pucker"></center>
 
 ## Lip Suck
 
 A measure of the participant’s lip suck. (0 - 100)
 
-<center><img src="../images/faces/Lip%20Suck.jpg" alt="" title=“Lip Suck”></center>
+<center><img src="../images/faces/Lip%20Suck.jpg" alt="" title="Lip Suck"></center>
 
 ## Mouth Open
 
 A measure of the participant’s mouth open. (0 - 100)
 
-<center><img src="../images/faces/Mouth%20Open.jpg" alt="" title=“Mouth Open”></center>
+<center><img src="../images/faces/Mouth%20Open.jpg" alt="" title="Mouth Open"></center>
 
 ## Nose Wrinkle
 
 A measure of the participant’s nose wrinkle. (0 - 100)
 
-<center><img src="../images/faces/Nose%20Wrinkle.jpg" alt="" title=“Nose Wrinkle”></center>
+<center><img src="../images/faces/Nose%20Wrinkle.jpg" alt="" title="Nose Wrinkle"></center>
 
 ## Smile
 
 The degree to which the participant is displaying a smile. The smile classifier looks at the full face rather than just the mouth/lip area, incorporating other facial cues, like the eyes, to accurately indicate a true smile. (0 - 100)
 
-<center><img src="../images/faces/Smile.jpg" alt="" title=“Smile”></center>
+<center><img src="../images/faces/Smile.jpg" alt="" title="Smile"></center>
 
 ## Smirk
 
 A measure of the participant’s smirk. (0 - 100)
 
-<center><img src="../images/faces/Smirk.jpg" alt="" title=“Smirk”></center>
+<center><img src="../images/faces/Smirk.jpg" alt="" title="Smirk"></center>
 
 ## Upper Lip Raise
 
 A measure of the participant’s upper lip raise. (0 - 100)
 
-<center><img src="../images/faces/Upper%20Lip%20Raise.jpg" alt="" title=“Upper Lip Raise”></center>
+<center><img src="../images/faces/Upper%20Lip%20Raise.jpg" alt="" title="Upper Lip Raise"></center>
 
 ## Inter Ocular Distance
 
