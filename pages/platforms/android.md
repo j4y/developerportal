@@ -469,4 +469,4 @@ That’s it!  You should now be able to build and run the MeasureUp app.
 <strong>Where to go from here</strong>  
 We’re excited to help you get the most of our SDK in your application. Please use the following ways to contact us with questions, comments or suggestions.  
 Email: [sdk@affectiva.com]  
-[http://www.affdex.com/mobile-sdk]  
+[http://www.affectiva.com/solutions/apis-sdks/]  

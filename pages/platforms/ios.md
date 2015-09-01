@@ -292,4 +292,4 @@ We’re excited to help you get the most of our SDK in your application. Please 
   
 Email: [sdk@affectiva.com](mailto:sdk@affectiva.com)
   
-Web: [www.affdex.com/mobile-sdk](http://www.affdex.com/mobile-sdk)
+Web: [www.affectiva.com/solutions/apis-sdks/](http://www.affectiva.com/solutions/apis-sdks/)

@@ -11,9 +11,9 @@ summary:
 
 <h1 id="Introducing the Affdex Mobile SDK">Introducing the Affdex Mobile SDK</h1>
 <p>
-The Affdex Mobile SDK for iOS and Android captures and reports emotion insights from people&acute;s faces. Emotion insights from faces obtained from the device camera, a video or even a single image are generated on-device and in real time.
+The Affdex Mobile SDK for iOS and Android captures and reports emotion insights from people&acute;s faces. These insights are based on images of faces obtained from device cameras, prerecorded video, or even single images, and are generated on-device and in real time.
 </p><p>
-Integrating the Affdex Mobile SDK enables iOS and Android developers to create interactive and exciting emotion-aware applications. Users interact with their mobile device using applications you build with the Affdex Mobile SDK, and their facial expressions are captured, analyzed and made available for further processing.
+Integrating the Affdex Mobile SDK enables iOS and Android developers to create interactive and exciting emotion-aware applications. Users interact with their mobile device using applications built with the Affdex Mobile SDK, and their facial expressions are captured, analyzed and made available for further processing.
 </p><p>
 While the science underlying the Affdex SDK is complex, the emotion insights provided by the SDK are easy to interpret and process. Features of the Affdex Mobile SDK include:
 </p>
@@ -37,7 +37,7 @@ Follow <a href=http://www.affdex.com/clients/affdex-resources/ target=_blank>thi
 </p>
 
 <h2 id="Requirements & Platform Details">Requirements & Platform Details</h2>
-<p>Integration documentation and example code are packaged with the SDK. You can also visit <a href=http://www.affdex.com/mobile-sdk target=_blank>www.affdex.com/mobile-sdk</a> for more information.
+<p>Integration documentation and example code are packaged with the SDK. You can also <a href="http://www.affectiva.com/solutions/apis-sdks/" target=_blank>visit our SDK site</a> for more information.
 </p>
 <p>
 Visit our GitHub page for example projects that utilize the SDK: <a href=https://github.com/Affectiva target=_blank>https://github.com/Affectiva</a>
@@ -65,7 +65,7 @@ The Affdex Mobile SDK builds on Affdex real-world experience analyzing billions 
 </p><p>
 
 <h2 id="A Note About Privacy">A Note About Privacy</h2>
-<p>Affdex takes the issue of privacy seriously, and we ask developers using the Affdex Mobile SDK to also be vigilant about safeguarding user information. The Affdex Mobile SDK collects a minimal set of anonymous technical data to help us better understand how it is being used.
+<p>Affdex takes privacy seriously, and we ask developers using the Affdex Mobile SDK to also be vigilant about safeguarding user information. The Affdex Mobile SDK collects a minimal set of anonymous technical data to help us better understand how it is being used.
 </p><p>
 The Affdex Mobile SDK does not collect the following information:
 
@@ -80,8 +80,4 @@ The Affdex Mobile SDK does not collect the following information:
 
 ## Questions
 
-If you have any comments, concerns, or questions, contact us at SDK@affectiva.com. Our site is [http://www.affectiva.com](affectiva.com). 
-
-
-
-
+If you have any comments, concerns, or questions, please contact us at SDK@affectiva.com.
