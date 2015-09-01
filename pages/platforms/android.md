@@ -37,12 +37,12 @@ The Affdex SDK package consists of the following:
 
 The Affdex SDK requires a device running Android API 16 or above.
 Java 1.6 or above is required on your development machine.
-The SDK requires access to external storage on the Android device, and Internet access for collecting anonymous analytics (see “A Note about Privacy” in “Introducing the SDK”). Include the following in your app’s <em>AndroidManifest.xml</em>:
+The SDK requires access to external storage on the Android device, and Internet access for collecting anonymous analytics (see “A Note about Privacy” in “Introducing the SDK”). Include the following in your app’s <code>AndroidManifest.xml</code>:  
 
 ```
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 ```
 
 ## Licensing
@@ -52,6 +52,7 @@ After you request the SDK, Affectiva will provide to you an Affectiva license fi
 ## Outline
 
 This document will guide you through the following:
+
 *   Adding the SDK to your Android project
 *   Using the SDK
 *   Options
@@ -74,6 +75,7 @@ The following code snippets demonstrate how easy it is to obtain facial expressi
 ## SDK Operating Modes
 
 The Affdex SDK has the following operating modes:
+
 *   Camera mode:  the SDK turns connects to the camera and processes the frames it records.  Sample app: MeasureUp.
 *   Video file mode:  provide to the SDK a path to a video file. 
 *   Pushed frame mode:  provide to the SDK individual frames of video and their timestamps. 
@@ -85,82 +87,115 @@ The SDK provides mode-specific Detector classes for each of these modes: CameraD
 ### SDK calling overview
 
 In general, calls to the SDK are made in the following order:
-*   Construct a Detector corresponding to the operating mode that you want. The following methods are called on a Detector instance.
-*   Call <em>setLicensePath()</em> with the path to the license file provided by Affectiva.
-*   Set options for the Detector. In particular, enable detection of at least one facial expression metric (e.g. call <em>setDetectSmile()</em> to detect smiles).  Several facial expressions can be detected by the SDK, as described in “Introducing the SDK”. See the “Options” section below for more information on the different options available. 
-*   Call <em>start()</em> to start processing.  Note the types of exceptions that can be thrown and handle them as desired. 
-*   If you are pushing your own images (pushed frame mode or photo mode), call <em>process()</em> with each image.
-*   When you are done processing, call <em>stop()</em>. 
 
-To receive results from the SDK, implement the Detector.ImageListener and/or Detector.FaceListener interfaces, and register your listener object(s) with the Detector via setImageListener() and/or setFaceListener(). These interfaces provide results of the SDK’s processing of each frame.  The ImageListener interface provides information about facial expressions and face points for a face found in a given image via its onImageResults callback.  The FaceListener interface notifies its listener when a face appears or disappears via its onFaceDetectionStarted() and onFaceDetectionStopped() callbacks. For an example of using these callbacks to show and hide the results from the SDK, see the sample app MeasureUp. 
-To check to see if the Detector is running (<em>start()</em> has been called, but not <em>stop()</em>), call <em>isRunning()</em>. 
-Note: Be sure to always call stop() following a successful call to start() (including for example, in circumstances where you abort processing, such as in exception catch blocks).  This ensures that resources held by the Detector instance are released.
+*   Construct a Detector corresponding to the operating mode that you want. The following methods are called on a Detector instance.
+*   Call <code>setLicensePath()</code> with the path to the license file provided by Affectiva.
+*   Set options for the Detector. In particular, enable detection of at least one facial expression metric (e.g. call <code>setDetectSmile()</code> to detect smiles).  Several facial expressions can be detected by the SDK, as described in “Introducing the SDK”. See the “Options” section below for more information on the different options available. 
+*   Call <code>start()</code> to start processing.  Note the types of exceptions that can be thrown and handle them as desired. 
+*   If you are pushing your own images (pushed frame mode or photo mode), call <code>process()</code> with each image.
+*   When you are done processing, call <code>stop()</code>. 
+
+To receive results from the SDK, implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interfaces, and register your listener object(s) with the Detector via <code>setImageListener()</code> and/or <code>setFaceListener()</code>. These interfaces provide results of the SDK’s processing of each frame.  The <code>ImageListener</code> interface provides information about facial expressions and face points for a face found in a given image via its onImageResults callback.  The FaceListener interface notifies its listener when a face appears or disappears via its onFaceDetectionStarted() and <code>onFaceDetectionStopped()</code> callbacks. For an example of using these callbacks to show and hide the results from the SDK, see the sample app MeasureUp. 
+To check to see if the Detector is running (<code>start()</code> has been called, but not <code>stop()</code>), call <code>isRunning()</code>. 
+{{ note }} Be sure to always call <code>stop()</code> following a successful call to <code>start()</code> (including for example, in circumstances where you abort processing, such as in exception catch blocks).  This ensures that resources held by the Detector instance are released. {{ end }}
 
 ### Camera Mode 
 
 Using the built-in camera is a common way to obtain video for facial expression detection. Either the front or back camera of your Android device can be used to feed video directly to the Detector.  
 A demonstration of Camera Mode is the sample app MeasureUp.  
-To use Camera Mode,  implement the Detector.ImageListener and/or Detector.FaceListener interface. Then follow this sequence of SDK calls:  
-*   Construct a CameraDetector. The cameraType argument specifies whether to connect to the front or back camera, while the cameraPreviewView argument optionally specifics a SurfaceView onto which the SDK should display preview frames (specify null for this argument if you don’t care about previewing the frames).
-    public CameraDetector(Context context, CameraType cameraType,
-                   SurfaceView cameraPreviewView)  
-*   Call setLicensePath() with the path to the license file provided by Affectiva.  
-*   Set options for the Detector. In particular, turn on at least one facial expression metric to detect facial expressions, e.g.
+To use Camera Mode,  implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interface. Then follow this sequence of SDK calls:  
+
+*   Construct a CameraDetector. The <code>cameraType</code> argument specifies whether to connect to the front or back camera, while the <code>cameraPreviewView</code> argument optionally specifics a SurfaceView onto which the SDK should display preview frames (specify <code>null</code> for this argument if you don’t care about previewing the frames).
+
+```
+public CameraDetector(Context context, CameraType cameraType,
+    SurfaceView cameraPreviewView)  
+```
+
+*   Call <code>setLicensePath()</code> with the path to the license file provided by Affectiva.  
+*   Set options for the Detector. In particular, turn on at least one facial expression metric to detect facial expressions, e.g.  
+```
 setDetectSmile(true);  
-*   Call start() to start processing.  Note that if the camera is already in use, an exception will be thrown. If successful, you will start receiving calls to onImageResults().  
-*   When you are done, call stop().  
+```
+
+*   Call <code>start()</code> to start processing.  Note that if the camera is already in use, an exception will be thrown. If successful, you will start receiving calls to <code>onImageResults()</code>.  
+*   When you are done, call <code>stop()</code>.  
 
 
 
 ### Video File Mode
 
 Another way to feed video into the detector is via a video file that is stored on the file system of your device. Follow this sequence of SDK calls: 
-*   Construct a VideoFileDetector. The filePath argument is the path to your video file.
-public Detector(Context context, String filePath)
-*   Call setLicensePath() with the path to the license file provided by Affectiva.
-*   Set options for the Detector. In particular, turn on at least one facial expression metric to detect facial expressions, e.g. 
 
+*   Construct a VideoFileDetector. The <code>filePath</code> argument is the path to your video file.  
+```
+public Detector(Context context, String filePath)
+```
+
+*   Call <code>setLicensePath()</code> with the path to the license file provided by Affectiva.
+*   Set options for the Detector. In particular, turn on at least one facial expression metric to detect facial expressions, e.g.   
 ```
 setDetectSmile(true); 
 ```
 
-*   Call start() to start processing. You will start receiving calls to <em>onImageResults()</em>. 
-*   When you are done processing, call <em>stop()</em>. 
+*   Call <code>start()</code> to start processing. You will start receiving calls to <code>onImageResults()</code>. 
+*   When you are done processing, call <code>stop()</code>. 
 
 ## Pushed Frame Mode
 
 If your app is processing video and has access to video frames, you can push those video frames to the Affdex SDK for processing.  Each video frame has an associated timestamp that increases with each frame in the video.  Your app may have access to video frames because your app is interfacing to the device’s camera, or because your app is reading a video file, or perhaps by some other method.
-*   Construct a FrameDetector.
-public FrameDetector(Context context) 
-*   Call setLicensePath() with the path to the license file provided by Affectiva.  
-*   Set options for the Detector. In particular, turn on at least one facial expression metric to detect facial expressions, e.g. 
 
+*   Construct a FrameDetector.  
+```
+public FrameDetector(Context context) 
+```
+
+*   Call <code>setLicensePath()</code> with the path to the license file provided by Affectiva.  
+*   Set options for the Detector. In particular, turn on at least one facial expression metric to detect facial expressions, e.g.  
 ```
 setDetectSmile(true); 
 ```
 
 *   Call start() to start processing.
-*   For each video frame, create an Affdex Frame (Bitmap, RGBA, and YUV420sp/NV21 formats are supported).  Note: Frame is an abstract base class with two concrete subclasses: BitmapFrame and ByteArrayFrame; you should construct one of these concrete subclasses. 
-*   Call process with the Affdex Frame and timestamp of the frame:
+*   For each video frame, create an Affdex Frame (Bitmap, RGBA, and YUV420sp/NV21 formats are supported).
+{{ note }} Frame is an abstract base class with two concrete subclasses: BitmapFrame and ByteArrayFrame; you should construct one of these concrete subclasses. {{ end }}
+
+*   Call process with the Affdex Frame and timestamp of the frame:  
+```
 public abstract void process(Frame frame, float timestamp); 
-*   For each call to process, the SDK will call onImageResults(). 
-*   When you are done processing, call stop(). 
+```
+
+*   For each call to process, the SDK will call <code>onImageResults()</code>. 
+*   When you are done processing, call <code>stop()</code>. 
 
 
 ### Photo Mode
 
 Use Photo Mode for processing images that are unrelated to each other (that is, they are not sequential frames of a video). Discrete images are processed by the SDK independently, without regard to the content of the preceding images, using different algorithms and data than are used with the other modes involving sequences of frames from a video source. 
-*   Construct a PhotoDetector.
+
+*   Construct a PhotoDetector.  
+```
 public Detector(Context context) 
-*   Call setLicensePath() with the path to the license file provided by Affectiva.
-*   Set options for the Detector. In particular, turn on at least one facial expression metric to detect facial expressions, e.g. 
+```
+
+*   Call <code>setLicensePath()</code> with the path to the license file provided by Affectiva.
+*   Set options for the Detector. In particular, turn on at least one facial expression metric to detect facial expressions, e.g.  
+```
 setDetectSmile(true); 
-*   Call start() to initialize the PhotoDetector. 
-*   For each photo to be processed, create an Affdex Frame from your frame (Bitmap, RGBA, and YUV420sp/NV21 formats are supported). Note: Frame is an abstract base class with two concrete subclasses: BitmapFrame and ByteArrayFrame; you should construct one of these concrete subclasses. 
-*   Call process with the Affdex Frame: 
+```
+
+*   Call <code>start()</code> to initialize the PhotoDetector. 
+*   For each photo to be processed, create an Affdex Frame from your frame (Bitmap, RGBA, and YUV420sp/NV21 formats are supported). 
+
+{{ note }} Frame is an abstract base class with two concrete subclasses: BitmapFrame and ByteArrayFrame; you should construct one of these concrete subclasses. {{ end }}
+
+*   Call process with the Affdex Frame:  
+```
 public abstract void process(Frame frame); 
-*   For each call to process, the SDK will call onImageResults(). 
-*   When you are done processing, call stop(). 
+```
+
+*   For each call to process, the SDK will call <code>onImageResults()</code>. 
+*   When you are done processing, call <code>stop()</code>. 
 
 
 
@@ -170,8 +205,7 @@ This section describes various options for operating the SDK.
 
 ### Detecting facial expressions
 
-The Affdex SDK can detect a variety of facial expressions, yielding metric scores for the expressions you configure.  Affdex expression metrics are described in detail in the “Introducing the SDK” document. By default, no expressions are detected. Detection can be enabled or disabled via setDetectXXX methods defined on the Detector class.  For example: 
-
+The Affdex SDK can detect a variety of facial expressions, yielding metric scores for the expressions you configure.  Affdex expression metrics are described in detail in the “Introducing the SDK” document. By default, no expressions are detected. Detection can be enabled or disabled via setDetectXXX methods defined on the Detector class.  For example:  
 ```
 setDetectSmile(true) 
 ```
@@ -180,33 +214,86 @@ See the Detector class Javadoc for a complete list of the methods available.
 
 ### Processing Rate
 
-In Camera Mode, you can specify the maximum number of frames per second that the SDK should process. This can improve performance if your requirements do not require every frame in the video stream from the camera to be processed. The default (and recommended) rate is 5 frames per second, but you may also set it lower if you are using a slower device, and need additional performance. Here is an example of setting the processing rate to 2 FPS: 
-
+In Camera Mode, you can specify the maximum number of frames per second that the SDK should process. This can improve performance if your requirements do not require every frame in the video stream from the camera to be processed. The default (and recommended) rate is 5 frames per second, but you may also set it lower if you are using a slower device, and need additional performance. Here is an example of setting the processing rate to 2 FPS:  
 ```
 setMaxProcessRate(2); 
 ```
 
 ### Face Detection Statistics
-To get the percentage of time a face was detected during a run (between <em>start()</em> and <em>stop()</em>), call: 
-
+To get the percentage of time a face was detected during a run (between <code>start()</code> and <code>stop()</code>), call:  
 ```
-    getPercentFaceDetected();  
+getPercentFaceDetected();  
 ```
 
-This can only be called after <em>stop()</em>. 
+This can only be called after <code>stop()</code>. 
 
 ### Interpreting the Data
 
-To receive the results of the SDK’s processing of a frame, implement the Detector.ImageListener and/or Detector.FaceListener interfaces.  
+To receive the results of the SDK’s processing of a frame, implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interfaces.  
 
-For the ImageListener interface, implement the callback <em>onImageResults()</em>, which is called by the SDK for every frame (except those that the CameraDetector skips in order to honor the maximum processing rate, unless setSendUnprocessFrames(true) has been called).
+For the ImageListener interface, implement the callback <code>onImageResults()</code>, which is called by the SDK for every frame (except those that the CameraDetector skips in order to honor the maximum processing rate, unless <code>setSendUnprocessFrames(true)</code> has been called).
 This method receives these parameters: 
+
 1.  A list of Face objects.  In this release, this will be an empty list if no face was found in the frame, or a list of one Face object if there was a face found in the frame.  In Camera Mode, if setSendUnprocessedFrames(true) has been called, then this parameter will be null for any frame that has been skipped in order to honor the maximimum processing rate. 
 2.  The image processed, as an Affdex Frame (a wrapper type for images, including Bitmaps, for example).
 3.  The timestamp of the frame.  In Photo Mode, this will be zero.
 
-The returned Face object provides getter methods for retrieving facial expression scores corresponding to the expressions previously configured on the Detector.  Scores are generally values from 0-100, representing the expression as a percent, with the exception of “valence” which ranges between -100 and +100.  
+The returned Face object contains three accessible inner objects: emotions, expressions, and measurements. Each of these inner objects has getter methods for retrieving the scores detected for each metric. For example, the smile score can be retrieved by calling <code>face.expressions.getSmile()</code> 
+The follow code sample shows an example of how to retrieve metric values from the Face object in onImageResults:  
 
+```
+@Override
+public void onImageResults(List<Face> faces, Frame frame,float timestamp) {
+
+    if (faces == null)
+        return; //frame was not processed
+
+    if (faces.size() == 0)
+        return; //no face found
+
+    Face face = faces.get(0); //Currently, the SDK only detects one face at a time
+
+    //Some Emotions
+    float joy = face.emotions.getJoy();
+    float anger = face.emotions.getAnger();
+    float disgust = face.emotions.getDisgust();
+
+    //Some Expressions
+    float smile = face.expressions.getSmile();
+    float brow_furrow = face.expressions.getBrowFurrow();
+    float brow_raise = face.expressions.getBrowRaise();
+
+    //Measurements
+    float interocular_distance = face.measurements.getInterocularDistance();
+    float yaw = face.measurements.orientation.getYaw();
+    float roll = face.measurements.orientation.getRoll();
+    float pitch = face.measurements.orientation.getPitch();
+}
+
+```
+  
+The Face object also provides a <code>getFacePoints()</code> method, which returns an array of face point coordinates.
+In the following code sample, the face point coordinates are retrieved from the face object and logged. 
+
+```
+@Override
+public void onImageResults(List<Face> faces, Frame frame,float timestamp) {
+
+    if (faces == null)
+        return; //frame was not processed
+
+    if (faces.size() == 0)
+        return; //no face found
+
+    Face face = faces.get(0); //Currently, the SDK only detects one face at a time
+
+    PointF[] points = face.getFacePoints();
+
+    for (int n = 0; n < points.length; n++) {
+        Log.i(LOG_TAG, String.format("Point %d is located at %.2f,%.2f                                                              \n",n,points[n].x,points[n].y));
+    }
+}
+```
 
 ### Face Point indices
 
@@ -330,19 +417,18 @@ The indices of the elements in the face points array correspond to specific loca
 The SDK comes with detailed Javadoc in both JAR and HTML formats, describing all of the SDK’s classes and methods. 
 
 
-## Viewing the Javadoc in a browser:
+<strong>Viewing the Javadoc in a browser:</strong>
 
 Open the file docs/javadoc/index.html in the location where you installed the SDK. 
 
-## Viewing the Javadoc in your IDE:
+<strong>Viewing the Javadoc in your IDE:</strong>
 
 
-### Eclipse:
+<strong>Eclipse:</strong>
 
 In your project’s libs folder, create a file called Affdex-sdk-1.1.jar.properties.  Edit that file in a text editor and enter a line like “doc=path/to/the/html/javadoc”.  The path specified should point to the docs/javadoc folder in your SDK installation folder, and can be an absolute or relative path. On Windows, use double backslashes to separate the folder names. 
 
-
-### Android Studio:
+<strong>Android Studio:</strong>
 
 At the time of this writing, Android Studio does not yet support attaching javadoc to library dependencies.
 
@@ -350,20 +436,22 @@ At the time of this writing, Android Studio does not yet support attaching javad
 ## Getting started with the MeasureUp sample app
 
 The SDK comes with a sample application called MeasureUp which demonstrates how to integrate the SDK into an app.  In this section, we’ll walk through the steps to build this app.  
+
 Step 1: Download the MeasureUp sample app  
-In a browser, open http://affdex-sdist.s3.amazonaws.com/Android/AndroidMeasureUp-1.1.zip, save it locally, and unzip it to wherever you normally put your Android projects.
-Step 2: Copy assets and libraries packaged with the SDK into the MeasureUp project
+In a browser, open http://affdex-sdist.s3.amazonaws.com/Android/AndroidMeasureUp-1.1.zip, save it locally, and unzip it to wherever you normally put your Android projects.  
+Step 2: Copy assets and libraries packaged with the SDK into the MeasureUp project  
 Copy the “libs” and “assets” folders from the Affdex SDK installation folder to the folder where you unzipped the MeasureUp project.  
 Step 3: Import the MeasureUp sample project into your IDE  
 
-### Eclipse:
+<strong>Eclipse:</strong>
+
 *   File->Import, choose General->Existing Projects into Workspace, click Next  
 *   Browse to and select the folder where you unzipped the MeasureUp project, then click Finish  
 
 Note: you will see an error related to an unresolved resource ('@integer/google/play/services/version') in AndroidManifest.xml, which we will resolve in the next step.  
 
 
-### Android Studio:
+<strong>Android Studio:</strong>
 
 *   File->Import Project  
 *   Browse to and select the folder where you unzipped the MeasureUp project, then click OK.  
@@ -386,6 +474,6 @@ That’s it!  You should now be able to build and run the MeasureUp app.
 
 The Affdex SDK for Android, and therefore by extension, any application that uses it, leverages the Flurry Analytics service to log events.  Due to a limitation in Flurry, an app cannot have two Flurry sessions open simultaneously, each logging to different Flurry accounts.  Therefore, apps that use the Affdex SDK for Android cannot also use the Flurry Analytics service themselves, as doing so could result in the app's analytics events being logged to the Affectiva Flurry account, or vice versa.  We are exploring ways to address this limitation in future releases.  
 Where to go from here  
-We’re excited to help you get the most of our SDK in your application. Please use the following ways to contact us with questions, comments, suggestions ... or even praise!  
+We’re excited to help you get the most of our SDK in your application. Please use the following ways to contact us with questions, comments or suggestions.  
 Email: [sdk@affectiva.com]  
 [http://www.affdex.com/mobile-sdk]  
