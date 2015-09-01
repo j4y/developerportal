@@ -13,10 +13,7 @@ summary:
 
 SDK Developer Guide
 Release 2.0
- 
-## Introduction
-Affdex SDK is the culmination of years of scientific research into emotion detection, validated across thousands of tests worldwide on PC platforms, and now made available on Apple iOS. Affdex SDK turns your ordinary app into an extraordinary app by emotion-enabling it to respond in real-time to user emotions.
-In this document, you will become familiar with integrating the Affdex SDK into your iOS app. Please take time to read this document and feel free to give us feedback at sdk@affectiva.com.
+
 
 ### Getting Started
 The Affdex SDK package consists of the following:
@@ -288,7 +285,7 @@ When the array of faces comes into the delegate method, your application can int
 In the above code snippet, the delegate method will call one of two instance methods depending on the value of the <code>faces</code> dictionary. The <code>unprocessedImageReady:image:atTime:</code> method receives unprocessed frames while the <code>processedImageReady:image:faces:atTime:</code> method receives the processed ones. In that method, you can check the metric values for  all <code>AFDXFace</code> objects in the dictionary is examined. The value extracted from the metric should be checked for NaN (not a number) which indicates that the detector has not been instructed to classify that expression.
 For multiple face detection, it is important to keep in mind that each face has its own face identifier (a unique number) which is tracked as long as that face remains in the image and does not "cross over" another face. If one face's bounding box collides with another face's bounding box from one frame to the next (in video or non-discrete image mode), the face tracker may assign a different face ID to those faces.
 
-## Where to Go From Here
+<strong>Where to Go From Here</strong>
 
 For detailed class documentation, see the documentation folder. 
 We’re excited to help you get the most of our SDK in your application. Please use the following ways to contact us with questions, comments, or suggestions.

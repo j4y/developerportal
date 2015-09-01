@@ -14,10 +14,7 @@ summary:
 SDK Developer Guide
 Release 2.0
  
-## Introduction
 
-Affdex SDK is the culmination of years of scientific research into emotion detection, validated across thousands of tests worldwide on PC platforms, and now made available as a software development kit for Windows. Affdex SDK turns your ordinary app into an extraordinary app by emotion-enabling it to respond in real-time to user emotions. 
-Affdex SDK for Windows enables the integration of Affectiva's emotion recognition engine into Windows applications. The SDK exposes APIs that can be used from C++ applications and .NET languages. This developer guide is a general overview of the APIs included in the SDK; please consult the API class documentation for the syntax specifics for using the different classes.
 
 This version of the SDK can track the following emotions, facial expressions, and other measurements:
 
@@ -544,7 +541,7 @@ virtual void onProcessingFinished();
 virtual void onProcessingException(AffdexException exception); 
 ```
 
-## Where to Go From Here
+<strong>Where to Go From Here</strong>
 
 For detailed class documentation, see the documentation folder. 
 We’re excited to help you get the most out of our SDK in your application. Please use the following ways to contact us with questions, comments, or suggestions!

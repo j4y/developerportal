@@ -11,15 +11,11 @@ summary:
 
 <img src={{ "/images/android.png" | prepend: site.baseurl }} align=right>
 
- SDK Developer Guide Release 1.1
+ SDK Developer Guide Release 2.0
 
 
 
-## Introduction
 
-
-The Affdex SDK is the culmination of years of scientific research into emotion detection, validated across thousands of tests worldwide on PC platforms, and now made available on Android and Apple iOS. Affdex SDK turns your ordinary app into an extraordinary app by emotion-enabling your app to respond in real-time to user emotions.
-In this document, you will become familiar with integrating the Affdex SDK into your Android app. Please take time to read this document and feel free to give us feedback at sdk@affectiva.com.
 
 
 ### What’s in the SDK
@@ -470,10 +466,7 @@ Step 5: Add your license file to the project
 
 That’s it!  You should now be able to build and run the MeasureUp app.  
 
-## A Note about SDK Analytics (Flurry)
-
-The Affdex SDK for Android, and therefore by extension, any application that uses it, leverages the Flurry Analytics service to log events.  Due to a limitation in Flurry, an app cannot have two Flurry sessions open simultaneously, each logging to different Flurry accounts.  Therefore, apps that use the Affdex SDK for Android cannot also use the Flurry Analytics service themselves, as doing so could result in the app's analytics events being logged to the Affectiva Flurry account, or vice versa.  We are exploring ways to address this limitation in future releases.  
-Where to go from here  
+<strong>Where to go from here</strong>  
 We’re excited to help you get the most of our SDK in your application. Please use the following ways to contact us with questions, comments or suggestions.  
 Email: [sdk@affectiva.com]  
 [http://www.affdex.com/mobile-sdk]  
