@@ -27,7 +27,7 @@ Affectiva makes source available for sample applications that use the SDK. You c
 
 There is a single Objective-C header file that your app will need to include: <code>Affdex/Affdex.h</code>. This header file defines the <code>AFDXDetector</code> class which contains the facial expression detector logic as well as the <code>AFDXFace</code> object.
 The Affdex framework contains all of the necessary code for the SDK and will need to be linked to your app. It contains compiled code for armv7, armv7s, arm64, i386 and x86_64 architectures, allowing you to use either the iOS simulator or a real iOS device.
-G
+
 ### Requirements & Dependencies
 
 The iOS SDK requires iOS 8.0 or above and Xcode 6. The SDK also depends on the following iOS frameworks:
@@ -45,7 +45,7 @@ The iOS SDK requires iOS 8.0 or above and Xcode 6. The SDK also depends on the f
 * 	AssetsLibrary.framework
 * 	libc++.dylib
 
-For an example on how to do this, see the FollowMe Xcode project which is available on GitHub at https://github.com/Affectiva/affdex-ios.
+For an example on how to do this, see the AffdexMe Xcode project which is available on GitHub at https://github.com/Affectiva/affdex-ios.
 
 ### Using the SDK
 
