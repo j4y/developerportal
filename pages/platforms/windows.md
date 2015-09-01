@@ -134,6 +134,7 @@ and
 By default, all classifiers are turned off (set to false).
 
 For example, to set on or off the detection of the smile and attention classifiers:  
+
 ```
 bool getDetectAttention();
 void setDetectAttention(bool detectAttention);
