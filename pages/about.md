@@ -9,4 +9,4 @@ summary:
 ---
 
 
-This is the developer portal for [http://www.affectiva.com](Affectiva's) Affdex SDK.
+This is the developer portal for [Affectiva's](http://www.affectiva.com) Affdex SDK.

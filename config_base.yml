@@ -6,9 +6,9 @@ feedback_email: SDK@affectiva.com
 
 sidebar_accordion: true
 
-disqus_shortname: idrbwjekyll
+disqus_shortname: 
 
-google_analytics:  UA-408430-5
+google_analytics:  
 
 markdown: redcarpet
 
