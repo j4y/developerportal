@@ -11,7 +11,7 @@ metadata: false
  
 
 
-Affectiva uses the area under a [Receiver Operating Characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) (ROC) curve to report on detector accuracy as this is the most generalized way to measure detector accuracy.
+Affectiva uses the area under a <a href=https://en.wikipedia.org/wiki/Receiver_operating_characteristic target=_blank>Receiver Operating Characteristic</a> (ROC) curve to report on detector accuracy as this is the most generalized way to measure detector accuracy.
 
 The more obvious facial expressions including smile, brow furrow, inner eyebrow raise, outer brow raise, lip press, nose wrinkler, and upper lip raiser, have an ROC score of over 0.9. 
 The more nuanced facial expressions, which are much harder for even humans to reliably identify, including a lip depressor, mouth open, lip pucker and eye close have an ROC score of over 0.8. 
