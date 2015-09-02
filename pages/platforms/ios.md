@@ -19,7 +19,9 @@ The Affdex SDK package consists of the following:
 
 * 	<b>AFFECTIVA SDK LICENSE AGREEMENT.pdf</b>, the license agreement file.
 * 	<b>Powered By Affectiva Logos</b> is a folder that contains the Powered By Affectiva logos for inclusion in apps as outlined in the license agreement.
-* 	<b>Affdex.framework</b>, the Affdex SDK framework that your app will link against.
+* 	<b>Framework_Device/Affdex.framework</b>, the Affdex SDK framework for armv7 and arm64 device targets. You should link against this framework if you are submitting your app to the App Store.
+* 	<b>Framework_Simulator/Affdex.framework</b>, the Affdex SDK framework for i386 and x86_64 simulator targets. You can link against this framework if you only intend to use the simulator.
+* 	<b>Framework_Universal/Affdex.framework</b>, the Affdex SDK framework for both device and simulator targets. You can link against this framework if you want to test your app on both the simulator and on a device.
 Affectiva makes source available for sample applications that use the SDK. You can find these source examples on our GitHub site: https://github.com/Affectiva/ios-sdk-samples
 
 ## Requirements & Dependencies
@@ -71,7 +73,7 @@ The AFDXFace object encapsulates the notion of a single face. This object contai
 * 	chinRaiseScore: this is a number between 0 and 100, indicating the intensity of the chin as it is raised on the face.
 * 	eyeClosureScore: this is a number between 0 and 100, indicating the intensity of the eyes as they are opened and closed  on the face.
 * 	innerBrowRaiseScore: this is a number between 0 and 100, indicating the intensity of the inner brows as they are raised on the face.
-* 	lipDepressorScore: this is a number between 0 and 100, indicating the intensity of the lip corners as they turn downward on the face. This is usually an indicator of frowning.
+* 	lipCornerDepressorScore: this is a number between 0 and 100, indicating the intensity of the lip corners as they turn downward on the face. This is usually an indicator of frowning.
 * 	lipPuckerScore: this is a number between 0 and 100, indicating the intensity of the lips as they are puckered on the face.
 * 	lipSuckScore: this is a number between 0 and 100, indicating the intensity of the lips as they are sucked on the face.
 * 	mouthOpenScore: this is a number between 0 and 100, indicating the intensity of the mouth as it is opened and closed on the face.
