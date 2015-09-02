@@ -8,13 +8,13 @@ platform: all
 
 version: all
 
-topnav_title: Affdex Dev Portal
+topnav_title: Affdex Developer Portal
 
 topnav_version:
 
-homepage_title: Affdex Dev Portal 
+homepage_title: Affdex Developer Portal 
 
-site_title: Affdex Dev Portal
+site_title: Affdex Developer Portal
 
 tagline: Guide for developers
 

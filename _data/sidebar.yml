@@ -30,16 +30,16 @@ entries:
           version: all
           print: true
 
-        - title: Metrics
-          url: /metrics/
+        - title: Accuracy
+          url: /accuracy/
           audience: writer, designer
           platform: all
           product: all
           version: all
           print: true
 
-        - title: Accuracy
-          url: /accuracy/
+        - title: Metrics
+          url: /metrics/
           audience: writer, designer
           platform: all
           product: all
@@ -163,6 +163,22 @@ entries:
       items:
         - title: Sample Code
           url: /samplecode/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Supported File Types
+          url: /supportedfiletypes/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Facial Point Indices
+          url: /fpi/
           audience: writer, designer
           platform: all
           product: all

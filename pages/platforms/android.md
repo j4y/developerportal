@@ -13,13 +13,6 @@ summary:
 
 SDK Developer Guide Release 2.0
 
-## What’s in the SDK
-
-The Affdex SDK package consists of the following:
-
-*   docs, the folder containing documentation. In the javadoc subfolder, start with index.html.
-*   libs, the folder containing Affdex SDK libraries that your app will link against assets, the folder containing files needed by the SDK 
-
 ## Requirements & Dependencies
 
 The Affdex SDK requires a device running Android API 16 or above.
@@ -32,30 +25,13 @@ The SDK requires access to external storage on the Android device, and Internet 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 ```
 
-## Licensing
-After you request the SDK, Affectiva will provide to you an Affectiva license file.  Copy this file into your Android app project under the folder /assets/Affdex, and specify its relative path under that folder when invoking the setLicensePath method (described in more detail below).
-
-
-## Outline
-
-This document will guide you through the following:
-
-*   Adding the SDK to your Android project
-*   Using the SDK
-*   Options
-*   Interpreting the data
-*   A note about SDK analytics (Flurry)
-*   Where to Go From Here
-
-
-## Add the SDK to your Project
+## Using the SDK
 
 In order to use this SDK in one of your Android apps, you will need to copy some files from the SDK into your Android project. In your Android project, alongside your “src and “res” folders, you may have the optional folders “assets” and “libs”. Copy the SDK’s “assets” folder into your project. If you already have an “assets” folder, copy the contents of the SDK’s “assets” folder into your “assets” folder. In a similar way, copy the SDK's “libs” folder into your project. 
 
 The provided sample app does not have “assets” or “libs” folders.  In this case, simply copy the entire “assets and “libs” folders into the app’s project, at the same level as the “res” and “src” folders.
 We do not recommend adding any of your own files to the “assets/Affdex” folder.
 
-## Using the SDK
 
 The following code snippets demonstrate how easy it is to obtain facial expression results using your device’s camera, a video file, or from images.
 
@@ -82,7 +58,7 @@ In general, calls to the SDK are made in the following order:
 *   If you are pushing your own images (pushed frame mode or photo mode), call <code>process()</code> with each image.
 *   When you are done processing, call <code>stop()</code>. 
 
-To receive results from the SDK, implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interfaces, and register your listener object(s) with the Detector via <code>setImageListener()</code> and/or <code>setFaceListener()</code>. These interfaces provide results of the SDK’s processing of each frame.  The <code>ImageListener</code> interface provides information about facial expressions and face points for a face found in a given image via its onImageResults callback.  The FaceListener interface notifies its listener when a face appears or disappears via its onFaceDetectionStarted() and <code>onFaceDetectionStopped()</code> callbacks. For an example of using these callbacks to show and hide the results from the SDK, see the sample app MeasureUp. 
+To receive results from the SDK, implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interfaces, and register your listener object(s) with the Detector via <code>setImageListener()</code> and/or <code>setFaceListener()</code>. These interfaces provide results of the SDK’s processing of each frame.  The <code>ImageListener</code> interface provides information about facial expressions and [face points]({{ site.baseurl }}/fpi/) for a face found in a given image via its onImageResults callback.  The FaceListener interface notifies its listener when a face appears or disappears via its onFaceDetectionStarted() and <code>onFaceDetectionStopped()</code> callbacks. For an example of using these callbacks to show and hide the results from the SDK, see the sample app MeasureUp. 
 To check to see if the Detector is running (<code>start()</code> has been called, but not <code>stop()</code>), call <code>isRunning()</code>. 
 {{ note }} Be sure to always call <code>stop()</code> following a successful call to <code>start()</code> (including for example, in circumstances where you abort processing, such as in exception catch blocks).  This ensures that resources held by the Detector instance are released. {{ end }}
 
@@ -281,183 +257,3 @@ public void onImageResults(List<Face> faces, Frame frame,float timestamp) {
     }
 }
 ```
-
-### Face Point indices
-
-The indices of the elements in the face points array correspond to specific locations on a face.  Please see the table below for an explanation of the locations corresponding to each index.  
-
-
-<table border="1" style="width:100%">
-<tr>
-<th> Index </th>
-<th> Point on face </th>
-<th> Index </th>
-<th> Point on face </th>
-</tr>
-<tr>
-<td> 0 </td>
-<td> Right Top Jaw </td>
-<td> 17 </td>
-<td> Inner Right Eye </td>
-</tr>
-<tr>
-<td> 1 </td>
-<td> Right Jaw Angle </td>
-<td> 18 </td>
-<td> Inner Left Eye </td>
-</tr>
-<tr>
-<td> 2 </td>
-<td> Gnathion </td>
-<td> 19 </td>
-<td> Outer Left Eye </td>
-</tr>
-<tr>
-<td> 3 </td>
-<td> Left Jaw Angle </td>
-<td> 20 </td>
-<td> Right Lip Corner </td>
-</tr>
-<tr>
-<td> 4 </td>
-<td> Left Top Jaw </td>
-<td> 21 </td>
-<td> Right Apex Upper Lip </td>
-</tr>
-<tr>
-<td> 5 </td>
-<td> Outer Right Brow Corner </td>
-<td> 22 </td>
-<td> Upper Lip Center </td>
-</tr>
-<tr>
-<td> 6 </td>
-<td> Right Brow Center </td>
-<td> 23 </td>
-<td> Left Apex Upper Lip </td>
-</tr>
-<tr>
-<td> 7 </td>
-<td> Inner Right Brow Corner </td>
-<td> 24 </td>
-<td> Left Lip Corner </td>
-</tr>
-<tr>
-<td> 8 </td>
-<td> Inner Left Brow Corner </td>
-<td> 25 </td>
-<td> Left Edge Lower Lip </td>
-</tr>
-<tr>
-<td> 9 </td>
-<td> Left Brow Center </td>
-<td> 26 </td>
-<td> Lower Lip Center </td>
-</tr>
-<tr>
-<td> 10 </td>
-<td> Outer Left Brow Corner </td>
-<td> 27 </td>
-<td> Right Edge Lower Lip </td>
-</tr>
-<tr>
-<td> 11 </td>
-<td> Nose Root </td>
-<td> 28 </td>
-<td> Bottom Upper Lip </td>
-</tr>
-<tr>
-<td> 12 </td>
-<td> Nose Tip </td>
-<td> 29 </td>
-<td> Top Lower Lip </td>
-</tr>
-<tr>
-<td> 13 </td>
-<td> Nose Lower Right Boundary </td>
-<td> 30 </td>
-<td> Upper Corner Right Eye </td>
-</tr>
-<tr>
-<td> 14 </td>
-<td> Nose Bottom Boundary </td>
-<td> 31 </td>
-<td> Lower Corner Right Eye </td>
-</tr>
-<tr>
-<td> 15 </td>
-<td> Nose Lower Left Boundary </td>
-<td> 32 </td>
-<td> Upper Corner Left Eye </td>
-</tr>
-<tr>
-<td> 16 </td>
-<td> Outer Right Eye </td>
-<td> 33 </td>
-<td> Lower Corner Left Eye </td>
-</tr>
-</table>
-
-
-
-## Reference documentation
-The SDK comes with detailed Javadoc in both JAR and HTML formats, describing all of the SDK’s classes and methods. 
-
-
-<strong>Viewing the Javadoc in a browser:</strong>
-
-Open the file docs/javadoc/index.html in the location where you installed the SDK. 
-
-<strong>Viewing the Javadoc in your IDE:</strong>
-
-
-<strong>Eclipse:</strong>
-
-In your project’s libs folder, create a file called Affdex-sdk-1.1.jar.properties.  Edit that file in a text editor and enter a line like “doc=path/to/the/html/javadoc”.  The path specified should point to the docs/javadoc folder in your SDK installation folder, and can be an absolute or relative path. On Windows, use double backslashes to separate the folder names. 
-
-<strong>Android Studio:</strong>
-
-At the time of this writing, Android Studio does not yet support attaching javadoc to library dependencies.
-
-
-## Getting started with the MeasureUp sample app
-
-The SDK comes with a sample application called MeasureUp which demonstrates how to integrate the SDK into an app.  In this section, we’ll walk through the steps to build this app.  
-
-Step 1: Download the MeasureUp sample app  
-In a browser, open http://affdex-sdist.s3.amazonaws.com/Android/AndroidMeasureUp-1.1.zip, save it locally, and unzip it to wherever you normally put your Android projects.  
-Step 2: Copy assets and libraries packaged with the SDK into the MeasureUp project  
-Copy the “libs” and “assets” folders from the Affdex SDK installation folder to the folder where you unzipped the MeasureUp project.  
-Step 3: Import the MeasureUp sample project into your IDE  
-
-<strong>Eclipse:</strong>
-
-*   File->Import, choose General->Existing Projects into Workspace, click Next  
-*   Browse to and select the folder where you unzipped the MeasureUp project, then click Finish  
-
-Note: you will see an error related to an unresolved resource ('@integer/google/play/services/version') in AndroidManifest.xml, which we will resolve in the next step.  
-
-
-<strong>Android Studio:</strong>
-
-*   File->Import Project  
-*   Browse to and select the folder where you unzipped the MeasureUp project, then click OK.  
-*   On the Import Project from ADT (EclipseAndroid) dialog, specify a folder for the imported project location, and click Next, then click Finish.
-
-Note: you will see an error related to an unresolved resource ('@integer/google/play/services/version') in AndroidManifest.xml, which we will resolve in the next step.  
-
-Step 4: Add project dependences for Google Play Services and Android v4 Support:
-Projects using the SDK need to include two additional libraries that are packaged with the Android SDK: the Google Play Services library and the Android v4 Support library.  
-To add the Google Play Services library to the project, follow instructions at: http://developer.android.com/google/play-services/setup.html
-To add the Android v4 Support library to the project, follow the instructions at: https://developer.android.com/tools/support-library/setup.html  
-Step 5: Add your license file to the project  
-*   Copy your Affectiva-provided license file to your project’s assets/Affdex folder.  
-*   In your IDE, edit the source file MainActivity.java, and in the onCreate method, edit the following line to refer to your license file:  
-        detector.setLicensePath("Affectiva.license");   
-
-That’s it!  You should now be able to build and run the MeasureUp app.  
-
-<strong>Where to go from here</strong>  
-We’re excited to help you get the most of our SDK in your application. Please use the following ways to contact us with questions, comments or suggestions.  
-Email: [sdk@affectiva.com]  
-[http://www.affectiva.com/solutions/apis-sdks/]  

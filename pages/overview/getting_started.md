@@ -58,6 +58,9 @@ The Affdex Mobile SDK builds on Affdex real-world experience analyzing billions 
 
 <h3 id="Video">Video</h3>
 <p>The SDK supports extracting metrics directly from front-facing or back-facing cameras. You can send consecutive video frames to the SDK for processing. You can also specify a video file that resides on the file system of the device.
+
+A list of supported file types can be found [here]({{ site.baseurl }}/supportedfiletypes/).
+
 </p><p>
 
 <h3 id="Static images">Static images</h3>
