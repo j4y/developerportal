@@ -4,8 +4,6 @@ permalink: /samplecode/
 metadata: false
 ---
 <br></br>
-<br></br>
-<br></br>
 
 | Platform |
 |---|
