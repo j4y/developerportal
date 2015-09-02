@@ -3,12 +3,9 @@ title: Sample Code
 permalink: /samplecode/
 metadata: false
 ---
-<br></br>
-
-| Platform |
-|---|
-| [Android](https://github.com/Affectiva/android-sample-apps) |
-| [iOS](https://github.com/Affectiva/ios-sdk-samples) |
-| [Windows](https://github.com/Affectiva/win-sdk-samples) |
-
-
+<center>
+<table><tr><h1> Choose Your Platform </h1></tr></table>
+</center>
+<center><a href=https://github.com/Affectiva/android-sample-apps target=_blank><img src={{ "/images/android.png" | prepend: site.baseurl }} title="Android"></a></center>
+<center><a href=https://github.com/Affectiva/ios-sdk-samples target=_blank><img src={{ "/images/apple.png" | prepend: site.baseurl }} title="iOS"></a></center>
+<center><a href=https://github.com/Affectiva/win-sdk-samples target=_blank><img src={{ "/images/windows.png" | prepend: site.baseurl }} title="Windows"></a></center>
