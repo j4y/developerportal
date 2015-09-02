@@ -11,8 +11,8 @@ topnav:
       product: all
       version: all
   
-    - title: GitHub repo
-      external_url: https://github.com/Affectiva
+    - title: Sample Code
+      url: /samplecode/
       audience: writer, designer
       platform: all
       product: all
