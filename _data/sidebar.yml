@@ -46,14 +46,6 @@ entries:
           version: all
           print: true
 
-        - title: See Also
-          url: /see_also/
-          audience: writer, designer
-          platform: all
-          product: all
-          version: all
-          print: true
-          
     - title: Platforms
       audience: writer, designer
       platform: all
@@ -161,3 +153,28 @@ entries:
                  version: all
                  print: false
 
+    - title: See Also
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all
+      print: true
+
+      items:
+        - title: Sample Code
+          url: /samplecode/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+          
+        - title: Academic Papers 
+          external_url: http://www.affectiva.com/research-on-emotion/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+                    
+      

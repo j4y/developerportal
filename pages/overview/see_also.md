@@ -1,5 +1,5 @@
 ---
-title: See Also 
+title: Academic Papers 
 permalink: /see_also/
 tags: see-also
 keywords: 
