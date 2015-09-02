@@ -11,12 +11,10 @@ summary:
 
 <img src={{ "/images/windows.png" | prepend: site.baseurl }} align=right>
 
-SDK Developer Guide
-Release 2.0
- 
+SDK Developer Guide Release 2.0
 
 
-This version of the SDK can track the following emotions, facial expressions, and other measurements:
+<!-- This version of the SDK can track the following emotions, facial expressions, and other measurements:
 
 <strong>Emotions</strong>
 
@@ -42,10 +40,10 @@ Head orientation estimation
 Interocular Distance: distance between the eyes.
 
 In this document, you will become familiar with integrating the Affdex SDK into your application. Please take time to read this document and feel free to give us feedback at sdk@affectiva.com.
+-->
+## What’s in the SDK
 
-## Getting Started
-
-The following are included in the SDK installer:
+The Affdex SDK package consists of the following:
 
 *	<strong>docs</strong>, documentation files for both the C++ and .NET APIs and licenses.
 *	<strong>bin</strong>, packaged native dynamic linked library and .NET assemblies.
