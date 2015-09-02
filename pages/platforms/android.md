@@ -11,25 +11,16 @@ summary:
 
 <img src={{ "/images/android.png" | prepend: site.baseurl }} align=right>
 
- SDK Developer Guide Release 2.0
+SDK Developer Guide Release 2.0
 
-
-
-
-
-
-### What’s in the SDK
+## What’s in the SDK
 
 The Affdex SDK package consists of the following:
 
-*   Introducing the SDK.pdf 
-*   SDK Developer Guide.pdf (this document)
 *   docs, the folder containing documentation. In the javadoc subfolder, start with index.html.
 *   libs, the folder containing Affdex SDK libraries that your app will link against assets, the folder containing files needed by the SDK 
 
-
-
-### Requirements
+## Requirements & Dependencies
 
 The Affdex SDK requires a device running Android API 16 or above.
 Java 1.6 or above is required on your development machine.
