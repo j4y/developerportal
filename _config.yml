@@ -24,9 +24,9 @@ port: 4006
 
 host: 127.0.0.1 
 
-url: "http://benjaminanding.github.io/"
+url: "http://developer.affectiva.com/"
 
-feedback_email: SDK@affectiva.com
+feedback_email: sdk@affectiva.com
 
 sidebar_accordion: true
 
