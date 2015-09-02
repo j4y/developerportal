@@ -5,6 +5,8 @@
     <div class="pageMetadataTitle">Table of Contents</div>
     {% include toc.html %}
     <hr/>
+    
+    <!--
     {% if page.tags != null or page.audience != null or page.last_updated != null %}
     <div class="pageMetadataTitle">Page Information</div>
     {% endif %}
@@ -17,7 +19,8 @@
     {% endfor %}
     {% endif %}
       </div>
-
+    
+     
     {% if site.show_audience_label == true and page.audience != null %}
 
     <div class="metadataRow"><span class="tagTitle">Audience:</span>
@@ -30,6 +33,10 @@
     <p><div class="metadataRow"><span class="tagTitle">Last updated:</span> {{page.last_updated}}</div></p>
     {% endif %}
 
+    -->
+    
 </div>
-{% endunless %}
+
+     
+     {% endunless %}
 <!-- end pageMetadata -->
