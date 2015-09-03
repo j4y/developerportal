@@ -13,19 +13,26 @@ summary:
 
 SDK Developer Guide Release 2.0
 
-<!--
+## What's New in SDK V2
+
+If you're coming from SDK V1, there are a number of changes that you should know about:
+
+* iOS 8 is now the minimum version of iOS supported.
+* The static library <code>libAffdex.a</code> has been replaced with an iOS Framework called <code>Affdex.framework</code>.
+* A new class called <code>AFDXFace</code> has been added which contains classifier scores and information about the face.
+* Some of the delegate methods in the <code>AFDXDelegate</code> protocol have changed.
+
+These changes will require some adaptations to your existing Xcode projects. Please read this guide thoroughly in order to understand the changes.
+
 ## What’s in the SDK
 
 The Affdex SDK package consists of the following:
 
-* 	<b>AFFECTIVA SDK LICENSE AGREEMENT.pdf</b>, the license agreement file.
-* 	<b>Powered By Affectiva Logos</b> is a folder that contains the Powered By Affectiva logos for inclusion in apps as outlined in the license agreement.
 * 	<b>Framework_Device/Affdex.framework</b>, the Affdex SDK framework for armv7 and arm64 device targets. You should link against this framework if you are submitting your app to the App Store.
 * 	<b>Framework_Simulator/Affdex.framework</b>, the Affdex SDK framework for i386 and x86_64 simulator targets. You can link against this framework if you only intend to use the simulator.
 * 	<b>Framework_Universal/Affdex.framework</b>, the Affdex SDK framework for both device and simulator targets. You can link against this framework if you want to test your app on both the simulator and on a device.
 
-Affectiva makes source available for sample applications that use the SDK. You can find these source examples on our GitHub site: https://github.com/Affectiva/ios-sdk-samples
--->
+We've made sample source available to show you how to use the SDK. You can find these source examples on our GitHub site: https://github.com/Affectiva/ios-sdk-samples
  
 ## Requirements & Dependencies
 
@@ -44,16 +51,17 @@ The iOS SDK requires iOS 8.0 or above and Xcode 6. The SDK also depends on the f
 * 	AssetsLibrary.framework
 * 	libc++.dylib
 
-For an example on how to do this, see the [AffdexMe](https://github.com/Affectiva/ios-sdk-samples) Xcode project.
+For an example on how to do this, see the [AffdexMe](https://github.com/Affectiva/ios-sdk-samples) source example.
 
 ## Using the SDK
 
-There is a single Objective-C header file that your app will need to include: <code>Affdex/Affdex.h</code>. This header file defines the <code>AFDXDetector</code> class which contains the facial expression detector logic as well as the <code>AFDXFace</code> object.
-The Affdex framework contains all of the necessary code for the SDK and will need to be linked to your app. It contains compiled code for armv7, armv7s, arm64, i386 and x86_64 architectures, allowing you to use either the iOS simulator or a real iOS device.
+In order to utilize the SDK, your app should link to the provided <code>Affdex.framework</code> framework, and include the Objective-C header file <code>Affdex/Affdex.h</code>. This header file defines the <code>AFDXDetector</code> class which contains the facial expression detector logic as well as the <code>AFDXFace</code> object.
 
-Since the feature of the SDK is to detect facial expressions, one of the key functions is the examination of images for faces. The AFDXDetector combines face detection, tracking and expression classification to do this.
-An image may contain no faces, one face, or many faces. The AFDXDetector will detect as many faces as it can in an image, and deliver information on each face to you, including the expressions that each face is making.
-The AFDXFace object encapsulates the notion of a single face. This object contains a number of properties about a face that is found in an image:  
+The framework contains all of the necessary code for the SDK and will need to be linked to your app. Choose the appropriate framework for your specific development situation (Device, Simulator, or Universal).
+
+Since the function of the SDK is to detect emotions and expressions, one of the key tasks is the examination of images for a face. The <code>AFDXDetector</code> combines face detection, tracking and expression classification to do this.
+An image may contain no faces, one face, or many faces. The <code>AFDXDetector</code> will currently detect only one face and and deliver information on that face to your app, including the emotions and expressions that the face is making.
+The <code>AFDXFace</code> object encapsulates the notion of a single face. This object contains a number of properties about a face that is found in an image:  
 
 * 	faceId: this is a numeric value, guaranteed to be unique for a particular face as long as it remains visible in successive frames.
 * 	facePoints: this is an array of CGPoint objects, each of which denotes a facial landmark on the face. The point is relative to the coordinate space of the image processed. There can be many such points in this array.
@@ -97,7 +105,7 @@ There are three ways for the SDK to analyze video and images for facial expressi
 2.	Video File
 3.	Images  
 
-Each has its own specific initialization method below to create the AFDXDetector object that will be used to detect facial expressions.
+Each has its own specific initialization method below to create the <code>AFDXDetector</code> object that will be used to detect facial expressions.
 
 ### The On-Device Camera
 
@@ -124,7 +132,7 @@ Another way to feed video into the detector is via a video file that is stored o
 - (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingFile:(NSString *)path;
 ```
 
-This initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate protocol</code>, as well as a path to a video file (with an extension of .mp4 or .m4v) on the device.
+This initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, as well as a path to a video file (with an extension of .mp4 or .m4v) on the device.
 The maximum number of faces detected is set to 1. If you want to override this default, use this initializer:  
 
 ```
@@ -155,7 +163,7 @@ To optimize performance, you should should set this to the maximum number of exp
 
 ## Step 2. Establish Object Properties
 
-Now that the AFDXDetector object is created, you next establish properties necessary for its operation.
+Now that the <code>AFDXDetector</code> object is created, you next establish properties necessary for its operation.
 The first step is to specify which classifiers you wish to activate and process. Classifiers employ the machine learning algorithms that yield expression metrics for the facial expressions you specify.  Affdex expression metrics are described in detail in the Introduction to Affdex SDK for iOS documentation. By default, all classifiers are disabled. Here, we’ll turn on a few of the supported classifiers:  
 
 ```
@@ -205,7 +213,7 @@ If you have chosen the initialization method for still images, then you will nee
 
 If you’ve chosen the camera or video file option, the SDK will begin to consume video frames from that data source automatically.
 
-## Adhering to the AFDXDetectorDelegate Protocol
+## Adhering to the <code>AFDXDetectorDelegate</code> Protocol
 
 The SDK communicates results to your app via the <code>AFDXDetectorDelegate</code> protocol. Here are the methods that your app will need to know about.  
 
