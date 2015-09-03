@@ -32,7 +32,7 @@ The Affdex SDK package consists of the following:
 * 	<b>Framework_Simulator/Affdex.framework</b>, the Affdex SDK framework for i386 and x86_64 simulator targets. You can link against this framework if you only intend to use the simulator.
 * 	<b>Framework_Universal/Affdex.framework</b>, the Affdex SDK framework for both device and simulator targets. You can link against this framework if you want to test your app on both the simulator and on a device.
 
-We've made sample source available to show you how to use the SDK. You can find these source examples on our GitHub site: https://github.com/Affectiva/ios-sdk-samples
+We've made sample source available to show you how to use the SDK. You can find these source examples on our <a href=https://github.com/Affectiva/ios-sdk-samples target=_blank>GitHub site</a>.
  
 ## Requirements & Dependencies
 
@@ -51,7 +51,7 @@ The iOS SDK requires iOS 8.0 or above and Xcode 6. The SDK also depends on the f
 * 	AssetsLibrary.framework
 * 	libc++.dylib
 
-For an example on how to do this, see the [AffdexMe](https://github.com/Affectiva/ios-sdk-samples) source example.
+For an example on how to do this, see the <a href=https://github.com/Affectiva/ios-sdk-samples target=_blank>AffdexMe</a> source example.
 
 ## Using the SDK
 
