@@ -212,7 +212,7 @@ void setCameraFPS(double cameraFPS);
 
 ### VideoDetector
 
-Another common use of the SDK is to process previously captured video files. The <code>VideoDetector</code> helps streamline this effort by decoding and processing frames from a video file. Like the <code>FrameDetector</code>, the constructor accepts a parameter for processing frames per second. This parameter regulates how many frames from the video stream get processed. During processing, the <code>VideoDetector</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. <a href="#Appendix I">Appendix I</a> includes a list of recomended video codecs that are compatible with the detector.  
+Another common use of the SDK is to process previously captured video files. The <code>VideoDetector</code> helps streamline this effort by decoding and processing frames from a video file. Like the <code>FrameDetector</code>, the constructor accepts a parameter for processing frames per second. This parameter regulates how many frames from the video stream get processed. During processing, the <code>VideoDetector</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list]({{ site.baseurl }}/supportedfiletypes/) of accepted file types and recommended video codecs that are compatible with the detector.  
 ```
 VideoDetector(double processFPS);
 ```
