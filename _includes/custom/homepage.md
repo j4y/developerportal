@@ -15,6 +15,5 @@ The Features of the Affdex SDK include:
 * All processing done on device -- no videos or images sent to our cloud.
 
 Available for [Android]({{ site.baseurl }}/android/), [iOS]({{ site.baseurl }}/ios/), and [Windows]({{ site.baseurl }}/windows/)  platforms.
-
-[Getting Started]({{ site.baseurl }}/getting_started/)
----
+<br></br>
+Next step: [Getting Started]({{ site.baseurl }}/getting_started/)
