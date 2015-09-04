@@ -17,21 +17,21 @@ The face provides a rich canvas of emotion. Humans are innately programmed to ex
 <table>
 <tr>
 <td><img src="../images/faces/Anger.jpg" alt="" title="Anger" align=center>
-Anger</td>
+<center>Anger</center></td>
 <td><img src="../images/faces/Sadness.jpg" alt="" title="Sadness" align=center>
-Sadness</td>
+<center>Sadness</center></td>
 <td><img src="../images/faces/Disgust.jpg" alt="" title="Disgust" align=center>
-Disgust</td>
+<center>Disgust</center></td>
 <td><img src="../images/faces/Fear.jpg" alt="" title="Fear" align=center>
-Fear </td>
+<center>Fear</center></td>
 </tr>
 <tr>
 <td><img src="../images/faces/Joy.jpg" alt="" title="Joy" align=center>
-Joy</td>
+<center>Joy</center></td>
 <td><img src="../images/faces/Surprise.jpg" alt="" title="Surprise" align=center>
-Surprise</td>
+<center>Surprise</center></td>
 <td><img src="../images/faces/Contempt.jpg" alt="" title="Contempt" align=center>
-Contempt</td>
+<center>Contempt</center></td>
 </tr>
 </table>
 
@@ -46,53 +46,53 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 <table>
 <tr>
 <td><img src="../images/faces/Attention.jpg" alt="" title="Attention" align=center>
-Attention
+<center>Attention</center>
 Measure of point of focus of the user based on the head orientation</td>
 <td><img src="../images/faces/Brow%20Furrow.jpg" alt="" title="Brow Furrow" align=center>
-Brow Furrow
+<center>Brow Furrow</center>
 Both eyebrows moving lower and closer together</td>
 <td><img src="../images/faces/Brow%20Raise.jpg" alt="" title="Brow Raise" align=center>
-Brow Raise
+<center>Brow Raise</center>
 Both eyebrows moved upwards</td>
 <td><img src="../images/faces/Inner%20Brow%20Raise.jpg" alt="" title="Inner Brow Raise" align=center>
-Inner Brow Raise
+<center>Inner Brow Raise</center>
 The inner corners of eyebrows are raised</td>
 <td><img src="../images/faces/Eye%20Closure.jpg" alt="" title="Eye Closure" align=center>
-Eye Closure
+<center>Eye Closure</center>
 Both eye lids closed</td>
 </tr>
 <tr>
 <td><img src="../images/faces/Nose%20Wrinkle.jpg" alt="" title="Nose Wrinkle" align=center>
-Nose Wrinkle
+<center>Nose Wrinkle</center>
 Wrinkles appear along the sides and across the root of the nose due to skin pulled upwards</td>
 <td><img src="../images/faces/Upper%20Lip%20Raise.jpg" alt="" title="Upper Lip Raise" align=center>
-Upper Lip Raise
+<center>Upper Lip Raise</center>
 The upper lip moving upwards</td>
 <td><img src="../images/faces/Lip%20Suck.jpg" alt="" title="Lip Suck" align=center>
-Lip Suck
+<center>Lip Suck</center>
 Suck the red parts of the lips and the adjacent skin into the mouth covering the teeth</td>
 <td><img src="../images/faces/Lip%20Pucker.jpg" alt="" title="Lip Pucker" align=center>
-Lip Pucker
+<center>Lip Pucker</center>
 The lips pushed foward</td>
 <td><img src="../images/faces/Lip%20Press.jpg" alt="" title="Lip Press" align=center>
-Lip Press
+<center>Lip Press</center>
 Pressing the lips together without pushing up the chin boss</td>
 </tr>
 <tr>
 <td><img src="../images/faces/Mouth%20Open.jpg" alt="" title="Mouth Open" align=center>
-Mouth Open
+<center>Mouth Open</center>
 Lower lip dropped downwards</td>
 <td><img src="../images/faces/Lip%20Depressor.jpg" alt="" title="Lip Depressor" align=center>
-Lip Corner Depressor
+<center>Lip Corner Depressor</center>
 Lip corners dropping downwards (frown)</td>
 <td><img src="../images/faces/Chin%20Raise.jpg" alt="" title="Chin Raise" align=center>
-Chin Raise
+<center>Chin Raise</center>
 The chin boss and the lower lip pushed upwards</td>
 <td><img src="../images/faces/Smirk.jpg" alt="" title="Smirk" align=center>
-Smirk
+<center>Smirk</center>
 Left or right lip corners pulled upwards and outwards</td>
 <td><img src="../images/faces/Smile.jpg" alt="" title="Smile" align=center>
-Smile
+<center>Smile</center>
 Lip corners pulling outwards and upwards towards the ears, combined with other indicators from around the face</td>
 </tr>
 </table>
