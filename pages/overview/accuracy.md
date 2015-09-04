@@ -9,7 +9,7 @@ summary:
 metadata: false
 ---
 
-<img src={{ "/images/graphic4.png" | prepend: site.baseurl }} align=right>
+<img src="{{ "/images/graphic4.png" | prepend: site.baseurl }}" align="right">
 
 We continuously train and test our emotion-sensing metrics to provide the most reliable and accurate classifiers. Our key emotions achieve accuracy in the high 90th percentile.
 
