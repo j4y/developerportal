@@ -35,7 +35,7 @@ A measure of the participant’s disgust. (0 - 100)
 
 ## Expressiveness
 
-A measure of the participant’s attention to the screen, using the orientation of the face to assess if they are looking directly at the screen or if they are distracted (turning away) while viewing content. (0 - 100)
+A measure of the participant's expressiveness, or engagement. (0 - 100)
 
 <center><img src="../images/faces/Expressiveness.jpg" alt="" title="Expressiveness" align=center></center>
 
@@ -71,7 +71,7 @@ A measure of the positive (or negative) nature of the participant’s expression
 
 ## Attention
 
-A measure of the participant’s attention. (0 - 100)
+A measure of the participant’s attention to the screen, using the orientation of the face to assess if they are looking directly at the screen or if they are distracted (turning away) while viewing content. (0 - 100)
 
 <center><img src="../images/faces/Attention.jpg" alt="" title="Attention" align=center></center>
 
