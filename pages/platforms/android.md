@@ -177,9 +177,9 @@ See the Detector class Javadoc for a complete list of the methods available.
 
 ### Processing Rate
 
-In Camera Mode, you can specify the maximum number of frames per second that the SDK should process. This can improve performance if your requirements do not require every frame in the video stream from the camera to be processed. The default (and recommended) rate is 5 frames per second, but you may also set it lower if you are using a slower device, and need additional performance. Here is an example of setting the processing rate to 2 FPS:  
+In Camera Mode, you can specify the maximum number of frames per second that the SDK should process. This can improve performance if your requirements do not require every frame in the video stream from the camera to be processed. The default (and recommended) rate is 5 frames per second, but you may also set it lower if you are using a slower device, and need additional performance. Here is an example of setting the processing rate to 20 FPS:  
 ```
-setMaxProcessRate(2); 
+setMaxProcessRate(20); 
 ```
 
 ### Face Detection Statistics
@@ -202,7 +202,7 @@ This method receives these parameters:
 3.  The timestamp of the frame.  In Photo Mode, this will be zero.
 
 The returned Face object contains three accessible inner objects: emotions, expressions, and measurements. Each of these inner objects has getter methods for retrieving the scores detected for each metric. For example, the smile score can be retrieved by calling <code>face.expressions.getSmile()</code> 
-The follow code sample shows an example of how to retrieve metric values from the Face object in onImageResults:  
+The follow code sample shows an example of how to retrieve metric values from the Face object in <code>onImageResults</code>:  
 
 ```
 @Override
@@ -257,3 +257,12 @@ public void onImageResults(List<Face> faces, Frame frame,float timestamp) {
     }
 }
 ```
+
+## A Note about SDK Analytics (Flurry)
+
+The Affdex SDK for Android, and therefore by extension, any application that uses it, leverages 
+the Flurry Analytics service to log events.  Due to a limitation in Flurry, an app cannot have two 
+Flurry sessions open simultaneously, each logging to different Flurry accounts.  Therefore, apps 
+that use the Affdex SDK for Android cannot also use the Flurry Analytics service themselves, as 
+doing so could result in the app's analytics events being logged to the Affectiva Flurry account, 
+or vice versa.  We are exploring ways to address this limitation in future releases.

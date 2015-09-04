@@ -9,78 +9,39 @@ summary:
 ---
 {% include linkrefs.html %} 
 
-<h1 id="Introducing the Affdex Mobile SDK">Introducing the Affdex Mobile SDK</h1>
-<p>
-The Affdex Mobile SDK for iOS and Android captures and reports emotion insights from people&acute;s faces. These insights are based on images of faces obtained from device cameras, prerecorded video, or even single images, and are generated on-device and in real time.
-</p><p>
-Integrating the Affdex Mobile SDK enables iOS and Android developers to create interactive and exciting emotion-aware applications. Users interact with their mobile device using applications built with the Affdex Mobile SDK, and their facial expressions are captured, analyzed and made available for further processing.
-</p><p>
-While the science underlying the Affdex SDK is complex, the emotion insights provided by the SDK are easy to interpret and process. Features of the Affdex Mobile SDK include:
-</p>
-<ul>
-<li>	Real-time capture and feedback of emotion insights
-</li><li>	Processes videos obtained from device camera, from a video file, or from still images
-</li><li>	Flexible and easy to use API
-</li><li>	All processing done on device - no videos or images sent to Affdex server
-</li></ul>
-<p>
+## Why Emotion-Enable Your Applications?
 
-<h2 id="Why Emotion-Enable Your Applications?">Why Emotion-Enable Your Applications?</h2>
-<p>Mobile devices are incredibly smart, but they don't respond to human sentiment. Emotion-enabled applications open a new world of spontaneous interaction in response to how people feel, allowing your applications to come to life. Using the Affdex Mobile SDK, your applications instantly respond to users’ unfiltered emotion feedback. Your applications become sympathetic to the user, mirroring the user’s emotional state, adjusting their interfaces and flow to better suit the user’s mood.
-</p><p>
+We live in a world that’s highly connected, full of incredibly smart devices and interactive digital experiences.  Yet emotions are missing from the digital world.  At Affectiva, we have made it our mission to bring emotional intelligence to the digital world. And to make this vision a reality, we have created our SDK so that others can bring emotion-sensing and analytics to their own offerings, be it digital experiences, apps, games, devices, or other technologies.
 
-<h2 id="Technology">Technology</h2>
-<p>
-The Affdex Mobile SDK builds on the proven cloud-based Affdex facial expression analysis platform. It has been adapted and tuned to process images captured in everyday use of a mobile device.  Processing is on-device (no cloud round trip), and the library is lightweight and fast to support a small memory footprint and real-time processing.
-</p><p>
+Using our SDK, developers can now enrich digital experiences and apps with emotion-sensing and analytics.  Devices can now instantly respond to a user's unfiltered emotions, and apps can adjust their interfaces and flow to better suit moods. This makes for a more authentic, interactive, and unique experience.
+
+## Technology
+
+The Affdex SDK is built on Affectiva's industry-leading patented science. It’s designed to analyze spontaneous facial expressions that people show in their daily interactions.  The highly accurate emotion recognition algorithms (classifiers) have been trained and tested using Affectiva’s massive emotion data repository - the world’s largest emotion database with more than 3.2 million faces from 75 countries analyzed, amounting to over 12 billion emotion data points. Designed for developer ease-of-use, processing of the emotion data is on-device (no cloud round trip), and the library is lightweight and fast to support a small memory footprint and real time processing.
+
 Follow <a href=http://www.affdex.com/clients/affdex-resources/ target=_blank>this link</a> for more information on the science underlying the Affdex SDK.
-</p>
 
-<h2 id="Requirements & Platform Details">Requirements & Platform Details</h2>
-<p>Integration documentation and example code are packaged with the SDK. You can also <a href="http://www.affectiva.com/solutions/apis-sdks/" target=_blank>visit our SDK site</a> for more information.
-</p>
-<p>
-Visit our GitHub page for example projects that utilize the SDK: <a href=https://github.com/Affectiva target=_blank>https://github.com/Affectiva</a>
-</p><p>
+## How To Use The SDK?
 
-<h2 id="Measurements">Measurements</h2>
-<p>The face provides a rich canvas of emotion. Humans are innately programmed to express and communicate emotion through facial expressions. Affdex scientifically measures and reports facial expressions using sophisticated computer vision and machine learning techniques. When you use the Affdex Mobile SDK in your applications, you will receive facial expression output from Affdex in the form of Affdex metrics: expression metrics and emotional metrics.
-</p>
-<center><img src="../images/graphic1.png"></center>
-<p>
-Expression metrics are scores that indicate when users make a specific facial expression (e.g., a smile) along with the degree of intensity. The metrics can be thought of as expression detectors: as the expression occurs and intensifies, the score rises from 0 (no expression) to 100 (expression fully present). In addition, we also expose a composite emotional metric called valence which gives feedback on the overall experience. Valence measures 0 to 100 indicate a neutral to positive experience, while -100 to 0 indicate a negative to neutral experience.
-</p>
+### Live video feeds
 
-<h2 id="Getting The Best Results">Getting The Best Results</h2>
-The Affdex Mobile SDK builds on Affdex real-world experience analyzing billions of faces worldwide, both online and offline. The SDK robustly handles gender, age, and ethnicity, and has been cross-culturally validated on real-world data.  While accommodating a variety of lighting conditions and head orientations, the SDK produces best results when people face the screen and facial features are visible. Obstructions to the face, such as a hand over the mouth, will result in a temporary loss of facial expression data so developers should prompt users to avoid such obstructions.
+The SDKs include classes to help extract emotion metrics directly from any optical sensor such as a web camera, including front and back facing cameras in the case of mobile devices.
 
-<h2 id="Ways To Use The SDK">Ways To Use The SDK</h2>
+### Recorded videos
 
-<h3 id="Video">Video</h3>
-<p>The SDK supports extracting metrics directly from front-facing or back-facing cameras. You can send consecutive video frames to the SDK for processing. You can also specify a video file that resides on the file system of the device.
+A recorded video file that resides on the file system of the device can also be used as an input. The SDKs include support for opening all the major video formats.
 
 A list of supported file types can be found [here]({{ site.baseurl }}/supportedfiletypes/).
 
-</p><p>
+### Photographs
 
-<h3 id="Static images">Static images</h3>
-<p>The SDK also includes the capability to generate emotion metrics from individual images (photographs).
-</p><p>
+The SDK also includes the capability to generate emotion metrics from individual images (photographs). 
 
-<h2 id="A Note About Privacy">A Note About Privacy</h2>
-<p>Affdex takes privacy seriously, and we ask developers using the Affdex Mobile SDK to also be vigilant about safeguarding user information. The Affdex Mobile SDK collects a minimal set of anonymous technical data to help us better understand how it is being used.
-</p><p>
-The Affdex Mobile SDK does not collect the following information:
+## Supported Platformss
 
-<ul>
-<li>	The Affdex Mobile SDK does not collect personal information
-</li><li>	The Affdex Mobile SDK does not store face video obtained from the device camera; all the processing is done local to the device, transiently, on a frame-by-frame basis.
-</li><li>	The Affdex Mobile SDK does not perform facial or identity recognition.
-</li></ul>
+With the SDKs, developers can emotion-enable apps and digital experiences for [Android]({{ site.baseurl }}/android/), [iOS]({{ site.baseurl }}/ios/), and [Windows]({{ site.baseurl }}/windows/) 
+
+Please refer to the technical documentation of each of the platforms for their requirements. To get started, sign up to download the SDKs through <a href="http://www.affectiva.com/solutions/apis-sdks/" target=_blank>our SDK site</a>.
 
 
-
-
-## Questions
-
-If you have any comments, concerns, or questions, please contact us at SDK@affectiva.com.
+Visit our GitHub page for example projects that utilize the SDK: <a href=https://github.com/Affectiva target=_blank>https://github.com/Affectiva</a>

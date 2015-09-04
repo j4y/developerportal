@@ -13,14 +13,13 @@ entries:
       print: true
 
       items:
-        - title: Cover
-          url: /titlepage/
+        - title: Home
+          url: /index.html
           audience: writer, designer
           platform: all
           product: all
           version: all
           print: true
-          web: false
 
         - title: Getting started
           url: /getting_started/
