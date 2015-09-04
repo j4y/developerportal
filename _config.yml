@@ -18,7 +18,7 @@ site_title: Affdex Developer Portal
 
 tagline: Guide for developers
 
-baseurl: "/developerportal"
+baseurl: ""
 
 port: 4006
 
