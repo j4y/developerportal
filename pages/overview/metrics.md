@@ -106,7 +106,9 @@ In addition, we also expose a composite emotional metric called valence which gi
 ## Face Tracking and Head Angle Estimation
 
 In addition to the emotion and facial expression metrics, the SDKs include our latest face tracker which calculates the following metrics:
+
 <img src="{{ "/images/graphic2.png" | prepend: site.baseurl }}" align="right">
+
 <strong>Facial Landmarks Estimation</strong>
 The tracking of the cartesian coordinates for the facial landmarks.
 
