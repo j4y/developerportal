@@ -123,9 +123,11 @@ void setProcessStatusListener(ProcessStatusListener listener);
 
 The following methods are available to turn on or off the detection of various classifiers.
 
-<code>bool getDetectClassifier();</code> 
+<p><code>bool getDetectClassifier();</code> </p>
+
 and
-<code>void setDetectClassifier(bool detectClassifier);</code>
+
+<p><code>void setDetectClassifier(bool detectClassifier);</code></p>
 
 By default, all classifiers are turned off (set to false).
 
@@ -314,6 +316,7 @@ Face.FeaturePoints
 <strong>Expressions</strong>
 
 <code>Expressions</code> is a representation of the probabilities of the facial expressions detected. Each value represents a probability between 0 to 100 of the presence of the expression in the frame analyzed:  
+
 ```
 struct Expressions
 {
@@ -338,6 +341,7 @@ struct Expressions
 <strong>Emotions</strong>
 
 <code>Emotions</code> is a representation of the probabilities of the emotions detected. Each value represents a probability between 0 to 100 of the presence of the emotion in the frame analyzed. Valence, a measure of positivity or negativity of the expressions, ranges from -100 to 100:  
+
 ```
 struct Emotions
 {
@@ -363,12 +367,12 @@ struct Expressions
   float interoculardistance;
 };
 ```
+<img src="../images/graphic3.png" align=right>
 
 <strong>Orientation</strong>
 
 <code>Orientation</code> is a representation of the orientation of the head in a 3-D space using Euler angles (pitch, yaw, roll):
-
-<img src="../images/graphic3.png" align=right>  
+  
 ```
 struct Orientation
 {

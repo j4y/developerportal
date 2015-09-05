@@ -101,7 +101,7 @@ Emotion and expression metrics scores indicate when users make a specific emotio
 
 In addition, we also expose a composite emotional metric called valence which gives feedback on the overall experience. Valence measures 0 to 100 indicate a neutral to positive experience, while -100 to 0 indicate a negative to neutral experience.
 
-<img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}">
+<center><img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}"></center>
 
 ## Face Tracking and Head Angle Estimation
 
@@ -110,7 +110,7 @@ In addition to the emotion and facial expression metrics, the SDKs include our l
 <img src="{{ "/images/graphic2.png" | prepend: site.baseurl }}" align="right">
 
 <strong>Facial Landmarks Estimation</strong>
-The tracking of the cartesian coordinates for the facial landmarks.
+The tracking of the cartesian coordinates for the [facial landmarks](/fpi/).
 
 <strong>Head Orientation Estimation</strong>
 Estimation of the head position in a 3-D space in Euler angles (pitch, yaw, roll).

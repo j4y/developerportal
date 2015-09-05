@@ -3901,10 +3901,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-link:hover {
   color: #333333;
 }
+
+/* NAVBAR COLOR */
+/* orange #f6a707, #fcc769 */
+/* blue #036f7b, #0290a0 */
 .navbar-inverse {
-  background-color: #74ab50;
-  border-color: #5c8840;
+  background-color: #f6a707;
+  border-color: #fcc769;
 }
+
 .navbar-inverse .navbar-brand {
   color: #f9faf9;
 }

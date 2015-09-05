@@ -1,5 +1,5 @@
 ---
-title: Getting started
+title:
 permalink: /getting_started/
 tags: getting-started
 audience: writer, designer
@@ -9,19 +9,7 @@ summary:
 ---
 {% include linkrefs.html %} 
 
-## Why Emotion-Enable Your Applications?
-
-We live in a world that’s highly connected, full of incredibly smart devices and interactive digital experiences.  Yet emotions are missing from the digital world.  At Affectiva, we have made it our mission to bring emotional intelligence to the digital world. And to make this vision a reality, we have created our SDK so that others can bring emotion-sensing and analytics to their own offerings, be it digital experiences, apps, games, devices, or other technologies.
-
-Using our SDK, developers can now enrich digital experiences and apps with emotion-sensing and analytics.  Devices can now instantly respond to a user's unfiltered emotions, and apps can adjust their interfaces and flow to better suit moods. This makes for a more authentic, interactive, and unique experience.
-
-## Technology
-
-The Affdex SDK is built on Affectiva's industry-leading patented science. It’s designed to analyze spontaneous facial expressions that people show in their daily interactions.  The highly accurate emotion recognition algorithms (classifiers) have been trained and tested using Affectiva’s massive emotion data repository - the world’s largest emotion database with more than 3.2 million faces from 75 countries analyzed, amounting to over 12 billion emotion data points. Designed for developer ease-of-use, processing of the emotion data is on-device (no cloud round trip), and the library is lightweight and fast to support a small memory footprint and real time processing.
-
-Follow <a href=http://www.affdex.com/clients/affdex-resources/ target=_blank>this link</a> for more information on the science underlying the Affdex SDK.
-
-## How To Use The SDK?
+## How to Use the SDK
 
 ### Live video feeds
 

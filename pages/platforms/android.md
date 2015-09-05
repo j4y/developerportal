@@ -253,7 +253,7 @@ public void onImageResults(List<Face> faces, Frame frame,float timestamp) {
     PointF[] points = face.getFacePoints();
 
     for (int n = 0; n < points.length; n++) {
-        Log.i(LOG_TAG, String.format("Point %d is located at %.2f,%.2f                                                              \n",n,points[n].x,points[n].y));
+        Log.i(LOG_TAG, String.format("Point %d is located at %.2f,%.2f \n",n,points[n].x,points[n].y));
     }
 }
 ```

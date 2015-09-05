@@ -192,12 +192,5 @@ entries:
           version: all
           print: true
           
-        - title: Academic Papers 
-          external_url: http://www.affectiva.com/research-on-emotion/
-          audience: writer, designer
-          platform: all
-          product: all
-          version: all
-          print: true
-                    
-      
+
+

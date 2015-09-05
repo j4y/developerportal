@@ -1,10 +1,10 @@
 ---
-title: Affdex SDK
+title: 
 permalink: "/"
 tags: overview
-homepage: true
+homepage: 
 metadata: false
 ---
-{% include linkrefs.html %}
+
 
 {% include custom/homepage.md %}
