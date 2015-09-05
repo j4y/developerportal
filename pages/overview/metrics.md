@@ -1,5 +1,5 @@
 ---
-title: The Metrics
+title: Metrics
 permalink: /metrics/
 tags: []
 keywords: 
@@ -17,21 +17,21 @@ The face provides a rich canvas of emotion. Humans are innately programmed to ex
 <table>
 <tr>
 <td><img src="../images/faces/Anger.jpg" alt="" title="Anger" align=center>
-<center>Anger</center></td>
+<center><strong>Anger</strong></center></td>
 <td><img src="../images/faces/Sadness.jpg" alt="" title="Sadness" align=center>
-<center>Sadness</center></td>
+<center><strong>Sadness</strong></center></td>
 <td><img src="../images/faces/Disgust.jpg" alt="" title="Disgust" align=center>
-<center>Disgust</center></td>
+<center><strong>Disgust</strong></center></td>
 <td><img src="../images/faces/Fear.jpg" alt="" title="Fear" align=center>
-<center>Fear</center></td>
+<center><strong>Fear</strong></center></td>
 </tr>
 <tr>
 <td><img src="../images/faces/Joy.jpg" alt="" title="Joy" align=center>
-<center>Joy</center></td>
+<center><strong>Joy</strong></center></td>
 <td><img src="../images/faces/Surprise.jpg" alt="" title="Surprise" align=center>
-<center>Surprise</center></td>
+<center><strong>Surprise</strong></center></td>
 <td><img src="../images/faces/Contempt.jpg" alt="" title="Contempt" align=center>
-<center>Contempt</center></td>
+<center><strong>Contempt</strong></center></td>
 </tr>
 </table>
 
@@ -46,53 +46,53 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 <table>
 <tr>
 <td><img src="../images/faces/Attention.jpg" alt="" title="Attention" align=center>
-<center>Attention</center>
+<center><strong>Attention</strong></center>
 Measure of point of focus of the user based on the head orientation</td>
 <td><img src="../images/faces/Brow%20Furrow.jpg" alt="" title="Brow Furrow" align=center>
-<center>Brow Furrow</center>
+<center><strong>Brow Furrow</strong></center>
 Both eyebrows moving lower and closer together</td>
 <td><img src="../images/faces/Brow%20Raise.jpg" alt="" title="Brow Raise" align=center>
-<center>Brow Raise</center>
+<center><strong>Brow Raise</strong></center>
 Both eyebrows moved upwards</td>
 <td><img src="../images/faces/Inner%20Brow%20Raise.jpg" alt="" title="Inner Brow Raise" align=center>
-<center>Inner Brow Raise</center>
+<center><strong>Inner Brow Raise</strong></center>
 The inner corners of eyebrows are raised</td>
 <td><img src="../images/faces/Eye%20Closure.jpg" alt="" title="Eye Closure" align=center>
-<center>Eye Closure</center>
+<center><strong>Eye Closure</strong></center>
 Both eye lids closed</td>
 </tr>
 <tr>
 <td><img src="../images/faces/Nose%20Wrinkle.jpg" alt="" title="Nose Wrinkle" align=center>
-<center>Nose Wrinkle</center>
+<center><strong>Nose Wrinkle</strong></center>
 Wrinkles appear along the sides and across the root of the nose due to skin pulled upwards</td>
 <td><img src="../images/faces/Upper%20Lip%20Raise.jpg" alt="" title="Upper Lip Raise" align=center>
-<center>Upper Lip Raise</center>
+<center><strong>Upper Lip Raise</strong></center>
 The upper lip moving upwards</td>
 <td><img src="../images/faces/Lip%20Suck.jpg" alt="" title="Lip Suck" align=center>
-<center>Lip Suck</center>
+<center><strong>Lip Suck</strong></center>
 Suck the red parts of the lips and the adjacent skin into the mouth covering the teeth</td>
 <td><img src="../images/faces/Lip%20Pucker.jpg" alt="" title="Lip Pucker" align=center>
-<center>Lip Pucker</center>
+<center><strong>Lip Pucker</strong></center>
 The lips pushed foward</td>
 <td><img src="../images/faces/Lip%20Press.jpg" alt="" title="Lip Press" align=center>
-<center>Lip Press</center>
+<center><strong>Lip Press</strong></center>
 Pressing the lips together without pushing up the chin boss</td>
 </tr>
 <tr>
 <td><img src="../images/faces/Mouth%20Open.jpg" alt="" title="Mouth Open" align=center>
-<center>Mouth Open</center>
+<center><strong>Mouth Open</strong></center>
 Lower lip dropped downwards</td>
 <td><img src="../images/faces/Lip%20Depressor.jpg" alt="" title="Lip Depressor" align=center>
-<center>Lip Corner Depressor</center>
+<center><strong>Lip Corner Depressor</strong></center>
 Lip corners dropping downwards (frown)</td>
 <td><img src="../images/faces/Chin%20Raise.jpg" alt="" title="Chin Raise" align=center>
-<center>Chin Raise</center>
+<center><strong>Chin Raise</strong></center>
 The chin boss and the lower lip pushed upwards</td>
 <td><img src="../images/faces/Smirk.jpg" alt="" title="Smirk" align=center>
-<center>Smirk</center>
+<center><strong>Smirk</strong></center>
 Left or right lip corners pulled upwards and outwards</td>
 <td><img src="../images/faces/Smile.jpg" alt="" title="Smile" align=center>
-<center>Smile</center>
+<center><strong>Smile</strong></center>
 Lip corners pulling outwards and upwards towards the ears, combined with other indicators from around the face</td>
 </tr>
 </table>
@@ -105,15 +105,15 @@ In addition, we also expose a composite emotional metric called valence which gi
 
 ## Face Tracking and Head Angle Estimation
 
-In addition to the emotion and facial expression metrics, the SDKs include our latest face tracker which calculates the following metrics:
-
 <img src="{{ "/images/graphic2.png" | prepend: site.baseurl }}" align="right">
 
-<strong>Facial Landmarks Estimation</strong>
+In addition to the emotion and facial expression metrics, the SDKs include our latest face tracker which calculates the following metrics:
+
+<strong>Facial Landmarks Estimation</strong>  
 The tracking of the cartesian coordinates for the [facial landmarks](/fpi/).
 
-<strong>Head Orientation Estimation</strong>
+<strong>Head Orientation Estimation</strong>  
 Estimation of the head position in a 3-D space in Euler angles (pitch, yaw, roll).
 
-<strong>Interocular Distance</strong>
+<strong>Interocular Distance</strong>  
 The distance between the two outer eye corners.

@@ -8,12 +8,13 @@ last_updated:
 summary: 
 metadata: false
 ---
-
 <img src="{{ "/images/graphic4.png" | prepend: site.baseurl }}" align="right">
 
+<br></br>
 We continuously train and test our emotion-sensing metrics to provide the most reliable and accurate classifiers. Our key emotions achieve accuracy in the high 90th percentile.
-
+<br></br>
 Our emotion metrics are trained and tested on very difficult datasets.  We sampled our test set, comprising hundred of thousands of facial frames, from more than 3.2 million facial videos.  This data is from more than 75 countries, representing real-world, spontaneous facial expressions, made under challenging conditions, such as varying lighting, different head movements, and variances in facial features due to ethnicity, age, gender, facial hair and glasses. 
+<br></br>
 
 ## How do we measure our accuracy?
 

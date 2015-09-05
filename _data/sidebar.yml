@@ -13,14 +13,6 @@ entries:
       print: true
 
       items:
-        - title: Home
-          url: /index.html
-          audience: writer, designer
-          platform: all
-          product: all
-          version: all
-          print: true
-
         - title: Getting started
           url: /getting_started/
           audience: writer, designer
@@ -52,6 +44,15 @@ entries:
           product: all
           version: all
           print: true
+
+        - title: On Privacy
+          url: /privacy/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
 
     - title: Platforms
       audience: writer, designer

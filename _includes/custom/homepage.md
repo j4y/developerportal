@@ -28,5 +28,12 @@ The Affdex SDK is built on Affectiva's industry-leading patented science. It’s
 Follow <a href=http://www.affdex.com/clients/affdex-resources/ target=_blank>this link</a> for more information on the <a href=http://www.affectiva.com/research-on-emotion/ target=_blank>science</a> underlying the Affdex SDK.
 
 Available for [Android]({{ site.baseurl }}/android/), [iOS]({{ site.baseurl }}/ios/), and [Windows]({{ site.baseurl }}/windows/)  platforms.
+
+## A Final Note
+
+We are excited that you are using our Affdex SDK. We are passionate about bringing emotional intelligence to the digital world, and look forward to seeing what amazing new apps and digital experiences you will emotion-enable using our technology.
+
+We are always interested in promoting and marketing new solutions built with our SDK. Just send us a note at sdk@affectiva.com if you would like to share with us what you are working on.
+
 <br></br>
 Next step: [Getting Started]({{ site.baseurl }}/getting_started/)
