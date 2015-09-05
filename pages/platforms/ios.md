@@ -66,34 +66,45 @@ The <code>AFDXFace</code> object encapsulates the notion of a single face. This 
 * 	faceId: this is a numeric value, guaranteed to be unique for a particular face as long as it remains visible in successive frames.
 * 	facePoints: this is an array of CGPoint objects, each of which denotes a facial landmark on the face. The point is relative to the coordinate space of the image processed. There can be many such points in this array.
 * 	faceBounds: this is a CGRect which describes the bounding box of the face.
-* 	angerScore: this is a number between 0 and 100, indicating the intensity of the anger on the face.
-* 	contemptScore: this is a number between 0 and 100, indicating the intensity of the contempt on the face.
-* 	disgustScore: this is a number between 0 and 100, indicating the intensity of the disgust on the face.
-* 	expressivenessScore: this is a number between 0 and 100, indicating the intensity of the expressiveness on the face.
-* 	fearScore: this is a number between 0 and 100, indicating the intensity of the fear on the face.
-* 	joyScore: this is a number between 0 and 100, indicating the intensity of the joy on the face.
-* 	sadnessScore: this is a number between 0 and 100, indicating the intensity of the sadness on the face.
-* 	surpriseScore: this is a number between 0 and 100, indicating the intensity of the surprise on the face.
-* 	valenceScore: this is a number between 0 and 100, indicating the intensity of the valence on the face.
-* 	attentionScore: this is a number between 0 and 100, indicating the intensity of the attention on the face.
-* 	browFurrowScore: this is a number between 0 and 100, indicating the intensity of the brows as they are lowered on the face.
-* 	browRaiseScore: this is a number between 0 and 100, indicating the intensity of the brows as they are raised on the face.
-* 	chinRaiseScore: this is a number between 0 and 100, indicating the intensity of the chin as it is raised on the face.
-* 	eyeClosureScore: this is a number between 0 and 100, indicating the intensity of the eyes as they are opened and closed  on the face.
-* 	innerBrowRaiseScore: this is a number between 0 and 100, indicating the intensity of the inner brows as they are raised on the face.
-* 	lipCornerDepressorScore: this is a number between 0 and 100, indicating the intensity of the lip corners as they turn downward on the face. This is usually an indicator of frowning.
-* 	lipPuckerScore: this is a number between 0 and 100, indicating the intensity of the lips as they are puckered on the face.
-* 	lipSuckScore: this is a number between 0 and 100, indicating the intensity of the lips as they are sucked on the face.
-* 	mouthOpenScore: this is a number between 0 and 100, indicating the intensity of the mouth as it is opened and closed on the face.
-* 	noseWrinkleScore: this is a number between 0 and 100, indicating the intensity of the nose as it wrinkles on the face.
-* 	smileScore: this is a number between 0 and 100, indicating the intensity of the smile on the face.
-* 	smirkScore: this is a number between 0 and 100, indicating the intensity of smirk on the face.
-* 	upperLipRaiseScore: this is a number between 0 and 100, indicating the intensity of upper lip raise on the face.
-* 	interOcularDistanceScore: this is a number indicating the distance between the eyes.
-* 	headAngleLeftRightScore: this is a number between -30 and 30 degrees indicating the left/right head angle (yaw) of the head.
-* 	headAngleRollScore: this is a number between -60 and 60 degrees indicating the head angle roll of the head.
-* 	headAngleUpDownScore: this is a number between -30 and 30 degrees indicating the up/down head angle (pitch) of the head.
 
+<table border="1" style="width:100%">
+<tr><th>Emotion Classifier</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
+<tr><td>Anger</td><td>anger</td><td>angerScore</td><td>0 - 100</td></tr>
+<tr><td>Contempt</td><td>contempt</td><td>contemptScore</td><td>0 - 100</td></tr>
+<tr><td>Disgust</td><td>disgust</td><td>disgustScore</td><td>0 - 100</td></tr>
+<tr><td>Expressiveness</td><td>expressiveness</td><td>expressivenessScore</td><td>0 - 100</td></tr>
+<tr><td>Fear</td><td>fear</td><td>fearScore</td><td>0 - 100</td></tr>
+<tr><td>Joy</td><td>joy</td><td>joyScore</td><td>0 - 100</td></tr>
+    <tr><td>Sadness</td><td>sadness</td><td>sadnessScore</td><td>0 - 100</td></tr>
+<tr><td>Surprise</td><td>surprise</td><td>surpriseScore</td><td>0 - 100</td></tr>
+<tr><td>Valence</td><td>valence</td><td>valenceScore</td><td>-100 - 100</td></tr>
+</table>
+
+<table border="1" style="width:100%">
+<tr><th>Expression Classifier</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
+<tr><td>Attention</td><td>attention</td><td>attentionScore</td><td>0 - 100</td></tr>
+<tr><td>Brow Furrow</td><td>browFurrow</td><td>browFurrowScore</td><td>0 - 100</td></tr>
+<tr><td>Brow Raise</td><td>browRaise</td><td>browRaiseScore</td><td>0 - 100</td></tr>
+<tr><td>Chin Raise</td><td>chinRaise</td><td>chinRaiseScore</td><td>0 - 100</td></tr>
+<tr><td>Eye Closure</td><td>eyeClosure</td><td>eyeClosureScore</td><td>0 - 100</td></tr>
+<tr><td>Inner Brow Raise</td><td>innerBrowRaise</td><td>innerBrowRaiseScore</td><td>0 - 100</td></tr>
+<tr><td>Lip Corner Depressor</td><td>lipCornerDepressor</td><td>lipCornerDepressorScore</td><td>0 - 100</td></tr>
+<tr><td>Lip Pucker</td><td>lipPucker</td><td>lipPuckerScore</td><td>0 - 100</td></tr>
+<tr><td>Lip Suck</td><td>lipSuck</td><td>lipSuckScore</td><td>0 - 100</td></tr>
+<tr><td>Mouth Open</td><td>mouthOpen</td><td>mouthOpenScore</td><td>0 - 100</td></tr>
+<tr><td>Nose Wrinkle</td><td>noseWrinkle</td><td>noseWrinkleScore</td><td>0 - 100</td></tr>
+<tr><td>Smile</td><td>smile</td><td>smileScore</td><td>0 - 100</td></tr>
+<tr><td>Smirk</td><td>smirk</td><td>smirkScore</td><td>0 - 100</td></tr>
+<tr><td>Upper Lip Raise</td><td>upperLipRaise</td><td>upperLipRaiseScore</td><td>0 - 100</td></tr>
+<tr><td>Inter Ocular Distance</td><td>interOcularDistance</td><td>interOcularDistanceScore</td><td>0 - 100</td></tr>
+</table>
+
+<table border="1" style="width:100%">
+<tr><th>Head Angle Classifier</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
+<tr><td>Head Angle Left/Right (Yaw)</td><td>headAngleLeftRight</td><td>headAngleLeftRightScore</td><td>-30 - 30</td></tr>
+<tr><td>Head Angle Roll (Roll)</td><td>headAngleRoll</td><td>headAngleRoll</td><td>-60 - 60</td></tr>
+<tr><td>Head Angle Up/Down (Pitch)</td><td>headAngleUpDown</td><td>headAngleUpDownScore</td><td>-30 - 30</td></tr>
+</table>
 
 There’s no better way to show how to use the Affdex SDK than through a set of examples. The following code snippets demonstrate how easy it is to obtain facial expression results using your device’s camera, a video file, or from images.
 
@@ -116,11 +127,6 @@ Using the built-in camera is a common way to obtain video for facial expression 
 ```
 
 This method takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, and a parameter of type <code>AFDXCameraType</code> (<code>AFDX_CAMERA_FRONT</code> or <code>AFDX_CAMERA_BACK</code>) which specifies the camera to use.
-The maximum number of faces detected is set to 1. If you want to override this default, use this initializer:  
-
-```
-- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingCamera:(AFDXCameraType)camera maximumFaces:(NSUInteger)maximumFaces;
-```
 
 To optimize performance, you should set this to the maximum number of expected faces that you anticipate.
 
@@ -133,18 +139,13 @@ Another way to feed video into the detector is via a video file that is stored o
 ```
 
 This initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, as well as a path to a video file (with an extension of .mp4 or .m4v) on the device.
-The maximum number of faces detected is set to 1. If you want to override this default, use this initializer:  
-
-```
-- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingFile:(NSString *)path maximumFaces:(NSUInteger)maximumFaces;
-```
 
 To optimize performance, you should should set this to the maximum number of expected faces that you anticipate.
 
 ### Images 
 
 Affdex SDK also allows you to process images rather than video. Images can be discrete, or unrelated, or they can be frames extracted from video in which case they're continuous, or related, images.
-If you have a library of facial images captured independently of one another then you would use the discrete option. This permits Affdex SDK to reset its baselining algorithm between images.
+If you have a library of facial images captured independently of one another then you would use the discrete option.
 A scenario illustrating the use of continuous image processing is when your app may record faces on a lengthy basis and, for storage efficiency purposes, you store only one frame per second rather than the standard 30 FPS (the default for iPhones). The resulting images are related and saving one frame per second provides you with sufficient granularity for your app's purpose.
 Processing either discrete or continuous images does not entail the use of the device camera so you can use Affdex SDK to process images while your device camera is in use.  
 
@@ -153,26 +154,23 @@ Processing either discrete or continuous images does not entail the use of the d
 ```
 
 Like the other methods, this initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol. The second parameter is a flag that the detector uses to determine whether discrete images will be used or not. This aids the detector to optimize processing of the image flow. If you intend to pass related sequential images such as images arising from a video source to the detector, then set this parameter to <code>NO</code>. If you want the detector to analyze a series of unrelated images, then set this parameter to <code>YES</code>. 
-The maximum number of faces detected is set to 1. If you want to override this default, use this initializer:  
-
-```
-- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingDiscreteImages:(BOOL)discrete maximumFaces:(NSUInteger)maximumFaces;
-```
 
 To optimize performance, you should should set this to the maximum number of expected faces that you anticipate.
 
 ## Step 2. Establish Object Properties
 
 Now that the <code>AFDXDetector</code> object is created, you next establish properties necessary for its operation.
-The first step is to specify which classifiers you wish to activate and process. Classifiers employ the machine learning algorithms that yield expression metrics for the facial expressions you specify.  Affdex expression metrics are described in detail in the Introduction to Affdex SDK for iOS documentation. By default, all classifiers are disabled. Here, we’ll turn on a few of the supported classifiers:  
+The first step is to specify which classifiers you wish to activate and process. Affdex expression metrics are described in detail in the [Metrics](/metrics) documention. By default, all classifiers are disabled. Here, we’ll turn on a few of the supported classifiers:  
 
 ```
+// turning on a few emotions
+detector.joy = YES;
+detector.anger = YES;
+
+// turning on a few expressions
 detector.smile = YES;
 detector.browRaise = YES;
 detector.browFurrow = YES;
-detector.lipCornerDepressor = YES;
-detector.valence = YES;
-detector.engagement = YES;
 ```
 
 If you want to turn on all emotions and expressions, you can use the following convenience methods:
@@ -192,7 +190,7 @@ pathForResource:@"sdk" ofType:@"license"];
 If you plan to use the camera to process facial frames using the Affdex SDK, you can specify the maximum number of frames per second. This is helpful to balance battery life with your processing requirements. The default (and recommended) rate is 5 frames per second, but you may also set it lower if you are using an older device such as an iPad 2, and need additional performance.  
 
 ```
-detector.maxProcessRate = 2.0;
+detector.maxProcessRate = 8.0;
 ```
 
 ## Step 3. Start the Detector
@@ -292,5 +290,7 @@ When the array of faces comes into the delegate method, your application can int
 }
 ```
 
-In the above code snippet, the delegate method will call one of two instance methods depending on the value of the <code>faces</code> dictionary. The <code>unprocessedImageReady:image:atTime:</code> method receives unprocessed frames while the <code>processedImageReady:image:faces:atTime:</code> method receives the processed ones. In that method, you can check the metric values for  all <code>AFDXFace</code> objects in the dictionary is examined. The value extracted from the metric should be checked for NaN (not a number) which indicates that the detector has not been instructed to classify that expression.
-For multiple face detection, it is important to keep in mind that each face has its own face identifier (a unique number) which is tracked as long as that face remains in the image and does not "cross over" another face. If one face's bounding box collides with another face's bounding box from one frame to the next (in video or non-discrete image mode), the face tracker may assign a different face ID to those faces.
+In the above code snippet, the delegate method will call one of two instance methods depending on the value of the <code>faces</code> dictionary. The <code>unprocessedImageReady:image:atTime:</code> method receives unprocessed frames while the <code>processedImageReady:image:faces:atTime:</code> method receives the processed ones. In that method, you can check the metric values for  all <code>AFDXFace</code> objects in the dictionary is examined. The value extracted from the metric should be checked for NaN (not a number) which indicates that the detector has not been instructed to detect that emotion or expression.
+
+<!-- For multiple face detection, it is important to keep in mind that each face has its own face identifier (a unique number) which is tracked as long as that face remains in the image and does not "cross over" another face. If one face's bounding box collides with another face's bounding box from one frame to the next (in video or non-discrete image mode), the face tracker may assign a different face ID to those faces.
+-->
