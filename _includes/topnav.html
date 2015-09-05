@@ -1,4 +1,4 @@
-<!-- Send feedback function -->
+<!-- Send feedback function
 <script>
     function SendLinkByMail(href) {
         var subject= "{{site.title}} {{site.version}} documentation feedback";
@@ -12,7 +12,8 @@
         window.location.href = uri;
     }
 </script>
-
+-->
+ 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
    <div class="container topnavlinks">
@@ -44,8 +45,9 @@
           {% endif %}
         {% endfor %}
       {% endfor %}
+      <!-- feedback function display
       {% if site.feedback_email %}<li><a class="fa fa-envelope-o mailto" href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B"> Feedback</a></li>{% endif %}
-
+       -->
 
       <!-- entries with drop-downs appear here -->
       <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->

@@ -4,8 +4,8 @@
 topnav:
 - title: Topnav
   subcategories:
-    - title: About
-      url: /about/
+    - title: Affectiva
+      external_url: http://www.affectiva.com
       audience: writer, designer
       platform: all
       product: all
