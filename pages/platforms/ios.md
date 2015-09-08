@@ -55,17 +55,17 @@ For an example on how to do this, see the <a href=https://github.com/Affectiva/i
 
 ## Using the SDK
 
-In order to utilize the SDK, your app should link to the provided <code>Affdex.framework</code> framework, and include the Objective-C header file <code>Affdex/Affdex.h</code>. This header file defines the <code>AFDXDetector</code> class which contains the facial expression detector logic as well as the <code>AFDXFace</code> object.
+In order to utilize the SDK, your app should link to the provided <code>Affdex.framework</code> framework. Choose the appropriate framework for your specific development situation (Device, Simulator, or Universal) Your code must include the Objective-C header file <code>Affdex/Affdex.h</code>. 
 
-The framework contains all of the necessary code for the SDK and will need to be linked to your app. Choose the appropriate framework for your specific development situation (Device, Simulator, or Universal).
+Since the function of the SDK is to detect emotions and expressions, one of the key tasks is the examination of images for a face. The <code>AFDXDetector</code> combines face detection, tracking and expression classification to do this. An image may contain no faces, one face, or many faces. This class will currently detect only one face and and deliver information on that face to your app, including the emotions and expressions that the face is making.
 
-Since the function of the SDK is to detect emotions and expressions, one of the key tasks is the examination of images for a face. The <code>AFDXDetector</code> combines face detection, tracking and expression classification to do this.
-An image may contain no faces, one face, or many faces. The <code>AFDXDetector</code> will currently detect only one face and and deliver information on that face to your app, including the emotions and expressions that the face is making.
-The <code>AFDXFace</code> object encapsulates the notion of a single face. This object contains a number of properties about a face that is found in an image:  
+Also defined in the header file is the <code>AFDXFace</code> object, which encapsulates the properties of a single face:  
 
-* 	faceId: this is a numeric value, guaranteed to be unique for a particular face as long as it remains visible in successive frames.
-* 	facePoints: this is an array of CGPoint objects, each of which denotes a facial landmark on the face. The point is relative to the coordinate space of the image processed. There can be many such points in this array.
-* 	faceBounds: this is a CGRect which describes the bounding box of the face.
+* 	<strong>faceId</strong>: this is a numeric value, guaranteed to be unique for a particular face as long as it remains visible in successive frames.
+* 	<strong>facePoints</strong>: this is an array of CGPoint objects, each of which denotes a facial landmark on the face. The point is relative to the coordinate space of the image processed. There can be many such points in this array.
+* 	<strong>faceBounds</strong>: this is a CGRect which describes the bounding box of the face.
+
+The emotion and expression values for the face are represented as properties of type <code>CGFloat</code> and end in Score (e.g. <code>fearScore</code>). The following tables show property names of both the emotions and the expressions supported in the <code>AFDXFace</code> object, as as well as the score property name and the range for the score.
 
 <table border="1" style="width:100%">
 <tr><th>Emotion Classifier</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
@@ -98,6 +98,8 @@ The <code>AFDXFace</code> object encapsulates the notion of a single face. This 
 <tr><td>Upper Lip Raise</td><td>upperLipRaise</td><td>upperLipRaiseScore</td><td>0 - 100</td></tr>
 <tr><td>Inter Ocular Distance</td><td>interOcularDistance</td><td>interOcularDistanceScore</td><td>0 - 100</td></tr>
 </table>
+
+The <code>AFDXFace</code> class also contains the angle (in degrees) of the face.
 
 <table border="1" style="width:100%">
 <tr><th>Head Angle Classifier</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
@@ -160,7 +162,7 @@ To optimize performance, you should should set this to the maximum number of exp
 ## Step 2. Establish Object Properties
 
 Now that the <code>AFDXDetector</code> object is created, you next establish properties necessary for its operation.
-The first step is to specify which classifiers you wish to activate and process. Affdex expression metrics are described in detail in the [Metrics](/metrics) documention. By default, all classifiers are disabled. Here, we’ll turn on a few of the supported classifiers:  
+The first step is to specify which classifiers you wish to activate and process. Affdex expression metrics are described in detail in the [Metrics](/metrics) documention. By default, all classifiers are disabled. Here, we’ll turn on a few classifiers:  
 
 ```
 // turning on a few emotions
@@ -183,8 +185,7 @@ If you want to turn on all emotions and expressions, you can use the following c
 You must also specify a path to your license file. This file is provided by Affectiva when you register for the SDK, and must be added to your Xcode project. Xcode will copy the license file to the resources area of the app bundle; you can set the licensePath property as follows:  
 
 ```
-detector.licensePath = [[NSBundle mainBundle] 
-pathForResource:@"sdk" ofType:@"license"];
+detector.licensePath = [[NSBundle mainBundle] pathForResource:@"sdk" ofType:@"license"];
 ```
 
 If you plan to use the camera to process facial frames using the Affdex SDK, you can specify the maximum number of frames per second. This is helpful to balance battery life with your processing requirements. The default (and recommended) rate is 5 frames per second, but you may also set it lower if you are using an older device such as an iPad 2, and need additional performance.  
@@ -261,7 +262,7 @@ When the array of faces comes into the delegate method, your application can int
         {
             // do something with the value...
         }
-        if (isnam(face.browRaise) == NO)
+        if (isnan(face.browRaise) == NO)
         {
             // do something with the value...
         } 
@@ -290,7 +291,7 @@ When the array of faces comes into the delegate method, your application can int
 }
 ```
 
-In the above code snippet, the delegate method will call one of two instance methods depending on the value of the <code>faces</code> dictionary. The <code>unprocessedImageReady:image:atTime:</code> method receives unprocessed frames while the <code>processedImageReady:image:faces:atTime:</code> method receives the processed ones. In that method, you can check the metric values for  all <code>AFDXFace</code> objects in the dictionary is examined. The value extracted from the metric should be checked for NaN (not a number) which indicates that the detector has not been instructed to detect that emotion or expression.
+In the above code snippet, the delegate method will call one of two instance methods depending on the value of the <code>faces</code> dictionary. The <code>unprocessedImageReady:image:atTime:</code> method receives unprocessed frames while the <code>processedImageReady:image:faces:atTime:</code> method receives the processed ones. In that method, you can check the metric values for  all <code>AFDXFace</code> objects in the dictionary. The value extracted from the metric should be checked for NaN (not a number) which indicates that the detector has not been instructed to detect that emotion or expression.
 
 <!-- For multiple face detection, it is important to keep in mind that each face has its own face identifier (a unique number) which is tracked as long as that face remains in the image and does not "cross over" another face. If one face's bounding box collides with another face's bounding box from one frame to the next (in video or non-discrete image mode), the face tracker may assign a different face ID to those faces.
 -->
