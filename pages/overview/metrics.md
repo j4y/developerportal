@@ -14,24 +14,24 @@ The face provides a rich canvas of emotion. Humans are innately programmed to ex
 
 ## Emotions
 
-<table>
+<table border="0">
 <tr>
-<td><img src="../images/faces/Anger.jpg" alt="" title="Anger" align=center>
-<center><strong>Anger</strong></center></td>
-<td><img src="../images/faces/Sadness.jpg" alt="" title="Sadness" align=center>
-<center><strong>Sadness</strong></center></td>
-<td><img src="../images/faces/Disgust.jpg" alt="" title="Disgust" align=center>
-<center><strong>Disgust</strong></center></td>
-<td><img src="../images/faces/Fear.jpg" alt="" title="Fear" align=center>
-<center><strong>Fear</strong></center></td>
+<td><font size="2"><img src="../images/faces/Anger.jpg" alt="" title="Anger" align=center>
+<center><strong>Anger</strong></center></font></td>
+<td><font size="2"><img src="../images/faces/Sadness.jpg" alt="" title="Sadness" align=center>
+<center><strong>Sadness</strong></center></font></td>
+<td><font size="2"><img src="../images/faces/Disgust.jpg" alt="" title="Disgust" align=center>
+<center><strong>Disgust</strong></center></font></td>
+<td><font size="2"><img src="../images/faces/Fear.jpg" alt="" title="Fear" align=center>
+<center><strong>Fear</strong></center></font></td>
 </tr>
 <tr>
-<td><img src="../images/faces/Joy.jpg" alt="" title="Joy" align=center>
-<center><strong>Joy</strong></center></td>
-<td><img src="../images/faces/Surprise.jpg" alt="" title="Surprise" align=center>
-<center><strong>Surprise</strong></center></td>
-<td><img src="../images/faces/Contempt.jpg" alt="" title="Contempt" align=center>
-<center><strong>Contempt</strong></center></td>
+<td><font size="2"><img src="../images/faces/Joy.jpg" alt="" title="Joy" align=center>
+<center><strong>Joy</strong></center></font></td>
+<td><font size="2"><img src="../images/faces/Surprise.jpg" alt="" title="Surprise" align=center>
+<center><strong>Surprise</strong></center></font></td>
+<td><font size="2"><img src="../images/faces/Contempt.jpg" alt="" title="Contempt" align=center>
+<center><strong>Contempt</strong></center></font></td>
 </tr>
 </table>
 
@@ -43,57 +43,57 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 
 ## Facial Expressions 
 
-<table>
+<table border="0">
 <tr>
-<td><img src="../images/faces/Attention.jpg" alt="" title="Attention" align=center>
-<center><strong>Attention</strong></center>
-Measure of point of focus of the user based on the head orientation</td>
-<td><img src="../images/faces/Brow%20Furrow.jpg" alt="" title="Brow Furrow" align=center>
-<center><strong>Brow Furrow</strong></center>
-Both eyebrows moving lower and closer together</td>
-<td><img src="../images/faces/Brow%20Raise.jpg" alt="" title="Brow Raise" align=center>
-<center><strong>Brow Raise</strong></center>
-Both eyebrows moved upwards</td>
-<td><img src="../images/faces/Inner%20Brow%20Raise.jpg" alt="" title="Inner Brow Raise" align=center>
-<center><strong>Inner Brow Raise</strong></center>
-The inner corners of eyebrows are raised</td>
-<td><img src="../images/faces/Eye%20Closure.jpg" alt="" title="Eye Closure" align=center>
-<center><strong>Eye Closure</strong></center>
-Both eye lids closed</td>
+<td><font size="2"><img src="../images/faces/Attention.jpg" alt="" title="Attention" align=center>
+<center><strong>Attention</strong></center><font size="1">
+<center>Measure of point of focus of the user based on the head orientation</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Brow%20Furrow.jpg" alt="" title="Brow Furrow" align=center>
+<center><strong>Brow Furrow</strong></center><font size="1">
+<center>Both eyebrows moving lower and closer together</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Brow%20Raise.jpg" alt="" title="Brow Raise" align=center>
+<center><strong>Brow Raise</strong></center><font size="1">
+<center>Both eyebrows moved upwards</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Inner%20Brow%20Raise.jpg" alt="" title="Inner Brow Raise" align=center>
+<center><strong>Inner Brow Raise</strong></center><font size="1">
+<center>The inner corners of eyebrows are raised</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Eye%20Closure.jpg" alt="" title="Eye Closure" align=center>
+<center><strong>Eye Closure</strong></center><font size="1">
+<center>Both eye lids closed</center></font></font></td>
 </tr>
 <tr>
-<td><img src="../images/faces/Nose%20Wrinkle.jpg" alt="" title="Nose Wrinkle" align=center>
-<center><strong>Nose Wrinkle</strong></center>
-Wrinkles appear along the sides and across the root of the nose due to skin pulled upwards</td>
-<td><img src="../images/faces/Upper%20Lip%20Raise.jpg" alt="" title="Upper Lip Raise" align=center>
-<center><strong>Upper Lip Raise</strong></center>
-The upper lip moving upwards</td>
-<td><img src="../images/faces/Lip%20Suck.jpg" alt="" title="Lip Suck" align=center>
-<center><strong>Lip Suck</strong></center>
-Suck the red parts of the lips and the adjacent skin into the mouth covering the teeth</td>
-<td><img src="../images/faces/Lip%20Pucker.jpg" alt="" title="Lip Pucker" align=center>
-<center><strong>Lip Pucker</strong></center>
-The lips pushed foward</td>
-<td><img src="../images/faces/Lip%20Press.jpg" alt="" title="Lip Press" align=center>
-<center><strong>Lip Press</strong></center>
-Pressing the lips together without pushing up the chin boss</td>
+<td><font size="2"><img src="../images/faces/Nose%20Wrinkle.jpg" alt="" title="Nose Wrinkle" align=center>
+<center><strong>Nose Wrinkle</strong></center><font size="1">
+<center>Wrinkles appear along the sides and across the root of the nose due to skin pulled upwards</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Upper%20Lip%20Raise.jpg" alt="" title="Upper Lip Raise" align=center>
+<center><strong>Upper Lip Raise</strong></center><font size="1">
+<center>The upper lip moving upwards</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Lip%20Suck.jpg" alt="" title="Lip Suck" align=center>
+<center><strong>Lip Suck</strong></center><font size="1">
+<center>Suck the red parts of the lips and the adjacent skin into the mouth covering the teeth</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Lip%20Pucker.jpg" alt="" title="Lip Pucker" align=center>
+<center><strong>Lip Pucker</strong></center><font size="1">
+<center>The lips pushed foward</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Lip%20Press.jpg" alt="" title="Lip Press" align=center>
+<center><strong>Lip Press</strong></center><font size="1">
+<center>Pressing the lips together without pushing up the chin boss</center></font></font></td>
 </tr>
 <tr>
-<td><img src="../images/faces/Mouth%20Open.jpg" alt="" title="Mouth Open" align=center>
-<center><strong>Mouth Open</strong></center>
-Lower lip dropped downwards</td>
-<td><img src="../images/faces/Lip%20Depressor.jpg" alt="" title="Lip Depressor" align=center>
-<center><strong>Lip Corner Depressor</strong></center>
-Lip corners dropping downwards (frown)</td>
-<td><img src="../images/faces/Chin%20Raise.jpg" alt="" title="Chin Raise" align=center>
-<center><strong>Chin Raise</strong></center>
-The chin boss and the lower lip pushed upwards</td>
-<td><img src="../images/faces/Smirk.jpg" alt="" title="Smirk" align=center>
-<center><strong>Smirk</strong></center>
-Left or right lip corners pulled upwards and outwards</td>
-<td><img src="../images/faces/Smile.jpg" alt="" title="Smile" align=center>
-<center><strong>Smile</strong></center>
-Lip corners pulling outwards and upwards towards the ears, combined with other indicators from around the face</td>
+<td><font size="2"><img src="../images/faces/Mouth%20Open.jpg" alt="" title="Mouth Open" align=center>
+<center><strong>Mouth Open</strong></center><font size="1">
+<center>Lower lip dropped downwards</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Lip%20Depressor.jpg" alt="" title="Lip Depressor" align=center>
+<center><strong>Lip Corner Depressor</strong></center><font size="1">
+<center>Lip corners dropping downwards (frown)</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Chin%20Raise.jpg" alt="" title="Chin Raise" align=center>
+<center><strong>Chin Raise</strong></center><font size="1">
+<center>The chin boss and the lower lip pushed upwards</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Smirk.jpg" alt="" title="Smirk" align=center>
+<center><strong>Smirk</strong></center><font size="1">
+<center>Left or right lip corners pulled upwards and outwards</center></font></font></td>
+<td><font size="2"><img src="../images/faces/Smile.jpg" alt="" title="Smile" align=center>
+<center><strong>Smile</strong></center><font size="1">
+<center>Lip corners pulling outwards and upwards towards the ears, combined with other indicators from around the face</center></font></font></td>
 </tr>
 </table>
 
