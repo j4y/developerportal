@@ -64,6 +64,7 @@ Also defined in the header file is the <code>AFDXFace</code> object, which encap
 * 	<strong>faceId</strong>: this is a numeric value, guaranteed to be unique for a particular face as long as it remains visible in successive frames.
 * 	<strong>facePoints</strong>: this is an array of CGPoint objects, each of which denotes a facial landmark on the face. The point is relative to the coordinate space of the image processed. There can be many such points in this array.
 * 	<strong>faceBounds</strong>: this is a CGRect which describes the bounding box of the face.
+* 	<strong>interOcularDistance</strong>: this is the distance between the two outer eye corners in pixels.
 
 The emotion and expression values for the face are represented as properties of type <code>CGFloat</code> and end in Score (e.g. <code>fearScore</code>). The following tables show property names of both the emotions and the expressions supported in the <code>AFDXFace</code> object, as as well as the score property name and the range for the score.
 
