@@ -70,10 +70,10 @@ The emotion and expression values for the face are represented as properties of 
 <table border="1" style="width:100%">
 <tr><th>Emotion</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
 <tr><td>Anger</td><td>anger</td><td>angerScore</td><td>0 - 100</td></tr>
+<tr><td>Sadness</td><td>sadness</td><td>sadnessScore</td><td>0 - 100</td></tr>
 <tr><td>Disgust</td><td>disgust</td><td>disgustScore</td><td>0 - 100</td></tr>
 <tr><td>Fear</td><td>fear</td><td>fearScore</td><td>0 - 100</td></tr>
 <tr><td>Joy</td><td>joy</td><td>joyScore</td><td>0 - 100</td></tr>
-    <tr><td>Sadness</td><td>sadness</td><td>sadnessScore</td><td>0 - 100</td></tr>
 <tr><td>Surprise</td><td>surprise</td><td>surpriseScore</td><td>0 - 100</td></tr>
 <tr><td>Contempt</td><td>contempt</td><td>contemptScore</td><td>0 - 100</td></tr>
 <tr><td>Valence</td><td>valence</td><td>valenceScore</td><td>-100 - 100</td></tr>
@@ -85,18 +85,19 @@ The emotion and expression values for the face are represented as properties of 
 <tr><td>Attention</td><td>attention</td><td>attentionScore</td><td>0 - 100</td></tr>
 <tr><td>Brow Furrow</td><td>browFurrow</td><td>browFurrowScore</td><td>0 - 100</td></tr>
 <tr><td>Brow Raise</td><td>browRaise</td><td>browRaiseScore</td><td>0 - 100</td></tr>
-<tr><td>Chin Raise</td><td>chinRaise</td><td>chinRaiseScore</td><td>0 - 100</td></tr>
-<tr><td>Eye Closure</td><td>eyeClosure</td><td>eyeClosureScore</td><td>0 - 100</td></tr>
 <tr><td>Inner Brow Raise</td><td>innerBrowRaise</td><td>innerBrowRaiseScore</td><td>0 - 100</td></tr>
-<tr><td>Lip Corner Depressor</td><td>lipCornerDepressor</td><td>lipCornerDepressorScore</td><td>0 - 100</td></tr>
-<tr><td>Lip Pucker</td><td>lipPucker</td><td>lipPuckerScore</td><td>0 - 100</td></tr>
-<tr><td>Lip Suck</td><td>lipSuck</td><td>lipSuckScore</td><td>0 - 100</td></tr>
-<tr><td>Mouth Open</td><td>mouthOpen</td><td>mouthOpenScore</td><td>0 - 100</td></tr>
+<tr><td>Eye Closure</td><td>eyeClosure</td><td>eyeClosureScore</td><td>0 - 100</td></tr>
 <tr><td>Nose Wrinkle</td><td>noseWrinkle</td><td>noseWrinkleScore</td><td>0 - 100</td></tr>
-<tr><td>Smile</td><td>smile</td><td>smileScore</td><td>0 - 100</td></tr>
-<tr><td>Smirk</td><td>smirk</td><td>smirkScore</td><td>0 - 100</td></tr>
 <tr><td>Upper Lip Raise</td><td>upperLipRaise</td><td>upperLipRaiseScore</td><td>0 - 100</td></tr>
+<tr><td>Lip Suck</td><td>lipSuck</td><td>lipSuckScore</td><td>0 - 100</td></tr>
+<tr><td>Lip Pucker</td><td>lipPucker</td><td>lipPuckerScore</td><td>0 - 100</td></tr>
+<tr><td>Lip Press</td><td>lipCornerDepressor</td><td>lipCornerDepressorScore</td><td>0 - 100</td></tr>
+<tr><td>Mouth Open</td><td>mouthOpen</td><td>mouthOpenScore</td><td>0 - 100</td></tr>
+<tr><td>Lip Corner Depressor</td><td>lipCornerDepressor</td><td>lipCornerDepressorScore</td><td>0 - 100</td></tr>
+<tr><td>Chin Raise</td><td>chinRaise</td><td>chinRaiseScore</td><td>0 - 100</td></tr>
 <!-- <tr><td>Interocular Distance</td><td>interOcularDistance</td><td>interOcularDistanceScore</td><td>0 - 100</td></tr> -->
+<tr><td>Smirk</td><td>smirk</td><td>smirkScore</td><td>0 - 100</td></tr>
+<tr><td>Smile</td><td>smile</td><td>smileScore</td><td>0 - 100</td></tr>
 </table>
 
 The <code>AFDXFace</code> class also contains the angle (in degrees) of the face.
