@@ -32,4 +32,4 @@ With the SDKs, developers can emotion-enable apps and digital experiences for [A
 Please refer to the technical documentation of each of the platforms for their requirements.  
 To get started, <a href="http://www.affectiva.com/solutions/apis-sdks/" target=_blank>sign up to download</a> the SDK.
 
-Visit our GitHub page for example projects that utilize the SDK: <a href=https://github.com/Affectiva target=_blank>https://github.com/Affectiva</a>
+Visit our <a href=https://github.com/Affectiva target=_blank>GitHub page</a> for example projects that utilize the SDK.
