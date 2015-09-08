@@ -68,20 +68,20 @@ Also defined in the header file is the <code>AFDXFace</code> object, which encap
 The emotion and expression values for the face are represented as properties of type <code>CGFloat</code> and end in Score (e.g. <code>fearScore</code>). The following tables show property names of both the emotions and the expressions supported in the <code>AFDXFace</code> object, as as well as the score property name and the range for the score.
 
 <table border="1" style="width:100%">
-<tr><th>Emotion Classifier</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
+<tr><th>Emotion</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
 <tr><td>Anger</td><td>anger</td><td>angerScore</td><td>0 - 100</td></tr>
-<tr><td>Contempt</td><td>contempt</td><td>contemptScore</td><td>0 - 100</td></tr>
 <tr><td>Disgust</td><td>disgust</td><td>disgustScore</td><td>0 - 100</td></tr>
-<tr><td>Expressiveness</td><td>expressiveness</td><td>expressivenessScore</td><td>0 - 100</td></tr>
 <tr><td>Fear</td><td>fear</td><td>fearScore</td><td>0 - 100</td></tr>
 <tr><td>Joy</td><td>joy</td><td>joyScore</td><td>0 - 100</td></tr>
     <tr><td>Sadness</td><td>sadness</td><td>sadnessScore</td><td>0 - 100</td></tr>
 <tr><td>Surprise</td><td>surprise</td><td>surpriseScore</td><td>0 - 100</td></tr>
+<tr><td>Contempt</td><td>contempt</td><td>contemptScore</td><td>0 - 100</td></tr>
 <tr><td>Valence</td><td>valence</td><td>valenceScore</td><td>-100 - 100</td></tr>
+<tr><td>Engagement</td><td>expressiveness</td><td>expressivenessScore</td><td>0 - 100</td></tr>
 </table>
 
 <table border="1" style="width:100%">
-<tr><th>Expression Classifier</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
+<tr><th>Expression</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
 <tr><td>Attention</td><td>attention</td><td>attentionScore</td><td>0 - 100</td></tr>
 <tr><td>Brow Furrow</td><td>browFurrow</td><td>browFurrowScore</td><td>0 - 100</td></tr>
 <tr><td>Brow Raise</td><td>browRaise</td><td>browRaiseScore</td><td>0 - 100</td></tr>
@@ -96,16 +96,16 @@ The emotion and expression values for the face are represented as properties of 
 <tr><td>Smile</td><td>smile</td><td>smileScore</td><td>0 - 100</td></tr>
 <tr><td>Smirk</td><td>smirk</td><td>smirkScore</td><td>0 - 100</td></tr>
 <tr><td>Upper Lip Raise</td><td>upperLipRaise</td><td>upperLipRaiseScore</td><td>0 - 100</td></tr>
-<tr><td>Inter Ocular Distance</td><td>interOcularDistance</td><td>interOcularDistanceScore</td><td>0 - 100</td></tr>
+<!-- <tr><td>Interocular Distance</td><td>interOcularDistance</td><td>interOcularDistanceScore</td><td>0 - 100</td></tr> -->
 </table>
 
 The <code>AFDXFace</code> class also contains the angle (in degrees) of the face.
 
 <table border="1" style="width:100%">
-<tr><th>Head Angle Classifier</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
-<tr><td>Head Angle Left/Right (Yaw)</td><td>headAngleLeftRight</td><td>headAngleLeftRightScore</td><td>-30 - 30</td></tr>
-<tr><td>Head Angle Roll (Roll)</td><td>headAngleRoll</td><td>headAngleRoll</td><td>-60 - 60</td></tr>
-<tr><td>Head Angle Up/Down (Pitch)</td><td>headAngleUpDown</td><td>headAngleUpDownScore</td><td>-30 - 30</td></tr>
+<tr><th>Head Angle</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
+<tr><td>Left/Right (Yaw)</td><td>headAngleLeftRight</td><td>headAngleLeftRightScore</td><td>-30 - 30</td></tr>
+<tr><td>Roll</td><td>headAngleRoll</td><td>headAngleRoll</td><td>-60 - 60</td></tr>
+<tr><td>Up/Down (Pitch)</td><td>headAngleUpDown</td><td>headAngleUpDownScore</td><td>-30 - 30</td></tr>
 </table>
 
 There’s no better way to show how to use the Affdex SDK than through a set of examples. The following code snippets demonstrate how easy it is to obtain facial expression results using your device’s camera, a video file, or from images.
