@@ -1,5 +1,5 @@
 ---
-title: Face Point Indices 
+title: Facial Landmarks 
 permalink: /fpi/
 tags: 
 keywords: 

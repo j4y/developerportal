@@ -117,3 +117,6 @@ Estimation of the head position in a 3-D space in Euler angles (pitch, yaw, roll
 
 <strong>Interocular Distance</strong>  
 The distance between the two outer eye corners.
+
+<br></br>
+<br></br>

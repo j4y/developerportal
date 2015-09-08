@@ -185,7 +185,7 @@ entries:
           version: all
           print: true
 
-        - title: Facial Point Indices
+        - title: Facial Landmarks
           url: /fpi/
           audience: writer, designer
           platform: all
