@@ -8,13 +8,13 @@ platform: all
 
 version: all
 
-topnav_title: Affdex SDK Developer Portal
+topnav_title: Affdex Developer Portal
 
 topnav_version: ""
 
-homepage_title: Affdex SDK Developer Portal 
+homepage_title: Affdex Developer Portal 
 
-site_title: Affdex SDK Developer Portal
+site_title: Affdex Developer Portal
 
 tagline: " "
 

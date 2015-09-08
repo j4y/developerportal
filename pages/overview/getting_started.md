@@ -6,6 +6,7 @@ audience: writer, designer
 keywords: 
 last_updated: 
 summary: 
+metadata: false
 ---
 {% include linkrefs.html %} 
 
@@ -19,7 +20,6 @@ The SDKs include classes to help extract emotion metrics directly from any optic
 
 A recorded video file that resides on the file system of the device can also be used as an input. The SDKs include support for opening all the major video formats.
 
-A list of supported file types can be found [here]({{ site.baseurl }}/supportedfiletypes/).
 
 ### Photographs
 
@@ -29,6 +29,7 @@ The SDK also includes the capability to generate emotion metrics from individual
 
 With the SDKs, developers can emotion-enable apps and digital experiences for [Android]({{ site.baseurl }}/android/), [iOS]({{ site.baseurl }}/ios/), and [Windows]({{ site.baseurl }}/windows/) 
 
-Please refer to the technical documentation of each of the platforms for their requirements. To get started, sign up to download the SDKs through <a href="http://www.affectiva.com/solutions/apis-sdks/" target=_blank>our SDK site</a>.
+Please refer to the technical documentation of each of the platforms for their requirements.  
+To get started, <a href="http://www.affectiva.com/solutions/apis-sdks/" target=_blank>sign up to download</a> the SDK.
 
 Visit our GitHub page for example projects that utilize the SDK: <a href=https://github.com/Affectiva target=_blank>https://github.com/Affectiva</a>

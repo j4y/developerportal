@@ -1,6 +1,6 @@
 ---
-title: Sample Code
-permalink: /samplecode/
+title: Sample Apps
+permalink: /sampleapps/
 metadata: false
 ---
 <center>

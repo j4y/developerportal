@@ -24,3 +24,10 @@ topnav:
       platform: all
       product: all
       version: all
+
+    - title: Ask a Question
+      external_url: https://stackoverflow.com/tags/affdex-sdk
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all

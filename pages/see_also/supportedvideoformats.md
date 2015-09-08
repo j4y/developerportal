@@ -1,6 +1,6 @@
 ---
-title: Supported File Types
-permalink: /supportedfiletypes/
+title: Supported Video Formats
+permalink: /supportedvideoformats/
 audience: writer, designer
 tags: 
 keywords: 
@@ -10,7 +10,7 @@ metadata: false
 ---
 {% include linkrefs.html %} 
 
-## for Video Processing
+## for Video Processing using the Windows SDK 
 
 <br></br>
 
