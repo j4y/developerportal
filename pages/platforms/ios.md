@@ -142,8 +142,6 @@ Another way to feed video into the detector is via a video file that is stored o
 
 This initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, a path to a video file (with an extension of .mp4 or .m4v) on the device, and the maximum number of faces to detect (currently only one face is detected).
 
-To optimize performance, you should should set this to the maximum number of expected faces that you anticipate.
-
 ### Images 
 
 Affdex SDK also allows you to process images rather than video. Images can be discrete, or unrelated, or they can be frames extracted from video in which case they're continuous, or related, images.
