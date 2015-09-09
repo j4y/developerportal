@@ -92,7 +92,7 @@ The emotion and expression values for the face are represented as properties of 
 <tr><td>Upper Lip Raise</td><td>upperLipRaise</td><td>upperLipRaiseScore</td><td>0 - 100</td></tr>
 <tr><td>Lip Suck</td><td>lipSuck</td><td>lipSuckScore</td><td>0 - 100</td></tr>
 <tr><td>Lip Pucker</td><td>lipPucker</td><td>lipPuckerScore</td><td>0 - 100</td></tr>
-<tr><td>Lip Press</td><td>lipCornerDepressor</td><td>lipCornerDepressorScore</td><td>0 - 100</td></tr>
+<tr><td>Lip Press</td><td>lipPress</td><td>lipPressScore</td><td>0 - 100</td></tr>
 <tr><td>Mouth Open</td><td>mouthOpen</td><td>mouthOpenScore</td><td>0 - 100</td></tr>
 <tr><td>Lip Corner Depressor</td><td>lipCornerDepressor</td><td>lipCornerDepressorScore</td><td>0 - 100</td></tr>
 <tr><td>Chin Raise</td><td>chinRaise</td><td>chinRaiseScore</td><td>0 - 100</td></tr>
