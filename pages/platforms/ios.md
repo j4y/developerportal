@@ -260,11 +260,11 @@ When the array of faces comes into the delegate method, your application can int
 {
     for (AFDXFace *face in [faces allValues])
     {
-        if (isnan(face.smile) == NO)
+        if (isnan(face.smileScore) == NO)
         {
             // do something with the value...
         }
-        if (isnan(face.browRaise) == NO)
+        if (isnan(face.browRaiseScore) == NO)
         {
             // do something with the value...
         } 
