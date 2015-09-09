@@ -127,22 +127,20 @@ Each has its own specific initialization method below to create the <code>AFDXDe
 Using the built-in camera is a common way to obtain video for facial expression detection. Either the front and back camera of your iPhone, iPad or iPod Touch can be used to feed video directly to the detector using the method:  
 
 ```
-- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingCamera:(AFDXCameraType)camera;
+- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingCamera:(AFDXCameraType)camera maximumFaces:(NSUInteger)maximumFaces;
 ```
 
-This method takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, and a parameter of type <code>AFDXCameraType</code> (<code>AFDX_CAMERA_FRONT</code> or <code>AFDX_CAMERA_BACK</code>) which specifies the camera to use.
-
-To optimize performance, you should set this to the maximum number of expected faces that you anticipate.
+This method takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, a parameter of type <code>AFDXCameraType</code> (<code>AFDX_CAMERA_FRONT</code> or <code>AFDX_CAMERA_BACK</code>) which specifies the camera to use, and the maximum number of faces to detect (currently only one face is detected).
 
 ### Video File
 
 Another way to feed video into the detector is via a video file that is stored on the file system of your device:  
 
 ```
-- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingFile:(NSString *)path;
+- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingFile:(NSString *)path maximumFaces:(NSUInteger)maximumFaces;
 ```
 
-This initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, as well as a path to a video file (with an extension of .mp4 or .m4v) on the device.
+This initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, a path to a video file (with an extension of .mp4 or .m4v) on the device, and the maximum number of faces to detect (currently only one face is detected).
 
 To optimize performance, you should should set this to the maximum number of expected faces that you anticipate.
 
@@ -154,12 +152,12 @@ A scenario illustrating the use of continuous image processing is when your app 
 Processing either discrete or continuous images does not entail the use of the device camera so you can use Affdex SDK to process images while your device camera is in use.  
 
 ```
-- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingDiscreteImages:(BOOL)discrete;
+- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingDiscreteImages:(BOOL)discrete maximumFaces:(NSUInteger)maximumFaces;
 ```
 
-Like the other methods, this initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol. The second parameter is a flag that the detector uses to determine whether discrete images will be used or not. This aids the detector to optimize processing of the image flow. If you intend to pass related sequential images such as images arising from a video source to the detector, then set this parameter to <code>NO</code>. If you want the detector to analyze a series of unrelated images, then set this parameter to <code>YES</code>. 
+Like the other methods, this initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, as well as a maximum number of faces (currently only one face is detected).
 
-To optimize performance, you should should set this to the maximum number of expected faces that you anticipate.
+The second parameter is a flag that the detector uses to determine whether discrete images will be used or not. This aids the detector to optimize processing of the image flow. If you intend to pass related sequential images such as images arising from a video source to the detector, then set this parameter to <code>NO</code>. If you want the detector to analyze a series of unrelated images, then set this parameter to <code>YES</code>. 
 
 ## Step 2. Establish Object Properties
 
