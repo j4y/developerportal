@@ -193,5 +193,12 @@ entries:
           version: all
           print: true
           
-
+        - title: FAQ
+          url: /faq/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+          web: false
 
