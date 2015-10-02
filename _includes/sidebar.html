@@ -63,7 +63,7 @@
                     
 
                     {% for thirdlevel in item.thirdlevel %}
-                    {% if thirdlevel.audience contains buildAudience and web != false %}
+                    {% if thirdlevel.audience contains audience and web != false %}
                     <li class="thirdlevel"><a href="#">{{ thirdlevel.title }}</a>
                         <ul>
                             {% for deeplevel in thirdlevel.thirdlevelitems %}
