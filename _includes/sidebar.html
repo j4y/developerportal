@@ -67,15 +67,15 @@
                     <li class="thirdlevel"><a href="#">{{ thirdlevel.title }}</a>
                         <ul>
                             {% for deeplevel in thirdlevel.thirdlevelitems %}
-                            {% if deeplevel.audience contains buildAudience and item.web != false  %}
+                            {% if deeplevel.audience contains audience and deeplevel.product contains product and deeplevel.platform contains platform and deeplevel.version contains version and deeplevel.web != false %}
                             {% if deeplevel.external_url %}
                             <li><a href="{{deeplevel.external_url}}" target="_blank">{{deeplevel.title}}</a></li>
-                            {% elsif page.url contains deeplevel.url %}
-                            <li class="active"><a href="{{deeplevel.url | prepend: site.baseurl}}">{{deeplevel.title}}</a></li>
+                            {% elsif page.url == deeplevel.url %}
+                            <li class="active"><a href="{{deeplevel.url | replace: "/",""}}">{{deeplevel.title}}</a></li>
                             {% else %}
-                            <li><a href="{{deeplevel.url | prepend: site.baseurl}}">{{deeplevel.title}}</a></li>
+                            <li><a href="{{deeplevel.url | replace: "/",""}}">{{deeplevel.title}}</a></li>
                             {% endif %}
-
+                            
                             {% endif %}
                             {% endfor %}
                         </ul>
