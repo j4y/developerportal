@@ -257,12 +257,3 @@ public void onImageResults(List<Face> faces, Frame frame,float timestamp) {
     }
 }
 ```
-
-## A Note about SDK Analytics (Flurry)
-
-The Affdex SDK for Android, and therefore by extension, any application that uses it, leverages 
-the Flurry Analytics service to log events.  Due to a limitation in Flurry, an app cannot have two 
-Flurry sessions open simultaneously, each logging to different Flurry accounts.  Therefore, apps 
-that use the Affdex SDK for Android cannot also use the Flurry Analytics service themselves, as 
-doing so could result in the app's analytics events being logged to the Affectiva Flurry account, 
-or vice versa.  We are exploring ways to address this limitation in future releases.
