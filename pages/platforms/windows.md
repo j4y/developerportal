@@ -300,10 +300,15 @@ The following color formats are supported by the Frame class:
 ```
 enum class COLOR_FORMAT
 {
-  RGB,
-  BGR
+  RGB,      // 24-bit pixels with Red, Green, Blue pixel ordering
+  BGR,      // 24-bit pixels with Blue, Green, Red pixel ordering
+  RGBA,     // 32-bit pixels with Red, Green, Blue, Alpha  pixel ordering
+  BGRA,     // 24-bit pixels with Blue, Green, Red, Alpha pixel ordering
+  YUV_NV21, // 12-bit pixels with YUV information (NV21 encoding)
+  YUV_I420  // 12-bit pixels with YUV information (I420 encoding)
 };
 ```
+
 
 To retrieve the color format used to create the frame, call:  
 
