@@ -12,46 +12,6 @@ summary:
 <img src={{ "/images/windows.png" | prepend: site.baseurl }} align=right>
 
 SDK Developer Guide Release 2.0
-
-
-<!-- This version of the SDK can track the following emotions, facial expressions, and other measurements:
-
-<strong>Emotions</strong>
-
-* Basic six emotions: Joy, Sadness, Surprise, Anger, Disgust, Fear
-*  Contempt
-*  Engagement: a measure of the user's overall expressiveness
-*  Valence: a measure of the overall positivity or negativity of the user's facial expression
-
-<strong>Facial Expressions</strong>
-
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Attention, Brow Furrow, Brow Raise, Chin Raise, Eye Closure, Inner Brow Raise, Frown,
-
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Lip Press, Lip Pucker, Lip Suck, Mouth Open, Nose Wrinkle, Smile, Smirk, Upper Lip Raise
-
-<strong>Other Measurements</strong>
-
-Head orientation estimation
-
-*    Yaw: head angle turning side to side
-*    Pitch: head angle tilting up and down
-*    Roll: head angle tilting side to side  
-
-Interocular Distance: distance between the eyes.
-
-In this document, you will become familiar with integrating the Affdex SDK into your application. Please take time to read this document and feel free to give us feedback at sdk@affectiva.com.
-
-## What’s in the SDK
-
-The Affdex SDK package consists of the following:
-
-*	<strong>docs</strong>, documentation files for both the C++ and .NET APIs and licenses.
-*	<strong>bin</strong>, packaged native dynamic linked library and .NET assemblies.
-*	<strong>lib</strong>, packaged native library
-*	<strong>data</strong>, data files required for the SDK runtime.
-
-Affectiva makes source available for sample applications that use the SDK. You can find these source examples on our site: https://github.com/Affectiva/win-sdk-samples.
--->
  
 ## Requirements & Dependencies
 
@@ -300,6 +260,15 @@ The following color formats are supported by the Frame class:
 ```
 enum class COLOR_FORMAT
 {
+    RGB,
+    BGR
+};
+```
+
+<!-- commented out until future release
+```
+enum class COLOR_FORMAT
+{
   RGB,      // 24-bit pixels with Red, Green, Blue pixel ordering
   BGR,      // 24-bit pixels with Blue, Green, Red pixel ordering
   RGBA,     // 32-bit pixels with Red, Green, Blue, Alpha  pixel ordering
@@ -308,7 +277,7 @@ enum class COLOR_FORMAT
   YUV_I420  // 12-bit pixels with YUV information (I420 encoding)
 };
 ```
-
+end comment -->
 
 To retrieve the color format used to create the frame, call:  
 
