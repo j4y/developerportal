@@ -104,7 +104,8 @@ public void onCameraSizeSelected(int cameraWidth, int cameraHeight, ROTATE rotat
     int cameraPreviewWidth;
     int cameraPreviewHeight;    	
 
-    //cameraWidth and cameraHeight report the unrotated dimensions of the camera frames, so switch the width and height if necessary
+//cameraWidth and cameraHeight report the unrotated dimensions of the camera frames, so switch the width and height if necessary
+
     if (rotation == ROTATE.BY_90_CCW || rotation == ROTATE.BY_90_CW) {
     cameraPreviewWidth = cameraHeight;
     cameraPreviewHeight = cameraWidth;
@@ -113,11 +114,13 @@ public void onCameraSizeSelected(int cameraWidth, int cameraHeight, ROTATE rotat
     cameraPreviewHeight = cameraHeight;
     }
 
-    //retrieve the width and height of the ViewGroup object containing our SurfaceView (in an actual application, we would want to consider the possibility that the mainLayout object may not have been sized yet)
+//retrieve the width and height of the ViewGroup object containing our SurfaceView (in an actual application, we would want to consider the possibility that the mainLayout object may not have been sized yet)
+
     int layoutWidth = mainLayout.getWidth();
     int layoutHeight = mainLayout.getHeight();
 
-    //compute the aspect Ratio of the ViewGroup object and the cameraPreview
+//compute the aspect Ratio of the ViewGroup object and the cameraPreview
+
     float layoutAspectRatio = (float)layoutWidth/layoutHeight; 	
     float cameraPreviewAspectRatio = (float)cameraWidth/cameraHeight;
 
@@ -132,7 +135,8 @@ public void onCameraSizeSelected(int cameraWidth, int cameraHeight, ROTATE rotat
     newHeight = layoutHeight;
     }
 
-    //size the SurfaceView
+//size the SurfaceView
+
     ViewGroup.LayoutParams params = surfaceView.getLayoutParams();
     params.height = newHeight;
     params.width = newWidth;
