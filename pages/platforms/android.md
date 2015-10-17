@@ -19,7 +19,7 @@ The Affdex SDK requires a device running Android API 16 or above.
 Java 1.6 or above is required on your development machine.
 
 
-<!-- 
+
  The SDK requires access to external storage on the Android device, and Internet access for collecting anonymous analytics (see “A Note about Privacy” in “Introducing the SDK”). Include the following in your app’s <code>AndroidManifest.xml</code>:  
 
 ```
@@ -27,7 +27,7 @@ Java 1.6 or above is required on your development machine.
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 ```
--->
+
 
 ### Licensing
 After you request the SDK, Affectiva will provide to you an Affectiva license file.  Copy this file into your Android app project under the folder <em>/assets/Affdex</em>, and specify its relative path under that folder when invoking the <code>setLicensePath</code> method (described in more detail below). 
