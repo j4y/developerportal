@@ -11,27 +11,36 @@ summary:
 
 <img src={{ "/images/android.png" | prepend: site.baseurl }} align=right>
 
-SDK Developer Guide Release 2.0
+SDK Developer Guide Release 2.01
 
 ## Requirements & Dependencies
 
 The Affdex SDK requires a device running Android API 16 or above.
 Java 1.6 or above is required on your development machine.
-The SDK requires access to external storage on the Android device, and Internet access for collecting anonymous analytics (see “A Note about Privacy” in “Introducing the SDK”). Include the following in your app’s <code>AndroidManifest.xml</code>:  
+
+
+<!-- 
+ The SDK requires access to external storage on the Android device, and Internet access for collecting anonymous analytics (see “A Note about Privacy” in “Introducing the SDK”). Include the following in your app’s <code>AndroidManifest.xml</code>:  
 
 ```
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 ```
+-->
 
-## Using the SDK
+### Licensing
+After you request the SDK, Affectiva will provide to you an Affectiva license file.  Copy this file into your Android app project under the folder <em>/assets/Affdex</em>, and specify its relative path under that folder when invoking the <code>setLicensePath</code> method (described in more detail below). 
+
+
+## Adding the SDK to Your Project 
 
 In order to use this SDK in one of your Android apps, you will need to copy some files from the SDK into your Android project. In your Android project, alongside your “src and “res” folders, you may have the optional folders “assets” and “libs”. Copy the SDK’s “assets” folder into your project. If you already have an “assets” folder, copy the contents of the SDK’s “assets” folder into your “assets” folder. In a similar way, copy the SDK's “libs” folder into your project. 
 
 The provided sample app does not have “assets” or “libs” folders.  In this case, simply copy the entire “assets and “libs” folders into the app’s project, at the same level as the “res” and “src” folders.
 We do not recommend adding any of your own files to the “assets/Affdex” folder.
 
+## Using the SDK
 
 The following code snippets demonstrate how easy it is to obtain facial expression results using your device’s camera, a video file, or from images.
 
@@ -39,7 +48,7 @@ The following code snippets demonstrate how easy it is to obtain facial expressi
 
 The Affdex SDK has the following operating modes:
 
-*   Camera mode:  the SDK turns connects to the camera and processes the frames it records.  Sample app: MeasureUp.
+*   Camera mode:  the SDK turns on and connects to the camera and processes the frames it records.  Sample app: MeasureUp.
 *   Video file mode:  provide to the SDK a path to a video file. 
 *   Pushed frame mode:  provide to the SDK individual frames of video and their timestamps. 
 *   Photo mode:  provide discrete images to the SDK (unrelated to any other image).
@@ -68,7 +77,7 @@ Using the built-in camera is a common way to obtain video for facial expression 
 A demonstration of Camera Mode is the sample app MeasureUp.  
 To use Camera Mode,  implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interface. Then follow this sequence of SDK calls:  
 
-*   Construct a CameraDetector. The <code>cameraType</code> argument specifies whether to connect to the front or back camera, while the <code>cameraPreviewView</code> argument optionally specifics a SurfaceView onto which the SDK should display preview frames (specify <code>null</code> for this argument if you don’t care about previewing the frames).
+*   Construct a CameraDetector. The <code>cameraType</code> argument specifies whether to connect to the front or back camera, while the <code>cameraPreviewView</code> argument optionally specifics a SurfaceView onto which the SDK should display preview frames.
 
 ```
 public CameraDetector(Context context, CameraType cameraType,
@@ -81,10 +90,59 @@ public CameraDetector(Context context, CameraType cameraType,
 setDetectSmile(true);  
 ```
 
-*   Call <code>start()</code> to start processing.  Note that if the camera is already in use, an exception will be thrown. If successful, you will start receiving calls to <code>onImageResults()</code>.  
-*   When you are done, call <code>stop()</code>.  
+*   Call <code>start()</code> to initialize the SDK and call <code>startCamera(CameraType)</code> to start the device Camera.   If successful, you will start receiving calls to <code>onImageResults()</code>.  
+*   When you are done, call <code>stopCamera()</code> to stop the Camera and call <code>stop()</code> to release the resources used by the Affdex SDK.  
+*	Remember to add the Camera permission to your <em>AndroidManifest.xml</em> file.
 
+#### Sizing the SurfaceView
 
+Aside from the convenience of managing the Android Camera, <code>CameraDetector</code> also takes care of choosing the frame rate and frame size that will work best with the SDK. Since it is the developer’s responsibility to layout and size the <code>SurfaceView</code> passed into <code>CameraDetector</code>, you may want to resize the <code>SurfaceView</code> to match the aspect ratio of the returned frames. For this purpose, implement the <code>CameraDetector.OnCameraEventListener</code> interface to receive the <code>onCameraSizeSelected</code> event. Below is a block of sample code showing how to resize the <code>SurfaceView</code> to occupy as much space as its parent container while matching the aspect ratio of the incoming camera frames.
+
+```
+@Override
+public void onCameraSizeSelected(int cameraWidth, int cameraHeight, ROTATE rotation) {
+    int cameraPreviewWidth;
+    int cameraPreviewHeight;    	
+
+    //cameraWidth and cameraHeight report the unrotated dimensions of the camera frames, so switch the width and height if necessary
+    if (rotation == ROTATE.BY_90_CCW || rotation == ROTATE.BY_90_CW) {
+    cameraPreviewWidth = cameraHeight;
+    cameraPreviewHeight = cameraWidth;
+    } else {
+    cameraPreviewWidth = cameraWidth;
+    cameraPreviewHeight = cameraHeight;
+    }
+
+    //retrieve the width and height of the ViewGroup object containing our SurfaceView (in an actual application, we would want to consider the possibility that the mainLayout object may not have been sized yet)
+    int layoutWidth = mainLayout.getWidth();
+    int layoutHeight = mainLayout.getHeight();
+
+    //compute the aspect Ratio of the ViewGroup object and the cameraPreview
+    float layoutAspectRatio = (float)layoutWidth/layoutHeight; 	
+    float cameraPreviewAspectRatio = (float)cameraWidth/cameraHeight;
+
+    int newWidth;
+    int newHeight;
+
+    if (cameraPreviewAspectRatio > layoutAspectRatio) {
+    newWidth = layoutWidth;
+    newHeight =(int) (layoutWidth / cameraPreviewAspectRatio);
+    } else {
+    newWidth = (int) (layoutHeight * cameraPreviewAspectRatio);
+    newHeight = layoutHeight;
+    }
+
+    //size the SurfaceView
+    ViewGroup.LayoutParams params = surfaceView.getLayoutParams();
+    params.height = newHeight;
+    params.width = newWidth;
+    surfaceView.setLayoutParams(params);
+}
+```
+
+#### Hiding the SurfaceView
+
+Some applications may not wish to display the camera preview on screen. Since Android requires an active Surface for the camera to function, <code>CameraDetector</code> always requires a <code>SurfaceView</code to be passed in. However, if you do not wish to display the preview, you can set the <code>SurfaceView</code> to be 1px by 1px and call <code>SurfaceView.setAlpha(0)</code> to hide it on-screen.
 
 ### Video File Mode
 
@@ -119,16 +177,16 @@ public FrameDetector(Context context)
 setDetectSmile(true); 
 ```
 
-*   Call start() to start processing.
+*   Call <code>start()</code> to start processing.
 *   For each video frame, create an Affdex Frame (Bitmap, RGBA, and YUV420sp/NV21 formats are supported).
 {{ note }} Frame is an abstract base class with two concrete subclasses: BitmapFrame and ByteArrayFrame; you should construct one of these concrete subclasses. {{ end }}
 
-*   Call process with the Affdex Frame and timestamp of the frame:  
+*   Call <code>process</code> with the Affdex Frame and timestamp of the frame:  
 ```
 public abstract void process(Frame frame, float timestamp); 
 ```
 
-*   For each call to process, the SDK will call <code>onImageResults()</code>. 
+*   For each call to <code>process</code>, the SDK will call <code>onImageResults()</code>. 
 *   When you are done processing, call <code>stop()</code>. 
 
 
