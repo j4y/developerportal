@@ -152,7 +152,7 @@ For each of the possible sources of facial frames, the SDK defines a detector cl
 
 ### FrameDetector
 
-The <code>FrameDetector</code> tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the the time the frame was captured. The timestamps arrive in an increasing order. The <code>FrameDetector</code> will detect a face in an frame and deliver information on it to you, including the facial expressions. 
+The <code>FrameDetector</code> tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order. The <code>FrameDetector</code> will detect a face in an frame and deliver information on it to you, including the facial expressions. 
 The <code>FrameDetector</code> constructor expects two parameters, a buffer size (which is necessary for setting the number of frames of the internal frame buffer), and a process frame rate (useful for throttling the maximum number of frames processed per second). By default, the process frame rate is set to 30. If the buffer becomes full because processing cannot keep up with the supply of frames, the oldest unprocessed frame is dropped.  
 
 ```
