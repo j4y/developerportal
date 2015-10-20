@@ -52,6 +52,7 @@ exclude:
   - bower_components
   - .idea 
   - _site
+  - vendor
 
 permalink: :title
 
