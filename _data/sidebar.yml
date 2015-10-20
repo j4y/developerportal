@@ -1,0 +1,162 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+# Spacing is really important here. A two-space indent appears below each level to indicate a new depth.
+# 
+# Sidebar
+entries:
+- title: Sidebar # this title doesn't appear anywhere
+  subcategories:
+    - title: Overview
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all
+      print: true
+
+      items:
+        - title: Getting started
+          url: /getting_started/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Metrics
+          url: /metrics/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Accuracy
+          url: /accuracy/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Getting Optimal Results
+          url: /gettingbestresults/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: On Privacy
+          url: /privacy/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+
+    - title: Platforms
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all
+      print: true
+
+      items:
+        - title: Android
+          url: /android/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: iOS
+          url: /ios/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Windows
+          url: /windows/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+    - title: See Also
+      audience: writer, designer
+      platform: all
+      product: all
+      version: all
+      print: true
+
+      items:
+        - title: Sample Apps
+          url: /sampleapps/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Supported Video Formats
+          url: /supportedvideoformats/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
+        - title: Facial Landmarks
+          url: /fpi/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+          
+        - title: FAQ
+          url: /faq/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+          web: false
+
+    - title: Tag archives
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      print: true
+      web: false
+      items:
+
+          thirdlevel:
+            - title: Tag archive pages
+              audience: writers, designers
+              platform: all
+              version: all
+              product: all
+              print: false
+              thirdlevelitems:
+                - title: Getting started pages
+                  url: /tag-getting-started.html
+                  audience: writers, designers
+                  platform: all
+                  version: all
+                  product: all
+                  print: false
+
+                - title: Formatting pages
+                  url: /tag-formatting.html
+                  audience: writers, designers
+                  platform: all
+                  version: all
+                  product: all
+                  print: false
+
