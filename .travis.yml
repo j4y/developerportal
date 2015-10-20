@@ -9,4 +9,5 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 branches:
   only:
+    - master
     - gh-pages
