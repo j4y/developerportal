@@ -134,8 +134,8 @@ entries:
           print: true
           web: false
 
-        - title: Thirdparty libraries
-          url: /licenses/
+        - title: Downloads
+          url: /downloads/
           audience: writer, designer
           platform: all
           product: all
