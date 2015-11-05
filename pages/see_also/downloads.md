@@ -2,20 +2,17 @@
 title:  
 permalink: /downloads/
 metadata: false
-output:
-    html_document:
-        css: styles.css
 ---
 ## SDK Downloads
 
-Select from the table the SDK package for the platform you will be developing on.
-The Android SDK comes as an uncompressed folder.
-The iOS SDK comes as a .tar folder.
-The Windows SDKs come as self extracting executables.
+Select from the table the SDK package for the platform you will be developing on.  
+The Android SDK comes as an uncompressed folder.  
+The iOS SDK comes as a .tar folder.  
+The Windows SDKs come as self extracting executables.  
 
 ### Downloads
 
-<table border="2" style="width:60%">
+<table border="1" style="width:60%">
 <tr>
 <th style="background-color:#c0c0c0;"><center>Platform</center></th>
 <th style="background-color:#c0c0c0;"><center>Version</center></th>
