@@ -27,7 +27,7 @@ The Affdex SDK is built on Affectiva's industry-leading patented science. It’s
           
 Follow <a href=http://www.affdex.com/clients/affdex-resources/ target=_blank>this link</a> for more information on the science underlying the Affdex SDK.
 
-Available for [Android]({{ site.baseurl }}/android/), [iOS]({{ site.baseurl }}/ios/), and [Windows]({{ site.baseurl }}/windows/)  platforms.
+Available for [Android]({{ site.baseurl }}/android/), [iOS]({{ site.baseurl }}/ios/), [Windows]({{ site.baseurl }}/windows/), and [Unity]({{ site.baseurl }}/unity/)  platforms.
 
 ## Note
 

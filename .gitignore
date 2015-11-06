@@ -1,2 +1,5 @@
 _site
 .sass-cache
+
+# Mac specific files
+.DS_Store

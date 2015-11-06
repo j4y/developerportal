@@ -4,22 +4,22 @@
 - platform: Android
   version: "SDK 2.0"
   url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/android/download_sdk.html
-  size: 14,255,519 bytes
+  size: 14.5 MB
     
 - platform: iOS
   version: "SDK 2.0"
   url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/ios/download_sdk.html
-  size: 96,102,400 bytes
+  size: 96.1 MB
   
 - platform: Windows 32-bit
   version: "SDK 2.0"
   url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/download_sdk.html
-  size: 19,121,672 bytes
+  size: 19.1 MB
 
 - platform: Windows 64-bit
   version: "SDK 2.0"
   url: http://affdex-sdk-dist.s3-website-us-east-1.amazonaws.com/windows/download_sdk_64.html
-  size: 30,396,320 bytes      
+  size: 30.4 MB      
 ################################
 ################################
 ################################      
