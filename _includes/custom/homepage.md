@@ -23,7 +23,7 @@ The SDK is available for [Android]({{ site.baseurl }}/android), [iOS]({{ site.ba
 
 ## Affdex Technology
 
-The Affdex SDK is built on Affectiva's industry-leading [patented science](http://www.affectiva.com/technology). It’s designed to analyze spontaneous facial expressions that people show in their daily interactions. The highly accurate emotion recognition algorithms (classifiers) have been trained and tested using Affectiva’s massive emotion data repository - the world’s largest emotion database with more than 3.2 million faces from 75 countries analyzed, amounting to over 12 billion emotion data points. Designed for developer ease-of-use, processing of the emotion data is on-device (no cloud round trip), and the library is lightweight and fast to support a small memory footprint and real time processing.
+Available for [Android]({{ site.baseurl }}/android/), [iOS]({{ site.baseurl }}/ios/), [Windows]({{ site.baseurl }}/windows/), and [Unity]({{ site.baseurl }}/unity/)  platforms.
 
 
 We are excited that you are using our Affdex SDK. We are passionate about bringing emotional intelligence to the digital world, and look forward to seeing what amazing new apps and digital experiences you will emotion-enable using our technology.
