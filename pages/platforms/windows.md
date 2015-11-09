@@ -42,7 +42,7 @@ Since the purpose of the SDK is to detect facial expressions and their underlyin
 *	Frames: a sequence of timed images.
 *	Photos: a facial photo
 
-For each of the different sources, the SDK defines a detector class that can handle processing images acquired from that source. There are a set of comon steps needed to start using a detector.
+For each of the different sources, the SDK defines a detector class that can handle processing images acquired from that source. There are a set of common steps needed to start using a detector.
 
 ### Creating a Detector
 First step is to instantiate a detector that matches the source. Each detector expects a different set of parameters in their constructor that is dependent on their functionality, for example the <code>FrameDetector</code> constructor expects two parameters, a buffer size, which is necessary for setting the capacity (number of frames) of the internal FrameBuffer and a process frame rate, which can be used to throttle the maximum number of frames that get processed per second. By default, the process frame rate is set to 30.
