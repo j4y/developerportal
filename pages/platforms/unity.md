@@ -1,7 +1,7 @@
 ---
 title: Affdex SDK for Unity
 permalink: /unity/
-tags: [unity, sdk]
+tags: [unity, sdk, asset]
 audience: writer, designer
 keywords: 
 last_updated: 
