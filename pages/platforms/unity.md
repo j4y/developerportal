@@ -17,7 +17,7 @@ SDK Developer Guide Release 2.0
 
 <em><strong>Hardware requirements (recommended)</strong></em>
 
-*	Processor, 2 GHz
+*	Processor, 2 GHz (64-bit)
 *	RAM, 1 GB
 *	Disk Space (min) : 950 MB
 
@@ -337,3 +337,7 @@ The following method indicates that the face detector has stopped tracking a fac
 ```
 virtual void onFaceLost(float timestamp, int faceId);
 ```
+
+## Special Notes on Builds
+
+The SDK DLL is 64-bit.  This means that when you build you should build to 64-bit.  If you get an error like "Failed to load native library!  Make sure you build in 64-bit mode!" it probably means you built a 32-bit executable.  If you need a 32-bit version of the DLL please contact sdk@Affectiva.com .  
