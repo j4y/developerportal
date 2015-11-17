@@ -34,46 +34,47 @@ SDK Developer Guide Release 2.0
  
 ## Using the Asset
 
-The purpose of the asset is to detect facial expressions and their underlying emotions from facial images. Facial images can be captured from different sources:
+The purpose of the asset is to detect facial expressions and their underlying emotions from facial images. Facial images can be captured from different sources:  
 
 *	Frames: a sequence of timed images.
 *	Video: a video file on a device's local storage.
 
-For each of the different sources, the underlying SDK defines a detector class that can handle processing images acquired from that source. There are a set of common steps needed to start using a detector.
+For each of the different sources, the underlying SDK defines a detector class that can handle processing images acquired from that source. There are a set of common steps needed to start using a detector.  
 
 ### Add detector to scene
-First step is to add a detector to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Detector):
+First step is to add a detector to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Detector):  
 <img src={{ "/images/unity/AddComponentDetector.png" | prepend: site.baseurl }} align=right>
 
-You can now add a license key, set the emotions you are interested in, and the expressions you are interested in:
+You can now add a license key, set the emotions you are interested in, and the expressions you are interested in:  
 <img src={{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }} align=right>
 
 ### Add CameraInput to scene
-You can either use Affectiva's CameraInput script or write your own.  To use ours, add a camera input component to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Camera Input):
+You can either use Affectiva's CameraInput script or write your own.  To use ours, add a camera input component to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Camera Input):  
 <img src={{ "/images/unity/AddCameraInput.png" | prepend: site.baseurl }} align=right> 
 
-Set the camera rate, camera location, width and height:
+Set the camera rate, camera location, width and height:  
 <img src={{ "/images/unity/SetCameraInput.png" | prepend: site.baseurl }} align=right>
 
-Affdex performs best using a resolution ratio of 4:3 (ie: 320x240, 640x480, 800x600, 1024x768, etc).
+Affdex performs best using a resolution ratio of 4:3 (ie: 320x240, 640x480, 800x600, 1024x768, etc).  
 
-To create your own script for getting images take a look at the <code>Frame</code> data structure below.  You can also see a prototype of Affectiva's <code>CameraInput</code> script on [GitHub](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).
+To create your own script for getting images take a look at the <code>Frame</code> data structure below.  You can also see a prototype of Affectiva's <code>CameraInput</code> script on [GitHub](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).  
 
 ### Configuring a Detector 
 
-In order to initialize the detector, a valid license must be provided. The Affdex Unity asset validates that a license of an appropriate length is set.  If the asset determines that a license of the proper size has not been set an error will be sent to the console stating, "License is invalid":
+In order to initialize the detector, a valid license must be provided. The Affdex Unity asset validates that a license of an appropriate length is set.  If the asset determines that a license of the proper size has not been set an error will be sent to the console stating, "License is invalid":  
 <img src={{ "/images/unity/InvalidLicense.png" | prepend: site.baseurl }} align=right>
 
-Each license issued by Affectiva is time bound and will only work for a fixed period of time shown in the license file, after which the SDK will throw an <code>AffdexLicenseException</code> which will be caught by the asset and output to the console.
+Each license issued by Affectiva is time bound and will only work for a fixed period of time shown in the license file, after which the SDK will throw an <code>AffdexLicenseException</code> which will be caught by the asset and output to the console.  
 
-The Affdex classifier data files are used in frame analysis processing. These files are supplied as part of the asset. The location of the data files on the physical storage must remain as:
+The Affdex classifier data files are used in frame analysis processing. These files are supplied as part of the asset. The location of the data files on the physical storage must remain as:  
 
 ```
 Assets/affdex-data
 ```
  
 The Detectors use callback or interface classes to communicate events and results:
-The <code>AbstractFaceListener</code> is a client callback interface which receives notification when the detector has started or stopped tracking a face. The OnFaceLost, OnFaceFound, and OnImageResults methods must be defined as part of a class attached as a component within Unity.  Here is an example of how they look:
+The <code>AbstractFaceListener</code> is a client callback interface which receives notification when the detector has started or stopped tracking a face. The OnFaceLost, OnFaceFound, and OnImageResults methods must be defined as part of a class attached as a component within Unity.  Here is an example of how they look:  
+
 ```
 using Affdex;
 using System.Collections.Generic;
@@ -101,9 +102,9 @@ For a fully implemented sample, check out [EmoSurvival](https://github.com/Affec
 
 ### Setting the Classifiers
 
-While you can use the detector UI to set the emotion and expression classifiers (as discussed above) you can also set them programmatically.  The following methods are available to turn on or off the detection of various classifiers.
+While you can use the detector UI to set the emotion and expression classifiers (as discussed above) you can also set them programmatically.  The following methods are available to turn on or off the detection of various classifiers.  
 
-By default, all classifiers are turned off (set to false).  Every classifier you turn on will take a bit more system resources.
+By default, all classifiers are turned off (set to false).  Every classifier you turn on will take a bit more system resources.  
 
 To set the detection of the smile classifier to on, call the Detector class's SetExpressionState method:  
 
@@ -113,11 +114,11 @@ void SetExpressionState(Expressions.Smile, true);
  
 ## Detectors
 
-For each of the possible sources of facial frames, the asset has a script to consume and process images from these sources.
+For each of the possible sources of facial frames, the asset has a script to consume and process images from these sources.  
 
 ### Detector
 
-This is automatically attached to a scene with the Affdex\Detector script.  In the underlying SDK, this uses the <code>FrameDetector</code>.  It tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order, which is why pausing the game using Time.timeScale can impact processing. The <code>FrameDetector</code> will detect a face in an frame and deliver information on it to you. 
+This is automatically attached to a scene with the Affdex\Detector script.  In the underlying SDK, this uses the <code>FrameDetector</code>.  It tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order, which is why pausing the game using Time.timeScale can impact processing. The <code>FrameDetector</code> will detect a face in an frame and deliver information on it to you.  
 
 ### Video File Input
 
@@ -127,7 +128,7 @@ Another common use of the asset is to process previously captured video files. T
 
 ###Frame
 
-The <code>Frame</code> is used for passing images to and from the detectors. If you use the <code>CameraInput</code> script described above you don't need to do this as that script takes care of it for you.  To initialize a new instance of a frame, you must call the frame constructor. The frame constructor requires the width and height of the frame and a pointer to the pixel array representing the image. Additionally, the color format of the incoming image must be supplied. (See below for supported color formats.) 
+The <code>Frame</code> is used for passing images to and from the detectors. If you use the <code>CameraInput</code> script described above you don't need to do this as that script takes care of it for you.  To initialize a new instance of a frame, you must call the frame constructor. The frame constructor requires the width and height of the frame and a pointer to the pixel array representing the image. Additionally, the color format of the incoming image must be supplied. (See below for supported color formats.)  
 
 ```
 Frame(int frameWidth, int frameHeight, ref byte[] pixels, COLOR_FORMAT 
@@ -192,7 +193,7 @@ float getTimestamp() const;
 void setTimestamp(float value);
 ```
 
-To see an example of how to send frames to the detector review [this GitHub Gist](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).
+To see an example of how to send frames to the detector review [this GitHub Gist](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).  
 
 ### Face
 
@@ -300,7 +301,7 @@ See the feature point indices [table]({{ site.baseurl }}/fpi/) for a full list o
 
 <strong>ImageListener</strong>
 
-This interface delivers information about the images and faces captured by a detector. The <code>ImageListener</code> contains two client callback methods:
+This interface delivers information about the images and faces captured by a detector. The <code>ImageListener</code> contains two client callback methods:  
 
 <code>onImageResults</code> returns the processed frame and a dictionary of the faces found. An individual entry in the dictionary is comprised of a face ID and a Face object which contains metrics about the face. If the image was processed, but no face was found, the returned dictionary will be empty. The detectors track a single face, the face that occupies the largest area in the image. A future release of the asset will allow tracking multiple faces in an image.  
 
@@ -308,7 +309,7 @@ This interface delivers information about the images and faces captured by a det
 virtual void onImageResults(Dictionary<int, Face> faces, Frame image);
 ```
 
-Here is an example of how to get the level of joy from onImageResults:
+Here is an example of how to get the level of joy from onImageResults:  
 
 ```
     public float currentJoy;
@@ -322,7 +323,7 @@ Here is an example of how to get the level of joy from onImageResults:
     }
 ```
 
-For a fully implemented example, check out [EmoSurvival](https://github.com/Affectiva/EmoSurvival/blob/master/Assets/Scripts/Player/PlayerEmotions.cs).
+For a fully implemented example, check out [EmoSurvival](https://github.com/Affectiva/EmoSurvival/blob/master/Assets/Scripts/Player/PlayerEmotions.cs).  
 
 <strong>FaceListener</strong>
 
