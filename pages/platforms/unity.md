@@ -43,17 +43,17 @@ For each of the different sources, the underlying SDK defines a detector class t
 
 ### Add detector to scene
 First step is to add a detector to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Detector):  
-<img src={{ "/images/unity/AddComponentDetector.png" | prepend: site.baseurl }} align=right>
+<img src={{ "/images/unity/AddComponentDetector.png" | prepend: site.baseurl }}>
 
 You can now add a license key, set the emotions you are interested in, and the expressions you are interested in:  
-<img src={{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }} align=right>
+<img src={{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }}>
 
 ### Add CameraInput to scene
 You can either use Affectiva's CameraInput script or write your own.  To use ours, add a camera input component to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Camera Input):  
-<img src={{ "/images/unity/AddCameraInput.png" | prepend: site.baseurl }} align=right> 
+<img src={{ "/images/unity/AddCameraInput.png" | prepend: site.baseurl }}> 
 
 Set the camera rate, camera location, width and height:  
-<img src={{ "/images/unity/SetCameraInput.png" | prepend: site.baseurl }} align=right>
+<img src={{ "/images/unity/SetCameraInput.png" | prepend: site.baseurl }}>
 
 Affdex performs best using a resolution ratio of 4:3 (ie: 320x240, 640x480, 800x600, 1024x768, etc).  
 
