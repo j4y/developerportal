@@ -78,16 +78,16 @@ entries:
           version: all
           print: true
 
-        - title: Windows
-          url: /windows/
+        - title: Unity
+          url: /unity/
           audience: writer, designer
           platform: all
           product: all
           version: all
           print: true
-          
-        - title: Unity
-          url: /unity/
+
+        - title: Windows
+          url: /windows/
           audience: writer, designer
           platform: all
           product: all
