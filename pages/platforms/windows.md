@@ -53,13 +53,13 @@ FrameDetector(int bufferSize, int processFrameRate);
 
 ### Configuring a Detector 
 
-In order to succesfully initialize the detector, a valid license file must be provided. Each license file issued by Affectiva is time bound and will only work for a fixed period of time shown in the license file, after which the SDK will throw an <code>AffdexLicenseException</code>. The location of the license file must be indicated by calling the following method with the fully qualified path to it:
+In order to initialize the detector, a valid license file must be provided. Each license file issued by Affectiva is time bound and will only work for a fixed period of time shown in the license file, after which the SDK will throw an <code>AffdexLicenseException</code>. The location of the license file must be indicated by calling the following method with the fully qualified path to it:
 
 ```
 void setLicensePath( String licensePath);
 ```
 
-The Affdex classifier data files are used in frame analysis processing. These files are supplied as part of the SDK. The location of the data files on the phyiscal storage needs to be passed to a detector in order to initalize it by calling the following with the fully qualified path to the folder containing them:
+The Affdex classifier data files are used in frame analysis processing. These files are supplied as part of the SDK. The location of the data files on the physical storage needs to be passed to a detector in order to initialize it by calling the following with the fully qualified path to the folder containing them:
 
 ```
 void setClassifierPath(String classifierPath);
@@ -415,7 +415,7 @@ See the feature point indices [table]({{ site.baseurl }}/fpi/) for a full list o
 
 This interface delivers information about the images and faces captured by a detector. The <code>ImageListener</code> contains two client callback methods:
 
-<code>onImageResults</code> returns the processed frame and a dictionary of the faces found. An individual entry in the dictionary is comprised of a face ID and a Face object which contains metrics about the face. If the image was processed but no face was found, the returned dictionary will be empty. The detectors track a single face, the face that occupies the largest area in the image. A Future release of the SDK will allow tracking mutiple faces in an image.  
+<code>onImageResults</code> returns the processed frame and a dictionary of the faces found. An individual entry in the dictionary is comprised of a face ID and a Face object which contains metrics about the face. If the image was processed but no face was found, the returned dictionary will be empty. The detectors track a single face, the face that occupies the largest area in the image. A Future release of the SDK will allow tracking multiple faces in an image.  
 
 ```
 virtual void onImageResults(Dictionary<int, Face> faces, Frame image);

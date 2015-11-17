@@ -27,7 +27,7 @@ The SDK also includes the capability to generate emotion metrics from individual
 
 ## Supported Platforms
 
-With the SDKs, developers can emotion-enable apps and digital experiences for [Android]({{ site.baseurl }}/android/), [iOS]({{ site.baseurl }}/ios/), and [Windows]({{ site.baseurl }}/windows/) 
+With the SDKs, developers can emotion-enable apps and digital experiences for [Android]({{ site.baseurl }}/android/), [iOS]({{ site.baseurl }}/ios/), [Windows]({{ site.baseurl }}/windows/), [Unity]({{ site.baseurl }}/unity/).
 
 Please refer to the technical documentation of each of the platforms for their requirements.  
 To get started, <a href="http://www.affectiva.com/solutions/apis-sdks/" target=_blank>sign up to download</a> the SDK.
