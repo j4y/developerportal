@@ -78,23 +78,15 @@ entries:
           print: true
 
         - title: Unity
-          url: /v2/unity/
+          url: /unity/
           audience: writer, designer
           platform: all
           product: all
           version: all
           print: true
 
-        - title: Windows (C++, C#)
-          url: /v3/windows/
-          audience: writer, designer
-          platform: all
-          product: all
-          version: all
-          print: true
-          
-        - title: Unity
-          url: /unity/
+        - title: Windows
+          url: /windows/
           audience: writer, designer
           platform: all
           product: all
