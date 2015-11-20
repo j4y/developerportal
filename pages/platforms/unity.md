@@ -73,14 +73,21 @@ Assets/affdex-data
 ```
  
 The Detectors use callback or interface classes to communicate events and results:
-The <code>AbstractFaceListener</code> is a client callback interface which receives notification when the detector has started or stopped tracking a face. The OnFaceLost, OnFaceFound, and OnImageResults methods must be defined as part of a class attached as a component within Unity.  Here is an example of how they look:  
+The <code>AbstractAffdexListener</code> is a client callback interface which receives notification when the detector has started or stopped tracking a face. The OnFaceLost, OnFaceFound, and OnImageResults methods must be defined as part of a class attached as a component within Unity.  Here is an example of how they look:  
 
 ```
 using Affdex;
 using System.Collections.Generic;
 
-public class YourClass : AbstractFaceClass
+public class PlayerEmotions : AbstractAffdexListener
 {
+    public float currentSmile;
+    public float currentInterocularDistance;
+    public float currentContempt;
+    public float currentValence;
+    public float currentAnger;
+    public float currentFear;
+    
     public override void onFaceFound(float timestamp, int faceId)
     {
         Debug.Log("Found the face");
@@ -94,9 +101,21 @@ public class YourClass : AbstractFaceClass
     public override void onImageResults(Dictionary<int, Face> faces)
     {
         Debug.Log("Got face results");
+        if (faces.Count > 0)
+        {
+            // You can also get feature points from the face class.
+            faces[0].Expressions.TryGetValue(Expressions.Smile, out currentSmile);
+            currentInterocularDistance = faces[0].Measurements.interOcularDistance;
+            faces[0].Emotions.TryGetValue(Emotions.Contempt, out currentContempt);
+            faces[0].Emotions.TryGetValue(Emotions.Valence, out currentValence);
+            faces[0].Emotions.TryGetValue(Emotions.Anger, out currentAnger);
+            faces[0].Emotions.TryGetValue(Emotions.Fear, out currentFear);
+        }
     }
 }
 ```
+
+OnImageResults is probably the most valuable method here.  The Faces class allows you to get the current values of all expressions, and all emotions.  It also allows you to get the interocular distance, facial feature point locations, and the orientation of the face.
 
 For a fully implemented sample, check out [EmoSurvival](https://github.com/Affectiva/EmoSurvival/blob/master/Assets/Scripts/Player/PlayerEmotions.cs).  You can use onFaceLost to pause a game.  If you use Time.timeScale to pause, the camera script will also pause, as it uses the same time values.  
 
