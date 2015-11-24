@@ -76,8 +76,8 @@ Assets/StreamingAssets/affdex-data
 
 ## AbstractAffdexListener
 
-The Detectors use callback or interface classes to communicate events and results:
-The <code>AbstractAffdexListener</code> is a client callback interface which receives notification when the detector has started or stopped tracking a face. The OnFaceLost, OnFaceFound, and OnImageResults methods must be defined as part of a class attached as a component within Unity.  Here is an example of how they look:  
+The Detectors use callback classes to communicate events and results:
+The <code>AbstractAffdexListener</code> is a client callback which receives notification when the detector has started or stopped tracking a face. The OnFaceLost, OnFaceFound, and OnImageResults methods must be defined as part of a class attached as a component within Unity.  Here is an example of how they look:  
 
 ```
 using Affdex;
@@ -107,7 +107,7 @@ public class PlayerEmotions : AbstractAffdexListener
         Debug.Log("Got face results");
         if (faces.Count > 0)
         {
-            // You can also get feature points from the face class.
+            FeaturePoints featurePointsList = Face[0].FeaturePoints; //Feature points can be retrieved from the face class.
             faces[0].Expressions.TryGetValue(Expressions.Smile, out currentSmile);
             currentInterocularDistance = faces[0].Measurements.interOcularDistance;
             faces[0].Emotions.TryGetValue(Emotions.Contempt, out currentContempt);
@@ -141,7 +141,7 @@ For each of the possible sources of facial frames, the asset has a script to con
 
 ### Detector
 
-This is automatically attached to a scene with the Affdex\Detector script.  In the underlining emotion recognition engine, this uses the <code>FrameDetector</code>.  It tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order, which is why pausing the game using Time.timeScale can impact processing. The <code>FrameDetector</code> will detect a face in an frame and deliver information on it to you.  
+This is automatically attached to a scene with the Affdex\Detector script.  In the underlining emotion recognition engine, this uses the <code>Detector</code>.  It tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order, which is why pausing the game using Time.timeScale can impact processing. The <code>Detector</code> will detect a face in an frame and deliver information on it to you.  
 
 ### Video File Input
 
