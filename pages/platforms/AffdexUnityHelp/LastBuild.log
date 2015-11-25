@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2015.10.10.0" projectFile="Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\AffdexUnity.shfbproj" started="11/25/2015 2:53:04 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2015.10.10.0" projectFile="Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\AffdexUnity.shfbproj" started="11/25/2015 3:37:36 PM">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -8,10 +8,14 @@ Locating components in the following folder(s):
     C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
     C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
 Framework reflection data location: C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework
-Using presentation style &#39;Markdown&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2015.10.10.0
+Copyright &#169; 2006-2015, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
 -------------------------------
 Clearing any prior web/markdown output...
-    Ignoring read-only/hidden file Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\.jekyll-metadata
+    Ignoring read-only/hidden file Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\.DS_Store
 </buildStep>
 <buildStep step="ValidatingDocumentationSources">
 Validating and copying documentation source information
@@ -27,16 +31,17 @@ Copying XML comments files
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
-    Last step completed in 00:00:00.0156
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00.0156
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0157
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateRefInfo.proj]
-Build started 11/25/2015 2:53:06 PM.
+Build started 11/25/2015 3:37:37 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 PrepareForBuild:
@@ -56,13 +61,13 @@ Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\U
 
 Build succeeded.
 
-Time Elapsed 00:00:01.64
-    Last step completed in 00:00:02.0000
+Time Elapsed 00:00:01.62
+    Last step completed in 00:00:01.9851
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - TransformManifest.proj]
-Build started 11/25/2015 2:53:08 PM.
+Build started 11/25/2015 3:37:39 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 TransformManifest:
@@ -83,12 +88,12 @@ Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\U
 
 Build succeeded.
 
-Time Elapsed 00:00:01.32
-    Last step completed in 00:00:01.6720
+Time Elapsed 00:00:01.31
+    Last step completed in 00:00:01.6741
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0158
+    Last step completed in 00:00:00.0283
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -102,7 +107,7 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 11/25/2015 2:53:10 PM.
+Build started 11/25/2015 3:37:41 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 GenerateIntermediateTOC:
@@ -114,14 +119,14 @@ Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\U
 
 Build succeeded.
 
-Time Elapsed 00:00:00.65
+Time Elapsed 00:00:00.64
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:01.0153
+    Last step completed in 00:00:01.0005
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.0937
+    Last step completed in 00:00:00.1088
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -131,7 +136,7 @@ Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\sand
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - BuildReferenceTopics.proj]
-Build started 11/25/2015 2:53:11 PM.
+Build started 11/25/2015 3:37:42 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 BuildReferenceTopics:
@@ -1807,82 +1812,133 @@ Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\U
 
 Build succeeded.
 
-Time Elapsed 00:00:12.05
-    Last step completed in 00:00:12.5555
+Time Elapsed 00:00:12.81
+    Last step completed in 00:00:13.3594
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0156
+    Last step completed in 00:00:00.0157
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - ExtractHtmlInfo.proj]
+Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+Sandcastle Help File Builder and Tools, version 2015.10.10.0
+Copyright c 2006-2015, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing website files in Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website
+Processed 118 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\WebKI.xml
+Saving website table of contents to Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\WebTOC.xml
+    Last step completed in 00:00:01.5000
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\AlertCaution.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\AlertCaution.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\AlertNote.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\AlertNote.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\AlertSecurity.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\AlertSecurity.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\CFW.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\CFW.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\CodeExample.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\CodeExample.png
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\privclass.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\privclass.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\privdelegate.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\privdelegate.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\privenumeration.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\privenumeration.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\privevent.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\privevent.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\privextension.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\privextension.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\privfield.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\privfield.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\privinterface.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\privinterface.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\privmethod.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\privmethod.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\privproperty.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\privproperty.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\privstructure.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\privstructure.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protclass.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protclass.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protdelegate.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protdelegate.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protenumeration.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protenumeration.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protevent.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protevent.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protextension.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protextension.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protfield.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protfield.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protinterface.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protinterface.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protmethod.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protmethod.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protoperator.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protoperator.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protproperty.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protproperty.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\protstructure.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\protstructure.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\pubclass.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\pubclass.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\pubdelegate.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\pubdelegate.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\pubenumeration.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\pubenumeration.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\pubevent.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\pubevent.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\pubextension.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\pubextension.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\pubfield.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\pubfield.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\pubinterface.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\pubinterface.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\pubmethod.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\pubmethod.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\puboperator.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\puboperator.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\pubproperty.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\pubproperty.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\pubstructure.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\pubstructure.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\slMobile.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\slMobile.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\static.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\static.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\media\xna.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\media\xna.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\Markdown\MarkdownContent\_Footer.md -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Markdown\_Footer.md
-    Last step completed in 00:00:00.1719
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\Search.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\TocClose.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\TocCollapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\TocExpanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\TocOpen.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\scripts\branding-Website.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
+    Last step completed in 00:00:00.3281
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
-Executing informational Generate Table of Contents build step for plug-ins (not used for Markdown)
-    Last step completed in 00:00:00.0000
+Generating website table of contents file...
+    Last step completed in 00:00:00.0156
 </buildStep>
-<buildStep step="GenerateHelpProject">
-Executing informational Generate Help Project build step for plug-ins (not used for Markdown)
-    Last step completed in 00:00:00.0000
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+Adding lightweight search and TOC elements to each topic...
+</plugIn>    Last step completed in 00:00:00.5001
 </buildStep>
-<buildStep step="CompilingHelpFile">
-Generating markdown content...
-[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateMarkdownContent.proj]
-Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
-  Finished generating 118 topics
-  Copying content to output folder...
-  Finished copying 161 files
-    Last step completed in 00:00:02.5625
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 244 files for the website content
+    Last step completed in 00:00:01.1249
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:01.8281
+    Last step completed in 00:00:02.4531
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 11/25/2015 2:53:28 PM.  Total time: 00:00:23.6336
+Build completed successfully at 11/25/2015 3:38:01 PM.  Total time: 00:00:24.6250
 
 </buildStep>
 </shfbBuild>
