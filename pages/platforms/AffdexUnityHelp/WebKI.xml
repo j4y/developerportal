@@ -17,8 +17,6 @@
   <HelpKINode Title="Affdex.CameraInput class" Url="html/5a5279cd-f2cc-c73f-8243-a6319229c662.htm" />
   <HelpKINode Title="Affdex.DebugFeatureViewer class" Url="html/e94caec4-2b0e-69de-28e2-47a2cc22837e.htm" />
   <HelpKINode Title="Affdex.Detector class" Url="html/e77adb8c-90bf-d7f1-5c6c-2f3c419b5c61.htm" />
-  <HelpKINode Title="Affdex.Editor namespace" Url="html/19ee517b-73dd-922e-48c7-3c952db37c5f.htm" />
-  <HelpKINode Title="Affdex.Editor.DetectorEditor class" Url="html/2c3ccaf5-84d5-5127-4249-2e340854794d.htm" />
   <HelpKINode Title="Affdex.EmotionPoint structure" Url="html/62a023b6-0075-1023-4498-fb9c407853ea.htm" />
   <HelpKINode Title="Affdex.Emotions enumeration" Url="html/9a91bf5d-8e50-6614-c638-00b4d1b60255.htm" />
   <HelpKINode Title="Affdex.ExpressionPoint structure" Url="html/9a6439bf-911b-c0ca-fc8a-4cf3fe066b3b.htm" />
@@ -104,15 +102,6 @@
   <HelpKINode Title="Detector.StartDetector method" Url="html/5889da63-6e45-d7f7-88ef-bbca477a568f.htm" />
   <HelpKINode Title="Detector.startOnWake field" Url="html/5e24f81b-289e-38e3-1467-7a65df3bd37a.htm" />
   <HelpKINode Title="Detector.Stop method" Url="html/966865e3-880b-0691-cf07-d6b990a817e4.htm" />
-  <HelpKINode Title="DetectorEditor class">
-    <HelpKINode Title="DetectorEditor Class" Url="html/2c3ccaf5-84d5-5127-4249-2e340854794d.htm" />
-    <HelpKINode Title="about DetectorEditor class" Url="html/2c3ccaf5-84d5-5127-4249-2e340854794d.htm" />
-    <HelpKINode Title="constructor" Url="html/cf033560-c364-1b45-33c4-ea9132eb513a.htm" />
-    <HelpKINode Title="methods" Url="html/aa877812-6d0d-1c67-e70a-0cf29308901a.htm" />
-    <HelpKINode Title="properties" Url="html/6fc4cee3-63e8-7ded-1aa9-1b9eb97766c9.htm" />
-  </HelpKINode>
-  <HelpKINode Title="DetectorEditor.DetectorEditor constructor" Url="html/cf033560-c364-1b45-33c4-ea9132eb513a.htm" />
-  <HelpKINode Title="DetectorEditor.OnInspectorGUI method" Url="html/af01535a-e5bf-f24c-4e7e-fc75a3901173.htm" />
   <HelpKINode Title="device field" Url="html/a850063e-64dc-d396-042b-b3fb897cd016.htm" />
   <HelpKINode Title="devices field" Url="html/3b65a748-48c6-63bd-26c9-837faef192f1.htm" />
   <HelpKINode Title="discrete field" Url="html/92339b16-9cd9-fb3c-8826-557cb5c06ace.htm" />
@@ -241,7 +230,6 @@
   <HelpKINode Title="onFaceFound method" Url="html/c6c6f4a3-9a45-36a3-aabb-97aaa452e895.htm" />
   <HelpKINode Title="onFaceLost method" Url="html/1f2d0010-ebe0-c00b-ed08-954595c2e6e1.htm" />
   <HelpKINode Title="onImageResults method" Url="html/a5287db1-c3ef-69d4-d73d-d351465fd9a6.htm" />
-  <HelpKINode Title="OnInspectorGUI method" Url="html/af01535a-e5bf-f24c-4e7e-fc75a3901173.htm" />
   <HelpKINode Title="Orientation property" Url="html/1ccf6251-462a-6dd0-4cac-91a955c6bc57.htm" />
   <HelpKINode Title="ProcessFrame method">
     <HelpKINode Title="CameraInput.ProcessFrame Method " Url="html/f9bd7fd1-7ad8-5b04-84e3-a2e0fd2be7fc.htm" />
