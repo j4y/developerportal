@@ -33,6 +33,10 @@ SDK Developer Guide Release 2.0
 
 ## Video Tutorial
 <iframe width="420" height="315" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
+
+## Class Documentation
+The classes that come with this asset are viewable here:
+* [AffdexUnity](http://developer.affectiva.com/pages/platforms/AffdexUnityHelp/index.html)
  
 ## Using the Asset
 
