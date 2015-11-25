@@ -337,4 +337,4 @@ See the feature point indices [table]({{ site.baseurl }}/fpi/) for a full list o
 
 ## Special Notes on Builds
 
-The SDK DLL is 64-bit.  This means that when you build you should build to 64-bit.  If you get an error like "Failed to load native library!  Make sure you build in 64-bit mode!" it probably means you built a 32-bit executable.  If you need a 32-bit version of the DLL please contact sdk@Affectiva.com .  
+The SDK DLL is 64-bit.  This means that when you build you should build to 64-bit.  If you get an error like "Failed to load native library!  Make sure you build in 64-bit mode!" it probably means you built a 32-bit executable.  If you need a 32-bit version of the DLL please contact sdk@Affectiva.com .  If you build for multiple platforms and want to no-op unsupported platforms you can run AffdexUnityUtils.ValidPlatform() to determining if the current platform is valid at run-time.
