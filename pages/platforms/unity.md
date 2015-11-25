@@ -91,6 +91,7 @@ public class PlayerEmotions : AbstractAffdexListener
     public float currentValence;
     public float currentAnger;
     public float currentFear;
+    public FeaturePoint[] featurePointsList;
     
     public override void onFaceFound(float timestamp, int faceId)
     {
@@ -105,15 +106,29 @@ public class PlayerEmotions : AbstractAffdexListener
     public override void onImageResults(Dictionary<int, Face> faces)
     {
         Debug.Log("Got face results");
-        if (faces.Count > 0)
+        
+        foreach (KeyValuePair<int, Face> pair in faces)
         {
-            FeaturePoints featurePointsList = Face[0].FeaturePoints; //Feature points can be retrieved from the face class.
-            faces[0].Expressions.TryGetValue(Expressions.Smile, out currentSmile);
-            currentInterocularDistance = faces[0].Measurements.interOcularDistance;
-            faces[0].Emotions.TryGetValue(Emotions.Contempt, out currentContempt);
-            faces[0].Emotions.TryGetValue(Emotions.Valence, out currentValence);
-            faces[0].Emotions.TryGetValue(Emotions.Anger, out currentAnger);
-            faces[0].Emotions.TryGetValue(Emotions.Fear, out currentFear);
+            int FaceId = pair.Key;  // The Face Unique Id.
+            Face face = pair.Value;    // Instance of the face class containing emotions, and facial expression values.
+
+            //Retrieve the Emotions Scores
+            face.Emotions.TryGetValue(Emotions.Contempt, out currentContempt);
+            face.Emotions.TryGetValue(Emotions.Valence, out currentValence);
+            face.Emotions.TryGetValue(Emotions.Anger, out currentAnger);
+            face.Emotions.TryGetValue(Emotions.Fear, out currentFear);
+
+            //Retrieve the Smile Score
+            face.Expressions.TryGetValue(Expressions.Smile, out currentSmile);
+
+
+            //Retrieve the Interocular distance, the distance between two outer eye corners.
+            currentInterocularDistance = face.Measurements.interOcularDistance;
+
+
+            //Retrieve the coordinates of the facial landmarks (face feature points)
+            featurePointsList = face.FeaturePoints;
+
         }
     }
 }
