@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2015.10.10.0" projectFile="Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\AffdexUnity.shfbproj" started="11/25/2015 3:37:36 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2015.10.10.0" projectFile="Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\AffdexUnity.shfbproj" started="11/25/2015 4:21:35 PM">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -16,18 +16,25 @@ Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
 -------------------------------
 Clearing any prior web/markdown output...
     Ignoring read-only/hidden file Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\.DS_Store
+    Ignoring read-only/hidden file Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\.jekyll-metadata
 </buildStep>
 <buildStep step="ValidatingDocumentationSources">
 Validating and copying documentation source information
 Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\bin\Debug\Affdex.dll
     Found assembly &#39;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\bin\Debug\Affdex.dll&#39;
 Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\bin\Debug\AffdexUnity.XML
+Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\UnityEditorSource.XML
+Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\UnityEditorSource.dll
+    Found assembly &#39;Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\UnityEditorSource.dll&#39;
+Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\Affdex.dll
+    Found assembly &#39;Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\Affdex.dll&#39;
 
 References to include (excluding framework assemblies):
     UnityEngine
 
 Copying XML comments files
     Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\bin\Debug\AffdexUnity.XML -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\AffdexUnity.XML
+    Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\UnityEditorSource.XML -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\UnityEditorSource.XML
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
@@ -36,12 +43,12 @@ Generating shared content files (en-US, English (United States))...
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0157
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateRefInfo.proj]
-Build started 11/25/2015 3:37:37 PM.
+Build started 11/25/2015 4:21:39 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 PrepareForBuild:
@@ -50,8 +57,8 @@ GenerateRefInfo:
   MRefBuilder (v2015.10.10.0)
   Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
   Portions Copyright c 2006-2015, Eric Woodruff, All Rights Reserved.
-  Loaded 1 assemblies for reflection and 2 dependency assemblies.
-  Wrote information on 1 namespaces, 17 types, and 91 members
+  Loaded 3 assemblies for reflection and 2 dependency assemblies.
+  Wrote information on 2 namespaces, 35 types, and 184 members
   Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
   XslTransform (v2015.10.10.0)
   Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
@@ -61,13 +68,13 @@ Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\U
 
 Build succeeded.
 
-Time Elapsed 00:00:01.62
-    Last step completed in 00:00:01.9851
+Time Elapsed 00:00:01.71
+    Last step completed in 00:00:02.0937
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - TransformManifest.proj]
-Build started 11/25/2015 3:37:39 PM.
+Build started 11/25/2015 4:21:41 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 TransformManifest:
@@ -88,12 +95,12 @@ Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\U
 
 Build succeeded.
 
-Time Elapsed 00:00:01.31
-    Last step completed in 00:00:01.6741
+Time Elapsed 00:00:01.29
+    Last step completed in 00:00:01.6562
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0283
+    Last step completed in 00:00:00.0313
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -107,7 +114,7 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 11/25/2015 3:37:41 PM.
+Build started 11/25/2015 4:21:43 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 GenerateIntermediateTOC:
@@ -121,22 +128,22 @@ Build succeeded.
 
 Time Elapsed 00:00:00.64
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:01.0005
+    Last step completed in 00:00:01.0003
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.1088
+    Last step completed in 00:00:00.1091
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\sandcastle.config
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0156
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - BuildReferenceTopics.proj]
-Build started 11/25/2015 3:37:42 PM.
+Build started 11/25/2015 4:21:44 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 BuildReferenceTopics:
@@ -1804,20 +1811,139 @@ BuildAssembler : warning : ShowMissingComponent: [P:Affdex.VideoFileInput.detect
 BuildAssembler : warning : ResolveReferenceLinksComponent: [F:Affdex.VideoFileInput.movie] Unknown reference link target &#39;T:UnityEngine.MovieTexture&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [P:Affdex.VideoFileInput.Texture] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Affdex.VideoFileInput.Texture] Unknown reference link target &#39;T:UnityEngine.Texture&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-  Processed 118 topic(s)
-  1659 warning(s)
+BuildAssembler : warning : ShowMissingComponent: [T:Affdex.Editor.DetectorEditor] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.ScriptableObject&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEngine.Object.hideFlags&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEngine.Object.name&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEditor.Editor.serializedObject&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEditor.Editor.target&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEditor.Editor.targets&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.DrawDefaultInspector&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.DrawHeader&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.DrawPreview(UnityEngine.Rect)&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEngine.Object.Equals(System.Object)&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEngine.Object.GetHashCode&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.GetInfoString&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEngine.Object.GetInstanceID&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.GetPreviewTitle&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.HasPreviewGUI&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.Initialize(UnityEngine.Object[])&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.MoveNextTarget&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.OnHeaderGUI&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.OnInspectorGUI&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.OnPreviewSettings&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.ReloadPreviewInstances&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.RenderStaticPreview(System.String,UnityEngine.Object[],System.Int32,System.Int32)&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.Repaint&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.RequiresConstantRepaint&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.ResetTarget&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEngine.ScriptableObject.SetDirty&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.ScriptableObject&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEngine.Object.ToString&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.UseDefaultMargins&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.DrawDefaultInspector&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.DrawHeader&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.DrawPreview(UnityEngine.Rect)&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEngine.Object.Equals(System.Object)&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEngine.Object.GetHashCode&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.GetInfoString&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEngine.Object.GetInstanceID&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.GetPreviewTitle&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.HasPreviewGUI&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.Initialize(UnityEngine.Object[])&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.MoveNextTarget&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.OnHeaderGUI&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.OnInspectorGUI&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.OnPreviewSettings&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.ReloadPreviewInstances&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.RenderStaticPreview(System.String,UnityEngine.Object[],System.Int32,System.Int32)&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.Repaint&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.RequiresConstantRepaint&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.ResetTarget&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEngine.ScriptableObject.SetDirty&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.ScriptableObject&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEngine.Object.ToString&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;M:UnityEditor.Editor.UseDefaultMargins&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEngine.Object.hideFlags&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEngine.Object.name&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEditor.Editor.serializedObject&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEditor.Editor.target&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEditor.Editor.targets&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Editor.DetectorEditor.OnInspectorGUI] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
+  Processed 124 topic(s)
+  1778 warning(s)
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
 Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj&quot; (default targets).
 
 Build succeeded.
 
-Time Elapsed 00:00:12.81
-    Last step completed in 00:00:13.3594
+Time Elapsed 00:00:12.55
+    Last step completed in 00:00:13.0593
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0157
+    Last step completed in 00:00:00.0310
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -1830,11 +1956,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website
-Processed 118 HTML files
+Processed 124 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\WebKI.xml
 Saving website table of contents to Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\WebTOC.xml
-    Last step completed in 00:00:01.5000
+    Last step completed in 00:00:01.3597
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -1913,32 +2039,32 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\TocOpen.gif
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00.3281
+    Last step completed in 00:00:00.2966
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00.0156
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:00.5001
+</plugIn>    Last step completed in 00:00:00.5157
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
-Copied 244 files for the website content
-    Last step completed in 00:00:01.1249
+Copied 253 files for the website content
+    Last step completed in 00:00:01.2342
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:02.4531
+    Last step completed in 00:00:02.5625
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 11/25/2015 3:38:01 PM.  Total time: 00:00:24.6250
+Build completed successfully at 11/25/2015 4:22:03 PM.  Total time: 00:00:27.5598
 
 </buildStep>
 </shfbBuild>
