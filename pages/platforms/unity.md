@@ -26,6 +26,8 @@ SDK Developer Guide Release 2.0
 * [Unity 5.2.1](http://unity3d.com/get-unity)
 * [Visual Studio 14](https://www.visualstudio.com/) or Xamarin Studio
 * [QuickTime Movie Player](http://www.apple.com/quicktime/download/) 
+* Visual C++ Redistributable runtime for VS 2013
+
 
 <em><strong>Supported operating systems</strong></em>
 
