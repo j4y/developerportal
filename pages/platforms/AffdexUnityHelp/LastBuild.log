@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2015.10.10.0" projectFile="Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\AffdexUnity.shfbproj" started="11/25/2015 4:21:35 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2015.10.10.0" projectFile="Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\AffdexUnity.shfbproj" started="11/30/2015 5:50:51 PM">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -22,33 +22,33 @@ Clearing any prior web/markdown output...
 Validating and copying documentation source information
 Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\bin\Debug\Affdex.dll
     Found assembly &#39;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\bin\Debug\Affdex.dll&#39;
-Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\bin\Debug\AffdexUnity.XML
 Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\UnityEditorSource.XML
 Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\UnityEditorSource.dll
     Found assembly &#39;Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\UnityEditorSource.dll&#39;
 Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\Affdex.dll
     Found assembly &#39;Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\Affdex.dll&#39;
+Source: Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\bin\Debug\AffdexUnity.XML
 
 References to include (excluding framework assemblies):
     UnityEngine
 
 Copying XML comments files
-    Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\bin\Debug\AffdexUnity.XML -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\AffdexUnity.XML
     Z:\Users\foresthandford\git\unity\UnityApplication\UnityEditorSource\UnityEditorSource\bin\Debug\UnityEditorSource.XML -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\UnityEditorSource.XML
+    Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\bin\Debug\AffdexUnity.XML -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\AffdexUnity.XML
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00.0156
+</plugIn>    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0158
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateRefInfo.proj]
-Build started 11/25/2015 4:21:39 PM.
+Build started 11/30/2015 5:50:53 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 PrepareForBuild:
@@ -68,13 +68,13 @@ Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\U
 
 Build succeeded.
 
-Time Elapsed 00:00:01.71
-    Last step completed in 00:00:02.0937
+Time Elapsed 00:00:01.06
+    Last step completed in 00:00:01.2654
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - TransformManifest.proj]
-Build started 11/25/2015 4:21:41 PM.
+Build started 11/30/2015 5:50:54 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 TransformManifest:
@@ -95,12 +95,12 @@ Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\U
 
 Build succeeded.
 
-Time Elapsed 00:00:01.29
-    Last step completed in 00:00:01.6562
+Time Elapsed 00:00:00.95
+    Last step completed in 00:00:01.1096
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0313
+    Last step completed in 00:00:00.0156
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -114,7 +114,7 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 11/25/2015 4:21:43 PM.
+Build started 11/30/2015 5:50:55 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 GenerateIntermediateTOC:
@@ -126,24 +126,24 @@ Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\U
 
 Build succeeded.
 
-Time Elapsed 00:00:00.64
+Time Elapsed 00:00:00.17
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:01.0003
+    Last step completed in 00:00:00.3280
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.1091
+    Last step completed in 00:00:00.1093
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\sandcastle.config
-    Last step completed in 00:00:00.0156
+    Last step completed in 00:00:00.0158
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - BuildReferenceTopics.proj]
-Build started 11/25/2015 4:21:44 PM.
+Build started 11/30/2015 5:50:56 PM.
 Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj&quot; on node 1 (default targets).
 Project file contains ToolsVersion=&quot;12.0&quot;. This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion=&quot;4.0&quot;. For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
 BuildReferenceTopics:
@@ -152,7 +152,6 @@ BuildReferenceTopics:
   Portions Copyright c 2006-2015, Eric Woodruff, All Rights Reserved.
   Loading configuration...
   Processing topics...
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.AbstractAffdexListener] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.AbstractAffdexListener] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.AbstractAffdexListener] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.AbstractAffdexListener] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
@@ -469,15 +468,6 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.AbstractAffdexListener] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.AbstractAffdexListener] Unknown reference link target &#39;P:UnityEngine.MonoBehaviour.useGUILayout&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.AbstractAffdexListener] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.AbstractAffdexListener.onFaceFound(System.Single,System.Int32)] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.AbstractAffdexListener.onFaceFound(System.Single,System.Int32)] Missing &lt;param name=&quot;timestamp&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.AbstractAffdexListener.onFaceFound(System.Single,System.Int32)] Missing &lt;param name=&quot;faceId&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.AbstractAffdexListener.onFaceLost(System.Single,System.Int32)] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.AbstractAffdexListener.onFaceLost(System.Single,System.Int32)] Missing &lt;param name=&quot;timestamp&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.AbstractAffdexListener.onFaceLost(System.Single,System.Int32)] Missing &lt;param name=&quot;faceId&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.AbstractAffdexListener.onImageResults(System.Collections.Generic.Dictionary{System.Int32,Affdex.Face})] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.AbstractAffdexListener.onImageResults(System.Collections.Generic.Dictionary{System.Int32,Affdex.Face})] Missing &lt;param name=&quot;faces&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.AffdexUnityUtils] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.CameraInput] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.CameraInput] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.CameraInput] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
@@ -794,9 +784,7 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.CameraInput] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.CameraInput] Unknown reference link target &#39;P:UnityEngine.MonoBehaviour.useGUILayout&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.CameraInput] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.CameraInput.device] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [F:Affdex.CameraInput.device] Unknown reference link target &#39;T:UnityEngine.WebCamDevice&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.CameraInput.devices] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [F:Affdex.CameraInput.devices] Unknown reference link target &#39;T:UnityEngine.WebCamDevice&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Affdex.CameraInput.Texture] Unknown reference link target &#39;T:UnityEngine.Texture&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.DebugFeatureViewer] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
@@ -1115,11 +1103,8 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.DebugFeatureViewer] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.DebugFeatureViewer] Unknown reference link target &#39;P:UnityEngine.MonoBehaviour.useGUILayout&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.DebugFeatureViewer] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.DebugFeatureViewer.debugTexture] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [F:Affdex.DebugFeatureViewer.debugTexture] Unknown reference link target &#39;T:UnityEngine.Texture&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:Affdex.DebugFeatureViewer.DebugTexture] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Affdex.DebugFeatureViewer.DebugTexture] Unknown reference link target &#39;T:UnityEngine.Texture&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.DebugFeatureViewer.OnDrawGizmos] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Detector] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Detector] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Detector] Unknown reference link target &#39;T:UnityEngine.Behaviour&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
@@ -1436,60 +1421,20 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Detector] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Detector] Unknown reference link target &#39;P:UnityEngine.MonoBehaviour.useGUILayout&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Detector] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:Affdex.Detector.IsRunning] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Detector.OnDestroy] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Detector.OnEnable] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Detector.StartDetector] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.Detector.startOnWake] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Detector.Stop] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.EmotionPoint] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.EmotionPoint.emotion] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.EmotionPoint.value] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.Emotions] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.ExpressionPoint] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.ExpressionPoint.expression] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.ExpressionPoint.value] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.Expressions] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Extensions.On(Affdex.Emotions,Affdex.Emotions)] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Extensions.On(Affdex.Emotions,Affdex.Emotions)] Missing &lt;returns&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Extensions.On(Affdex.Emotions,Affdex.Emotions)] Missing &lt;param name=&quot;emotion&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Extensions.On(Affdex.Emotions,Affdex.Emotions)] Missing &lt;param name=&quot;value&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Extensions.On(Affdex.Expressions,Affdex.Expressions)] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Extensions.On(Affdex.Expressions,Affdex.Expressions)] Missing &lt;returns&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Extensions.On(Affdex.Expressions,Affdex.Expressions)] Missing &lt;param name=&quot;expression&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Extensions.On(Affdex.Expressions,Affdex.Expressions)] Missing &lt;param name=&quot;value&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.Face] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:Affdex.Face.Emotions] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:Affdex.Face.Expressions] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:Affdex.Face.FeaturePoints] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:Affdex.Face.Measurements] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Face.ToString] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Face.ToString] Missing &lt;returns&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.FaceData] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.FaceData.emotions] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.FaceData.expressions] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.FaceData.featurePoints] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.FaceData.measurements] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.FeaturePoint] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.FeaturePoint.id] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.FeaturePoint.x] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.FeaturePoint.y] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.Frame] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Frame.#ctor(UnityEngine.Color32[],System.Int32,System.Int32,System.Single)] Missing &lt;param name=&quot;rgba&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Frame.#ctor(UnityEngine.Color32[],System.Int32,System.Int32,System.Single)] Missing &lt;param name=&quot;width&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Frame.#ctor(UnityEngine.Color32[],System.Int32,System.Int32,System.Single)] Missing &lt;param name=&quot;height&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Frame.#ctor(UnityEngine.Color32[],System.Int32,System.Int32,System.Single)] Missing &lt;param name=&quot;timestamp&quot;/&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Affdex.Frame.#ctor(UnityEngine.Color32[],System.Int32,System.Int32,System.Single)] Unknown reference link target &#39;T:UnityEngine.Color32&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.Frame.h] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.Frame.rgba] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [F:Affdex.Frame.rgba] Unknown reference link target &#39;T:UnityEngine.Color32&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.Frame.timestamp] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.Frame.w] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:Affdex.IDetectorInput.Texture] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Affdex.IDetectorInput.Texture] Unknown reference link target &#39;T:UnityEngine.Texture&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.Measurements] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:Affdex.Measurements.interOcularDistance] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:Affdex.Measurements.Orientation] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Affdex.Measurements.Orientation] Unknown reference link target &#39;T:UnityEngine.Quaternion&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.VideoFileInput] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.VideoFileInput] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
@@ -1807,11 +1752,8 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.VideoFileInput] Unknown reference link target &#39;T:UnityEngine.Component&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.VideoFileInput] Unknown reference link target &#39;P:UnityEngine.MonoBehaviour.useGUILayout&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.VideoFileInput] Unknown reference link target &#39;T:UnityEngine.MonoBehaviour&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:Affdex.VideoFileInput.detector] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [F:Affdex.VideoFileInput.movie] Unknown reference link target &#39;T:UnityEngine.MovieTexture&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:Affdex.VideoFileInput.Texture] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Affdex.VideoFileInput.Texture] Unknown reference link target &#39;T:UnityEngine.Texture&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:Affdex.Editor.DetectorEditor] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.Object&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEngine.ScriptableObject&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
@@ -1929,21 +1871,20 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;P:UnityEditor.Editor.targets&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Affdex.Editor.DetectorEditor] Unknown reference link target &#39;T:UnityEditor.Editor&#39;. [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Affdex.Editor.DetectorEditor.OnInspectorGUI] Missing &lt;summary&gt; documentation [Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj]
   Processed 124 topic(s)
-  1778 warning(s)
+  1719 warning(s)
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
-  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 3 of 30.
 Done Building Project &quot;Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\BuildReferenceTopics.proj&quot; (default targets).
 
 Build succeeded.
 
-Time Elapsed 00:00:12.55
-    Last step completed in 00:00:13.0593
+Time Elapsed 00:00:13.33
+    Last step completed in 00:00:13.7878
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0310
+    Last step completed in 00:00:00.0308
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -1960,7 +1901,7 @@ Processed 124 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\WebKI.xml
 Saving website table of contents to Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\WebTOC.xml
-    Last step completed in 00:00:01.3597
+    Last step completed in 00:00:00.6823
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -2039,7 +1980,7 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\icons\TocOpen.gif
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; Z:\Users\foresthandford\git\unity\UnityApplication\UnitySource\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00.2966
+    Last step completed in 00:00:00.3438
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
@@ -2050,21 +1991,21 @@ Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:00.5157
+</plugIn>    Last step completed in 00:00:00.6251
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 253 files for the website content
-    Last step completed in 00:00:01.2342
+    Last step completed in 00:00:01.1874
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:02.5625
+    Last step completed in 00:00:01.9999
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 11/25/2015 4:22:03 PM.  Total time: 00:00:27.5598
+Build completed successfully at 11/30/2015 5:51:14 PM.  Total time: 00:00:23.5011
 
 </buildStep>
 </shfbBuild>
