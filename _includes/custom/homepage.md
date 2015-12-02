@@ -6,6 +6,13 @@ We live in a world that’s highly connected, full of smart devices and interact
 
 Using our SDK, developers can now enrich digital experiences and apps with emotion-sensing and analytics.  Devices can now instantly respond to a user's unfiltered emotions, and apps can adjust their interfaces and flow to better suit moods. This makes for a more authentic, interactive, and unique experience.
 
+* Captures facial expressions of emotion and feedback of emotion metrics in real time.
+* Processes data obtained from optical sensors, such as a web camera, a video file, or still images.
+* Supports tracking and analysis of multiple faces in frame.
+* Has a flexible and easy to use API.
+* Measures 7 emotions, 15 highly nuanced facial expressions, identifies presence or absence of glasses, and recognizes gender as well as 14 Emoji expressions.
+* Has two alternative metrics for measuring the emotional experience: valence and engagement.
+* All processing is done on device -- no videos or images sent to our cloud.
 
 **Using the Affdex SDK enables your app to:**
 
