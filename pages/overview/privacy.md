@@ -17,5 +17,3 @@ The Affdex SDK does not collect the following information:
 * The Affdex SDK does not collect personal information
 * The Affdex SDK does not store face video obtained from the device camera; all the processing is done local to the device, transiently, on a frame-by-frame basis.
 * The Affdex SDK does not perform facial or identity recognition.
-
-The Affdex SDK for Android leverages the Flurry Analytics service; please see <a href=http://www.flurry.com/legal-privacy/privacy-policy target=_blank>Flurry's Privacy Policy</a> for details, including their instructions allowing users to opt out of tracking.
