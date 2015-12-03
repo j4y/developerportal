@@ -11,7 +11,7 @@ summary:
 
 <img src={{ "/images/android.png" | prepend: site.baseurl }} align=right>
 
-SDK Developer Guide Release 2.01
+SDK Developer Guide Release 2.1
 
 ## Requirements & Dependencies
 
@@ -77,11 +77,10 @@ Using the built-in camera is a common way to obtain video for facial expression 
 A demonstration of Camera Mode is the sample app MeasureUp.  
 To use Camera Mode,  implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interface. Then follow this sequence of SDK calls:  
 
-*   Construct a CameraDetector. The <code>cameraType</code> argument specifies whether to connect to the front or back camera, while the <code>cameraPreviewView</code> argument optionally specifics a SurfaceView onto which the SDK should display preview frames.
+*   Construct a CameraDetector. The <code>cameraType</code> argument specifies whether to connect to the front or back camera, the <code>cameraPreviewView</code> argument optionally specifics a SurfaceView onto which the SDK should display preview frames, the <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. (Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.
 
 ```
-public CameraDetector(Context context, CameraType cameraType,
-    SurfaceView cameraPreviewView)  
+public CameraDetector(Context context, CameraType cameraType, SurfaceView cameraPreviewView, int maxNumFaces, FaceDetectorMode faceDetectorMode)
 ```
 
 *   Call <code>setLicensePath()</code> with the path to the license file provided by Affectiva.  
@@ -152,9 +151,9 @@ Some applications may not wish to display the camera preview on screen. Since An
 
 Another way to feed video into the detector is via a video file that is stored on the file system of your device. Follow this sequence of SDK calls: 
 
-*   Construct a VideoFileDetector. The <code>filePath</code> argument is the path to your video file.  
+*   Construct a VideoFileDetector. The <code>filePath</code> argument is the path to your video file, the <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. (Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.  
 ```
-public Detector(Context context, String filePath)
+public VideoFileDetector(Context context, String filePath, int maxNumFaces, FaceDetectorMode faceDetectorMode)
 ```
 
 *   Call <code>setLicensePath()</code> with the path to the license file provided by Affectiva.
@@ -172,7 +171,7 @@ If your app is processing video and has access to video frames, you can push tho
 
 *   Construct a FrameDetector.  
 ```
-public FrameDetector(Context context) 
+public FrameDetector(Context context, int maxNumFaces, FaceDetectorMode faceDetectorMode)
 ```
 
 *   Call <code>setLicensePath()</code> with the path to the license file provided by Affectiva.  
@@ -200,7 +199,7 @@ Use Photo Mode for processing images that are unrelated to each other (that is, 
 
 *   Construct a PhotoDetector.  
 ```
-public Detector(Context context) 
+public PhotoDetector(Context context, int maxNumFaces, FaceDetectorMode faceDetectorMode)
 ```
 
 *   Call <code>setLicensePath()</code> with the path to the license file provided by Affectiva.
@@ -245,7 +244,7 @@ setMaxProcessRate(20);
 ```
 
 ### Face Detection Statistics
-To get the percentage of time a face was detected during a run (between <code>start()</code> and <code>stop()</code>), call:  
+To get the percentage of time any face was detected during a run (between <code>start()</code> and <code>stop()</code>), call:  
 ```
 getPercentFaceDetected();  
 ```
@@ -259,16 +258,16 @@ To receive the results of the SDK’s processing of a frame, implement the <code
 For the ImageListener interface, implement the callback <code>onImageResults()</code>, which is called by the SDK for every frame (except those that the CameraDetector skips in order to honor the maximum processing rate, unless <code>setSendUnprocessFrames(true)</code> has been called).
 This method receives these parameters: 
 
-1.  A list of Face objects.  In this release, this will be an empty list if no face was found in the frame, or a list of one Face object if there was a face found in the frame.  In Camera Mode, if setSendUnprocessedFrames(true) has been called, then this parameter will be null for any frame that has been skipped in order to honor the maximimum processing rate. 
+1.  A list of Face objects.  In this release, this will be an empty list if no face was found in the frame, or a list of Face objects for each face found in the frame.  In Camera Mode, if setSendUnprocessedFrames(true) has been called, then this parameter will be null for any frame that has been skipped in order to honor the maximimum processing rate. 
 2.  The image processed, as an Affdex Frame (a wrapper type for images, including Bitmaps, for example).
 3.  The timestamp of the frame.  In Photo Mode, this will be zero.
 
-The returned Face object contains three accessible inner objects: emotions, expressions, and measurements. Each of these inner objects has getter methods for retrieving the scores detected for each metric. For example, the smile score can be retrieved by calling <code>face.expressions.getSmile()</code> 
+The returned Face object contains four accessible inner objects: appearance, emotions, expressions, and measurements. Each of these inner objects has getter methods for retrieving the scores detected for each metric. For example, the smile score can be retrieved by calling <code>face.expressions.getSmile()</code> 
 The follow code sample shows an example of how to retrieve metric values from the Face object in <code>onImageResults</code>:  
 
 ```
 @Override
-public void onImageResults(List<Face> faces, Frame frame,float timestamp) {
+public void onImageResults(List<Face> faces, Frame image,float timestamp) {
 
     if (faces == null)
         return; //frame was not processed
@@ -276,7 +275,11 @@ public void onImageResults(List<Face> faces, Frame frame,float timestamp) {
     if (faces.size() == 0)
         return; //no face found
 
-    Face face = faces.get(0); //Currently, the SDK only detects one face at a time
+    Face face = faces.get(0); //0 indexed list of faces found
+
+    //Appearance
+    Gender genderValue = face.appearance.getGender();
+    Glasses glassesValue = face.appearance.getGlasses();
 
     //Some Emotions
     float joy = face.emotions.getJoy();
@@ -310,7 +313,7 @@ public void onImageResults(List<Face> faces, Frame frame,float timestamp) {
     if (faces.size() == 0)
         return; //no face found
 
-    Face face = faces.get(0); //Currently, the SDK only detects one face at a time
+    Face face = faces.get(0); //0 indexed list of faces found
 
     PointF[] points = face.getFacePoints();
 
