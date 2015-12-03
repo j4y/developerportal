@@ -11,7 +11,7 @@ summary:
 
 <img src={{ "/images/windows.png" | prepend: site.baseurl }} align=right>
 
-SDK Developer Guide Release 2.0
+SDK Developer Guide Release 2.1
  
 ## Requirements & Dependencies
 
@@ -154,10 +154,13 @@ For each of the possible sources of facial frames, the SDK defines a detector cl
 ### FrameDetector
 
 The <code>FrameDetector</code> tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order. The <code>FrameDetector</code> will detect a face in an frame and deliver information on it to you, including the facial expressions. 
-The <code>FrameDetector</code> constructor expects two parameters, a buffer size (which is necessary for setting the number of frames of the internal frame buffer), and a process frame rate (useful for throttling the maximum number of frames processed per second). By default, the process frame rate is set to 30. If the buffer becomes full because processing cannot keep up with the supply of frames, the oldest unprocessed frame is dropped.  
+The <code>FrameDetector</code> constructor expects four parameters, a buffer size (which is necessary for setting the number of frames of the internal frame buffer), a process frame rate (useful for throttling the maximum number of frames processed per second), a maximum number of faces to process, and the face detector mode (LARGE_FACES for closer, SMALL_FACES for farther away). By default, the process frame rate is set to 30. If the buffer becomes full because processing cannot keep up with the supply of frames, the oldest unprocessed frame is dropped.  
 
 ```
-FrameDetector(int bufferSize, int processFrameRate);
+FrameDetector(const int bufferSize, 
+              const float processFrameRate = DEFAULT_PROCESSING_FRAMERATE,
+              const unsigned int maxNumFaces = DEFAULT_MAX_NUM_FACES,
+              const FaceDetectorMode faceConfig = affdex::FaceDetectorMode::LARGE_FACES);
 ```
 
 After successfully initializing the detector using the start method. The frames can be passed to the detector by calling the process method.  
@@ -169,10 +172,13 @@ void process(Frame frame);
 ### CameraDetector
 
 Using a webcam is a common way to obtain video for facial expression detection. The CameraDetector can access a webcam connected to the device to capture frames and feed them directly to the facial expression engine. 
-The constructor of the <code>CameraDetector</code> class expects the camera ID, the number of frames to capture per second and the number of frames to process per second. 
+The constructor of the <code>CameraDetector</code> class expects the camera ID, the number of frames to capture per second, the number of frames to process per second, the maximum number of faces to process, and the face detector mode (LARGE_FACES for closer, SMALL_FACES for farther away). 
 
 ```
-CameraDetector(int cameraId=0, double cameraFPS=15, double processFPS);
+CameraDetector(const int cameraId = 0, const double cameraFPS = 15,
+               const double processFPS = DEFAULT_PROCESSING_FRAMERATE,
+               const unsigned int maxNumFaces = DEFAULT_MAX_NUM_FACES,
+               const FaceDetectorMode faceConfig = affdex::FaceDetectorMode::LARGE_FACES);
 ```
 
 An instance of the <code>CameraDetector</code> can also be created without any parameters. In this case, the detector connects to the first camera on the device list and assumes the capture frame rate to be 15
@@ -196,10 +202,12 @@ void setCameraFPS(double cameraFPS);
 
 ### VideoDetector
 
-Another common use of the SDK is to process previously captured video files. The <code>VideoDetector</code> helps streamline this effort by decoding and processing frames from a video file. Like the <code>FrameDetector</code>, the constructor accepts a parameter for processing frames per second. This parameter regulates how many frames from the video stream get processed. During processing, the <code>VideoDetector</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list]({{ site.baseurl }}/supportedvideoformats/) of accepted file types and recommended video codecs that are compatible with the detector.  
+Another common use of the SDK is to process previously captured video files. The <code>VideoDetector</code> helps streamline this effort by decoding and processing frames from a video file. Like the <code>FrameDetector</code>, the constructor accepts a parameter for processing frames per second. This parameter regulates how many frames from the video stream get processed. During processing, the <code>VideoDetector</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list]({{ site.baseurl }}/supportedvideoformats/) of accepted file types and recommended video codecs that are compatible with the detector.   Other parameters include the maximum number of faces to process, and face detector mode (LARGE_FACES for closer faces, and SMALL_FACES for farther away faces).
 
 ```
-VideoDetector(double processFPS);
+VideoDetector(const double processFPS = DEFAULT_PROCESSING_FRAMERATE, 
+              const unsigned int maxNumFaces = DEFAULT_MAX_NUM_FACES,
+              const FaceDetectorMode faceConfig = affdex::FaceDetectorMode::SMALL_FACES);
 ```
 
 Once the detector is started, the processing begins by calling the process function, the path to video file you are processing is passed in as a parameter:  
@@ -216,7 +224,13 @@ void stop();
 
 ### PhotoDetector
 
-The <code>PhotoDetector</code> class is used for streamlining the processing of still images. Since photos lack any continuity over time, the expression and emotion detection is performed independently on each frame and the timestamp is ignored. Due to this fact, the underlying emotion detection may return different results than the video based detectors.
+The <code>PhotoDetector</code> class is used for streamlining the processing of still images. Since photos lack any continuity over time, the expression and emotion detection is performed independently on each frame and the timestamp is ignored. Due to this fact, the underlying emotion detection may return different results than the video based detectors. It takes two arguments, maximum number of faces, and face mode (LARGE_FACES for closer faces, and SMALL_FACES for farther away faces).
+
+```
+PhotoDetector(const unsigned int maxNumFaces = DEFAULT_MAX_NUM_FACES, 
+              const FaceDetectorMode faceConfig = FaceDetectorMode::SMALL_FACES);
+```
+
 Like the <code>FrameDetector</code>, the <code>PhotoDetector</code> must be started:  
 
 ```
@@ -261,15 +275,6 @@ The following color formats are supported by the Frame class:
 ```
 enum class COLOR_FORMAT
 {
-    RGB,
-    BGR
-};
-```
-
-<!-- commented out until future release
-```
-enum class COLOR_FORMAT
-{
   RGB,      // 24-bit pixels with Red, Green, Blue pixel ordering
   BGR,      // 24-bit pixels with Blue, Green, Red pixel ordering
   RGBA,     // 32-bit pixels with Red, Green, Blue, Alpha  pixel ordering
@@ -278,7 +283,6 @@ enum class COLOR_FORMAT
   YUV_I420  // 12-bit pixels with YUV information (I420 encoding)
 };
 ```
-end comment -->
 
 To retrieve the color format used to create the frame, call:  
 
@@ -313,15 +317,72 @@ void setTimestamp(float value);
 The Face class represents a face found with a processed frame. It contains results for detected expressions and emotions and the face and head measurements.  
 
 ```
-Face.Expressions
+Face.Appearance
 Face.Emotions
+Face.Emoji
+Face.Expressions
 Face.Measurements
+Face.Orientation
 ```
 
 The Face object also enables users to retrieve the feature points associated with a face:  
 
 ```
 Face.FeaturePoints
+```
+
+<strong>Appearance</strong>
+
+<code>Appearance</code> is a set of enums that describe the presence or absence of glasses on a face, as well as a face's perceived gender.
+
+```
+struct Appearance
+{
+  Gender gender; //enumeration with values of {Unknown, Male, Female}
+  Glasses glasses; //enumeration with values {No, Yes}
+};
+```
+
+<strong>Emotions</strong>
+
+<code>Emotions</code> is a representation of the probabilities of the emotions detected. Each value represents a probability between 0 to 100 of the presence of the emotion in the frame analyzed. Valence, a measure of positivity or negativity of the expressions, ranges from -100 to 100:  
+
+```
+struct Emotions
+{
+float Joy;
+float Fear;
+float Disgust;
+float Sadness;
+float Anger;
+float Surprise;
+float Contempt;
+float Valence;
+float Engagement;
+};
+```
+<strong>Emoji</strong>
+
+<code>Emoji</code> is a representation of the probability of Emoji expressions detected. Each value represents a probability between 0 to 100 of the presence of the Emoji expression in the frame analyzed.
+
+```
+struct Emoji
+{
+  float laughing;
+  float smiley;
+  float relaxed;
+  float wink;
+  float kiss;
+  float kissAndEyeClosure;
+  float tongueOutAndWink;
+  float tongueOut;
+  float tongueOutAndEyeClosure;
+  float flushed;
+  float disappointed;
+  float rage;
+  float scream;
+  float smirk;
+};
 ```
 
 <strong>Expressions</strong>
@@ -349,31 +410,12 @@ struct Expressions
 };
 ```
 
-<strong>Emotions</strong>
-
-<code>Emotions</code> is a representation of the probabilities of the emotions detected. Each value represents a probability between 0 to 100 of the presence of the emotion in the frame analyzed. Valence, a measure of positivity or negativity of the expressions, ranges from -100 to 100:  
-
-```
-struct Emotions
-{
-  float Joy;
-  float Fear;
-  float Disgust;
-  float Sadness;
-  float Anger;
-  float Surprise;
-  float Contempt;
-  float Valence;
-  float Engagement;
-};
-```
-
 <strong>Measurements</strong>
 
 <code>Measurements</code> is a representation of the head and face measurements. The Interocular distance is the defined as the distance between the two outer eye corners in pixels:  
 
 ```
-struct Expressions
+struct Measurements
 {
   Orientation orientation;
   float interoculardistance;
@@ -416,7 +458,7 @@ See the feature point indices [table]({{ site.baseurl }}/fpi/) for a full list o
 
 This interface delivers information about the images and faces captured by a detector. The <code>ImageListener</code> contains two client callback methods:
 
-<code>onImageResults</code> returns the processed frame and a dictionary of the faces found. An individual entry in the dictionary is comprised of a face ID and a Face object which contains metrics about the face. If the image was processed but no face was found, the returned dictionary will be empty. The detectors track a single face, the face that occupies the largest area in the image. A Future release of the SDK will allow tracking multiple faces in an image.  
+<code>onImageResults</code> returns the processed frame and a dictionary of the faces found. An individual entry in the dictionary is comprised of a face ID and a Face object which contains metrics about the face. If the image was processed but no face was found, the returned dictionary will be empty.
 
 ```
 virtual void onImageResults(Dictionary<int, Face> faces, Frame image);
