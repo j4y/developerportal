@@ -64,7 +64,7 @@ Set the camera rate, camera location, width and height:
 
 Affdex performs best using a resolution ratio of 4:3 (ie: 320x240, 640x480, 800x600, 1024x768, etc).  
 
-To create your own script for getting images take a look at the <code>Frame</code> data structure below.  You can also see a prototype of Affectiva's <code>CameraInput</code> script on [GitHub](https://gist.github.com/ForestJay/e47a258cc2ae7a9a44c8).  
+To create your own script for getting images take a look at the <code>Frame</code> data structure below.  You can also see Affectiva's <code>CameraInput</code> script in the asset.  
 
 ### Configuring a Detector 
 
