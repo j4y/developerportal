@@ -79,16 +79,16 @@ The Affdex classifier data files are used in frame analysis processing. These fi
 Assets/StreamingAssets/affdex-data
 ```
 
-## AbstractAffdexListener
+## ImageResultsListener
 
 The Detectors use callback classes to communicate events and results:
-The <code>AbstractAffdexListener</code> is a client callback which receives notification when the detector has started or stopped tracking a face. The OnFaceLost, OnFaceFound, and OnImageResults methods must be defined as part of a class attached as a component within Unity.  Here is an example of how they look:  
+The <code>ImageResultsListener</code> is a client callback which receives notification when the detector has started or stopped tracking a face. The OnFaceLost, OnFaceFound, and OnImageResults methods must be defined as part of a class attached as a component within Unity.  Here is an example of how they look:  
 
 ```
 using Affdex;
 using System.Collections.Generic;
 
-public class PlayerEmotions : AbstractAffdexListener
+public class PlayerEmotions : ImageResultsListener
 {
     public float currentSmile;
     public float currentInterocularDistance;
