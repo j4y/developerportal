@@ -366,22 +366,22 @@ float Engagement;
 <code>Emoji</code> is a representation of the probability of Emoji expressions detected. Each value represents a probability between 0 to 100 of the presence of the Emoji expression in the frame analyzed.
 
 ```
-struct Emoji
+struct Emojis
 {
-  float laughing;
-  float smiley;
-  float relaxed;
-  float wink;
-  float kiss;
-  float kissAndEyeClosure;
-  float tongueOutAndWink;
-  float tongueOut;
-  float tongueOutAndEyeClosure;
-  float flushed;
-  float disappointed;
-  float rage;
-  float scream;
-  float smirk;
+    float relaxed;
+    float smiley;
+    float laughing;
+    float kissingClosedEyes;
+    float kissing;
+    float disappointed;
+    float rage;
+    float smirk;
+    float wink;
+    float stuckOutTongueClosedEyes;
+    float stuckOutTongueWinkingEye;
+    float stuckOutTongue;
+    float flushed;   
+    float scream;          
 };
 ```
 

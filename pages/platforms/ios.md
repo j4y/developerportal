@@ -11,16 +11,18 @@ summary:
 
 <img src={{ "/images/apple.png" | prepend: site.baseurl }} align=right>
 
-SDK Developer Guide Release 2.0
+SDK Developer Guide Release 2.1
 
-## What's New in SDK V2
+## What's New in SDK V2.1
 
-If you're coming from SDK V1, there are a number of changes that you should know about:
+If you're coming from SDK V1 or V2, there are a number of changes that you should know about:
 
 * iOS 8 is now the minimum version of iOS supported.
 * The static library <code>libAffdex.a</code> has been replaced with an iOS Framework called <code>Affdex.framework</code>.
 * A new class called <code>AFDXFace</code> has been added which contains classifier scores and information about the face.
 * Some of the delegate methods in the <code>AFDXDelegate</code> protocol have changed.
+* The SDK supports detection of multiple faces. 
+* Scores for popular Emoji expressions are now available.
 
 These changes will require some adaptations to your existing Xcode projects. Please read this guide thoroughly in order to understand the changes.
 
@@ -66,7 +68,7 @@ Also defined in the header file is the <code>AFDXFace</code> object, which encap
 * 	<strong>faceBounds</strong>: this is a CGRect which describes the bounding box of the face.
 * 	<strong>interOcularDistance</strong>: this is the distance between the two outer eye corners in pixels.
 
-The emotion and expression values for the face are represented as properties of type <code>CGFloat</code> and end in Score (e.g. <code>fearScore</code>). The following tables show property names of both the emotions and the expressions supported in the <code>AFDXFace</code> object, as as well as the score property name and the range for the score.
+The emotion, emoji, and expression values for the face are represented as properties of type <code>CGFloat</code> and end in Score (e.g. <code>fearScore</code>). The following tables show property names of both the emotions and the expressions supported in the <code>AFDXFace</code> object, as as well as the score property name and the range for the score.
 
 <table border="1" style="width:100%">
 <tr><th>Emotion</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
@@ -80,6 +82,25 @@ The emotion and expression values for the face are represented as properties of 
 <tr><td>Valence</td><td>valence</td><td>valenceScore</td><td>-100 - 100</td></tr>
 <tr><td>Engagement</td><td>expressiveness</td><td>expressivenessScore</td><td>0 - 100</td></tr>
 </table>
+
+<table border="1" style="width:100%">
+<tr><th>Emoji</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
+<tr><td>Laughing</td><td>AFDX_EMOJI_LAUGHING</td><td>laughing</td><td>0 - 100</td></tr>
+<tr><td>Smiley</td><td>AFDX_EMOJI_SMILEY</td><td>smiley</td><td>0 - 100</td></tr>
+<tr><td>Relaxed</td><td>AFDX_EMOJI_RELAXED</td><td>relaxed</td><td>0 - 100</td></tr>
+<tr><td>Wink</td><td>AFDX_EMOJI_WINK</td><td>wink</td><td>0 - 100</td></tr>
+<tr><td>Kissing</td><td>AFDX_EMOJI_KISS</td><td>kissing</td><td>0 - 100</td></tr>
+<tr><td>Kissing and Eye Closure</td><td>AFDX_EMOJI_KISS_AND_EYE_CLOSURE</td><td>kissingClosedEyes</td><td>0 - 100</td></tr>
+<tr><td>Tongue Out and Wink</td><td>AFDX_EMOJI_TONGUE_OUT_AND_WINK</td><td>stuckOutTongueWinkingEye</td><td>0 - 100</td></tr>
+<tr><td>Tongue Out</td><td>AFDX_EMOJI_TONGUE_OUT</td><td>stuckOutTongue</td><td>0 - 100</td></tr>
+<tr><td>Tongue Out and Eye Closure</td><td>AFDX_EMOJI_TONGUE_OUT_AND_EYE_CLOSURE</td><td>stuckOutTongueClosedEyes</td><td>0 - 100</td></tr>
+<tr><td>Flushed</td><td>AFDX_EMOJI_FLUSHED</td><td>flushed</td><td>0 - 100</td></tr>
+<tr><td>Disappointed</td><td>AFDX_EMOJI_DISSAPOINTED</td><td>disappointed</td><td>0 - 100</td></tr>
+<tr><td>Rage</td><td>AFDX_EMOJI_RAGE</td><td>rage</td><td>0 - 100</td></tr>
+<tr><td>Scream</td><td>AFDX_EMOJI_SCREAM</td><td>scream</td><td>0 - 100</td></tr>
+<tr><td>Smirk</td><td>AFDX_EMOJI_SMIRK</td><td>smirk</td><td>0 - 100</td></tr>
+</table>
+
 
 <table border="1" style="width:100%">
 <tr><th>Expression</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
@@ -150,7 +171,7 @@ A scenario illustrating the use of continuous image processing is when your app 
 Processing either discrete or continuous images does not entail the use of the device camera so you can use Affdex SDK to process images while your device camera is in use.  
 
 ```
-- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate usingDiscreteImages:(BOOL)discrete maximumFaces:(NSUInteger)maximumFaces;
+- (id)initWithDelegate:(id <AFDXDetectorDelegate>)delegate discreteImages:(BOOL)discrete maximumFaces:(NSUInteger)maximumFaces;
 ```
 
 Like the other methods, this initialization method also takes a reference to an object which adheres to the <code>AFDXDetectorDelegate</code> protocol, as well as a maximum number of faces (currently only one face is detected).
@@ -184,6 +205,12 @@ You must also specify a path to your license file. This file is provided by Affe
 
 ```
 detector.licensePath = [[NSBundle mainBundle] pathForResource:@"sdk" ofType:@"license"];
+```
+
+Or you can set the licenseString variable to the path of your license file.
+
+```
+detector.licenseString = @"....."; // change the ellipses to the license string.
 ```
 
 If you plan to use the camera to process facial frames using the Affdex SDK, you can specify the maximum number of frames per second. This is helpful to balance battery life with your processing requirements. The default (and recommended) rate is 5 frames per second, but you may also set it lower if you are using an older device such as an iPad 2, and need additional performance.  
@@ -291,5 +318,4 @@ When the array of faces comes into the delegate method, your application can int
 
 In the above code snippet, the delegate method will call one of two instance methods depending on the value of the <code>faces</code> dictionary. The <code>unprocessedImageReady:image:atTime:</code> method receives unprocessed frames while the <code>processedImageReady:image:faces:atTime:</code> method receives the processed ones. In that method, you can check the metric values for  all <code>AFDXFace</code> objects in the dictionary. The value extracted from the metric should be checked for NaN (not a number) which indicates that the detector has not been instructed to detect that emotion or expression.
 
-<!-- For multiple face detection, it is important to keep in mind that each face has its own face identifier (a unique number) which is tracked as long as that face remains in the image and does not "cross over" another face. If one face's bounding box collides with another face's bounding box from one frame to the next (in video or non-discrete image mode), the face tracker may assign a different face ID to those faces.
--->
+ For multiple face detection, it is important to keep in mind that each face has its own face identifier (a unique number) which is tracked as long as that face remains in the image and does not "cross over" another face. If one face's bounding box collides with another face's bounding box from one frame to the next (in video or non-discrete image mode), the face tracker may assign a different face ID to those faces.
