@@ -1,13 +1,13 @@
 ## Introducing the Affdex SDK
 
-![]({{ "/images/banner.png" | prepend: site.baseurl }})
+By integrating the Affdex SDK, developers can create interactive and exciting emotion-aware applications and digital experiences. As users interact with their mobile or desktop devices using applications and digital experiences you have built with the Affdex SDK, their facial expressions are captured, analyzed and made available for further processing.
 
 We live in a world that’s highly connected, full of smart devices and interactive digital experiences.  Yet emotions are missing from the digital world.  At Affectiva, we have made it our mission to bring emotional intelligence to the digital world. To make this mission a reality, we have created the Affdex SDK so that others can bring emotion-sensing and analytics to their own offerings, be it digital experiences, apps, games, devices, or other technologies.
 
-Using our SDK, developers can now enrich digital experiences and apps with emotion-sensing and analytics.  Devices can now instantly respond to a user's unfiltered emotions, and apps can adjust their interfaces and flow to better suit moods. This makes for a more authentic, interactive, and unique experience.
+The features of the Affdex SDK include:
 
-* Captures facial expressions of emotion and feedback of emotion metrics in real time.
-* Processes data obtained from optical sensors, such as a web camera, a video file, or still images.
+* Captures facial expressions of emotion and provides feedback of emotion metrics in real time.
+* Processes data obtained from video files, still images, or optical sensors, such as a web camera.
 * Supports tracking and analysis of multiple faces in frame.
 * Has a flexible and easy to use API.
 * Measures 7 emotions, 15 highly nuanced facial expressions, identifies presence or absence of glasses, and recognizes gender as well as 14 Emoji expressions.
