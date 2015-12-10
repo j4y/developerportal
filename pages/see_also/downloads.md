@@ -5,7 +5,7 @@ metadata: false
 ---
 ## SDK Downloads
 
-Select from the table the SDK package for the platform you will be developing on.  
+Select the SDK package for your desired platform.  
 The Android SDK comes as an uncompressed folder.  
 The iOS SDK comes as a .tar folder.  
 To get the Affdex Unity Asset, go to the Unity [Asset Store](https://www.assetstore.unity3d.com/) where you can import it into your project.  

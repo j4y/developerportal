@@ -48,7 +48,7 @@ The following code snippets demonstrate how easy it is to obtain facial expressi
 
 The Affdex SDK has the following operating modes:
 
-*   Camera mode:  the SDK turns on and connects to the camera and processes the frames it records.  Sample app: MeasureUp.
+*   Camera mode:  the SDK turns on and connects to the camera and processes the frames it records.  Sample app: AffdexMe.
 *   Video file mode:  provide to the SDK a path to a video file. 
 *   Pushed frame mode:  provide to the SDK individual frames of video and their timestamps. 
 *   Photo mode:  provide discrete images to the SDK (unrelated to any other image).
@@ -67,14 +67,14 @@ In general, calls to the SDK are made in the following order:
 *   If you are pushing your own images (pushed frame mode or photo mode), call <code>process()</code> with each image.
 *   When you are done processing, call <code>stop()</code>. 
 
-To receive results from the SDK, implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interfaces, and register your listener object(s) with the Detector via <code>setImageListener()</code> and/or <code>setFaceListener()</code>. These interfaces provide results of the SDK’s processing of each frame.  The <code>ImageListener</code> interface provides information about facial expressions and [face points]({{ site.baseurl }}/fpi/) for a face found in a given image via its onImageResults callback.  The FaceListener interface notifies its listener when a face appears or disappears via its onFaceDetectionStarted() and <code>onFaceDetectionStopped()</code> callbacks. For an example of using these callbacks to show and hide the results from the SDK, see the sample app MeasureUp. 
+To receive results from the SDK, implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interfaces, and register your listener object(s) with the Detector via <code>setImageListener()</code> and/or <code>setFaceListener()</code>. These interfaces provide results of the SDK’s processing of each frame.  The <code>ImageListener</code> interface provides information about facial expressions and [face points]({{ site.baseurl }}/fpi/) for a face found in a given image via its onImageResults callback.  The FaceListener interface notifies its listener when a face appears or disappears via its onFaceDetectionStarted() and <code>onFaceDetectionStopped()</code> callbacks. For an example of using these callbacks to show and hide the results from the SDK, see the sample app AffdexMe. 
 To check to see if the Detector is running (<code>start()</code> has been called, but not <code>stop()</code>), call <code>isRunning()</code>. 
 {{ note }} Be sure to always call <code>stop()</code> following a successful call to <code>start()</code> (including for example, in circumstances where you abort processing, such as in exception catch blocks).  This ensures that resources held by the Detector instance are released. {{ end }}
 
 ### Camera Mode 
 
 Using the built-in camera is a common way to obtain video for facial expression detection. Either the front or back camera of your Android device can be used to feed video directly to the Detector.  
-A demonstration of Camera Mode is the sample app MeasureUp.  
+A demonstration of Camera Mode is the sample app AffdexMe.  
 To use Camera Mode,  implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interface. Then follow this sequence of SDK calls:  
 
 *   Construct a CameraDetector. The <code>cameraType</code> argument specifies whether to connect to the front or back camera, the <code>cameraPreviewView</code> argument optionally specifics a SurfaceView onto which the SDK should display preview frames, the <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. (Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.

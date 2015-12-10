@@ -37,9 +37,9 @@ The face provides a rich canvas of emotion. Humans are innately programmed to ex
 
 Furthermore, the SDK allows for measuring valence and engagement, as alternative metrics for measuring the emotional experience:
 
-<strong>Engagement</strong>: A measure of facial muscle activation that illustrates the subject’s expressivness. The range of values is between 0 and 100.
+<strong>Engagement</strong>: A measure of facial muscle activation that illustrates the subject’s expressivness. The range of values is from 0 and 100.
 
-<strong>Valence</strong>: A measure of the positive (or negative) nature of the recorded person experience. The range of values for the metric is between -100 to 100.
+<strong>Valence</strong>: A measure of the positive or negative nature of the recorded person's experience. The range of values for the metric is from -100 to 100.
 
 ## Facial Expressions 
 
@@ -47,7 +47,7 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 <tr>
 <td><font size="2"><img src="{{ "/images/faces/Attention.jpg" | prepend: site.baseurl }}" alt="" title="Attention" align=center>
 <center><strong>Attention</strong></center><font size="1">
-<center>Measure of point of focus of the user based on the head orientation</center></font></font></td>
+<center>Measure of focus of the user based on the head orientation</center></font></font></td>
 <td><font size="2"><img src="{{ "/images/faces/Brow%20Furrow.jpg" | prepend: site.baseurl }}" alt="" title="Brow Furrow" align=center>
 <center><strong>Brow Furrow</strong></center><font size="1">
 <center>Both eyebrows moving lower and closer together</center></font></font></td>
@@ -59,7 +59,7 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 <center>The inner corners of eyebrows are raised</center></font></font></td>
 <td><font size="2"><img src="{{ "/images/faces/Eye%20Closure.jpg" | prepend: site.baseurl }}" alt="" title="Eye Closure" align=center>
 <center><strong>Eye Closure</strong></center><font size="1">
-<center>Both eye lids closed</center></font></font></td>
+<center>Both eyelids closed</center></font></font></td>
 </tr>
 <tr>
 <td><font size="2"><img src="{{ "/images/faces/Nose%20Wrinkle.jpg" | prepend: site.baseurl }}" alt="" title="Nose Wrinkle" align=center>
@@ -70,7 +70,7 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 <center>The upper lip moving upwards</center></font></font></td>
 <td><font size="2"><img src="{{ "/images/faces/Lip%20Suck.jpg" | prepend: site.baseurl }}" alt="" title="Lip Suck" align=center>
 <center><strong>Lip Suck</strong></center><font size="1">
-<center>Suck the red parts of the lips and the adjacent skin into the mouth covering the teeth</center></font></font></td>
+<center>Measure of pull of the red parts of the lips and the adjacent skin into the mouth</center></font></font></td>
 <td><font size="2"><img src="{{ "/images/faces/Lip%20Pucker.jpg" | prepend: site.baseurl }}" alt="" title="Lip Pucker" align=center>
 <center><strong>Lip Pucker</strong></center><font size="1">
 <center>The lips pushed foward</center></font></font></td>
@@ -90,7 +90,7 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 <center>The chin boss and the lower lip pushed upwards</center></font></font></td>
 <td><font size="2"><img src="{{ "/images/faces/Smirk.jpg" | prepend: site.baseurl }}" | prepend: site.baseurl }}" alt="" title="Smirk" align=center>
 <center><strong>Smirk</strong></center><font size="1">
-<center>Left or right lip corners pulled upwards and outwards</center></font></font></td>
+<center>Left or right lip corner pulled upwards and outwards</center></font></font></td>
 <td><font size="2"><img src="{{ "/images/faces/Smile.jpg" | prepend: site.baseurl }}" alt="" title="Smile" align=center>
 <center><strong>Smile</strong></center><font size="1">
 <center>Lip corners pulling outwards and upwards towards the ears, combined with other indicators from around the face</center></font></font></td>
@@ -137,9 +137,9 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 </table>
 
 
-Emotion, expression and Emoji metrics scores indicate when users make a specific emotion, or expression (e.g., a smile) along with the degree of confidence. The metrics can be thought of as detectors: as the emotion or facial expression occurs and intensifies, the score rises from 0 (no expression) to 100 (expression fully present). 
+Emotion, expression and Emoji metrics scores indicate when users show a specific emotion, or expression (e.g., a smile) along with the degree of confidence. The metrics can be thought of as detectors: as the emotion or facial expression occurs and intensifies, the score rises from 0 (no expression) to 100 (expression fully present). 
 
-In addition, we also expose a composite emotional metric called valence which gives feedback on the overall experience. Valence measures 0 to 100 indicate a neutral to positive experience, while -100 to 0 indicate a negative to neutral experience.
+We also expose a composite emotional metric called valence which gives feedback on the overall experience. Valence measures 0 to 100 indicate a neutral to positive experience, while -100 to 0 indicate a negative to neutral experience.
 
 <center><img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}"></center>
 
@@ -160,13 +160,13 @@ The distance between the two outer eye corners.
 
 ## Appearance
 
-As well as the following appearance metrics:
+As well, our SDKs also provide the following appearance metrics:
 
-<strong>Gender</strong>
+<strong>Gender</strong>  
 Identification of gender as <em>Male</em>, <em>Female</em>, or <em>Unknown</em>.
 
-<strong>Glasses</strong>
-Identification of the presence (<e>yes</em>) or absence (<em>no</em>) of glasses.
+<strong>Glasses</strong>  
+Identification of the presence or absence of glasses.
 
 <br></br>
 <br></br>

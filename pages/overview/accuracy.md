@@ -13,7 +13,7 @@ metadata: false
 <br></br>
 We continuously train and test our emotion-sensing metrics to provide the most reliable and accurate classifiers. Our key emotions achieve accuracy in the high 90th percentile.
 <br></br>
-Our emotion metrics are trained and tested on very difficult datasets.  We sampled our test set, comprising hundred of thousands of facial frames, from more than 3.2 million facial videos.  This data is from more than 75 countries, representing real-world, spontaneous facial expressions, made under challenging conditions, such as varying lighting, different head movements, and variances in facial features due to ethnicity, age, gender, facial hair and glasses. 
+Our emotion metrics are trained and tested on very difficult datasets.  We sampled our test set, comprised of hundreds of thousands of facial frames, from more than 3.2 million facial videos.  This data is from more than 75 countries, representing real-world, spontaneous facial expressions, made under challenging conditions, such as varying lighting, different head movements, and variances in facial features due to ethnicity, age, gender, facial hair and glasses. 
 <br></br>
 
 ## How do we measure our accuracy?
@@ -26,15 +26,15 @@ Some,  more nuanced, facial expressions, which are much harder for even humans t
 The classifiers for emotions have ROC scores greater than or equal to 0.8, with expressions of joy, disgust, contempt and surprise the most accurately detected. Expressions of anger, sadness and fear tend to be more nuanced and subtle and are therefore harder to detect resulting in scores at the lower end of the range.
 
 
-Effects of changes in head angles and face luminace
+<strong>Effects of changes in head angles and face luminance</strong>
 
-The best performance in a range of +/- 25 degrees frontal, outside of which accuracy begins to suffer. Furthermore, for the effect of the differences in lighting conditions on accuracy, the classifier accuracy drops only when the face is extremely poorly illuminated or backlit. This occurs when the average pixel brightness of the face falls below 30 on a scale of 0 (pitch black) to 255 (white). In the example below, our classifiers can handle the three images on the right.
+The best performance is in a range of +/- 25 degrees frontal, outside of which accuracy begins to suffer. Furthermore, for the effect of the differences in lighting conditions on accuracy, the classifier accuracy drops only when the face is extremely poorly illuminated or backlit. This occurs when the average pixel brightness of the face falls below 30 on a scale of 0 (pitch black) to 255 (white). In the example below, our classifiers can handle the three images on the right.
 
 <center><img src={{ "/images/lighting.png" | prepend: site.baseurl }}></center>
 
 ## Cultural differences
 
-Many scientific studies demonstrated the universality of facial expressions of emotions, however, each culture employs what we call "display rules” -- culturally-specific rules that govern when people amplify, dampen or altogether mask a facial expression of emotion. The research demonstrating the effect of display rules is extensive, covers the past 50 years, and is widely acknowledged. In Southeast Asia there are very clear display rules around how to display emotion, especially in the presence of strangers (a work meeting, a moderator in a research study etc): namely, dampen their expressions especially negative ones.
+Many scientific studies demonstrated the universality of facial expressions of emotions; however, each culture employs what we call "display rules” -- culturally-specific rules that govern when people amplify, dampen or altogether mask a facial expression of emotion. The research demonstrating the effect of display rules is extensive, covers the past 50 years, and is widely acknowledged. In Southeast Asia there are very clear display rules around how to display emotion, especially in the presence of strangers (a work meeting, a moderator in a research study, etc.): namely, dampen their expressions (especially negative ones).
 
 Our classifiers are trained against our massive emotion data repository that reflects data from 75 countries.   This has hardened our technology to account for cultural differences with high accuracy.
 
