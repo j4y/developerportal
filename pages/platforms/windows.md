@@ -361,6 +361,7 @@ float Valence;
 float Engagement;
 };
 ```
+
 <strong>Emoji</strong>
 
 <code>Emoji</code> is a representation of the probability of Emoji expressions detected. Each value represents a probability between 0 to 100 of the presence of the Emoji expression in the frame analyzed.

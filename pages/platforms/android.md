@@ -262,7 +262,7 @@ This method receives these parameters:
 2.  The image processed, as an Affdex Frame (a wrapper type for images, including Bitmaps, for example).
 3.  The timestamp of the frame.  In Photo Mode, this will be zero.
 
-The returned Face object contains four accessible inner objects: appearance, emotions, expressions, and measurements. Each of these inner objects has getter methods for retrieving the scores detected for each metric. For example, the smile score can be retrieved by calling <code>face.expressions.getSmile()</code> 
+The returned Face object contains five accessible inner objects: appearance, emoji, emotions, expressions, and measurements. Each of these inner objects has getter methods for retrieving the scores detected for each metric. For example, the smile score can be retrieved by calling <code>face.expressions.getSmile()</code> 
 The follow code sample shows an example of how to retrieve metric values from the Face object in <code>onImageResults</code>:  
 
 ```
@@ -280,6 +280,12 @@ public void onImageResults(List<Face> faces, Frame image,float timestamp) {
     //Appearance
     Gender genderValue = face.appearance.getGender();
     Glasses glassesValue = face.appearance.getGlasses();
+
+    //Some Emoji
+    float smiley = face.emoji.getSmiley();
+    float laughing = face.emoji.getLaughing();
+    float wink = face.emoji.getWink();
+
 
     //Some Emotions
     float joy = face.emotions.getJoy();
