@@ -101,37 +101,37 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 
 <table border="0">
 <tr>
-<td><font size="2"><img src="{{ "/images/emoji/laughing.jpg" | prepend: site.baseurl }}" alt="" title="Laughing" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/laughing.png" | prepend: site.baseurl }}" alt="" title="Laughing" align=center></center>
 <center><strong>Laughing</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/smiley.jpg" | prepend: site.baseurl }}" alt="" title="Smiley" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/smiley.png" | prepend: site.baseurl }}" alt="" title="Smiley" align=center></center>
 <center><strong>Smiley</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/relaxed.jpg" | prepend: site.baseurl }}" alt="" title="Relaxed" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/relaxed.png" | prepend: site.baseurl }}" alt="" title="Relaxed" align=center></center>
 <center><strong>Relaxed</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/wink.jpg" | prepend: site.baseurl }}" alt="" title="Wink" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/wink.png" | prepend: site.baseurl }}" alt="" title="Wink" align=center></center>
 <center><strong>Wink</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/kiss.jpg" | prepend: site.baseurl }}" alt="" title="Kiss" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/kiss.png" | prepend: site.baseurl }}" alt="" title="Kiss" align=center></center>
 <center><strong>Kiss</strong></center></font></td>
 </tr>
 <tr>
-<td><font size="2"><img src="{{ "/images/emoji/kissAndEyeClosure.jpg" | prepend: site.baseurl }}" alt="" title="Kiss and Eye Closure" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/kissAndEyeClosure.png" | prepend: site.baseurl }}" alt="" title="Kiss and Eye Closure"></center>
 <center><strong>Kiss and Eye Closure</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/tongueOutAndWink.jpg" | prepend: site.baseurl }}" alt="" title="Tongue Out and Wink" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/tongueOutAndWink.png" | prepend: site.baseurl }}" alt="" title="Tongue Out and Wink"></center>
 <center><strong>Tongue Out and Wink</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/tongueOut.jpg" | prepend: site.baseurl }}" alt="" title="Tongue Out" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/tongueOut.png" | prepend: site.baseurl }}" alt="" title="Tongue Out"></center>
 <center><strong>Tongue Out</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/tongueOutAndEyeClosure.jpg" | prepend: site.baseurl }}" alt="" title="Tongue Out and Eye Closure" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/tongueOutAndEyeClosure.png" | prepend: site.baseurl }}" alt="" title="Tongue Out and Eye Closure"></center>
 <center><strong>Tongue Out and Eye Closure</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/flushed.jpg" | prepend: site.baseurl }}" alt="" title="Flushed" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/flushed.png" | prepend: site.baseurl }}" alt="" title="Flushed"></center>
 <center><strong>Flushed</strong></center></font></td>
 </tr>
 <tr>
-<td><font size="2"><img src="{{ "/images/emoji/disappointed.jpg" | prepend: site.baseurl }}" alt="" title="Disappointed" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/disappointed.png" | prepend: site.baseurl }}" alt="" title="Disappointed"></center>
 <center><strong>Disappointed</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/Rage.jpg" | prepend: site.baseurl }}" alt="" title="Rage" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/rage.png" | prepend: site.baseurl }}" alt="" title="Rage"></center>
 <center><strong>Rage</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/scream.jpg" | prepend: site.baseurl }}" alt="" title="Scream" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/scream.png" | prepend: site.baseurl }}" alt="" title="Scream"></center>
 <center><strong>Scream</strong></center></font></td>
-<td><font size="2"><img src="{{ "/images/emoji/smirk.jpg" | prepend: site.baseurl }}" alt="" title="Smirk" align=center>
+<td><font size="2"><center><img src="{{ "/images/emoji/smirk.png" | prepend: site.baseurl }}" alt="" title="Smirk"></center>
 <center><strong>Smirk</strong></center></font></td>
 </tr>
 </table>
