@@ -37,7 +37,7 @@ The face provides a rich canvas of emotion. Humans are innately programmed to ex
 
 Furthermore, the SDK allows for measuring valence and engagement, as alternative metrics for measuring the emotional experience:
 
-<strong>Engagement</strong>: A measure of facial muscle activation that illustrates the subject’s expressivness. The range of values is from 0 and 100.
+<strong>Engagement</strong>: A measure of facial muscle activation that illustrates the subject’s expressivness. The range of values is from 0 to 100.
 
 <strong>Valence</strong>: A measure of the positive or negative nature of the recorded person's experience. The range of values for the metric is from -100 to 100.
 
