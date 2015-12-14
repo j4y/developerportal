@@ -59,7 +59,7 @@ For an example on how to do this, see the <a href=https://github.com/Affectiva/i
 
 In order to utilize the SDK, your app should link to the provided <code>Affdex.framework</code> framework. Choose the appropriate framework for your specific development situation (Device, Simulator, or Universal) Your code must include the Objective-C header file <code>Affdex/Affdex.h</code>. 
 
-Since the function of the SDK is to detect emotions and expressions, one of the key tasks is the examination of images for a face. The <code>AFDXDetector</code> combines face detection, tracking and expression classification to do this. An image may contain no faces, one face, or many faces. This class will currently detect only one face and and deliver information on that face to your app, including the emotions and expressions that the face is making.
+Since the function of the SDK is to detect emotions and expressions, one of the key tasks is the examination of images for a face. The <code>AFDXDetector</code> combines face detection, tracking and expression classification to do this. An image may contain no faces, one face, or many faces. This class will detect the faces and and deliver information on the faces to your app, including the emotions and expressions that the faces make.
 
 Also defined in the header file is the <code>AFDXFace</code> object, which encapsulates the properties of a single face:  
 
