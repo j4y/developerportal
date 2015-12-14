@@ -60,14 +60,14 @@ The SDK provides mode-specific Detector classes for each of these modes: CameraD
 
 In general, calls to the SDK are made in the following order:
 
-*   Construct a Detector corresponding to the operating mode that you want. The following methods are called on a Detector instance.
+*   Construct a Detector corresponding to the operating mode that you want. 
 *   Call <code>setLicensePath()</code> with the path to the license file provided by Affectiva.
 *   Set options for the Detector. In particular, enable detection of at least one facial expression metric (e.g. call <code>setDetectSmile()</code> to detect smiles).  Several facial expressions can be detected by the SDK, as described in “Introducing the SDK”. See the “Options” section below for more information on the different options available. 
 *   Call <code>start()</code> to start processing.  Note the types of exceptions that can be thrown and handle them as desired. 
 *   If you are pushing your own images (pushed frame mode or photo mode), call <code>process()</code> with each image.
 *   When you are done processing, call <code>stop()</code>. 
 
-To receive results from the SDK, implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interfaces, and register your listener object(s) with the Detector via <code>setImageListener()</code> and/or <code>setFaceListener()</code>. These interfaces provide results of the SDK’s processing of each frame.  The <code>ImageListener</code> interface provides information about facial expressions and [face points]({{ site.baseurl }}/fpi/) for a face found in a given image via its onImageResults callback.  The FaceListener interface notifies its listener when a face appears or disappears via its onFaceDetectionStarted() and <code>onFaceDetectionStopped()</code> callbacks. For an example of using these callbacks to show and hide the results from the SDK, see the sample app AffdexMe. 
+To receive results from the SDK, implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interfaces, and register your listener object(s) with the Detector via <code>setImageListener()</code> and/or <code>setFaceListener()</code>. These interfaces provide results of the SDK’s processing of each frame.  The <code>ImageListener</code> interface provides information about facial expressions and [face points]({{ site.baseurl }}/fpi/) for a face found in a given image via its <code>onImageResults</code> callback.  The FaceListener interface notifies its listener when a face appears or disappears via its <code>onFaceDetectionStarted()</code> and <code>onFaceDetectionStopped()</code> callbacks. For an example of using these callbacks to show and hide the results from the SDK, see the sample app AffdexMe. 
 To check to see if the Detector is running (<code>start()</code> has been called, but not <code>stop()</code>), call <code>isRunning()</code>. 
 {{ note }} Be sure to always call <code>stop()</code> following a successful call to <code>start()</code> (including for example, in circumstances where you abort processing, such as in exception catch blocks).  This ensures that resources held by the Detector instance are released. {{ end }}
 
