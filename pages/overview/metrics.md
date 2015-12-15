@@ -70,7 +70,7 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 <center>The upper lip moving upwards</center></font></font></td>
 <td><font size="2"><img src="{{ "/images/faces/Lip%20Suck.jpg" | prepend: site.baseurl }}" alt="" title="Lip Suck" align=center>
 <center><strong>Lip Suck</strong></center><font size="1">
-<center>Measure of pull of the red parts of the lips and the adjacent skin into the mouth</center></font></font></td>
+<center>Measure of pull of the lips and the adjacent skin into the mouth</center></font></font></td>
 <td><font size="2"><img src="{{ "/images/faces/Lip%20Pucker.jpg" | prepend: site.baseurl }}" alt="" title="Lip Pucker" align=center>
 <center><strong>Lip Pucker</strong></center><font size="1">
 <center>The lips pushed foward</center></font></font></td>
@@ -160,7 +160,7 @@ The distance between the two outer eye corners.
 
 ## Appearance
 
-As well, our SDKs also provide the following appearance metrics:
+Our SDKs also provide the following appearance metrics:
 
 <strong>Gender</strong>  
 Identification of gender as <em>Male</em>, <em>Female</em>, or <em>Unknown</em>.

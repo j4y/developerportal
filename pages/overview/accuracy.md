@@ -34,7 +34,7 @@ The best performance is in a range of +/- 25 degrees frontal, outside of which a
 
 ## Cultural differences
 
-Many scientific studies demonstrated the universality of facial expressions of emotions; however, each culture employs what we call "display rules” -- culturally-specific rules that govern when people amplify, dampen or altogether mask a facial expression of emotion. The research demonstrating the effect of display rules is extensive, covers the past 50 years, and is widely acknowledged. In Southeast Asia there are very clear display rules around how to display emotion, especially in the presence of strangers (a work meeting, a moderator in a research study, etc.): namely, dampen their expressions (especially negative ones).
+Many scientific studies demonstrate the universality of facial expressions of emotions; however, each culture employs what we call "display rules” -- culturally-specific rules that govern when people amplify, dampen or altogether mask a facial expression of emotion. The research demonstrating the effect of display rules is extensive, covers the past 50 years, and is widely acknowledged. In Southeast Asia there are very clear display rules around how to display emotion, especially in the presence of strangers (a work meeting, a moderator in a research study, etc.): namely, dampen their expressions, especially negative ones.
 
 Our classifiers are trained against our massive emotion data repository that reflects data from 75 countries.   This has hardened our technology to account for cultural differences with high accuracy.
 

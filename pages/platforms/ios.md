@@ -251,7 +251,7 @@ This method is called in your code when the detector has finished processing a v
 - (void)detector:(AFDXDetector *)detector didStartDetectingFace:(AFDXFace *)face;
 ```
 
-This method is called in your code and signals when the detector detects a new face that has come into view. It is often used in conjunction with detector:didStopDetectingFace:. The implementation of this delegate method is optional.  
+This method is called in your code and signals when the detector detects a new face that has come into view. It is often used in conjunction with <code>detector:didStopDetectingFace:</code>. The implementation of this delegate method is optional.  
 
 ```
 - (void)detector:(AFDXDetector *)detector didStopDetectingFace:(AFDXFace *)face;

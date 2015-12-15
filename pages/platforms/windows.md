@@ -275,12 +275,12 @@ The following color formats are supported by the Frame class:
 ```
 enum class COLOR_FORMAT
 {
-  RGB,      // 24-bit pixels with Red, Green, Blue pixel ordering
-  BGR,      // 24-bit pixels with Blue, Green, Red pixel ordering
-  RGBA,     // 32-bit pixels with Red, Green, Blue, Alpha  pixel ordering
-  BGRA,     // 24-bit pixels with Blue, Green, Red, Alpha pixel ordering
-  YUV_NV21, // 12-bit pixels with YUV information (NV21 encoding)
-  YUV_I420  // 12-bit pixels with YUV information (I420 encoding)
+    RGB,      // 24-bit pixels with Red, Green, Blue pixel ordering
+    BGR,      // 24-bit pixels with Blue, Green, Red pixel ordering
+    RGBA,     // 32-bit pixels with Red, Green, Blue, Alpha  pixel ordering
+    BGRA,     // 24-bit pixels with Blue, Green, Red, Alpha pixel ordering
+    YUV_NV21, // 12-bit pixels with YUV information (NV21 encoding)
+    YUV_I420  // 12-bit pixels with YUV information (I420 encoding)
 };
 ```
 
@@ -338,33 +338,33 @@ Face.FeaturePoints
 ```
 struct Appearance
 {
-  Gender gender; //enumeration with values of {Unknown, Male, Female}
-  Glasses glasses; //enumeration with values {No, Yes}
+    Gender gender; //enumeration with values of {Unknown, Male, Female}
+    Glasses glasses; //enumeration with values {No, Yes}
 };
 ```
 
 <strong>Emotions</strong>
 
-<code>Emotions</code> is a representation of the probabilities of the emotions detected. Each value represents a probability between 0 to 100 of the presence of the emotion in the frame analyzed. Valence, a measure of positivity or negativity of the expressions, ranges from -100 to 100:  
+<code>Emotions</code> is a representation of the probabilities of the emotions detected. Each value represents a probability from 0 to 100 of the presence of the emotion in the frame analyzed. Valence, a measure of positivity or negativity of the expressions, ranges from -100 to 100:  
 
 ```
 struct Emotions
 {
-float Joy;
-float Fear;
-float Disgust;
-float Sadness;
-float Anger;
-float Surprise;
-float Contempt;
-float Valence;
-float Engagement;
+    float Joy;
+    float Fear;
+    float Disgust;
+    float Sadness;
+    float Anger;
+    float Surprise;
+    float Contempt;
+    float Valence;
+    float Engagement;
 };
 ```
 
 <strong>Emoji</strong>
 
-<code>Emoji</code> is a representation of the probability of Emoji expressions detected. Each value represents a probability between 0 to 100 of the presence of the Emoji expression in the frame analyzed.
+<code>Emoji</code> is a representation of the probability of Emoji expressions detected. Each value represents a probability from 0 to 100 of the presence of the Emoji expression in the frame analyzed.
 
 ```
 struct Emojis
@@ -388,26 +388,26 @@ struct Emojis
 
 <strong>Expressions</strong>
 
-<code>Expressions</code> is a representation of the probabilities of the facial expressions detected. Each value represents a probability between 0 to 100 of the presence of the expression in the frame analyzed:  
+<code>Expressions</code> is a representation of the probabilities of the facial expressions detected. Each value represents a probability from 0 to 100 of the presence of the expression in the frame analyzed:  
 
 ```
 struct Expressions
 {
-  float Smile;
-  float InnerEyeBrowRaise;
-  float BrowRaise;
-  float BrowFurrow;
-  float NoseWrinkler;
-  float UpperLipRaiser;
-  float LipCornerDepressor;
-  float ChinRaiser;
-  float LipPucker;
-  float LipPress;
-  float LipSuck;
-  float MouthOpen;
-  float Smirk;
-  float EyeClosure;
-  float Attention;
+    float Smile;
+    float InnerEyeBrowRaise;
+    float BrowRaise;
+    float BrowFurrow;
+    float NoseWrinkler;
+    float UpperLipRaiser;
+    float LipCornerDepressor;
+    float ChinRaiser;
+    float LipPucker;
+    float LipPress;
+    float LipSuck;
+    float MouthOpen;
+    float Smirk;
+    float EyeClosure;
+    float Attention;
 };
 ```
 
@@ -418,8 +418,8 @@ struct Expressions
 ```
 struct Measurements
 {
-  Orientation orientation;
-  float interoculardistance;
+    Orientation orientation;
+    float interoculardistance;
 };
 ```
 <img src="../images/graphic3.png" align=right>
@@ -431,9 +431,9 @@ struct Measurements
 ```
 struct Orientation
 {
-  float pitch;
-  float yaw;
-  float roll;
+    float pitch;
+    float yaw;
+    float roll;
 };
 ```
 
@@ -444,9 +444,9 @@ struct Orientation
 ```
 struct FeaturePoint
 {
-  int id;
-  float x;
-  float y;
+    int id;
+    float x;
+    float y;
 };
 ```
 

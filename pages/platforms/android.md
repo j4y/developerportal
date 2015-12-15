@@ -77,7 +77,7 @@ Using the built-in camera is a common way to obtain video for facial expression 
 A demonstration of Camera Mode is the sample app AffdexMe.  
 To use Camera Mode,  implement the <code>Detector.ImageListener</code> and/or <code>Detector.FaceListener</code> interface. Then follow this sequence of SDK calls:  
 
-*   Construct a CameraDetector. The <code>cameraType</code> argument specifies whether to connect to the front or back camera, the <code>cameraPreviewView</code> argument optionally specifics a SurfaceView onto which the SDK should display preview frames, the <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. (Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.
+*   Construct a CameraDetector. The <code>cameraType</code> argument specifies whether to connect to the front or back camera, the <code>cameraPreviewView</code> argument optionally specifics a SurfaceView onto which the SDK should display preview frames, the <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.
 
 ```
 public CameraDetector(Context context, CameraType cameraType, SurfaceView cameraPreviewView, int maxNumFaces, FaceDetectorMode faceDetectorMode)
@@ -151,7 +151,7 @@ Some applications may not wish to display the camera preview on screen. Since An
 
 Another way to feed video into the detector is via a video file that is stored on the file system of your device. Follow this sequence of SDK calls: 
 
-*   Construct a VideoFileDetector. The <code>filePath</code> argument is the path to your video file, the <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. (Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.  
+*   Construct a VideoFileDetector. The <code>filePath</code> argument is the path to your video file, the <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.  
 ```
 public VideoFileDetector(Context context, String filePath, int maxNumFaces, FaceDetectorMode faceDetectorMode)
 ```
@@ -167,7 +167,7 @@ setDetectSmile(true);
 
 ### Pushed Frame Mode
 
-If your app is processing video and has access to video frames, you can push those video frames to the Affdex SDK for processing.  Each video frame has an associated timestamp that increases with each frame in the video.  Your app may have access to video frames because your app is interfacing to the device’s camera, or because your app is reading a video file, or perhaps by some other method. The <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. (Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.  
+If your app is processing video and has access to video frames, you can push those video frames to the Affdex SDK for processing.  Each video frame has an associated timestamp that increases with each frame in the video.  Your app may have access to video frames because your app is interfacing to the device’s camera, or because your app is reading a video file, or perhaps by some other method. The <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.  
 
 *   Construct a FrameDetector.  
 ```
@@ -195,7 +195,7 @@ public abstract void process(Frame frame, float timestamp);
 
 ### Photo Mode
 
-Use Photo Mode for processing images that are unrelated to each other (that is, they are not sequential frames of a video). Discrete images are processed by the SDK independently, without regard to the content of the preceding images, using different algorithms and data than are used with the other modes involving sequences of frames from a video source. The <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. (Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.  
+Use Photo Mode for processing images that are unrelated to each other (that is, they are not sequential frames of a video). Discrete images are processed by the SDK independently, without regard to the content of the preceding images, using different algorithms and data than are used with the other modes involving sequences of frames from a video source. The <code>maxNumFaces</code> argument indicates the maximum number of faces that the system should try to track (may slow down the system if value is too high), and the <code>faceDetectorMode</code> argument is a flag to specify if the system is tracking large (up close) or small (farther away) faces. Possible values are <code>Detector.FaceDetectorMode.LARGE_FACES</code> or <code>Detector.FaceDetectorMode.SMALL_FACES</code>.  
 
 *   Construct a PhotoDetector.  
 ```
