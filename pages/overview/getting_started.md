@@ -1,5 +1,5 @@
 ---
-title:
+title:Getting Started
 permalink: /getting_started/
 tags: getting-started
 audience: writer, designer
@@ -9,8 +9,6 @@ summary:
 metadata: false
 ---
 {% include linkrefs.html %} 
-
-## How to Use the SDK
 
 ### Live video feeds
 
@@ -23,7 +21,7 @@ A recorded video file that resides on the file system of the device can also be 
 
 ### Photos
 
-The SDK also includes the capability to generate emotion metrics from individual images (photographs). 
+The SDK also includes the capability to generate emotion metrics from individual images. 
 
 ## Supported Platforms
 
