@@ -109,18 +109,18 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 <center><strong>Relaxed</strong></center></font></td>
 <td><font size="2"><center><img src="{{ "/images/emoji/wink.png" | prepend: site.baseurl }}" alt="" title="Wink" align=center></center>
 <center><strong>Wink</strong></center></font></td>
-<td><font size="2"><center><img src="{{ "/images/emoji/kiss.png" | prepend: site.baseurl }}" alt="" title="Kiss" align=center></center>
-<center><strong>Kiss</strong></center></font></td>
+<td><font size="2"><center><img src="{{ "/images/emoji/kissing.png" | prepend: site.baseurl }}" alt="" title="Kissing" align=center></center>
+<center><strong>Kissing</strong></center></font></td>
 </tr>
 <tr>
-<td><font size="2"><center><img src="{{ "/images/emoji/kissAndEyeClosure.png" | prepend: site.baseurl }}" alt="" title="Kiss and Eye Closure"></center>
-<center><strong>Kiss and Eye Closure</strong></center></font></td>
-<td><font size="2"><center><img src="{{ "/images/emoji/tongueOutAndWink.png" | prepend: site.baseurl }}" alt="" title="Tongue Out and Wink"></center>
-<center><strong>Tongue Out and Wink</strong></center></font></td>
-<td><font size="2"><center><img src="{{ "/images/emoji/tongueOut.png" | prepend: site.baseurl }}" alt="" title="Tongue Out"></center>
-<center><strong>Tongue Out</strong></center></font></td>
-<td><font size="2"><center><img src="{{ "/images/emoji/tongueOutAndEyeClosure.png" | prepend: site.baseurl }}" alt="" title="Tongue Out and Eye Closure"></center>
-<center><strong>Tongue Out and Eye Closure</strong></center></font></td>
+<td><font size="2"><center><img src="{{ "/images/emoji/kissingClosedEyes.png" | prepend: site.baseurl }}" alt="" title="Kissing Closed Eyes"></center>
+<center><strong>Kissing Closed Eyes</strong></center></font></td>
+<td><font size="2"><center><img src="{{ "/images/emoji/stuckOutTongueWinkingEye.png" | prepend: site.baseurl }}" alt="" title="Stuck Out Tongue Winking Eye"></center>
+<center><strong>Stuck Out Tongue Winking Eye</strong></center></font></td>
+<td><font size="2"><center><img src="{{ "/images/emoji/stuckOutTongue.png" | prepend: site.baseurl }}" alt="" title="Stuck Out Tongue"></center>
+<center><strong>Stuck Out Tongue</strong></center></font></td>
+<td><font size="2"><center><img src="{{ "/images/emoji/stuckOutTongueClosedEyes.png" | prepend: site.baseurl }}" alt="" title="Stuck Out Tongue Closed Eyes"></center>
+<center><strong>Stuck Out Tongue Closed Eyes</strong></center></font></td>
 <td><font size="2"><center><img src="{{ "/images/emoji/flushed.png" | prepend: site.baseurl }}" alt="" title="Flushed"></center>
 <center><strong>Flushed</strong></center></font></td>
 </tr>

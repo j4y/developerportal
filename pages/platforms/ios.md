@@ -13,17 +13,21 @@ summary:
 
 SDK Developer Guide Release 2.1
 
-## What's New in SDK V2.1
+## What's New: 
 
-If you're coming from SDK V1 or V2, there are a number of changes that you should know about:
+### in SDK V2.1
+
+* The SDK supports detection of multiple faces. 
+* Identification of gender is now available.
+* Detection of glasses is now available.
+* Scores for popular Emoji expressions are now available.
+
+### in SDK V2.0
 
 * iOS 8 is now the minimum version of iOS supported.
 * The static library <code>libAffdex.a</code> has been replaced with an iOS Framework called <code>Affdex.framework</code>.
 * A new class called <code>AFDXFace</code> has been added which contains classifier scores and information about the face.
 * Some of the delegate methods in the <code>AFDXDelegate</code> protocol have changed.
-* The SDK supports detection of multiple faces. 
-* Scores for popular Emoji expressions are now available.
-
 These changes will require some adaptations to your existing Xcode projects. Please read this guide thoroughly in order to understand the changes.
 
 ## What’s in the SDK
@@ -89,11 +93,11 @@ The emotion, emoji, and expression values for the face are represented as proper
 <tr><td>Smiley</td><td>AFDX_EMOJI_SMILEY</td><td>smiley</td><td>0 - 100</td></tr>
 <tr><td>Relaxed</td><td>AFDX_EMOJI_RELAXED</td><td>relaxed</td><td>0 - 100</td></tr>
 <tr><td>Wink</td><td>AFDX_EMOJI_WINK</td><td>wink</td><td>0 - 100</td></tr>
-<tr><td>Kissing</td><td>AFDX_EMOJI_KISS</td><td>kissing</td><td>0 - 100</td></tr>
-<tr><td>Kissing and Eye Closure</td><td>AFDX_EMOJI_KISS_AND_EYE_CLOSURE</td><td>kissingClosedEyes</td><td>0 - 100</td></tr>
-<tr><td>Tongue Out and Wink</td><td>AFDX_EMOJI_TONGUE_OUT_AND_WINK</td><td>stuckOutTongueWinkingEye</td><td>0 - 100</td></tr>
-<tr><td>Tongue Out</td><td>AFDX_EMOJI_TONGUE_OUT</td><td>stuckOutTongue</td><td>0 - 100</td></tr>
-<tr><td>Tongue Out and Eye Closure</td><td>AFDX_EMOJI_TONGUE_OUT_AND_EYE_CLOSURE</td><td>stuckOutTongueClosedEyes</td><td>0 - 100</td></tr>
+<tr><td>Kissing</td><td>AFDX_EMOJI_KISSING</td><td>kissing</td><td>0 - 100</td></tr>
+<tr><td>Kissing Closed Eyes</td><td>AFDX_EMOJI_KISSING_CLOSED_EYES</td><td>kissingClosedEyes</td><td>0 - 100</td></tr>
+<tr><td>Stuck Out Tongue Winking Eye</td><td>AFDX_EMOJI_STUCK_OUT_TONGUE_WINKING_EYE</td><td>stuckOutTongueWinkingEye</td><td>0 - 100</td></tr>
+<tr><td>Stuck Out Tongue</td><td>AFDX_EMOJI_STUCK_OUT_TONGUE</td><td>stuckOutTongue</td><td>0 - 100</td></tr>
+<tr><td>Stuck Out Tongue Closed Eyes</td><td>AFDX_EMOJI_STUCK_OUT_TONGUE_CLOSED_EYES</td><td>stuckOutTongueClosedEyes</td><td>0 - 100</td></tr>
 <tr><td>Flushed</td><td>AFDX_EMOJI_FLUSHED</td><td>flushed</td><td>0 - 100</td></tr>
 <tr><td>Disappointed</td><td>AFDX_EMOJI_DISSAPOINTED</td><td>disappointed</td><td>0 - 100</td></tr>
 <tr><td>Rage</td><td>AFDX_EMOJI_RAGE</td><td>rage</td><td>0 - 100</td></tr>
