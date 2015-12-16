@@ -1,5 +1,5 @@
 ---
-title:Getting Started
+title: Getting Started
 permalink: /getting_started/
 tags: getting-started
 audience: writer, designer
