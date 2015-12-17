@@ -6,7 +6,8 @@ audience: writer, designer
 keywords: 
 last_updated: 
 summary: 
----
+---  
+
 {% include linkrefs.html %} 
 
 <img src={{ "/images/apple.png" | prepend: site.baseurl }} align=right>
@@ -69,71 +70,109 @@ Also defined in the header file is the <code>AFDXFace</code> object, which encap
 
 * 	<strong>faceId</strong>: this is a numeric value, guaranteed to be unique for a particular face as long as it remains visible in successive frames.
 * 	<strong>facePoints</strong>: this is an array of CGPoint objects, each of which denotes a facial landmark on the face. The point is relative to the coordinate space of the image processed. There can be many such points in this array.
-* 	<strong>faceBounds</strong>: this is a CGRect which describes the bounding box of the face.
-* 	<strong>interOcularDistance</strong>: this is the distance between the two outer eye corners in pixels.
+* 	<strong>faceBounds</strong>: this is a CGRect which describes the bounding box of the face.  
 
-The emotion, emoji, and expression values for the face are represented as properties of type <code>CGFloat</code> and end in Score (e.g. <code>fearScore</code>). The following tables show property names of both the emotions and the expressions supported in the <code>AFDXFace</code> object, as as well as the score property name and the range for the score.
+Head angle values are encapsulated inside of the <code>AFDXOrientation</code> class, which is accesible through the <code>orientation</code> property of the <code>AFDXFace</code> object. The following values are accessible:
 
+
+<table border=1 style="width:100%">
+<tr><th><center>Property Name</center></th>
+<th><center>Description</center></th>
+<th><center>Range</center></th></tr>
+<td><center>yaw</td></center>
+<td><center>Left/Right Head Angle of the Face</td></center>
+<td><center>-30 - 30</td></center><tr>
+<td><center>pitch</td></center>
+<td><center>Up/Down Head Angle of the Face</td></center>
+<td><center>-30 - 30</td></center></tr>
+<td><center>roll</td></center>
+<td><center>Head Tilt Angle of the Face</td></center>
+<td><center>-30 - 30</td></center></tr>
+<td><center>interocularDistance</td></center>
+<td><center>Distance in pixels between outer eye corners</td></center>
+<td><center>&nbsp &nbsp N/A</td></center></tr>
+</table>
+
+Appearance values are encapsulated inside of the <code>AFDXAppearance</code> class, which is accesible through the <code>appearance</code> property of the <code>AFDXFace</code> object. The following values are accessible:  
+
+<table border=1 style="width:100%">
+<th><center>Property Name</center></th>
+<th><center>Type</center></th>
+<th><center>Description</center></th>
+<th><center>Values</center></th>
+<tr><td><center>glasses</td></center><td><center>enum</td></center><td><center>Presence or Absence of Glasses</td></center><td><center>AFDX_GLASSES_YES, AFDX_GLASSES_NO</td></center>
+<tr><td><center>gender</td></center><td><center>enum</td></center><td><center>Perceived Gender</td></center><td><center>AFDX_GENDER_MALE, AFDX_GENDER_FEMALE, AFDX_GENDER_UNKNOWN</td></center></tr>
+</table>
+
+
+Emotions are available from within the <code>AFDXEmotions</code> class, which is accesible from the <code>emotions</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. For example:
+
+```
+detector.anger = TRUE;
+detector.fear = FALSE;
+detector.sadness = FALSE; // etc
+```  
+
+The following table shows the available emotions and their ranges.
+ 
 <table border="1" style="width:100%">
-<tr><th>Emotion</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
-<tr><td>Anger</td><td>anger</td><td>angerScore</td><td>0 - 100</td></tr>
-<tr><td>Sadness</td><td>sadness</td><td>sadnessScore</td><td>0 - 100</td></tr>
-<tr><td>Disgust</td><td>disgust</td><td>disgustScore</td><td>0 - 100</td></tr>
-<tr><td>Fear</td><td>fear</td><td>fearScore</td><td>0 - 100</td></tr>
-<tr><td>Joy</td><td>joy</td><td>joyScore</td><td>0 - 100</td></tr>
-<tr><td>Surprise</td><td>surprise</td><td>surpriseScore</td><td>0 - 100</td></tr>
-<tr><td>Contempt</td><td>contempt</td><td>contemptScore</td><td>0 - 100</td></tr>
-<tr><td>Valence</td><td>valence</td><td>valenceScore</td><td>-100 - 100</td></tr>
-<tr><td>Engagement</td><td>expressiveness</td><td>expressivenessScore</td><td>0 - 100</td></tr>
+<tr><th><center>Emotion</center></th><th><center>Property Name</center></th><th><center>Range</center></th></tr>
+<tr><td><center>Anger</td></center><td><center>anger</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Sadness</td></center><td><center>sadness</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Disgust</td></center><td><center>disgust</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Fear</td></center><td><center>fear</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Joy</td></center><td><center>joy</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Surprise</td></center><td><center>surprise</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Contempt</td></center><td><center>contempt</td></center</center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Valence</td></center><td><center>valence</td></center><td><center>-100 - 100</td></center></tr>
+<tr><td><center>Engagement</td></center><td><center>expressiveness</td></center><td><center>0 - 100</td></center></tr>
 </table>
 
 <table border="1" style="width:100%">
-<tr><th>Emoji</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
-<tr><td>Laughing</td><td>AFDX_EMOJI_LAUGHING</td><td>laughing</td><td>0 - 100</td></tr>
-<tr><td>Smiley</td><td>AFDX_EMOJI_SMILEY</td><td>smiley</td><td>0 - 100</td></tr>
-<tr><td>Relaxed</td><td>AFDX_EMOJI_RELAXED</td><td>relaxed</td><td>0 - 100</td></tr>
-<tr><td>Wink</td><td>AFDX_EMOJI_WINK</td><td>wink</td><td>0 - 100</td></tr>
-<tr><td>Kissing</td><td>AFDX_EMOJI_KISSING</td><td>kissing</td><td>0 - 100</td></tr>
-<tr><td>Kissing Closed Eyes</td><td>AFDX_EMOJI_KISSING_CLOSED_EYES</td><td>kissingClosedEyes</td><td>0 - 100</td></tr>
-<tr><td>Stuck Out Tongue Winking Eye</td><td>AFDX_EMOJI_STUCK_OUT_TONGUE_WINKING_EYE</td><td>stuckOutTongueWinkingEye</td><td>0 - 100</td></tr>
-<tr><td>Stuck Out Tongue</td><td>AFDX_EMOJI_STUCK_OUT_TONGUE</td><td>stuckOutTongue</td><td>0 - 100</td></tr>
-<tr><td>Stuck Out Tongue Closed Eyes</td><td>AFDX_EMOJI_STUCK_OUT_TONGUE_CLOSED_EYES</td><td>stuckOutTongueClosedEyes</td><td>0 - 100</td></tr>
-<tr><td>Flushed</td><td>AFDX_EMOJI_FLUSHED</td><td>flushed</td><td>0 - 100</td></tr>
-<tr><td>Disappointed</td><td>AFDX_EMOJI_DISSAPOINTED</td><td>disappointed</td><td>0 - 100</td></tr>
-<tr><td>Rage</td><td>AFDX_EMOJI_RAGE</td><td>rage</td><td>0 - 100</td></tr>
-<tr><td>Scream</td><td>AFDX_EMOJI_SCREAM</td><td>scream</td><td>0 - 100</td></tr>
-<tr><td>Smirk</td><td>AFDX_EMOJI_SMIRK</td><td>smirk</td><td>0 - 100</td></tr>
+<tr><th><center>Emoji Name</center></th><th><center><center>Score Name</center></th><th><center>Range</center></th></tr>
+<tr><td><center>Laughing</td></center><td><center><center>laughing</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Smiley</td></center><td><center><center>smiley</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Relaxed</td></center><td><center><center>relaxed</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Wink</td></center><td><center><center>wink</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Kissing</td></center><td><center><center>kissing</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Kissing Closed Eyes</td></center><td><center><center>kissingClosedEyes</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Stuck Out Tongue Winking Eye</td></center><td><center><center>stuckOutTongueWinkingEye</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Stuck Out Tongue</td></center><td><center>stuckOutTongue</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Stuck Out Tongue Closed Eyes</td></center><td><center>stuckOutTongueClosedEyes</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Flushed</td></center><td><center>flushed</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Disappointed</td></center><td><center>disappointed</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Rage</td></center><td><center>rage</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Scream</td></center><td><center>scream</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Smirk</td></center><td><center>smirk</td></center><td><center>0 - 100</td></center></tr>
 </table>
 
+Expressions are available from within the <code>AFDXExpressions</code> class, which is accesible from the <code>expressions</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. For example:
+
+```
+detector.attention = TRUE;
+detector.browFurrow = FALSE;
+detector.smile = FALSE; // etc
+```  
 
 <table border="1" style="width:100%">
-<tr><th>Expression</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
-<tr><td>Attention</td><td>attention</td><td>attentionScore</td><td>0 - 100</td></tr>
-<tr><td>Brow Furrow</td><td>browFurrow</td><td>browFurrowScore</td><td>0 - 100</td></tr>
-<tr><td>Brow Raise</td><td>browRaise</td><td>browRaiseScore</td><td>0 - 100</td></tr>
-<tr><td>Inner Brow Raise</td><td>innerBrowRaise</td><td>innerBrowRaiseScore</td><td>0 - 100</td></tr>
-<tr><td>Eye Closure</td><td>eyeClosure</td><td>eyeClosureScore</td><td>0 - 100</td></tr>
-<tr><td>Nose Wrinkle</td><td>noseWrinkle</td><td>noseWrinkleScore</td><td>0 - 100</td></tr>
-<tr><td>Upper Lip Raise</td><td>upperLipRaise</td><td>upperLipRaiseScore</td><td>0 - 100</td></tr>
-<tr><td>Lip Suck</td><td>lipSuck</td><td>lipSuckScore</td><td>0 - 100</td></tr>
-<tr><td>Lip Pucker</td><td>lipPucker</td><td>lipPuckerScore</td><td>0 - 100</td></tr>
-<tr><td>Lip Press</td><td>lipPress</td><td>lipPressScore</td><td>0 - 100</td></tr>
-<tr><td>Mouth Open</td><td>mouthOpen</td><td>mouthOpenScore</td><td>0 - 100</td></tr>
-<tr><td>Lip Corner Depressor</td><td>lipCornerDepressor</td><td>lipCornerDepressorScore</td><td>0 - 100</td></tr>
-<tr><td>Chin Raise</td><td>chinRaise</td><td>chinRaiseScore</td><td>0 - 100</td></tr>
-<!-- <tr><td>Interocular Distance</td><td>interOcularDistance</td><td>interOcularDistanceScore</td><td>0 - 100</td></tr> -->
-<tr><td>Smirk</td><td>smirk</td><td>smirkScore</td><td>0 - 100</td></tr>
-<tr><td>Smile</td><td>smile</td><td>smileScore</td><td>0 - 100</td></tr>
+<tr><th><center>Expression</center></th><th><center>Property Name</center></th><th><center>Range</center></th></tr>
+<tr><td><center>Attention</td></center><td><center>attention</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Brow Furrow</td></center><td><center>browFurrow</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Brow Raise</td></center><td><center>browRaise</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Inner Brow Raise</td></center><td><center>innerBrowRaise</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Eye Closure</td></center><td><center>eyeClosure</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Nose Wrinkle</td></center><td><center>noseWrinkle</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Upper Lip Raise</td></center><td><center>upperLipRaise</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Lip Suck</td></center><td><center>lipSuck</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Lip Pucker</td></center><td><center>lipPucker</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Lip Press</td></center><td><center>lipPress</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Mouth Open</td></center><td><center>mouthOpen</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Lip Corner Depressor</td></center><td><center>lipCornerDepressor</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Chin Raise</td></center><td><center>chinRaise</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Smirk</td></center><td><center>smirk</td></center><td><center>0 - 100</td></center></tr>
+<tr><td><center>Smile</td></center><td><center>smile</td></center><td><center>0 - 100</td></center></tr>
 </table>
 
-The <code>AFDXFace</code> class also contains the angle (in degrees) of the face.
-
-<table border="1" style="width:100%">
-<tr><th>Head Angle</th><th>Property Name</th><th>Score Name</th><th>Range</th></tr>
-<tr><td>Left/Right (Yaw)</td><td>headAngleLeftRight</td><td>headAngleLeftRightScore</td><td>-30 - 30</td></tr>
-<tr><td>Roll</td><td>headAngleRoll</td><td>headAngleRoll</td><td>-60 - 60</td></tr>
-<tr><td>Up/Down (Pitch)</td><td>headAngleUpDown</td><td>headAngleUpDownScore</td><td>-30 - 30</td></tr>
-</table>
 
 There’s no better way to show how to use the Affdex SDK than through a set of examples. The following code snippets demonstrate how easy it is to obtain facial expression results using your device’s camera, a video file, or from images.
 
