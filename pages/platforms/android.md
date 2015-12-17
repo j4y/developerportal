@@ -235,7 +235,7 @@ The Affdex SDK can detect a variety of facial expressions, yielding metric score
 setDetectSmile(true) 
 ```
 
-See the Detector class Javadoc for a complete list of the methods available.
+See the Detector class <a href={{ "/pages/platforms/javadoc/index.html" | prepend: site.baseurl }}>Javadoc</a> for a complete list of the methods available.
 
 ### Processing Rate
 
