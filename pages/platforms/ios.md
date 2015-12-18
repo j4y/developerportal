@@ -105,15 +105,9 @@ Appearance values are encapsulated inside of the <code>AFDXAppearance</code> cla
 </table>
 
 
-Emotions are available from within the <code>AFDXEmotions</code> class, which is accesible from the <code>emotions</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. For example:
+Emotions are available from within the <code>AFDXEmotions</code> class, which is accesible from the <code>emotions</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. See the example code under [establishing object properties](#step-2-establish-object-properties).  
 
-```
-detector.anger = TRUE;
-detector.fear = FALSE;
-detector.sadness = FALSE; // etc
-```  
-
-The following table shows the available emotions and their ranges.
+The following table shows the available emotions and their ranges.  
  
 <table border="1" style="width:100%">
 <tr><th><center>Emotion</center></th><th><center>Property Name</center></th><th><center>Range</center></th></tr>
@@ -127,6 +121,11 @@ The following table shows the available emotions and their ranges.
 <tr><td><center>Valence</td></center><td><center>valence</td></center><td><center>-100 - 100</td></center></tr>
 <tr><td><center>Engagement</td></center><td><center>expressiveness</td></center><td><center>0 - 100</td></center></tr>
 </table>
+
+Emoji are available from within the <code>AFDXEmoji</code> class, which is accesible from the <code>emoji</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. See the example code under [establishing object properties](#step-2-establish-object-properties).  
+
+The following table shows the available emoji and their ranges.  
+
 
 <table border="1" style="width:100%">
 <tr><th><center>Emoji Name</center></th><th><center><center>Score Name</center></th><th><center>Range</center></th></tr>
@@ -146,13 +145,7 @@ The following table shows the available emotions and their ranges.
 <tr><td><center>Smirk</td></center><td><center>smirk</td></center><td><center>0 - 100</td></center></tr>
 </table>
 
-Expressions are available from within the <code>AFDXExpressions</code> class, which is accesible from the <code>expressions</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. For example:
-
-```
-detector.attention = TRUE;
-detector.browFurrow = FALSE;
-detector.smile = FALSE; // etc
-```  
+Expressions are available from within the <code>AFDXExpressions</code> class, which is accesible from the <code>expressions</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. See the example code under [establishing object properties](#step-2-establish-object-properties). 
 
 <table border="1" style="width:100%">
 <tr><th><center>Expression</center></th><th><center>Property Name</center></th><th><center>Range</center></th></tr>
@@ -235,6 +228,10 @@ detector.anger = YES;
 detector.smile = YES;
 detector.browRaise = YES;
 detector.browFurrow = YES;
+
+// turning on a few emoji
+detector.smiley = YES;
+detector.kissing = YES; // etc
 ```
 
 If you want to turn on all emotions and expressions, you can use the following convenience methods:
