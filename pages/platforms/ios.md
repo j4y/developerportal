@@ -1,12 +1,12 @@
 ---
-title: Affdex SDK for iOS
-permalink: /ios/
-tags: [ios, sdk]
-audience: writer, designer
-keywords: 
-last_updated: 
-summary: 
----  
+title: Affdex SDK for iOS  
+permalink: /ios/  
+tags: [ios, sdk]  
+audience: writer, designer  
+keywords:  
+last_updated:  
+summary:  
+---
 
 {% include linkrefs.html %} 
 
