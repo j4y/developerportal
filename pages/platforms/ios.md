@@ -72,6 +72,9 @@ Also defined in the header file is the <code>AFDXFace</code> object, which encap
 * 	<strong>facePoints</strong>: this is an array of CGPoint objects, each of which denotes a facial landmark on the face. The point is relative to the coordinate space of the image processed. There can be many such points in this array.
 * 	<strong>faceBounds</strong>: this is a CGRect which describes the bounding box of the face.  
 
+
+### Head Orientation and Appearance
+
 Head angle values are encapsulated inside of the <code>AFDXOrientation</code> class, which is accesible through the <code>orientation</code> property of the <code>AFDXFace</code> object. The following values are accessible:
 
 
@@ -104,8 +107,9 @@ Appearance values are encapsulated inside of the <code>AFDXAppearance</code> cla
 <tr><td><center>gender</td></center><td><center>enum</td></center><td><center>Perceived Gender</td></center><td><center>AFDX_GENDER_MALE, AFDX_GENDER_FEMALE, AFDX_GENDER_UNKNOWN</td></center></tr>
 </table>
 
+### Emotions
 
-Emotions are available from within the <code>AFDXEmotions</code> class, which is accesible from the <code>emotions</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. See the example code under [establishing object properties](#step-2-establish-object-properties).  
+Emotions are available from within the <code>AFDXEmotions</code> class, which is accesible from the <code>emotions</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. 
 
 The following table shows the available emotions and their ranges.  
  
@@ -122,7 +126,9 @@ The following table shows the available emotions and their ranges.
 <tr><td><center>Engagement</td></center><td><center>expressiveness</td></center><td><center>0 - 100</td></center></tr>
 </table>
 
-Emoji are available from within the <code>AFDXEmoji</code> class, which is accesible from the <code>emoji</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. See the example code under [establishing object properties](#step-2-establish-object-properties).  
+### Emoji
+
+Emoji are available from within the <code>AFDXEmoji</code> class, which is accesible from the <code>emoji</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. 
 
 The following table shows the available emoji and their ranges.  
 
@@ -145,7 +151,10 @@ The following table shows the available emoji and their ranges.
 <tr><td><center>Smirk</td></center><td><center>smirk</td></center><td><center>0 - 100</td></center></tr>
 </table>
 
-Expressions are available from within the <code>AFDXExpressions</code> class, which is accesible from the <code>expressions</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. See the example code under [establishing object properties](#step-2-establish-object-properties). 
+
+### Expressions
+
+Expressions are available from within the <code>AFDXExpressions</code> class, which is accesible from the <code>expressions</code> property of the detector. You can explicitly turn on or off the ability to capture an emotion by setting the emotion name in the detector. 
 
 <table border="1" style="width:100%">
 <tr><th><center>Expression</center></th><th><center>Property Name</center></th><th><center>Range</center></th></tr>
@@ -167,7 +176,7 @@ Expressions are available from within the <code>AFDXExpressions</code> class, wh
 </table>
 
 
-There’s no better way to show how to use the Affdex SDK than through a set of examples. The following code snippets demonstrate how easy it is to obtain facial expression results using your device’s camera, a video file, or from images.
+There’s no better way to show how to use the Affdex SDK than through a set of examples. See the example code snippets under [establishing object properties](#step-2-establish-object-properties) for a demonstration of how easy it is to obtain facial expression results using your device’s camera, a video file, or from images.
 
 ## Step 1. Call the Correct Initializer
 
