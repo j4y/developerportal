@@ -65,8 +65,8 @@ The Affdex classifier data files are used in frame analysis processing. These fi
 void setClassifierPath(String classifierPath);
 ```
 
-If <code>setLicensePath</code> and/or <code>setClassifierPath</code> return a <code>std::length_error</code> exception, check that the SDK DLL you are using matches the configuration you use to build your binary.  For example, if you build in debug mode, but use the release version of the SDK DLL, you will get this exception.  The configuration must match the version of the DLL you use.
- 
+If <code>setLicensePath</code> and/or <code>setClassifierPath</code> return a <code>std::length_error</code> exception, check that the SDK DLL you are using matches the configuration you use to build your binary.  For example, if you build in debug mode, but use the release version of the SDK DLL, you will get this exception.  The configuration must match the version of the DLL you use.  
+
 The Detectors use callback or interface classes to communicate events and results. The event listeners need to be initialized before the detector is started:
 The <code>FaceListener</code> is a client callback interface which sends notification when the detector has started or stopped tracking a face. Call the following method to set the <code>FaceListener</code>:  
 
