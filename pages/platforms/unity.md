@@ -52,7 +52,7 @@ For each of the different sources, the underlining emotion recognition engine de
 First step is to add a detector to your scene's Main Camera (Add Component -> Scripts -> Affdex -> Detector):  
 <img src={{ "/images/unity/AddComponentDetector.png" | prepend: site.baseurl }}>
 
-You can now add a license key, set the emotions you are interested in, and the expressions you are interested in:  
+You can now set the emotions and expressions you are interested in (the more you select the worse performance will be, so only select the ones you need):  
 <img src={{ "/images/unity/SetEmotions.png" | prepend: site.baseurl }}>
 
 ### Add CameraInput to scene
@@ -67,11 +67,6 @@ Affdex performs best using a resolution ratio of 4:3 (ie: 320x240, 640x480, 800x
 To create your own script for getting images take a look at the <code>Frame</code> data structure below.  You can also see Affectiva's <code>CameraInput</code> script in the asset.  
 
 ### Configuring a Detector 
-
-In order to initialize the detector, a valid license must be provided. The asset validates that a license of an appropriate length is set.  If the asset determines that a license of the proper size has not been set an error will be sent to the console stating, "License is invalid":  
-<img src={{ "/images/unity/InvalidLicense.png" | prepend: site.baseurl }} align=right style="margin:5px 5px">
-
-Each license issued by Affectiva is time bound and will only work for a fixed period of time shown in the license file, after which the underlining emotion recognition engine will throw an <code>AffdexLicenseException</code> which will be caught by the asset and output to the console.  
 
 The Affdex classifier data files are used in frame analysis processing. These files are supplied as part of the asset. The location of the data files on the physical storage must remain as:  
 
