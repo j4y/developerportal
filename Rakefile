@@ -2,6 +2,6 @@ require 'html/proofer'
 
 task :test do
   sh "bundle exec jekyll build"
-  options = { :alt_ignore => [/.*/], :disable_external=> true, :href_ignore => ['#'] }
+  options = { :alt_ignore => [/.*/], :disable_external => true, :href_ignore => ['#'], :file_ignore => [/javadoc/] }
   HTML::Proofer.new("./_site",  options).run
 end
