@@ -10,7 +10,9 @@ metadata: false
 ---
 {% include linkrefs.html %} 
 
-### Live video feeds
+## How to Use the SDK
+
+### Live video stream
 
 The SDKs include classes to help extract emotion metrics directly from any optical sensor such as a web camera, including front and back facing cameras in the case of mobile devices.
 
@@ -18,10 +20,10 @@ The SDKs include classes to help extract emotion metrics directly from any optic
 
 A recorded video file that resides on the file system of the device can also be used as an input. The SDKs include support for opening all the major video formats.
 
-
-### Photos
+### Still images
 
 The SDK also includes the capability to generate emotion metrics from individual images. 
+
 
 ## Supported Platforms
 
