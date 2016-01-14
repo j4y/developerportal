@@ -13,7 +13,7 @@ metadata: false
 <br></br>
 We continuously train and test our emotion-sensing metrics to provide the most reliable and accurate classifiers. Our key emotions achieve accuracy in the high 90th percentile.  
 <br></br>
-Our emotion metrics are trained and tested on very difficult datasets.  We sampled our test set, comprised of hundreds of thousands of facial frames, from more than 3.2 million facial videos.  This data is from more than 75 countries, representing real-world, spontaneous facial expressions, made under challenging conditions, such as varying lighting, different head movements, and variances in facial features due to ethnicity, age, gender, facial hair and glasses. 
+Our emotion metrics are trained and tested on very difficult datasets.  We sampled our test set, comprised of hundreds of thousands of facial frames, from more than 3.2 million facial videos.  This data is from more than 75 countries, representing real-world, spontaneous facial expressions, made under challenging conditions, such as varying lighting, different head movements, and variances in facial features due to ethnicity, age, gender, facial hair and glasses.  
 <br></br>
 
 ## How do we measure our accuracy?
@@ -27,7 +27,9 @@ The classifiers for emotions have ROC scores greater than or equal to 0.8, with 
 
 The gender classifier uses the face bounding box tracked over a window of time, if available, to build confidence in its decision. If the confidence level does not meet the threshold within a window of 10 seconds, the gender is reported as _unknown_. The ROC score of the classifier is 0.95 and the average length of time taken to reach a decision is 3.4 seconds.  The ROC score of the glasses classifier is 0.9.  
 
-<strong>Effects of changes in head angles and face luminance</strong>
+The emojis are driven by the expression classifiers. Classifiers for Tongue out, Wink and Eye widen expressions were introduced to widen the range of emojis supported. These have an ROC score of over 0.8.  
+
+## Effects of changes in head angles and face luminance
 
 The best performance is in a range of +/- 25 degrees frontal, outside of which accuracy begins to suffer. Furthermore, for the effect of the differences in lighting conditions on accuracy, the classifier accuracy drops only when the face is extremely poorly illuminated or backlit. This occurs when the average pixel brightness of the face falls below 30 on a scale of 0 (pitch black) to 255 (white). In the example below, our classifiers can handle the three images on the right.
 

@@ -14,9 +14,31 @@ The face provides a rich canvas of emotion. Humans are innately programmed to ex
 
 ## Emotions
 
+
+<!--
+markdown table example, formatting becomes a nightmare
+[1]: {{ "/images/faces/Anger.jpg" | prepend: site.baseurl }}
+[2]: {{ "/images/faces/Sadness.jpg" | prepend: site.baseurl }}
+[3]: {{ "/images/faces/Disgust.jpg" | prepend: site.baseurl }}
+[4]: {{ "/images/faces/Fear.jpg" | prepend: site.baseurl }}
+[5]: {{ "/images/faces/Joy.jpg" | prepend: site.baseurl }}
+[6]: {{ "/images/faces/Surprise.jpg" | prepend: site.baseurl }}
+[7]: {{ "/images/faces/Contempt.jpg" | prepend: site.baseurl }}
+
+|       |       |       |       |
+| :---: | :---: | :---: | :---: |
+| ![a][1]  | ![a][2]  | ![a][3]  | ![a][4]  |
+| ![a][5]  | ![a][6]  | ![a][7]  |   |
+|       |       |       |       |
+| :---: | :---: | :---: | :---: |
+-->
+
+
+
+
 <table border="0">
 <tr>
-<td><font size="2"><img src="{{ "/images/faces/Anger.jpg" | prepend: site.baseurl }}" | prepend: site.baseurl }}" alt="" title="Anger" align=center>
+<td><font size="2"><img src="{{ "/images/faces/Anger.jpg" | prepend: site.baseurl }}" alt="" title="Anger" align=center>
 <center><strong>Anger</strong></center></font></td>
 <td><font size="2"><img src="{{ "/images/faces/Sadness.jpg" | prepend: site.baseurl }}" alt="" title="Sadness" align=center>
 <center><strong>Sadness</strong></center></font></td>
@@ -114,13 +136,13 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 </tr>
 <tr>
 <td><font size="2"><center><img src="{{ "/images/emoji/kissingClosedEyes.png" | prepend: site.baseurl }}" alt="" title="Kissing Closed Eyes"></center>
-<center><strong>Kissing Closed Eyes</strong></center></font></td>
+<center><strong>Kissing & Closed Eyes</strong></center></font></td>
 <td><font size="2"><center><img src="{{ "/images/emoji/stuckOutTongueWinkingEye.png" | prepend: site.baseurl }}" alt="" title="Stuck Out Tongue Winking Eye"></center>
-<center><strong>Stuck Out Tongue Winking Eye</strong></center></font></td>
+<center><strong><p>Stuck Out Tongue &</p> Winking Eye</strong></center></font></td>
 <td><font size="2"><center><img src="{{ "/images/emoji/stuckOutTongue.png" | prepend: site.baseurl }}" alt="" title="Stuck Out Tongue"></center>
 <center><strong>Stuck Out Tongue</strong></center></font></td>
-<td><font size="2"><center><img src="{{ "/images/emoji/stuckOutTongueClosedEyes.png" | prepend: site.baseurl }}" alt="" title="Stuck Out Tongue Closed Eyes"></center>
-<center><strong>Stuck Out Tongue Closed Eyes</strong></center></font></td>
+<td><font size="2"><center><img src="{{ "/images/emoji/neutral.png" | prepend: site.baseurl }}" alt="" title="Neutral"></center>
+<center><strong>Neutral</strong></center></font></td>
 <td><font size="2"><center><img src="{{ "/images/emoji/flushed.png" | prepend: site.baseurl }}" alt="" title="Flushed"></center>
 <center><strong>Flushed</strong></center></font></td>
 </tr>
@@ -139,9 +161,26 @@ Furthermore, the SDK allows for measuring valence and engagement, as alternative
 
 Emotion, expression and Emoji metrics scores indicate when users show a specific emotion, or expression (e.g., a smile) along with the degree of confidence. The metrics can be thought of as detectors: as the emotion or facial expression occurs and intensifies, the score rises from 0 (no expression) to 100 (expression fully present). 
 
-We also expose a composite emotional metric called valence which gives feedback on the overall experience. Valence measures 0 to 100 indicate a neutral to positive experience, while -100 to 0 indicate a negative to neutral experience.
+In addition, we also expose a composite emotional metric called _valence_ which gives feedback on the overall experience. Valence measures from 0 to 100 indicate a neutral to positive experience, while measures from -100 to 0 indicate a negative to neutral experience.
 
-<center><img src="{{ "/images/graphic1.png" | prepend: site.baseurl }}"></center>
+![]({{ "/images/graphic1.png" | prepend: site.baseurl }}) 
+
+## Appearance
+
+<img src="{{ "/images/graphic6.png" | prepend: site.baseurl }}" align="right">
+
+Our SDKs also provide the following appearance metrics:
+
+<strong>Gender</strong>  
+The gender classifier reports one of three values {Female, Male and Unknown}. It tracks a face over a window of time to build confidence in it’s decision. If the confidence level does not meet the threshold within a window of 10 seconds, the gender is reported as unknown. The average length of time taken to reach a decision is 3.4 seconds.  
+
+
+<strong>Glasses</strong>  
+An estimate of whether the subject is wearing eye or sun glasses.  
+
+<br></br>
+<br></br>
+
 
 <strong>Valence</strong>: A measure of the positive or negative nature of the recorded person's experience. The range of values for the metric is from -100 to 100.
 
@@ -187,8 +226,6 @@ An confidence level of whether the subject in the image is wearing eye or sun gl
 
 <img src="{{ "/images/graphic7.png" | prepend: site.baseurl }}" align="right">
 
-<br />
-
 The SDKs include our latest face tracker which calculates the following metrics:
 
 `Facial Landmarks Estimation`
@@ -199,16 +236,6 @@ Estimation of the head position in a 3-D space in Euler angles (pitch, yaw, roll
 
 `Interocular Distance`
 The distance between the two outer eye corners.
-
-## Appearance
-
-Our SDKs also provide the following appearance metrics:
-
-<strong>Gender</strong>  
-Identification of gender as <em>Male</em>, <em>Female</em>, or <em>Unknown</em>.
-
-<strong>Glasses</strong>  
-Identification of the presence or absence of glasses.
 
 <br></br>
 <br></br>
