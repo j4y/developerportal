@@ -74,6 +74,8 @@ The Affdex classifier data files are used in frame analysis processing. These fi
 Assets/StreamingAssets/affdex-data
 ```
 
+When you switch scenes you need to destroy and respawn the <code>Detector</code> and <code>CameraInput</code>.  If you do not respawn these components, Unity's camera interface will get a frozen image at reload thus causing the metrics to continually come from the image taken at the scene transition.
+
 ## ImageResultsListener
 
 The Detectors use callback classes to communicate events and results:
