@@ -1,7 +1,6 @@
 ---
 title: Affdex SDK for Unity
 permalink: /v2/unity/
-redirect_from: "/unity/"
 tags: [unity, sdk, asset]
 audience: writer, designer
 keywords:
@@ -38,7 +37,7 @@ SDK Developer Guide Release 2.0
 <iframe width="420" height="315" src="https://www.youtube.com/embed/HjtPiXWx220" frameborder="0" allowfullscreen></iframe>
 
 ## Class Documentation
-The classes that come with this asset are viewable [here]({{ site.baseurl }}/pages/platform/unity/v2/AffdexUnityHelp/index.html).
+The classes that come with this asset are viewable [here](http://developer.affectiva.com/pages/platforms/AffdexUnityHelp/index.html).
  
 ## Using the Asset
 

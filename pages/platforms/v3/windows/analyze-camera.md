@@ -8,12 +8,10 @@ last_updated:
 summary:
 metadata: false
 ---
-**classdoc:** CameraDetector [[c++]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/affdex-native/classaffdex_1_1_camera_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/html/1d7a795f-92f8-e0e5-f48a-79d1d1941091.htm)]
-
-Using a webcam is a common way to obtain video for facial expression detection. The ```CameraDetector``` can access a webcam connected to the device to capture frames and feed them directly to the facial expression engine.
+Using a webcam is a common way to obtain video for facial expression detection. The [CameraDetector]({{ site.baseurl }}/v3/windows/detectors/#cameradetector) can access a webcam connected to the device to capture frames and feed them directly to the facial expression engine.
 
 ### Creating the detector
-The ```CameraDetector``` constructor expects five parameters { `cameraId`, `cameraFPS`, `processFrameRate`, `maxNumFaces` and `faceConfig` }
+The [FrameDetector]({{ site.baseurl }}/v3/windows/detectors/#framedetector) constructor expects five parameters { `cameraId`, `cameraFPS`, `processFrameRate`, `maxNumFaces` and `faceConfig` }
 
 ```csharp
 CameraDetector(

@@ -61,7 +61,7 @@ entries:
       print: true
 
       items:
-        - title: Android (Java)
+        - title: Android
           url: /v3/android/
           audience: writer, designer
           platform: all
@@ -69,7 +69,7 @@ entries:
           version: all
           print: true
 
-        - title: iOS (Objective-C)
+        - title: iOS
           url: /v3/ios/
           audience: writer, designer
           platform: all
@@ -78,15 +78,15 @@ entries:
           print: true
 
         - title: Unity
-          url: /unity/
+          url: /v2/unity/
           audience: writer, designer
           platform: all
           product: all
           version: all
           print: true
 
-        - title: Windows
-          url: /windows/
+        - title: Windows (C++, C#)
+          url: /v3/windows/
           audience: writer, designer
           platform: all
           product: all

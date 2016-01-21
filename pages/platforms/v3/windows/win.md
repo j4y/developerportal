@@ -1,7 +1,6 @@
 ---
 title: Affdex SDK for Windows
 permalink: /v3/windows/
-redirect_from: "/windows/"
 tags: [windows, sdk]
 audience: writer, designer
 keywords:
@@ -23,7 +22,8 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 ## Getting started
 
-##### 1. [Download]({{ site.baseurl }}/downloads/) and run the SDK installer
+##### 1. Download and Run the SDK Installer
+
 ##### 2. Import an affdex API into your application
 
 &nbsp;&nbsp;&nbsp;&nbsp;**A C++ Application:** [Configure your project to use the affdex-native library.](https://en.wikibooks.org/wiki/C%2B%2B_Programming/Compiler/Linker/Libraries/Configuring_Visual_Studio)
@@ -32,7 +32,7 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 &nbsp;&nbsp;&nbsp;&nbsp;The .NET assembly depends on the affdex-native.dll and loads it in runtime.
 
-&nbsp;&nbsp;&nbsp;&nbsp;A dynamic library, ```opencv_ffmpeg.dll``` is required by [VideoDetector]({{ site.baseurl }}/v3/windows/detectors/#videodetector) in runtime for the video decoding.
+&nbsp;&nbsp;&nbsp;&nbsp;A dynamic library, opencv_ffmpeg.dll is required by [VideoDetector]({{ site.baseurl }}/v3/windows/detectors/#videodetector) in runtime for the video decoding.
 
 ##### 3. Capture and analyze faces
 
@@ -43,12 +43,36 @@ Facial images can be captured from different sources. For each of the different 
 * [How to analyze a video frames feed]({{ site.baseurl }}/v3/windows/analyze-frames/)
 * [How to analyze a photo]({{ site.baseurl }}/v3/windows/analyze-photo/)
 
-##### 3. Checkout sample applications on GitHub
+##### 3. Checkout Sample applications on GitHub
 Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/win-sdk-samples)
 
-## Class documentation
-* .NET (C#) Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/index.html)]
-* C++ Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/affdex-native/namespaceaffdex.html)]
+## Reference
+
+##### Detector classes
+* [CameraDetector]({{ site.baseurl }}/v3/windows/detectors/#cameradetector)
+* [VideoDetector]({{ site.baseurl }}/v3/windows/detectors/#videodetector)
+* [FrameDetector]({{ site.baseurl }}/v3/windows/detectors/#framedetector)
+* [PhotoDetector]({{ site.baseurl }}/v3/windows/detectors/#photodetector)
+
+##### Data structure classes
+* [Frame]({{ site.baseurl }}/v3/windows/data-structures/#frame)
+* [Face]({{ site.baseurl }}/v3/windows/data-structures/#face)
+* [Emotions]({{ site.baseurl }}/v3/windows/data-structures/#emotions)
+* [Expressions]({{ site.baseurl }}/v3/windows/data-structures/#expressions)
+* [Appearance]({{ site.baseurl }}/v3/windows/data-structures/#appearance)
+* [Emojis]({{ site.baseurl }}/v3/windows/data-structures/#emojis)
+* [Measurements]({{ site.baseurl }}/v3/windows/data-structures/#measurements)
+* [Orientation]({{ site.baseurl }}/v3/windows/data-structures/#orientation)
+* [FeaturePoint]({{ site.baseurl }}/v3/windows/data-structures/#featurepoint)
+
+##### Interface classes
+* [ImageListener]({{ site.baseurl }}/v3/windows/interfaces/#imagelistener)
+* [FaceListener]({{ site.baseurl }}/v3/windows/interfaces/#facelistener)
+* [ProcessStatusListener]({{ site.baseurl }}/v3/windows/interfaces/#processstatuslistener)
+
+##### Class documentation
+* .NET (C#) Namespace: [[HTML]({{ site.baseurl }}/v3/windows/interfaces/#processstatuslistener)]
+* C++ Namespace: [[HTML]({{ site.baseurl }}/v3/windows/interfaces/#processstatuslistener)]
 
 ## Requirements & Dependencies
 
