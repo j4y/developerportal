@@ -1,6 +1,6 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 # Spacing is really important here. A two-space indent appears below each level to indicate a new depth.
-# 
+#
 # Sidebar
 entries:
 - title: Sidebar # this title doesn't appear anywhere
@@ -63,7 +63,7 @@ entries:
 
       items:
         - title: Android
-          url: /android/
+          url: /v3/android/
           audience: writer, designer
           platform: all
           product: all
@@ -71,7 +71,7 @@ entries:
           print: true
 
         - title: iOS
-          url: /ios/
+          url: /v3/ios/
           audience: writer, designer
           platform: all
           product: all
@@ -79,15 +79,15 @@ entries:
           print: true
 
         - title: Unity
-          url: /unity/
+          url: /v2/unity/
           audience: writer, designer
           platform: all
           product: all
           version: all
           print: true
 
-        - title: Windows
-          url: /windows/
+        - title: Windows (C++, C#)
+          url: /v3/windows/
           audience: writer, designer
           platform: all
           product: all
@@ -125,7 +125,7 @@ entries:
           product: all
           version: all
           print: true
-          
+
         - title: FAQ
           url: /faq/
           audience: writer, designer
@@ -176,4 +176,3 @@ entries:
                   version: all
                   product: all
                   print: false
-
