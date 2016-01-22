@@ -8,7 +8,7 @@ last_updated:
 summary:
 metadata: false
 ---
-classdoc: [PhotoDetector]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/PhotoDetector.html)
+**classdoc:** [[PhotoDetector]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/PhotoDetector.html)]
 
 The ```PhotoDetector``` class is used for streamlining the processing of still images. Since photos lack any continuity over time, the expression and emotion detection is performed independently on each frame and the timestamp is ignored. Due to this fact, the underlying emotion detection may return different results than the video based detectors.
 

@@ -1,6 +1,8 @@
 ### Configuring the callback functions
 The Detectors use callback functions defined in interface classes to communicate events and results. The event listeners need to be initialized before the detector is started:
-The [FaceListener]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Detector.FaceListener.html) is a client callback interface which sends notification when the detector has started or stopped tracking a face. Call `setFaceListener` to set the `FaceListener`:  
+The ```FaceListener``` is a client callback interface which sends notification when the detector has started or stopped tracking a face. Call `setFaceListener` to set the `FaceListener`:  
+
+**classdoc:** FaceListener [[java]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Detector.FaceListener.html)]
 
 ```java
 public class MyActivity implements Detector.FaceListener {
@@ -11,7 +13,9 @@ public class MyActivity implements Detector.FaceListener {
 };
 ```
 
-The [ImageListener]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Detector.ImageListener.html) is a client callback interface which delivers information about an image which has been handled by the Detector. Call `setImageListener` to set the `ImageListener`:  
+The ```ImageListener``` is a client callback interface which delivers information about an image which has been handled by the Detector. Call `setImageListener` to set the `ImageListener`:  
+
+**classdoc:** ImageListener [[java]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Detector.ImageListener.html)]
 
 ```java
 public class MyActivity implements Detector.ImageListener {
