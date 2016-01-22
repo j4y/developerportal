@@ -53,7 +53,6 @@ entries:
           version: all
           print: true
 
-
     - title: Platforms
       audience: writer, designer
       platform: all
@@ -137,15 +136,6 @@ entries:
 
         - title: Thirdparty libraries
           url: /licenses/
-          audience: writer, designer
-          platform: all
-          product: all
-          version: all
-          print: true
-          web: true
-
-        - title: Downloads
-          url: /downloads/
           audience: writer, designer
           platform: all
           product: all

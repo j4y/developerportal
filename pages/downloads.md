@@ -1,17 +1,18 @@
 ---
-title:  
+title:
 permalink: /downloads/
 metadata: false
 ---
-## SDK Downloads
 
-Select the SDK package for your desired platform.  
-The Android SDK comes as an uncompressed folder.  
-The iOS SDK comes as a .tar folder.  
-To get the Affdex Unity Asset, go to the Unity [Asset Store](https://www.assetstore.unity3d.com/) where you can import it into your project.  
-The Windows SDKs come as self extracting executables.  
+#### Sign up for a free evaluation license
 
-### Downloads
+Use [this form](http://www.affectiva.com/45-day-free-trial/) to signup for a free 45 day license to use the SDKs. Once the form is submitted, you should receive an email containing the license file to use with the SDK.
+
+Contact sales@affectiva.com for more information about Developer and/or Commercial distribution licenses.
+
+#### Download the SDK
+
+Use the download links below to download the latest SDK version:
 
 <table border="1" style="width:60%">
 <tr>
@@ -46,8 +47,8 @@ Size: {{oldversion.size}}
 {% endfor %}
 </li>
 </ul>
- 
- 
+
+
  table > thead > tr > th {
  vertical-align: bottom;
  border-bottom: 2px solid #ddd;
@@ -56,9 +57,9 @@ Size: {{oldversion.size}}
  color: white;
  text-align: center;
  }
- 
- 
- 
- 
- 
+
+
+
+
+
 -->
