@@ -41,13 +41,13 @@ public class MyActivity implements Detector.ImageListener {
         int faceId = face.getId();
 
         //Appearance
-        Gender genderValue = face.appearance.getGender();
-        Glasses glassesValue = face.appearance.getGlasses();
+        Face.GENDER genderValue = face.appearance.getGender();
+        Face.GLASSES glassesValue = face.appearance.getGlasses();
 
         //Some Emoji
-        float smiley = face.emoji.getSmiley();
-        float laughing = face.emoji.getLaughing();
-        float wink = face.emoji.getWink();
+        float smiley = face.emojis.getSmiley();
+        float laughing = face.emojis.getLaughing();
+        float wink = face.emojis.getWink();
 
 
         //Some Emotions
