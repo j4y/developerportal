@@ -22,8 +22,7 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 ## Getting started
 
-##### 1. Download and Run the SDK Installer
-
+##### 1. [Download]({{ site.baseurl }}/downloads/) and run the SDK installer
 ##### 2. Import an affdex API into your application
 
 &nbsp;&nbsp;&nbsp;&nbsp;**A C++ Application:** [Configure your project to use the affdex-native library.](https://en.wikibooks.org/wiki/C%2B%2B_Programming/Compiler/Linker/Libraries/Configuring_Visual_Studio)
@@ -32,7 +31,7 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 &nbsp;&nbsp;&nbsp;&nbsp;The .NET assembly depends on the affdex-native.dll and loads it in runtime.
 
-&nbsp;&nbsp;&nbsp;&nbsp;A dynamic library, opencv_ffmpeg.dll is required by [VideoDetector]({{ site.baseurl }}/v3/windows/detectors/#videodetector) in runtime for the video decoding.
+&nbsp;&nbsp;&nbsp;&nbsp;A dynamic library, ```opencv_ffmpeg.dll``` is required by [VideoDetector]({{ site.baseurl }}/v3/windows/detectors/#videodetector) in runtime for the video decoding.
 
 ##### 3. Capture and analyze faces
 
