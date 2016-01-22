@@ -71,8 +71,8 @@ Sample applications for processing videos, and connecting to the camera are avai
 * [ProcessStatusListener]({{ site.baseurl }}/v3/windows/interfaces/#processstatuslistener)
 
 ##### Class documentation
-* .NET (C#) Namespace: [[HTML]({{ site.baseurl }}/v3/windows/interfaces/#processstatuslistener)]
-* C++ Namespace: [[HTML]({{ site.baseurl }}/v3/windows/interfaces/#processstatuslistener)]
+* .NET (C#) Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/index.html)]
+* C++ Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/affdex-native/namespaceaffdex.html)]
 
 ## Requirements & Dependencies
 
