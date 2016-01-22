@@ -42,34 +42,10 @@ Facial images can be captured from different sources. For each of the different 
 * [How to analyze a video frames feed]({{ site.baseurl }}/v3/windows/analyze-frames/)
 * [How to analyze a photo]({{ site.baseurl }}/v3/windows/analyze-photo/)
 
-##### 3. Checkout Sample applications on GitHub
+##### 3. Checkout sample applications on GitHub
 Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/win-sdk-samples)
 
-## Reference
-
-##### Detector classes
-* [CameraDetector]({{ site.baseurl }}/v3/windows/detectors/#cameradetector)
-* [VideoDetector]({{ site.baseurl }}/v3/windows/detectors/#videodetector)
-* [FrameDetector]({{ site.baseurl }}/v3/windows/detectors/#framedetector)
-* [PhotoDetector]({{ site.baseurl }}/v3/windows/detectors/#photodetector)
-
-##### Data structure classes
-* [Frame]({{ site.baseurl }}/v3/windows/data-structures/#frame)
-* [Face]({{ site.baseurl }}/v3/windows/data-structures/#face)
-* [Emotions]({{ site.baseurl }}/v3/windows/data-structures/#emotions)
-* [Expressions]({{ site.baseurl }}/v3/windows/data-structures/#expressions)
-* [Appearance]({{ site.baseurl }}/v3/windows/data-structures/#appearance)
-* [Emojis]({{ site.baseurl }}/v3/windows/data-structures/#emojis)
-* [Measurements]({{ site.baseurl }}/v3/windows/data-structures/#measurements)
-* [Orientation]({{ site.baseurl }}/v3/windows/data-structures/#orientation)
-* [FeaturePoint]({{ site.baseurl }}/v3/windows/data-structures/#featurepoint)
-
-##### Interface classes
-* [ImageListener]({{ site.baseurl }}/v3/windows/interfaces/#imagelistener)
-* [FaceListener]({{ site.baseurl }}/v3/windows/interfaces/#facelistener)
-* [ProcessStatusListener]({{ site.baseurl }}/v3/windows/interfaces/#processstatuslistener)
-
-##### Class documentation
+## Class documentation
 * .NET (C#) Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/index.html)]
 * C++ Namespace: [[HTML]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/affdex-native/namespaceaffdex.html)]
 

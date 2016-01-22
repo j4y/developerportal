@@ -8,10 +8,12 @@ last_updated:
 summary:
 metadata: false
 ---
-The [FrameDetector]({{ site.baseurl }}/v3/windows/detectors/#framedetector) tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order. The [FrameDetector]({{ site.baseurl }}/v3/windows/detectors/#framedetector) will detect a face in an frame and deliver information on it to you, including the facial expressions.
+**classdoc:** FrameDetector [[c++]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/affdex-native/classaffdex_1_1_frame_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/html/bd91c0f9-9c20-5ef9-0df9-565cb08997b9.htm)]
+
+The ```FrameDetector``` tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order. The ```FrameDetector``` will detect a face in an frame and deliver information on it to you, including the facial expressions.
 
 ### Creating the detector
-The [FrameDetector]({{ site.baseurl }}/v3/windows/detectors/#framedetector) constructor expects four parameters { `bufferSize`, `processFrameRate`, `maxNumFaces` and `faceConfig` }
+The ```FrameDetector``` constructor expects four parameters { `bufferSize`, `processFrameRate`, `maxNumFaces` and `faceConfig` }
 
 ```csharp
 FrameDetector(

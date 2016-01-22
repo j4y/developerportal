@@ -8,6 +8,8 @@ last_updated:
 summary:
 metadata: false
 ---
+**classdoc:** VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)]
+
 A common use of the SDK is to process previously captured video files. The [VideoDetector]({{ site.baseurl }}/v3/windows/detectors/#videodetector) helps streamline this effort by decoding and processing frames from a video file. Like the `FrameDetector`, the constructor accepts a parameter for processing frames per second. This parameter regulates how many frames from the video stream get processed. During processing, the <code>VideoDetector</code> decodes and processes frames as fast as possible and actual processing times will depend on CPU speed. Please see [this list]({{ site.baseurl }}/supportedvideoformats/) of accepted file types and recommended video codecs that are compatible with the detector.
 
 ### Creating the detector
