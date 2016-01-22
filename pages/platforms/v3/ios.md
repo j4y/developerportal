@@ -1,6 +1,7 @@
 ---
 title: Affdex SDK for iOS  
 permalink: /v3/ios/  
+redirect_from: "/ios/"
 tags: [ios, sdk]  
 audience: writer, designer  
 keywords:  
