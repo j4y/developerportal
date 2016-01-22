@@ -1,6 +1,6 @@
 ---
 title: Affdex SDK for Android
-permalink: /v3/android/
+permalink: /v3/andrid/
 tags: [android, sdk]
 audience: writer, designer
 keywords:

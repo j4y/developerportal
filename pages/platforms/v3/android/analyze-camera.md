@@ -8,7 +8,7 @@ last_updated:
 summary:
 metadata: false
 ---
-**classdoc:** CameraDetector [[java]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/CameraDetector.html)]
+classdoc: [CameraDetector]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/CameraDetector.html)
 
 Using a webcam is a common way to obtain video for facial expression detection. The ```CameraDetector``` can access a webcam connected to the device to capture frames and feed them directly to the facial expression engine.
 

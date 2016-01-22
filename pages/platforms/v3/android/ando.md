@@ -1,7 +1,6 @@
 ---
 title: Affdex SDK for Android
 permalink: /v3/android/
-redirect_from: "/android/"
 tags: [android, sdk]
 audience: writer, designer
 keywords:
@@ -27,8 +26,8 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 ##### 1. [Download]({{ site.baseurl }}/downloads/) and extract the SDK archive.
 ##### 2. Import the Affdex API into your application
 * Copy the contents of the libs folder into your libs folder under ```app/libs```
-* Copy the contents of the ```src/main/assets``` folder into your app assets folder under ```app/src/main/assets```
-* Copy the jniLibs folder to your app to your app under ```app/```
+* Copy the contents of the assets folder into your app assets folder under ```app/src/main/assets```
+* Copy the jniLibs folder to your app to your app under ```app/src/main```
 
  The SDK requires access to external storage on the Android device. Therefore, the ```AndroidManifest.xml``` needs to include permission for that it:
 
@@ -53,8 +52,30 @@ Facial images can be captured from different sources. For each of the different 
 ##### 3. Checkout Sample applications on GitHub
 Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/android-sdk-samples)
 
-## Class documentation
-* class docs: [[HTML]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/index.html)]
+## Reference
+Below are links for the javadoc for each of the available classes.
+##### Detector classes
+* [CameraDetector]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/CameraDetector.html)
+* [VideoDetector]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/VideoFileDetector.html)
+* [FrameDetector]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/FrameDetector.html)
+* [PhotoDetector]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/PhotoDetector.html)
+
+##### Data structure classes
+* [Frame]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/Frame.html)
+* [BitmapFrame]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/Frame.BitmapFrame.html)
+* [ByteArrayFrame]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/Frame.ByteArrayFrame.html)
+* [Face]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.html)
+* [Emotions]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.Emotions.html)
+* [Expressions]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.Expressions.html)
+* [Appearance]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.Appearance.html)
+* [Emojis]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.Emojis.html)
+* [Measurements]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.Measurements.html)
+* [Orientation]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Face.Measurements.Orientation.html)
+
+##### Interface classes
+* [ImageListener]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Detector.ImageListener.html)
+* [FaceListener]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Detector.FaceListener.html)
+* [CameraEventListener]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/CameraDetector.CameraEventListener.html)
 
 ## Requirements & Dependencies
 

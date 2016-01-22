@@ -61,7 +61,7 @@ entries:
       print: true
 
       items:
-        - title: Android
+        - title: Android (Java)
           url: /v3/android/
           audience: writer, designer
           platform: all

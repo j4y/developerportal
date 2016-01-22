@@ -1,8 +1,6 @@
 ### Configuring the callback functions
 The Detectors use callback functions defined in interface classes to communicate events and results. The event listeners need to be initialized before the detector is started:
-The ```FaceListener``` is a client callback interface which sends notification when the detector has started or stopped tracking a face. Call `setFaceListener` to set the `FaceListener`:  
-
-**classdoc:** FaceListener [[java]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Detector.FaceListener.html)]
+The [FaceListener]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Detector.FaceListener.html) is a client callback interface which sends notification when the detector has started or stopped tracking a face. Call `setFaceListener` to set the `FaceListener`:  
 
 ```java
 public class MyActivity implements Detector.FaceListener {
@@ -13,9 +11,7 @@ public class MyActivity implements Detector.FaceListener {
 };
 ```
 
-The ```ImageListener``` is a client callback interface which delivers information about an image which has been handled by the Detector. Call `setImageListener` to set the `ImageListener`:  
-
-**classdoc:** ImageListener [[java]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Detector.ImageListener.html)]
+The [ImageListener]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/Detector.ImageListener.html) is a client callback interface which delivers information about an image which has been handled by the Detector. Call `setImageListener` to set the `ImageListener`:  
 
 ```java
 public class MyActivity implements Detector.ImageListener {
@@ -41,13 +37,13 @@ public class MyActivity implements Detector.ImageListener {
         int faceId = face.getId();
 
         //Appearance
-        Face.GENDER genderValue = face.appearance.getGender();
-        Face.GLASSES glassesValue = face.appearance.getGlasses();
+        Gender genderValue = face.appearance.getGender();
+        Glasses glassesValue = face.appearance.getGlasses();
 
         //Some Emoji
-        float smiley = face.emojis.getSmiley();
-        float laughing = face.emojis.getLaughing();
-        float wink = face.emojis.getWink();
+        float smiley = face.emoji.getSmiley();
+        float laughing = face.emoji.getLaughing();
+        float wink = face.emoji.getWink();
 
 
         //Some Emotions
