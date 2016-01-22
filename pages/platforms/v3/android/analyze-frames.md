@@ -8,7 +8,7 @@ last_updated:
 summary:
 metadata: false
 ---
-classdoc: [FrameDetector](({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/FrameDetector.html)
+**classdoc:** [[FrameDetector](({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/FrameDetector.html)]
 
 The ```FrameDetector``` tracks expressions in a sequence of real-time frames. It expects each frame to have a timestamp that indicates the time the frame was captured. The timestamps arrive in an increasing order. The ```FrameDetector``` will detect a face in an frame and deliver information on it to you, including the facial expressions.
 

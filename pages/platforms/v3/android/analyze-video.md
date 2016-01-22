@@ -8,7 +8,7 @@ last_updated:
 summary:
 metadata: false
 ---
-classdoc: [VideoDetector]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/VideoFileDetector.html)
+**classdoc:** [[VideoDetector]({{ site.baseurl }}/pages/platforms/v3/android/javadoc/com/affectiva/android/affdex/sdk/detector/VideoFileDetector.html)]
 
 A common use of the SDK is to process previously captured video files. The ```VideoDetector``` helps streamline this effort by decoding and processing frames from a video file.
 
