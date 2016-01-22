@@ -180,10 +180,9 @@ PLATFORMS
 
 DEPENDENCIES
   chronic
-  github-pages (= 42)
+  github-pages
   google-api-client (= 0.8)
   html-proofer
-  json
   rake
 
 BUNDLED WITH
