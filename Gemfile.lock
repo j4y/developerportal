@@ -36,9 +36,9 @@ GEM
     fast-stemmer (1.0.2)
     ffi (1.9.10)
     gemoji (2.1.0)
-    github-pages (42)
+    github-pages (43)
       RedCloth (= 4.2.9)
-      github-pages-health-check (= 0.5.3)
+      github-pages-health-check (= 0.6.0)
       jekyll (= 2.4.0)
       jekyll-coffeescript (= 1.0.1)
       jekyll-feed (= 0.3.1)
@@ -190,12 +190,13 @@ PLATFORMS
 
 DEPENDENCIES
   chronic
-  github-pages (= 42)
+  github-pages (= 43)
   google-api-client (= 0.8)
   html-proofer
   jekyll-redirect-from
   json
   rake
+  s3_website
 
 BUNDLED WITH
    1.10.6
