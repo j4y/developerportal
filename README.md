@@ -20,6 +20,12 @@ Build the website, and start a local server for live preview.
 $ jekyll serve
 ```
 
+or
+
+```shell
+$ bundle exec jekyll serve
+```
+
 Output should look something like this, at which point you can point your browser to `http://127.0.0.1:4006/` to see the website.
 
 ```
