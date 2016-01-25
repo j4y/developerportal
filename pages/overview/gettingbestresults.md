@@ -32,4 +32,4 @@ The position of the head (x and y coordinates) within the images is not very imp
 
 ### Lighting
 
-The Affdex algorithms are very robust in diverse lighting conditions. However, for best results have the subjects lit uniformly and avoid strong lights in the background. 
+The Affdex algorithms are very robust in diverse lighting conditions. However, for best results have the subjects lit uniformly and avoid strong lights in the background.
