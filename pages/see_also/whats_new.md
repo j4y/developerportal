@@ -18,7 +18,7 @@ metadata: false
 * New API that returns the most likely emoji (`dominantEmoji`) posed in an image.
 * Added models to allow identification of [Gender and presence of eye or sun glasses](/metrics#appearance)
 * New API that allows the developer to control the face detector configuration to use in the detection.
-* Add dynamic core / threading detection to allow SDKs to make use of multiple CPU core if available.
+* Added dynamic core detection to allow SDKs to make use of multiple CPU core if available.
 * Refactored the documentation on the developer portal to add tutorials to help developers get started.
 * New version of the AffdexMe apps ([iOS](https://github.com/Affectiva/ios-sdk-samples/tree/master/apps/AffdexMe), [Android](https://github.com/Affectiva/affdexme-android) and [Windows](https://github.com/Affectiva/win-sdk-samples/tree/master/AffdexMe)):
   - Track multi faces in realtime.
