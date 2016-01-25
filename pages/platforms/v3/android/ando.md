@@ -27,8 +27,8 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 ##### 1. [Download]({{ site.baseurl }}/downloads/) and extract the SDK archive.
 ##### 2. Import the Affdex API into your application
 * Copy the contents of the libs folder into your libs folder under ```app/libs```
-* Copy the contents of the assets folder into your app assets folder under ```app/src/main/assets```
-* Copy the jniLibs folder to your app to your app under ```app/src/main```
+* Copy the contents of the ```src/main/assets``` folder into your app assets folder under ```app/src/main/assets```
+* Copy the jniLibs folder to your app to your app under ```app/```
 
  The SDK requires access to external storage on the Android device. Therefore, the ```AndroidManifest.xml``` needs to include permission for that it:
 
