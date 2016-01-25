@@ -69,7 +69,7 @@ entries:
           version: all
           print: true
 
-        - title: iOS
+        - title: iOS (Objective-C)
           url: /v3/ios/
           audience: writer, designer
           platform: all
