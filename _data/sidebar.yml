@@ -101,6 +101,14 @@ entries:
       print: true
 
       items:
+        - title: What's New
+          url: /whats_new/
+          audience: writer, designer
+          platform: all
+          product: all
+          version: all
+          print: true
+
         - title: Sample Apps
           url: /sampleapps/
           audience: writer, designer
