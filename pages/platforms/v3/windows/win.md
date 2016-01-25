@@ -32,7 +32,7 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
 
 &nbsp;&nbsp;&nbsp;&nbsp;The .NET assembly depends on the affdex-native.dll and loads it in runtime.
 
-&nbsp;&nbsp;&nbsp;&nbsp;A dynamic library, ```opencv_ffmpeg.dll``` is required by [VideoDetector]({{ site.baseurl }}/v3/windows/detectors/#videodetector) in runtime for the video decoding.
+&nbsp;&nbsp;&nbsp;&nbsp;A dynamic library, ```opencv_ffmpeg.dll``` is required by VideoDetector [[c++]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/affdex-native/classaffdex_1_1_video_detector.html)], [[c#]({{ site.baseurl }}/pages/platforms/v3/windows/classdocs/Affdex/html/6e4b1996-68bf-4750-439a-731c2be17537.htm)] in runtime for the video decoding.
 
 ##### 3. Capture and analyze faces
 
