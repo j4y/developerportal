@@ -57,7 +57,7 @@ The `start()` spawns a thread that decodes video frames then processes them and 
 ### Processing a video
 Once the detector is started, the processing begins by calling the process function, the path to video file you are processing is passed in as a parameter:  
 
-```
+```csharp
 void process(String path);
 ```
 

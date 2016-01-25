@@ -6,7 +6,7 @@ entries:
 - title: Sidebar # this title doesn't appear anywhere
   subcategories:
     - title: Overview
-      audience: writer, designer
+      audience: developer, designer
       platform: all
       product: all
       version: all
@@ -15,7 +15,7 @@ entries:
       items:
         - title: Getting Started
           url: /getting_started/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -23,7 +23,7 @@ entries:
 
         - title: Metrics
           url: /metrics/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -31,7 +31,7 @@ entries:
 
         - title: Accuracy
           url: /accuracy/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -39,7 +39,7 @@ entries:
 
         - title: Getting Optimal Results
           url: /gettingbestresults/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -47,14 +47,14 @@ entries:
 
         - title: On Privacy
           url: /privacy/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
           print: true
 
     - title: Platforms
-      audience: writer, designer
+      audience: developer, designer
       platform: all
       product: all
       version: all
@@ -63,7 +63,7 @@ entries:
       items:
         - title: Android (Java)
           url: /v3/android/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -71,7 +71,7 @@ entries:
 
         - title: iOS (Objective-C)
           url: /v3/ios/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -79,7 +79,7 @@ entries:
 
         - title: Unity
           url: /v2/unity/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -87,14 +87,14 @@ entries:
 
         - title: Windows (C++, C#)
           url: /v3/windows/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
           print: true
 
     - title: See Also
-      audience: writer, designer
+      audience: developer, designer
       platform: all
       product: all
       version: all
@@ -111,7 +111,7 @@ entries:
 
         - title: Sample Apps
           url: /sampleapps/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -119,7 +119,7 @@ entries:
 
         - title: Supported Video Formats
           url: /supportedvideoformats/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -127,7 +127,7 @@ entries:
 
         - title: Facial Landmarks
           url: /fpi/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -135,7 +135,7 @@ entries:
 
         - title: FAQ
           url: /faq/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -144,7 +144,7 @@ entries:
 
         - title: Thirdparty libraries
           url: /licenses/
-          audience: writer, designer
+          audience: developer, designer
           platform: all
           product: all
           version: all
@@ -152,7 +152,7 @@ entries:
           web: true
 
     - title: Tag archives
-      audience: writers, designers
+      audience: developers, designers
       platform: all
       product: all
       version: all
@@ -162,7 +162,7 @@ entries:
 
           thirdlevel:
             - title: Tag archive pages
-              audience: writers, designers
+              audience: developers, designers
               platform: all
               version: all
               product: all
@@ -170,7 +170,7 @@ entries:
               thirdlevelitems:
                 - title: Getting started pages
                   url: /tag-getting-started.html
-                  audience: writers, designers
+                  audience: developers, designers
                   platform: all
                   version: all
                   product: all
@@ -178,7 +178,7 @@ entries:
 
                 - title: Formatting pages
                   url: /tag-formatting.html
-                  audience: writers, designers
+                  audience: developers, designers
                   platform: all
                   version: all
                   product: all

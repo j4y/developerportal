@@ -35,7 +35,8 @@ The purpose of the SDK is to detect facial expressions and their underlying emot
  ```xml
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
  ```
-Additionally, if you use the [CameraDetector](), the you will need to add permission to access the camera:
+
+Additionally, if you use the `CameraDetector`, then you will need to add permission to access the camera:
 
 ```xml
 <uses-permission android:name="android.permission.CAMERA" />
