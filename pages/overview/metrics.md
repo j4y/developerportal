@@ -68,13 +68,16 @@ An confidence level of whether the subject in the image is wearing eye or sun gl
 
 The SDKs include our latest face tracker which calculates the following metrics:
 
-`Facial Landmarks Estimation`
+**Facial Landmarks Estimation**
+
 The tracking of the cartesian coordinates for the [facial landmarks](/fpi/).
 
-`Head Orientation Estimation`
+**Head Orientation Estimation**
+
 Estimation of the head position in a 3-D space in Euler angles (pitch, yaw, roll).
 
-`Interocular Distance`
+**Interocular Distance**
+
 The distance between the two outer eye corners.
 
 <br />
