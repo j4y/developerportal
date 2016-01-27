@@ -5,7 +5,7 @@ To develop using the portal, either host locally using jekyll
 or host on s3 using s3_website.
 
 [![Build Status](https://travis-ci.org/Affectiva/developerportal.svg?branch=gh-pages)](https://travis-ci.org/Affectiva/developerportal)
-
+[![Dependency Status](https://gemnasium.com/Affectiva/developerportal.svg)](https://gemnasium.com/Affectiva/developerportal)
 
 **How to run locally**
 
