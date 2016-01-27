@@ -14,7 +14,7 @@ detector.setDetectAllEmotions(true);
 detector.setDetectAllEmojis(true);
 ```
 
-To check the status of a detector at any time, for example smile:
+To check the status of a classifier at any time, for example smile:
 
 ```csharp
 detector.getDetectSmile();
