@@ -11,8 +11,9 @@ or host on s3 using s3_website.
 
 Assuming, you have Ruby and bundle installed. If you don't, a good place to start [would be here.](https://www.codecademy.com/learn/ruby)
 
+Install all required gems
 ```shell
-$ bundle install #installs gems needed.
+$ bundle install
 ```
 
 Build the website, and start a local server for live preview.
@@ -33,6 +34,13 @@ Output should look something like this, at which point you can point your browse
 Configuration file: /Users/amahmoud/Affectiva/repos/developerportal/_config.yml
     Server address: http://127.0.0.1:4006/
   Server running... press ctrl-c to stop.
+```
+
+**How to run the tests**
+
+The html-proofer gem is used to validate the generated HTML files to make sure they're accurate.
+```shell
+$ bundle exec rake test
 ```
 
 **How to build host on S3**
