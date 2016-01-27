@@ -47,7 +47,7 @@ This method is called in your code when the detector has finished processing a v
 After successful initialization, the following method can be used to process images for detection:  
 
 ```objective-c
-- (void)processImage:(UIImage *)facePicture;
+- (void)processImage:(UIImage *)facePicture atTime:(NSTimeInterval)time;
 ```
 
 {% include ios/v3/detector/getting_results.md %}

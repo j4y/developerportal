@@ -190,11 +190,10 @@ PLATFORMS
 
 DEPENDENCIES
   chronic
-  github-pages (= 43)
+  github-pages
   google-api-client (= 0.8)
   html-proofer
   jekyll-redirect-from
-  json
   rake
   s3_website
 
