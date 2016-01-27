@@ -42,7 +42,7 @@ Facial images can be captured from different sources. For each of the different 
 Sample applications for processing videos, and connecting to the camera are available for cloning on our [GitHub repository.](http://github.com/Affectiva/ios-sdk-samples)
 
 ## Reference
-* class docs: [[HTML]({{ site.baseurl }}/pages/platforms/v3/ios/classdocs/index.html)]
+* class docs: [[HTML]({{ site.baseurl }}/pages/platforms/v3/ios/classdocs/annotated.html)]
 
 
 ## Requirements & Dependencies

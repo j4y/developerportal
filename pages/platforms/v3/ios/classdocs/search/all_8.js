@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['joy',['joy',['../interface_a_f_d_x_emotions.html#a69948ca204c726ca29a4cfc0d92f5f7a',1,'AFDXEmotions']]],
-  ['jsondescription',['jsonDescription',['../interface_a_f_d_x_orientation.html#a8bcc2dc0954595ceeada8baed47b0188',1,'AFDXOrientation::jsonDescription()'],['../interface_a_f_d_x_appearance.html#a9f455bb68c697ab2ffaf7c9b4bb84823',1,'AFDXAppearance::jsonDescription()'],['../interface_a_f_d_x_emoji.html#a9c3041590d8dbd3420bc8cf368d9afc0',1,'AFDXEmoji::jsonDescription()'],['../interface_a_f_d_x_emotions.html#abfb0efea8deaf8e47b65f7cb338eb2a2',1,'AFDXEmotions::jsonDescription()'],['../interface_a_f_d_x_expressions.html#a1e5e56dd09a505637f611e1a58a14adb',1,'AFDXExpressions::jsonDescription()'],['../interface_a_f_d_x_face.html#a25ffce9da50f5719e79ffab722ae9c02',1,'AFDXFace::jsonDescription()']]]
+  ['imagebydrawingpoints_3aandrectangles_3aandimages_3awithradius_3ausingpointcolor_3ausingrectanglecolor_3ausingimagerects_3aonimage_3a',['imageByDrawingPoints:andRectangles:andImages:withRadius:usingPointColor:usingRectangleColor:usingImageRects:onImage:',['../interface_a_f_d_x_detector.html#a12641c2e448e46695bdd103a8acd3b61',1,'AFDXDetector']]],
+  ['imagebydrawingpoints_3aandrectangles_3awithradius_3ausingpointcolor_3ausingrectanglecolor_3aonimage_3a',['imageByDrawingPoints:andRectangles:withRadius:usingPointColor:usingRectangleColor:onImage:',['../interface_a_f_d_x_detector.html#a2cd4baf26992b9d08b2daca7c6c984eb',1,'AFDXDetector']]],
+  ['initwithdelegate_3adiscreteimages_3amaximumfaces_3a',['initWithDelegate:discreteImages:maximumFaces:',['../interface_a_f_d_x_detector.html#a8723d955fc613751cb8cc094a984ded0',1,'AFDXDetector']]],
+  ['initwithdelegate_3ausingcamera_3amaximumfaces_3a',['initWithDelegate:usingCamera:maximumFaces:',['../interface_a_f_d_x_detector.html#a34886a56e274530ac091f2d504e2d181',1,'AFDXDetector']]],
+  ['initwithdelegate_3ausingfile_3amaximumfaces_3a',['initWithDelegate:usingFile:maximumFaces:',['../interface_a_f_d_x_detector.html#a91cfc5358e70350c3718d41865174eb6',1,'AFDXDetector']]],
+  ['innerbrowraise',['innerBrowRaise',['../interface_a_f_d_x_expressions.html#a893a61d64d46d8cd5cf2ed6e99969d97',1,'AFDXExpressions::innerBrowRaise()'],['../interface_a_f_d_x_detector.html#acf7672d8e05cfd462e646ba67eb48058',1,'AFDXDetector::innerBrowRaise()']]],
+  ['interoculardistance',['interocularDistance',['../interface_a_f_d_x_orientation.html#a56b0f80081d3632a235019c5e190af47',1,'AFDXOrientation']]],
+  ['isrunning',['isRunning',['../interface_a_f_d_x_detector.html#a95c500cffaaea04bdfca031a2c20144a',1,'AFDXDetector']]]
 ];

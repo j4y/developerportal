@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rage',['rage',['../interface_a_f_d_x_emoji.html#aeedc9cf80b3d78b5e974b8a006cbed5f',1,'AFDXEmoji']]],
-  ['relaxed',['relaxed',['../interface_a_f_d_x_emoji.html#a39fe16ee27e6a5c8cbc780f073108c80',1,'AFDXEmoji']]],
-  ['roll',['roll',['../interface_a_f_d_x_orientation.html#af02c2f613308d2b628b43589c639ba30',1,'AFDXOrientation']]]
+  ['pitch',['pitch',['../interface_a_f_d_x_orientation.html#a95df165dfa61b32e035f5b818af86418',1,'AFDXOrientation']]],
+  ['processimage_3a',['processImage:',['../interface_a_f_d_x_detector.html#abbd541daa935c94a3b2af90cdd16b8a6',1,'AFDXDetector']]],
+  ['processimage_3aattime_3a',['processImage:atTime:',['../interface_a_f_d_x_detector.html#a7512eb4edc9b6d1d5c73466dd7a96c67',1,'AFDXDetector']]]
 ];

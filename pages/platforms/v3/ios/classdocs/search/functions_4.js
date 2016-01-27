@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version',['version',['../interface_a_f_d_x_detector.html#a4d1b981551805fc0baa6401c297dc78a',1,'AFDXDetector']]]
+  ['reset',['reset',['../interface_a_f_d_x_detector.html#a854270927a6a4c95ea9953507dcde899',1,'AFDXDetector']]]
 ];
