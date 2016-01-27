@@ -13,7 +13,7 @@ metadata: false
 ### What's new in the Affdex SDK version 3.0
 
 * New API to allow tracking of multiple faces simultaneously.
-* Added a Face to Emoji mapper to allow the developer to recognize and track [14 Emojis](/metrics#emoji-expressions)
+* Added a Face to Emoji mapper to allow the developer to recognize and track [13 Emojis](/metrics#emoji-expressions)
 * New API that returns the most likely emoji (`dominantEmoji`) posed in an image.
 * Added models to allow identification of [gender and presence of eye or sun glasses](/metrics#appearance)
 * New API that allows the developer to control the face detector configuration to use in the detection.

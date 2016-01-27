@@ -13,7 +13,7 @@ Using our SDK, developers can now enrich digital experiences and apps with emoti
 * Measure and track facial expressions of [emotion]({{ site.baseurl }}/metrics#emotions) in realtime.
 * Track 15 highly nuanced [facial expressions]({{ site.baseurl }}/metrics#facial-expressions) in real time.
 * Recognize aspects of [physical appearance]({{ site.baseurl }}/metrics#appearance) such as person's gender and glasses.
-* Identify 14 [emojis]({{ site.baseurl }}/metrics#emoji-expressions) from the posed facial images.
+* Identify 13 [emojis]({{ site.baseurl }}/metrics#emoji-expressions) from the posed facial images.
 
 All processing is done on device -- no videos or images sent to our cloud.  
 
