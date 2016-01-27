@@ -23,9 +23,3 @@ To turn on or off the detection of all expressions, emotions or emojis:
 [detector setDetectAllExpressions:YES];
 [detector setDetectEmojis:YES];
 ```
-
-To check the status of a detector at any time, for example smile:
-
-```objective-c
-detector.getDetectSmile();
-```
